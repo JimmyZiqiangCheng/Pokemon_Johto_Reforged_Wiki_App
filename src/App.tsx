@@ -600,10 +600,14 @@ function browserSearchRank<T extends Record<string, any>>(item: T, query: string
 
 function PokemonPage({ data, indexes, route }: { data: ExplorerData; indexes: Indexes; route: Route }) {
   const pokemonItems = useMemo(
-    () => data.pokemon.map((item) => ({ ...item, name: displayPokemonName(item.name, item.id), searchName: displayPokemonName(item.name, item.id) })),
+    () => data.pokemon.map((item) => {
+      const name = displayPokemonName(item.name, item.id);
+      return { ...item, name, searchName: name, generation: pokemonGeneration(item) };
+    }),
     [data.pokemon]
   );
-  const filters = ["All", ...TYPE_COLORS_KEYS(), "Wild", "Static/Gift", "Evolution-only", "Has egg moves"];
+  const generationFilters = POKEMON_GENERATION_FILTERS.filter((generation) => pokemonItems.some((item) => item.generation === generation));
+  const filters = ["All", ...generationFilters, ...TYPE_COLORS_KEYS(), "Wild", "Static/Gift", "Evolution-only", "Has egg moves"];
   return (
     <BrowserPage<Pokemon>
       title="Pokemon"
@@ -614,6 +618,7 @@ function PokemonPage({ data, indexes, route }: { data: ExplorerData; indexes: In
       searchKeys={["name", "searchName", "id", "types", "abilities.name", "eggGroups", "availability.summary", "scopeStatus"]}
       filters={filters}
       filterFn={(item, filter) =>
+        item.generation === filter ||
         item.types.includes(filter) ||
         (filter === "Wild" && item.availability.wildCount > 0) ||
         (filter === "Static/Gift" && item.availability.staticGiftCount > 0) ||
@@ -631,7 +636,7 @@ function PokemonPage({ data, indexes, route }: { data: ExplorerData; indexes: In
           <div className="card-main">
             <strong>#{item.dexNo} {item.name}</strong>
             <TypeRow types={item.types} />
-            <small>{item.availability.summary}</small>
+            <small>{item.generation} - {item.availability.summary}</small>
           </div>
           <span className="bst-chip">BST {item.bst}</span>
         </CardShell>
@@ -639,6 +644,47 @@ function PokemonPage({ data, indexes, route }: { data: ExplorerData; indexes: In
       renderDetail={(item) => <PokemonDetail pokemon={item} indexes={indexes} />}
     />
   );
+}
+
+const POKEMON_GENERATION_FILTERS = ["Gen 1", "Gen 2", "Gen 3", "Gen 4", "Gen 5", "Gen 6", "Gen 7", "Gen 8", "Gen 9", "Other"];
+const GEN_6_SPECIES = new Set(["SPECIES_SYLVEON"]);
+const GEN_8_SPECIES = new Set([
+  "SPECIES_OBSTAGOON",
+  "SPECIES_PERRSERKER",
+  "SPECIES_CURSOLA",
+  "SPECIES_SIRFETCHD",
+  "SPECIES_MR_RIME",
+  "SPECIES_WYRDEER",
+  "SPECIES_KLEAVOR",
+  "SPECIES_URSALUNA",
+  "SPECIES_SNEASLER",
+  "SPECIES_OVERQWIL"
+]);
+const GEN_9_SPECIES = new Set([
+  "SPECIES_ANNIHILAPE",
+  "SPECIES_CLODSIRE",
+  "SPECIES_FARIGIRAF",
+  "SPECIES_DUDUNSPARCE"
+]);
+
+function pokemonGeneration(item: Pick<Pokemon, "dexNo" | "id">): string {
+  const id = item.id || "";
+  if (GEN_6_SPECIES.has(id)) return "Gen 6";
+  if (id.includes("_ALOLAN")) return "Gen 7";
+  if (id.includes("_GALARIAN") || id.includes("_HISUIAN") || GEN_8_SPECIES.has(id)) return "Gen 8";
+  if (id.includes("_PALDEAN") || GEN_9_SPECIES.has(id)) return "Gen 9";
+  const dexNo = Number(item.dexNo || 0);
+  if (!Number.isFinite(dexNo) || dexNo < 1) return "Other";
+  if (dexNo >= 1 && dexNo <= 151) return "Gen 1";
+  if (dexNo <= 251) return "Gen 2";
+  if (dexNo <= 386) return "Gen 3";
+  if (dexNo <= 493) return "Gen 4";
+  if (dexNo <= 649) return "Gen 5";
+  if (dexNo <= 721) return "Gen 6";
+  if (dexNo <= 809) return "Gen 7";
+  if (dexNo <= 905) return "Gen 8";
+  if (dexNo <= 1025) return "Gen 9";
+  return "Other";
 }
 
 function PokemonDetail({ pokemon, indexes }: { pokemon: Pokemon; indexes: Indexes }) {
@@ -651,7 +697,7 @@ function PokemonDetail({ pokemon, indexes }: { pokemon: Pokemon; indexes: Indexe
           <AssetImage src={pokemon.assets.sprite || pokemon.assets.icon} label={pokemonName} size="large" />
         </div>
         <div className="profile-copy">
-          <p className="eyebrow">Pokemon #{pokemon.dexNo}</p>
+          <p className="eyebrow">Pokemon #{pokemon.dexNo}{pokemon.generation ? ` - ${pokemon.generation}` : ""}</p>
           <h2>{pokemonName}</h2>
           <TypeRow types={pokemon.types} />
           <p>{pokemon.availability.summary}</p>
