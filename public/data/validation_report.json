@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T08:34:43-07:00",
+  "generatedAt": "2026-06-28T09:42:09-07:00",
   "summary": {
     "counts": {
       "pokemon": 545,
@@ -24,7 +24,7 @@
       "missingItemAssets": 0
     },
     "issueCounts": {
-      "bossTeamsWithMissingMovesItemsAbilities": 37,
+      "bossTeamsWithMissingMovesItemsAbilities": 0,
       "brokenLinks": 0,
       "itemsMissingDescriptions": 204,
       "locationsWithNoLinkedContent": 7,
@@ -37,7 +37,7 @@
     },
     "severityCounts": {
       "critical": 0,
-      "warnings": 976
+      "warnings": 939
     },
     "status": "PASS"
   },
@@ -4484,193 +4484,7 @@
         "name": "Unused 138 Unknown 138"
       }
     ],
-    "bossTeamsWithMissingMovesItemsAbilities": [
-      {
-        "boss": "Silver",
-        "pokemon": "Gastly",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Zubat",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Bayleef",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Cyndaquil",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Totodile",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Chikorita",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Gastly",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Zubat",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Quilava",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Gastly",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Zubat",
-        "field": "moves"
-      },
-      {
-        "boss": "Silver",
-        "pokemon": "Croconaw",
-        "field": "moves"
-      },
-      {
-        "boss": "Ariana",
-        "pokemon": "Arbok",
-        "field": "moves"
-      },
-      {
-        "boss": "Ariana",
-        "pokemon": "Gloom",
-        "field": "moves"
-      },
-      {
-        "boss": "Ariana",
-        "pokemon": "Murkrow",
-        "field": "moves"
-      },
-      {
-        "boss": "Ariana",
-        "pokemon": "Golbat",
-        "field": "moves"
-      },
-      {
-        "boss": "Ariana",
-        "pokemon": "Vileplume",
-        "field": "moves"
-      },
-      {
-        "boss": "Ariana",
-        "pokemon": "Honchkrow",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Zubat",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Koffing",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Ekans",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Raticate",
-        "field": "moves"
-      },
-      {
-        "boss": "Petrel",
-        "pokemon": "Golbat",
-        "field": "moves"
-      },
-      {
-        "boss": "Petrel",
-        "pokemon": "Raticate",
-        "field": "moves"
-      },
-      {
-        "boss": "Petrel",
-        "pokemon": "Koffing",
-        "field": "moves"
-      },
-      {
-        "boss": "Petrel",
-        "pokemon": "Grimer",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Golbat",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Weezing",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Raticate",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Arbok",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Murkrow",
-        "field": "moves"
-      },
-      {
-        "boss": "Proton",
-        "pokemon": "Skuntank",
-        "field": "moves"
-      },
-      {
-        "boss": "Palmer",
-        "pokemon": "Rattata",
-        "field": "moves"
-      },
-      {
-        "boss": "Argenta",
-        "pokemon": "Rattata",
-        "field": "moves"
-      },
-      {
-        "boss": "Thorton",
-        "pokemon": "Rattata",
-        "field": "moves"
-      },
-      {
-        "boss": "Dahlia",
-        "pokemon": "Rattata",
-        "field": "moves"
-      },
-      {
-        "boss": "Darach",
-        "pokemon": "Rattata",
-        "field": "moves"
-      }
-    ],
+    "bossTeamsWithMissingMovesItemsAbilities": [],
     "missingPokemonIcons": [],
     "missingItemIcons": [],
     "brokenLinks": [],

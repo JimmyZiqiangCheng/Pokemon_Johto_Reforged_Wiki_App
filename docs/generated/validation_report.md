@@ -1,6 +1,6 @@
 # Pokemon Johto Reforged Explorer Validation Report
 
-Generated: 2026-06-28T08:34:43-07:00
+Generated: 2026-06-28T09:42:09-07:00
 Status: PASS
 
 ## Counts
@@ -29,7 +29,7 @@ Status: PASS
 
 ## Issue Counts
 
-- bossTeamsWithMissingMovesItemsAbilities: 37
+- bossTeamsWithMissingMovesItemsAbilities: 0
 - brokenLinks: 0
 - itemsMissingDescriptions: 204
 - locationsWithNoLinkedContent: 7
@@ -155,31 +155,3 @@ Status: PASS
 - `{"id": "ENCDATA_UNUSED_064_UNKNOWN_064", "name": "Unused 064 Unknown 064"}`
 - `{"id": "ENCDATA_UNUSED_090_UNKNOWN_090", "name": "Unused 090 Unknown 090"}`
 - `{"id": "ENCDATA_UNUSED_138_UNKNOWN_138", "name": "Unused 138 Unknown 138"}`
-
-### bossTeamsWithMissingMovesItemsAbilities
-- `{"boss": "Silver", "pokemon": "Gastly", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Zubat", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Bayleef", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Cyndaquil", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Totodile", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Chikorita", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Gastly", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Zubat", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Quilava", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Gastly", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Zubat", "field": "moves"}`
-- `{"boss": "Silver", "pokemon": "Croconaw", "field": "moves"}`
-- `{"boss": "Ariana", "pokemon": "Arbok", "field": "moves"}`
-- `{"boss": "Ariana", "pokemon": "Gloom", "field": "moves"}`
-- `{"boss": "Ariana", "pokemon": "Murkrow", "field": "moves"}`
-- `{"boss": "Ariana", "pokemon": "Golbat", "field": "moves"}`
-- `{"boss": "Ariana", "pokemon": "Vileplume", "field": "moves"}`
-- `{"boss": "Ariana", "pokemon": "Honchkrow", "field": "moves"}`
-- `{"boss": "Proton", "pokemon": "Zubat", "field": "moves"}`
-- `{"boss": "Proton", "pokemon": "Koffing", "field": "moves"}`
-- `{"boss": "Proton", "pokemon": "Ekans", "field": "moves"}`
-- `{"boss": "Proton", "pokemon": "Raticate", "field": "moves"}`
-- `{"boss": "Petrel", "pokemon": "Golbat", "field": "moves"}`
-- `{"boss": "Petrel", "pokemon": "Raticate", "field": "moves"}`
-- `{"boss": "Petrel", "pokemon": "Koffing", "field": "moves"}`
-- ... 12 more

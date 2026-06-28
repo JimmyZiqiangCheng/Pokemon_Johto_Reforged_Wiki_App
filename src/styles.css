@@ -1010,6 +1010,10 @@ a:focus-visible {
   gap: 9px;
 }
 
+.party-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .entity-card,
 .party-card {
   display: grid;
@@ -1059,6 +1063,46 @@ a:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+
+.party-meta-grid {
+  display: grid;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-2);
+  padding: 7px;
+}
+
+.party-meta-row {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.party-meta-row > span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.party-meta-row > strong {
+  min-width: 0;
+  color: var(--text);
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.party-meta-row .pill,
+.party-meta-row .popup-pill {
+  max-width: 100%;
+}
+
+.party-source-note {
+  color: var(--muted);
+  font-weight: 800;
 }
 
 .learnset-group {

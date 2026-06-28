@@ -304,6 +304,35 @@ def designated_entries(text: str, prefix: str) -> dict[str, str]:
     return entries
 
 
+def numeric_designated_entries(text: str, array_name: str) -> dict[int, str]:
+    match = re.search(rf"\b{re.escape(array_name)}\s*\[\]\s*=\s*\{{", text)
+    if not match:
+        return {}
+    array_start = text.find("{", match.start())
+    array_end = matching_brace(text, array_start)
+    body = text[array_start + 1 : array_end]
+    entries: dict[int, str] = {}
+    pattern = re.compile(r"^\s*\[\s*([0-9]+)\s*\]\s*=\s*\{", re.MULTILINE)
+    for entry_match in pattern.finditer(body):
+        start = body.find("{", entry_match.start())
+        end = matching_brace(body, start)
+        entries[int(entry_match.group(1))] = body[start + 1 : end]
+    return entries
+
+
+def top_level_brace_blocks(body: str) -> list[str]:
+    blocks: list[str] = []
+    pos = 0
+    while pos < len(body):
+        start = body.find("{", pos)
+        if start < 0:
+            break
+        end = matching_brace(body, start)
+        blocks.append(body[start + 1 : end])
+        pos = end + 1
+    return blocks
+
+
 def field_string(body: str, field_name: str) -> str | None:
     match = re.search(rf"\.{re.escape(field_name)}\s*=\s*\"((?:\\.|[^\"])*)\"", body)
     if not match:
@@ -1267,34 +1296,177 @@ def encounter_tags(species_id: str, chance: int, region: str, rare_notes: list[d
     return tags
 
 
-def normalize_party(raw_party: list[dict[str, Any]], pokemon_by_id: dict[str, dict[str, Any]], moves_by_id: dict[str, dict[str, Any]], items_by_id: dict[str, dict[str, Any]] | None = None) -> list[dict[str, Any]]:
+def parse_stat_override(body: str, field_name: str) -> dict[str, int] | None:
+    block = named_block(body, field_name)
+    if not block:
+        return None
+    values = {stat: field_int(block, stat) for stat in STAT_FIELDS}
+    if any(value is not None for value in values.values()):
+        return {stat: int(value or 0) for stat, value in values.items()}
+    positional = [int(value) for value in re.findall(r"\b[0-9]+\b", block)]
+    if len(positional) >= len(STAT_FIELDS):
+        return dict(zip(STAT_FIELDS, positional[: len(STAT_FIELDS)]))
+    return None
+
+
+def parse_trainer_source_party(engine_root: Path) -> dict[int, list[dict[str, Any]]]:
+    source_path = engine_root / "data" / "Trainers.c"
+    if not source_path.exists():
+        return {}
+    entries = numeric_designated_entries(read_text(source_path), "sTrainerData")
+    details: dict[int, list[dict[str, Any]]] = {}
+    for trainer_num, body in entries.items():
+        party_block = named_block(body, "party")
+        if not party_block:
+            continue
+        members = []
+        for member_body in top_level_brace_blocks(party_block):
+            species_id = field_ident(member_body, "species")
+            if not species_id:
+                continue
+            move_ids = [move_id for move_id in field_list(member_body, "moves") if move_id and move_id != "MOVE_NONE"]
+            members.append(
+                {
+                    "species": species_id,
+                    "level": field_int(member_body, "level"),
+                    "item": field_ident(member_body, "item"),
+                    "moves": move_ids,
+                    "ivs": field_int(member_body, "ivs"),
+                    "abilitySlot": field_ident(member_body, "abilitySlot"),
+                    "ability": field_ident(member_body, "ability"),
+                    "setIvs": parse_stat_override(member_body, "setIvs"),
+                    "setEvs": parse_stat_override(member_body, "setEvs"),
+                    "nature": field_ident(member_body, "nature"),
+                }
+            )
+        if members:
+            details[trainer_num] = members
+    return details
+
+
+def trainer_default_move_ids(species_id: str | None, level: int | None, pokemon_by_id: dict[str, dict[str, Any]]) -> list[str]:
+    if not species_id or level is None:
+        return []
+    mon = pokemon_by_id.get(species_id)
+    if not mon:
+        return []
+    learned: list[str] = []
+    for row in sorted(mon.get("learnsets", {}).get("level", []), key=lambda item: (item.get("level") or 0)):
+        move_level = row.get("level")
+        move_id = row.get("moveId")
+        if move_level is None or move_level > level or not move_id or move_id == "MOVE_NONE":
+            continue
+        if move_id in learned:
+            learned.remove(move_id)
+        learned.append(move_id)
+    return learned[-4:]
+
+
+def trainer_move_refs(move_ids: list[str], moves_by_id: dict[str, dict[str, Any]], source: str) -> list[dict[str, Any]]:
+    return [
+        {
+            "id": move_id,
+            "name": moves_by_id.get(move_id, {}).get("name") or labelize(move_id, "MOVE_"),
+            "type": moves_by_id.get(move_id, {}).get("type"),
+            "source": source,
+        }
+        for move_id in move_ids
+        if move_id and move_id != "MOVE_NONE"
+    ]
+
+
+def trainer_ability_from_slot(
+    explicit_ability: str | None,
+    ability_slot: str | None,
+    mon: dict[str, Any],
+) -> dict[str, Any] | None:
+    if explicit_ability and explicit_ability != "ABILITY_NONE":
+        return {
+            "id": explicit_ability,
+            "name": labelize(explicit_ability, "ABILITY_"),
+            "slot": "explicit",
+            "slotName": "Explicit ability",
+            "source": "Trainer source ability override",
+            "resolved": True,
+        }
+    slot_map = {
+        "TRAINER_POKEMON_ABILITY_1": ("1", "Ability 1"),
+        "TRAINER_POKEMON_ABILITY_2": ("2", "Ability 2"),
+        "TRAINER_POKEMON_ABILITY_HIDDEN": ("hidden", "Hidden ability"),
+    }
+    slot, slot_name = slot_map.get(ability_slot or "", ("", labelize(ability_slot or "", "TRAINER_POKEMON_ABILITY_")))
+    ability = None
+    if slot == "hidden":
+        ability = mon.get("hiddenAbility")
+    else:
+        ability = next((entry for entry in mon.get("abilities", []) if str(entry.get("slot")) == slot), None)
+    if ability:
+        return {
+            "id": ability.get("id"),
+            "name": ability.get("name"),
+            "slot": slot,
+            "slotName": slot_name,
+            "source": "Trainer source ability slot",
+            "resolved": True,
+        }
+    if ability_slot:
+        return {
+            "id": None,
+            "name": slot_name or "Ability slot",
+            "slot": slot,
+            "slotName": slot_name or ability_slot,
+            "source": "Trainer source ability slot",
+            "resolved": False,
+        }
+    return None
+
+
+def normalize_party(
+    raw_party: list[dict[str, Any]],
+    pokemon_by_id: dict[str, dict[str, Any]],
+    moves_by_id: dict[str, dict[str, Any]],
+    items_by_id: dict[str, dict[str, Any]] | None = None,
+    source_party: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
     party = []
-    for member in raw_party or []:
-        species_id = member.get("species")
+    for index, member in enumerate(raw_party or []):
+        source_member = (source_party or [])[index] if source_party and index < len(source_party) else {}
+        species_id = source_member.get("species") or member.get("species")
         mon = pokemon_by_id.get(species_id, {})
-        item_id = member.get("item")
+        item_id = source_member.get("item") or member.get("item")
+        level = source_member.get("level") if source_member.get("level") is not None else member.get("level")
+        explicit_move_ids = source_member.get("moves") or member.get("moves", [])
+        if explicit_move_ids:
+            move_ids = explicit_move_ids
+            move_source = "Trainer source"
+        else:
+            move_ids = trainer_default_move_ids(species_id, level, pokemon_by_id)
+            move_source = "Level-up learnset"
+        iv_setting = source_member.get("ivs") if source_member.get("ivs") is not None else member.get("ivs")
+        evs = source_member.get("setEvs") or member.get("evs")
+        explicit_ivs = source_member.get("setIvs")
+        ability_slot = source_member.get("abilitySlot") or member.get("abilitySlot")
+        ability = trainer_ability_from_slot(source_member.get("ability") or member.get("ability"), ability_slot, mon)
         party.append(
             {
                 "species": species_id,
                 "pokemonName": mon.get("name") or clean_text(member.get("name")) or labelize(species_id or "", "SPECIES_"),
                 "pokemonIcon": mon.get("assets", {}).get("icon"),
                 "types": mon.get("types", []),
-                "level": member.get("level"),
+                "level": level,
                 "item": item_id,
                 "itemName": (items_by_id or {}).get(item_id, {}).get("name") if item_id else labelize(item_id or "", "ITEM_") if item_id and item_id != "ITEM_NONE" else None,
-                "moves": [
-                    {
-                        "id": move_id,
-                        "name": moves_by_id.get(move_id, {}).get("name") or labelize(move_id, "MOVE_"),
-                        "type": moves_by_id.get(move_id, {}).get("type"),
-                    }
-                    for move_id in member.get("moves", [])
-                    if move_id and move_id != "MOVE_NONE"
-                ],
-                "ability": member.get("ability"),
-                "nature": member.get("nature"),
-                "evs": member.get("evs"),
-                "ivs": member.get("ivs"),
+                "moves": trainer_move_refs(move_ids, moves_by_id, move_source),
+                "moveSource": move_source if move_ids else "Not exported",
+                "ability": ability,
+                "abilityName": ability.get("name") if ability else None,
+                "abilitySlot": ability_slot,
+                "nature": source_member.get("nature") or member.get("nature"),
+                "evs": evs,
+                "evSummary": "Explicit EV spread" if evs else "No explicit EV spread in trainer source",
+                "ivs": iv_setting,
+                "ivSummary": f"Source IV setting {iv_setting}" if iv_setting is not None else "No IV setting exported",
+                "setIvs": explicit_ivs,
             }
         )
     return party
@@ -1342,6 +1514,7 @@ def trainer_category(row: dict[str, Any], id_sets: dict[str, set[int]]) -> str:
 
 def parse_trainers(engine_root: Path, exports: dict[str, Any], pokemon_by_id: dict[str, dict[str, Any]], moves_by_id: dict[str, dict[str, Any]], items_by_id: dict[str, dict[str, Any]] | None = None) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     trainer_class_ids = parse_defines(engine_root / "include" / "constants" / "trainerclass.h", "TRAINERCLASS_")
+    source_party_by_trainer = parse_trainer_source_party(engine_root)
     id_sets = {
         "gym_leaders": {row["id"] for row in exports.get("gym_leaders", [])},
         "elite_four": {row["id"] for row in exports.get("elite_four_champions", [])},
@@ -1354,7 +1527,8 @@ def parse_trainers(engine_root: Path, exports: dict[str, Any], pokemon_by_id: di
         if not row.get("party") and clean_text(row.get("name")) == "-":
             continue
         category = trainer_category(row, id_sets)
-        party = normalize_party(row.get("party", []), pokemon_by_id, moves_by_id, items_by_id)
+        source_party = source_party_by_trainer.get(row.get("id"), [])
+        party = normalize_party(row.get("party", []), pokemon_by_id, moves_by_id, items_by_id, source_party)
         class_id = row.get("trainer_class")
         trainers.append(
             {
@@ -1373,7 +1547,7 @@ def parse_trainers(engine_root: Path, exports: dict[str, Any], pokemon_by_id: di
                 "rematch": "rematch" in category.lower(),
                 "progression": infer_trainer_progression(category, row),
                 "sprite": find_trainer_sprite(engine_root, class_id, trainer_class_ids),
-                "sourceRefs": ["exports/perfect_johto/trainer_teams.json"],
+                "sourceRefs": ["exports/perfect_johto/trainer_teams.json", "hg-engine-main/hg-engine-main/data/Trainers.c"],
                 "validationFlags": [] if party else ["Missing party data"],
             }
         )
@@ -1907,8 +2081,8 @@ Generated JSON lives in `public/data/`. Source records are copied from the Pokem
 - `items.json`: item constants, names, prices, pockets, mart availability, held/evolution usage, technical fields, and icons when available.
 - `locations.json`: inferred location records linked to encounters and future location-scoped exports.
 - `encounters.json`: flattened wild encounter slots with method, time, level range, chance, rarity, Pokemon, and location links.
-- `trainers.json`: trainer parties from exported trainer data.
-- `boss_fights.json`: boss-oriented subset linked back to trainer records.
+- `trainers.json`: trainer records with enriched party Pokemon, held items, source IV settings, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
+- `boss_fights.json`: boss-oriented subset linked back to trainer records with the same enriched party structure.
 - `statics_gifts.json`: static, roaming, gift, and dossier-style exported encounters.
 - `legendary_dossiers.json`: Phase 8 dossier subset with flags/requirements where exported.
 - `marts.json`: badge-gated shop exports.

@@ -27,7 +27,7 @@ export async function loadExplorerData(): Promise<ExplorerData> {
   const base = `${import.meta.env.BASE_URL}data/`;
   const entries = await Promise.all(
     Object.entries(DATA_FILES).map(async ([key, file]) => {
-      const response = await fetch(`${base}${file}`);
+      const response = await fetch(`${base}${file}`, { cache: "no-cache" });
       if (!response.ok) {
         throw new Error(`Failed to load ${file}: ${response.status}`);
       }

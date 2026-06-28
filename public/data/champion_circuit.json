@@ -24,28 +24,45 @@
         {
           "id": "MOVE_VOLT_TACKLE",
           "name": "Volt Tackle",
-          "type": "Electric"
+          "type": "Electric",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_IRON_TAIL",
           "name": "Iron Tail",
-          "type": "Steel"
+          "type": "Steel",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_QUICK_ATTACK",
           "name": "Quick Attack",
-          "type": "Normal"
+          "type": "Normal",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_THUNDERBOLT",
           "name": "Thunderbolt",
-          "type": "Electric"
+          "type": "Electric",
+          "source": "Trainer source"
         }
       ],
-      "ability": null,
+      "moveSource": "Trainer source",
+      "ability": {
+        "id": "ABILITY_STATIC",
+        "name": "Static",
+        "slot": "1",
+        "slotName": "Ability 1",
+        "source": "Trainer source ability slot",
+        "resolved": true
+      },
+      "abilityName": "Static",
+      "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
-      "ivs": null
+      "evSummary": "No explicit EV spread in trainer source",
+      "ivs": 250,
+      "ivSummary": "Source IV setting 250",
+      "setIvs": null
     },
     "sprite": "assets/trainers/pkmn_trainer_red.png",
     "party": [
@@ -63,28 +80,45 @@
           {
             "id": "MOVE_VOLT_TACKLE",
             "name": "Volt Tackle",
-            "type": "Electric"
+            "type": "Electric",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_IRON_TAIL",
             "name": "Iron Tail",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_QUICK_ATTACK",
             "name": "Quick Attack",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_THUNDERBOLT",
             "name": "Thunderbolt",
-            "type": "Electric"
+            "type": "Electric",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_STATIC",
+          "name": "Static",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Static",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_LAPRAS",
@@ -101,28 +135,45 @@
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_BLIZZARD",
             "name": "Blizzard",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_BODY_SLAM",
             "name": "Body Slam",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_REST",
             "name": "Rest",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_WATER_ABSORB",
+          "name": "Water Absorb",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Water Absorb",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_SNORLAX",
@@ -138,28 +189,45 @@
           {
             "id": "MOVE_BODY_SLAM",
             "name": "Body Slam",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CRUNCH",
             "name": "Crunch",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_REST",
             "name": "Rest",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SLEEP_TALK",
             "name": "Sleep Talk",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_IMMUNITY",
+          "name": "Immunity",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Immunity",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_VENUSAUR",
@@ -176,28 +244,45 @@
           {
             "id": "MOVE_FRENZY_PLANT",
             "name": "Frenzy Plant",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SLUDGE_BOMB",
             "name": "Sludge Bomb",
-            "type": "Poison"
+            "type": "Poison",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SLEEP_POWDER",
             "name": "Sleep Powder",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_GIGA_DRAIN",
             "name": "Giga Drain",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_OVERGROW",
+          "name": "Overgrow",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Overgrow",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_CHARIZARD",
@@ -214,28 +299,45 @@
           {
             "id": "MOVE_BLAST_BURN",
             "name": "Blast Burn",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AIR_SLASH",
             "name": "Air Slash",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_CLAW",
             "name": "Dragon Claw",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_FLAMETHROWER",
             "name": "Flamethrower",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_BLAZE",
+          "name": "Blaze",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Blaze",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_BLASTOISE",
@@ -252,28 +354,45 @@
           {
             "id": "MOVE_HYDRO_CANNON",
             "name": "Hydro Cannon",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_FOCUS_BLAST",
             "name": "Focus Blast",
-            "type": "Fighting"
+            "type": "Fighting",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_TORRENT",
+          "name": "Torrent",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Torrent",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       }
     ],
     "partySize": 6,
@@ -347,28 +466,45 @@
         {
           "id": "MOVE_LEAF_STORM",
           "name": "Leaf Storm",
-          "type": "Grass"
+          "type": "Grass",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_PSYCHIC",
           "name": "Psychic",
-          "type": "Psychic"
+          "type": "Psychic",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_EXPLOSION",
           "name": "Explosion",
-          "type": "Normal"
+          "type": "Normal",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_TRICK_ROOM",
           "name": "Trick Room",
-          "type": "Psychic"
+          "type": "Psychic",
+          "source": "Trainer source"
         }
       ],
-      "ability": null,
+      "moveSource": "Trainer source",
+      "ability": {
+        "id": "ABILITY_CHLOROPHYLL",
+        "name": "Chlorophyll",
+        "slot": "1",
+        "slotName": "Ability 1",
+        "source": "Trainer source ability slot",
+        "resolved": true
+      },
+      "abilityName": "Chlorophyll",
+      "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
-      "ivs": null
+      "evSummary": "No explicit EV spread in trainer source",
+      "ivs": 100,
+      "ivSummary": "Source IV setting 100",
+      "setIvs": null
     },
     "sprite": "assets/trainers/leader_blue.png",
     "party": [
@@ -387,28 +523,45 @@
           {
             "id": "MOVE_LEAF_STORM",
             "name": "Leaf Storm",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_PSYCHIC",
             "name": "Psychic",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EXPLOSION",
             "name": "Explosion",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_TRICK_ROOM",
             "name": "Trick Room",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_CHLOROPHYLL",
+          "name": "Chlorophyll",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Chlorophyll",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 100,
+        "ivSummary": "Source IV setting 100",
+        "setIvs": null
       },
       {
         "species": "SPECIES_MACHAMP",
@@ -424,28 +577,45 @@
           {
             "id": "MOVE_DYNAMIC_PUNCH",
             "name": "Dynamic Punch",
-            "type": "Fighting"
+            "type": "Fighting",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STONE_EDGE",
             "name": "Stone Edge",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_FLING",
             "name": "Fling",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ATTRACT",
             "name": "Attract",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_NO_GUARD",
+          "name": "No Guard",
+          "slot": "2",
+          "slotName": "Ability 2",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "No Guard",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_RHYPERIOR",
@@ -462,28 +632,45 @@
           {
             "id": "MOVE_MEGAHORN",
             "name": "Megahorn",
-            "type": "Bug"
+            "type": "Bug",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STONE_EDGE",
             "name": "Stone Edge",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_THUNDER_FANG",
             "name": "Thunder Fang",
-            "type": "Electric"
+            "type": "Electric",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_SOLID_ROCK",
+          "name": "Solid Rock",
+          "slot": "2",
+          "slotName": "Ability 2",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Solid Rock",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_ARCANINE",
@@ -499,28 +686,45 @@
           {
             "id": "MOVE_FLARE_BLITZ",
             "name": "Flare Blitz",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EXTREME_SPEED",
             "name": "Extreme Speed",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_THUNDER_FANG",
             "name": "Thunder Fang",
-            "type": "Electric"
+            "type": "Electric",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CRUNCH",
             "name": "Crunch",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Intimidate",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_TYRANITAR",
@@ -537,28 +741,45 @@
           {
             "id": "MOVE_LOW_KICK",
             "name": "Low Kick",
-            "type": "Fighting"
+            "type": "Fighting",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_FIRE_FANG",
             "name": "Fire Fang",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ROCK_SLIDE",
             "name": "Rock Slide",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_SAND_STREAM",
+          "name": "Sand Stream",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Sand Stream",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_PIDGEOT",
@@ -575,28 +796,45 @@
           {
             "id": "MOVE_RETURN",
             "name": "Return",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DOUBLE_TEAM",
             "name": "Double Team",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AIR_SLASH",
             "name": "Air Slash",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STEEL_WING",
             "name": "Steel Wing",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_KEEN_EYE",
+          "name": "Keen Eye",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Keen Eye",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       }
     ],
     "partySize": 6,
@@ -670,28 +908,45 @@
         {
           "id": "MOVE_WATERFALL",
           "name": "Waterfall",
-          "type": "Water"
+          "type": "Water",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_ICE_FANG",
           "name": "Ice Fang",
-          "type": "Ice"
+          "type": "Ice",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_DRAGON_DANCE",
           "name": "Dragon Dance",
-          "type": "Dragon"
+          "type": "Dragon",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_CRUNCH",
           "name": "Crunch",
-          "type": "Dark"
+          "type": "Dark",
+          "source": "Trainer source"
         }
       ],
-      "ability": null,
+      "moveSource": "Trainer source",
+      "ability": {
+        "id": "ABILITY_INTIMIDATE",
+        "name": "Intimidate",
+        "slot": "1",
+        "slotName": "Ability 1",
+        "source": "Trainer source ability slot",
+        "resolved": true
+      },
+      "abilityName": "Intimidate",
+      "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
-      "ivs": null
+      "evSummary": "No explicit EV spread in trainer source",
+      "ivs": 250,
+      "ivSummary": "Source IV setting 250",
+      "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
     "party": [
@@ -710,28 +965,45 @@
           {
             "id": "MOVE_WATERFALL",
             "name": "Waterfall",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_FANG",
             "name": "Ice Fang",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_DANCE",
             "name": "Dragon Dance",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CRUNCH",
             "name": "Crunch",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Intimidate",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_AERODACTYL",
@@ -748,28 +1020,45 @@
           {
             "id": "MOVE_AERIAL_ACE",
             "name": "Aerial Ace",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ROCK_SLIDE",
             "name": "Rock Slide",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CRUNCH",
             "name": "Crunch",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_THUNDER_FANG",
             "name": "Thunder Fang",
-            "type": "Electric"
+            "type": "Electric",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_ROCK_HEAD",
+          "name": "Rock Head",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Rock Head",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_KINGDRA",
@@ -786,28 +1075,45 @@
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_PULSE",
             "name": "Dragon Pulse",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_YAWN",
             "name": "Yawn",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_SWIFT_SWIM",
+          "name": "Swift Swim",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Swift Swim",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_CHARIZARD",
@@ -824,28 +1130,45 @@
           {
             "id": "MOVE_FLAMETHROWER",
             "name": "Flamethrower",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AIR_SLASH",
             "name": "Air Slash",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_CLAW",
             "name": "Dragon Claw",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_HYPER_BEAM",
             "name": "Hyper Beam",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_BLAZE",
+          "name": "Blaze",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Blaze",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_AGGRON",
@@ -862,28 +1185,45 @@
           {
             "id": "MOVE_IRON_HEAD",
             "name": "Iron Head",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_CLAW",
             "name": "Dragon Claw",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STONE_EDGE",
             "name": "Stone Edge",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_STURDY",
+          "name": "Sturdy",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Sturdy",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_DRAGONITE",
@@ -900,28 +1240,45 @@
           {
             "id": "MOVE_FIRE_PUNCH",
             "name": "Fire Punch",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SAFEGUARD",
             "name": "Safeguard",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRACO_METEOR",
             "name": "Draco Meteor",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_HYPER_BEAM",
             "name": "Hyper Beam",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_INNER_FOCUS",
+          "name": "Inner Focus",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Inner Focus",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       }
     ],
     "partySize": 6,
@@ -983,28 +1340,45 @@
         {
           "id": "MOVE_STEEL_WING",
           "name": "Steel Wing",
-          "type": "Steel"
+          "type": "Steel",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_AIR_SLASH",
           "name": "Air Slash",
-          "type": "Flying"
+          "type": "Flying",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_NIGHT_SLASH",
           "name": "Night Slash",
-          "type": "Dark"
+          "type": "Dark",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_SPIKES",
           "name": "Spikes",
-          "type": "Ground"
+          "type": "Ground",
+          "source": "Trainer source"
         }
       ],
-      "ability": null,
+      "moveSource": "Trainer source",
+      "ability": {
+        "id": "ABILITY_KEEN_EYE",
+        "name": "Keen Eye",
+        "slot": "1",
+        "slotName": "Ability 1",
+        "source": "Trainer source ability slot",
+        "resolved": true
+      },
+      "abilityName": "Keen Eye",
+      "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
-      "ivs": null
+      "evSummary": "No explicit EV spread in trainer source",
+      "ivs": 250,
+      "ivSummary": "Source IV setting 250",
+      "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
     "party": [
@@ -1023,28 +1397,45 @@
           {
             "id": "MOVE_STEEL_WING",
             "name": "Steel Wing",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AIR_SLASH",
             "name": "Air Slash",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_NIGHT_SLASH",
             "name": "Night Slash",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SPIKES",
             "name": "Spikes",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_KEEN_EYE",
+          "name": "Keen Eye",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Keen Eye",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_CLAYDOL",
@@ -1061,28 +1452,45 @@
           {
             "id": "MOVE_EARTH_POWER",
             "name": "Earth Power",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_PSYCHIC",
             "name": "Psychic",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ANCIENT_POWER",
             "name": "Ancient Power",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_LIGHT_SCREEN",
             "name": "Light Screen",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Levitate",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_CRADILY",
@@ -1099,28 +1507,45 @@
           {
             "id": "MOVE_ENERGY_BALL",
             "name": "Energy Ball",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STONE_EDGE",
             "name": "Stone Edge",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CONFUSE_RAY",
             "name": "Confuse Ray",
-            "type": "Ghost"
+            "type": "Ghost",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_RECOVER",
             "name": "Recover",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_SUCTION_CUPS",
+          "name": "Suction Cups",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Suction Cups",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_ARMALDO",
@@ -1137,28 +1562,45 @@
           {
             "id": "MOVE_X_SCISSOR",
             "name": "X-Scissor",
-            "type": "Bug"
+            "type": "Bug",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ROCK_SLIDE",
             "name": "Rock Slide",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AQUA_TAIL",
             "name": "Aqua Tail",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CRUSH_CLAW",
             "name": "Crush Claw",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_BATTLE_ARMOR",
+          "name": "Battle Armor",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Battle Armor",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_AGGRON",
@@ -1175,28 +1617,45 @@
           {
             "id": "MOVE_IRON_HEAD",
             "name": "Iron Head",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STONE_EDGE",
             "name": "Stone Edge",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_CLAW",
             "name": "Dragon Claw",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_STURDY",
+          "name": "Sturdy",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Sturdy",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_METAGROSS",
@@ -1213,28 +1672,45 @@
           {
             "id": "MOVE_METEOR_MASH",
             "name": "Meteor Mash",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ZEN_HEADBUTT",
             "name": "Zen Headbutt",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_BULLET_PUNCH",
             "name": "Bullet Punch",
-            "type": "Steel"
+            "type": "Steel",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_CLEAR_BODY",
+          "name": "Clear Body",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Clear Body",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 255,
+        "ivSummary": "Source IV setting 255",
+        "setIvs": null
       }
     ],
     "partySize": 6,
@@ -1299,28 +1775,45 @@
         {
           "id": "MOVE_WATER_SPOUT",
           "name": "Water Spout",
-          "type": "Water"
+          "type": "Water",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_ICE_BEAM",
           "name": "Ice Beam",
-          "type": "Ice"
+          "type": "Ice",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_AMNESIA",
           "name": "Amnesia",
-          "type": "Psychic"
+          "type": "Psychic",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_REST",
           "name": "Rest",
-          "type": "Psychic"
+          "type": "Psychic",
+          "source": "Trainer source"
         }
       ],
-      "ability": null,
+      "moveSource": "Trainer source",
+      "ability": {
+        "id": "ABILITY_WATER_VEIL",
+        "name": "Water Veil",
+        "slot": "1",
+        "slotName": "Ability 1",
+        "source": "Trainer source ability slot",
+        "resolved": true
+      },
+      "abilityName": "Water Veil",
+      "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
-      "ivs": null
+      "evSummary": "No explicit EV spread in trainer source",
+      "ivs": 250,
+      "ivSummary": "Source IV setting 250",
+      "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
     "party": [
@@ -1338,28 +1831,45 @@
           {
             "id": "MOVE_WATER_SPOUT",
             "name": "Water Spout",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AMNESIA",
             "name": "Amnesia",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_REST",
             "name": "Rest",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_WATER_VEIL",
+          "name": "Water Veil",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Water Veil",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_TENTACRUEL",
@@ -1376,28 +1886,45 @@
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SLUDGE_BOMB",
             "name": "Sludge Bomb",
-            "type": "Poison"
+            "type": "Poison",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_TOXIC_SPIKES",
             "name": "Toxic Spikes",
-            "type": "Poison"
+            "type": "Poison",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_CLEAR_BODY",
+          "name": "Clear Body",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Clear Body",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_GYARADOS",
@@ -1414,28 +1941,45 @@
           {
             "id": "MOVE_WATERFALL",
             "name": "Waterfall",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_FANG",
             "name": "Ice Fang",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_DANCE",
             "name": "Dragon Dance",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_CRUNCH",
             "name": "Crunch",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Intimidate",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_LUDICOLO",
@@ -1452,28 +1996,45 @@
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ENERGY_BALL",
             "name": "Energy Ball",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_RAIN_DANCE",
             "name": "Rain Dance",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_SWIFT_SWIM",
+          "name": "Swift Swim",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Swift Swim",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_WHISCASH",
@@ -1490,28 +2051,45 @@
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AQUA_TAIL",
             "name": "Aqua Tail",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ZEN_HEADBUTT",
             "name": "Zen Headbutt",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_REST",
             "name": "Rest",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_OBLIVIOUS",
+          "name": "Oblivious",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Oblivious",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_MILOTIC",
@@ -1528,28 +2106,45 @@
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AQUA_RING",
             "name": "Aqua Ring",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_RECOVER",
             "name": "Recover",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Marvel Scale",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 255,
+        "ivSummary": "Source IV setting 255",
+        "setIvs": null
       }
     ],
     "partySize": 6,
@@ -1611,28 +2206,45 @@
         {
           "id": "MOVE_DARK_PULSE",
           "name": "Dark Pulse",
-          "type": "Dark"
+          "type": "Dark",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_SHADOW_BALL",
           "name": "Shadow Ball",
-          "type": "Ghost"
+          "type": "Ghost",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_WILL_O_WISP",
           "name": "Will-O-Wisp",
-          "type": "Fire"
+          "type": "Fire",
+          "source": "Trainer source"
         },
         {
           "id": "MOVE_SILVER_WIND",
           "name": "Silver Wind",
-          "type": "Bug"
+          "type": "Bug",
+          "source": "Trainer source"
         }
       ],
-      "ability": null,
+      "moveSource": "Trainer source",
+      "ability": {
+        "id": "ABILITY_PRESSURE",
+        "name": "Pressure",
+        "slot": "1",
+        "slotName": "Ability 1",
+        "source": "Trainer source ability slot",
+        "resolved": true
+      },
+      "abilityName": "Pressure",
+      "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
-      "ivs": null
+      "evSummary": "No explicit EV spread in trainer source",
+      "ivs": 250,
+      "ivSummary": "Source IV setting 250",
+      "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
     "party": [
@@ -1651,28 +2263,45 @@
           {
             "id": "MOVE_DARK_PULSE",
             "name": "Dark Pulse",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SHADOW_BALL",
             "name": "Shadow Ball",
-            "type": "Ghost"
+            "type": "Ghost",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_WILL_O_WISP",
             "name": "Will-O-Wisp",
-            "type": "Fire"
+            "type": "Fire",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SILVER_WIND",
             "name": "Silver Wind",
-            "type": "Bug"
+            "type": "Bug",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_PRESSURE",
+          "name": "Pressure",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Pressure",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_ROSERADE",
@@ -1689,28 +2318,45 @@
           {
             "id": "MOVE_ENERGY_BALL",
             "name": "Energy Ball",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SLUDGE_BOMB",
             "name": "Sludge Bomb",
-            "type": "Poison"
+            "type": "Poison",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SHADOW_BALL",
             "name": "Shadow Ball",
-            "type": "Ghost"
+            "type": "Ghost",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STUN_SPORE",
             "name": "Stun Spore",
-            "type": "Grass"
+            "type": "Grass",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_NATURAL_CURE",
+          "name": "Natural Cure",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Natural Cure",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_TOGEKISS",
@@ -1727,28 +2373,45 @@
           {
             "id": "MOVE_AIR_SLASH",
             "name": "Air Slash",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_AURA_SPHERE",
             "name": "Aura Sphere",
-            "type": "Fighting"
+            "type": "Fighting",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EXTREME_SPEED",
             "name": "Extreme Speed",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ROOST",
             "name": "Roost",
-            "type": "Flying"
+            "type": "Flying",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Hustle",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_LUCARIO",
@@ -1765,28 +2428,45 @@
           {
             "id": "MOVE_AURA_SPHERE",
             "name": "Aura Sphere",
-            "type": "Fighting"
+            "type": "Fighting",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DRAGON_PULSE",
             "name": "Dragon Pulse",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EXTREME_SPEED",
             "name": "Extreme Speed",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_DARK_PULSE",
             "name": "Dark Pulse",
-            "type": "Dark"
+            "type": "Dark",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_STEADFAST",
+          "name": "Steadfast",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Steadfast",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_MILOTIC",
@@ -1803,28 +2483,45 @@
           {
             "id": "MOVE_SURF",
             "name": "Surf",
-            "type": "Water"
+            "type": "Water",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_ICE_BEAM",
             "name": "Ice Beam",
-            "type": "Ice"
+            "type": "Ice",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_MIRROR_COAT",
             "name": "Mirror Coat",
-            "type": "Psychic"
+            "type": "Psychic",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_RECOVER",
             "name": "Recover",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Marvel Scale",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 250,
+        "ivSummary": "Source IV setting 250",
+        "setIvs": null
       },
       {
         "species": "SPECIES_GARCHOMP",
@@ -1841,28 +2538,45 @@
           {
             "id": "MOVE_DRAGON_RUSH",
             "name": "Dragon Rush",
-            "type": "Dragon"
+            "type": "Dragon",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_EARTHQUAKE",
             "name": "Earthquake",
-            "type": "Ground"
+            "type": "Ground",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_STONE_EDGE",
             "name": "Stone Edge",
-            "type": "Rock"
+            "type": "Rock",
+            "source": "Trainer source"
           },
           {
             "id": "MOVE_SWORDS_DANCE",
             "name": "Swords Dance",
-            "type": "Normal"
+            "type": "Normal",
+            "source": "Trainer source"
           }
         ],
-        "ability": null,
+        "moveSource": "Trainer source",
+        "ability": {
+          "id": "ABILITY_SAND_VEIL",
+          "name": "Sand Veil",
+          "slot": "1",
+          "slotName": "Ability 1",
+          "source": "Trainer source ability slot",
+          "resolved": true
+        },
+        "abilityName": "Sand Veil",
+        "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
-        "ivs": null
+        "evSummary": "No explicit EV spread in trainer source",
+        "ivs": 255,
+        "ivSummary": "Source IV setting 255",
+        "setIvs": null
       }
     ],
     "partySize": 6,

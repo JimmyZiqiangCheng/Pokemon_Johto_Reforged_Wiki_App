@@ -1574,7 +1574,7 @@ function TrainersPage({ data, indexes, route, hideSpoilers }: { data: ExplorerDa
       route={route}
       items={trainers}
       getId={(item) => item.id}
-      searchKeys={["name", "className", "classId", "category", "party.pokemonName", "party.moves.name", "progression"]}
+      searchKeys={["name", "className", "classId", "category", "party.pokemonName", "party.moves.name", "party.abilityName", "party.moveSource", "progression"]}
       filters={filters}
       filterFn={(item, filter) => item.category === filter}
       sorters={{
@@ -1598,7 +1598,7 @@ function BossesPage({ data, indexes, route, hideSpoilers }: { data: ExplorerData
       route={route}
       items={data.bossFights}
       getId={(item) => item.id}
-      searchKeys={["name", "className", "category", "party.pokemonName", "party.moves.name", "progression"]}
+      searchKeys={["name", "className", "category", "party.pokemonName", "party.moves.name", "party.abilityName", "party.moveSource", "progression"]}
       filters={filters}
       filterFn={(item, filter) => item.category === filter}
       sorters={{
@@ -1620,7 +1620,7 @@ function ChampionCircuitPage({ data, indexes, route, hideSpoilers }: { data: Exp
       route={route}
       items={data.championCircuit}
       getId={(item) => item.id}
-      searchKeys={["name", "className", "party.pokemonName", "party.moves.name"]}
+      searchKeys={["name", "className", "party.pokemonName", "party.moves.name", "party.abilityName", "party.moveSource"]}
       filters={["All", "Red", "Blue", "Lance", "Steven", "Wallace", "Cynthia"]}
       filterFn={(item, filter) => item.name === filter}
       sorters={{
@@ -1686,7 +1686,7 @@ function TrainerDetail({ trainer, hideSpoilers, indexes }: { trainer: any; hideS
         <Metric label="Levels" value={`${trainer.minLevel ?? "?"}-${trainer.maxLevel ?? "?"}`} />
       </div>
       <SpoilerGate hide={hideSpoilers} label={trainer.category}>
-        <PartyGrid party={trainer.party} moves={indexes.moves} />
+        <PartyGrid party={trainer.party} moves={indexes.moves} abilities={indexes.abilities} />
       </SpoilerGate>
       <ValidationFlags flags={trainer.validationFlags || []} />
     </div>
@@ -1711,7 +1711,7 @@ function BossDetail({ boss, hideSpoilers, indexes, circuit = false }: { boss: an
         <Metric label="Rematch" value={boss.rematch ? "Yes" : "No"} />
       </div>
       <SpoilerGate hide={hideSpoilers} label={boss.category}>
-        <PartyGrid party={boss.party} moves={indexes.moves} />
+        <PartyGrid party={boss.party} moves={indexes.moves} abilities={indexes.abilities} />
       </SpoilerGate>
       <Section title="Type Coverage">
         <div className="pill-row">{boss.typeCoverage.map((item: any) => <Pill key={item.type}>{item.type} x{item.count}</Pill>)}</div>
@@ -2081,7 +2081,55 @@ function GroupedLearners({ learners }: { learners: any[] }) {
   );
 }
 
-function PartyGrid({ party, moves }: { party: any[]; moves?: Map<string, Move> }) {
+function AbilityPopupPill({ ability, abilities }: { ability?: any; abilities?: Map<string, any> }) {
+  if (!ability) return <Muted>Ability not exported.</Muted>;
+  const detail = ability.id ? abilities?.get(ability.id) : undefined;
+  const label = ability.name || ability.slotName || "Ability";
+  return (
+    <PopupPill label={label}>
+      <div className="popup-content">
+        <strong>{label}</strong>
+        <div className="move-preview-meta">
+          <span>{ability.slotName || readableAbilitySlot(ability.slot)}</span>
+          <span>{ability.source || "Trainer source"}</span>
+        </div>
+        <p>{detail?.description || (ability.resolved === false ? "Ability slot is present in the trainer source, but no species ability entry resolved for it." : "No ability description available.")}</p>
+      </div>
+    </PopupPill>
+  );
+}
+
+function formatStatSpread(values: Record<string, unknown> | null | undefined, emptyText: string): string {
+  if (!values || typeof values !== "object") return emptyText;
+  const entries = Object.entries(STAT_LABELS)
+    .map(([key, label]) => ({ key, label, value: values[key] }))
+    .filter((entry) => entry.value !== null && entry.value !== undefined && entry.value !== "");
+  if (!entries.length) return emptyText;
+  const nonZero = entries.filter((entry) => Number(entry.value) !== 0);
+  const shown = nonZero.length ? nonZero : entries;
+  return shown.map((entry) => `${entry.label} ${entry.value}`).join(" / ");
+}
+
+function ivSummary(member: any): string {
+  if (member.setIvs) return formatStatSpread(member.setIvs, "No IV override");
+  if (member.ivs !== null && member.ivs !== undefined) return `Source setting ${member.ivs}`;
+  return member.ivSummary || "No IV setting exported";
+}
+
+function evSummary(member: any): string {
+  return formatStatSpread(member.evs, member.evSummary || "No explicit EV spread");
+}
+
+function PartyMetaRow({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="party-meta-row">
+      <span>{label}</span>
+      <strong>{children}</strong>
+    </div>
+  );
+}
+
+function PartyGrid({ party, moves, abilities }: { party: any[]; moves?: Map<string, Move>; abilities?: Map<string, any> }) {
   if (!party.length) return <Muted>No party data exported.</Muted>;
   return (
     <div className="party-grid">
@@ -2095,9 +2143,19 @@ function PartyGrid({ party, moves }: { party: any[]; moves?: Map<string, Move> }
             </div>
           </div>
           <TypeRow types={member.types || []} />
-          <div className="pill-row">{member.itemName ? <LinkPill section="items" id={member.item}>{member.itemName}</LinkPill> : <Muted>No held item</Muted>}</div>
+          <div className="party-meta-grid">
+            <PartyMetaRow label="Ability">
+              <AbilityPopupPill ability={member.ability} abilities={abilities} />
+            </PartyMetaRow>
+            <PartyMetaRow label="IVs">{ivSummary(member)}</PartyMetaRow>
+            <PartyMetaRow label="EVs">{evSummary(member)}</PartyMetaRow>
+            <PartyMetaRow label="Held item">
+              {member.itemName ? <LinkPill section="items" id={member.item}>{member.itemName}</LinkPill> : <Muted>None</Muted>}
+            </PartyMetaRow>
+          </div>
+          <small className="party-source-note">Moves: {member.moveSource || "Trainer source"}</small>
           <div className="move-list">
-            {member.moves.length ? member.moves.map((move: any) => <MovePopupPill key={move.id} moveId={move.id} fallbackName={move.name} moves={moves} />) : <Muted>Moves not exported.</Muted>}
+            {asArray(member.moves).length ? asArray(member.moves).map((move: any) => <MovePopupPill key={move.id} moveId={move.id} fallbackName={move.name} moves={moves} />) : <Muted>Moves not exported.</Muted>}
           </div>
         </div>
       ))}
