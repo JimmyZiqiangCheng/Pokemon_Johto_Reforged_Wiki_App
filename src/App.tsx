@@ -7,6 +7,7 @@ import {
   CircuitBoard,
   Eye,
   EyeOff,
+  Gift,
   Home,
   Info,
   ListFilter,
@@ -51,7 +52,8 @@ const NAV: Array<{ section: string; label: string; icon: LucideIcon }> = [
   { section: "abilities", label: "Abilities", icon: Shield },
   { section: "locations", label: "Locations", icon: MapIcon },
   { section: "rare-finds", label: "Rare Finds", icon: Search },
-  { section: "statics", label: "Event Pokemon", icon: Boxes },
+  { section: "statics", label: "Events & Gifts", icon: Gift },
+  { section: "dossiers", label: "Legendary Events", icon: Boxes },
   { section: "trainers", label: "Trainers", icon: UserRound },
   { section: "items", label: "Items", icon: Package },
   { section: "marts", label: "Shops", icon: ShoppingBag },
@@ -72,7 +74,6 @@ type Indexes = {
 function canonicalSection(section: string): string {
   if (section === "encounters") return "locations";
   if (section === "bosses" || section === "champion-circuit") return "trainers";
-  if (section === "dossiers") return "statics";
   if (section === "validation") return "features";
   return section;
 }
@@ -178,7 +179,7 @@ function renderPage(data: ExplorerData, indexes: Indexes, route: Route, hideSpoi
     case "encounters":
       return <EncountersPage data={data} indexes={indexes} route={route} rareOnly={false} />;
     case "rare-finds":
-      return <EncountersPage data={data} indexes={indexes} route={route} rareOnly />;
+      return <RareFindsPage data={data} indexes={indexes} route={route} />;
     case "trainers":
       return <TrainersPage data={data} indexes={indexes} route={route} hideSpoilers={hideSpoilers} />;
     case "champion-circuit":
@@ -198,7 +199,7 @@ function renderPage(data: ExplorerData, indexes: Indexes, route: Route, hideSpoi
     case "validation":
       return <FeaturesPage data={data} />;
     default:
-      return <OverviewPage data={data} />;
+      return <OverviewPage data={data} indexes={indexes} />;
   }
 }
 
@@ -211,7 +212,7 @@ function StatePanel({ title, body }: { title: string; body: string }) {
   );
 }
 
-function OverviewPage({ data }: { data: ExplorerData }) {
+function OverviewPage({ data, indexes }: { data: ExplorerData; indexes: Indexes }) {
   const visibleFeatures = data.features.filter((feature) => normalize(feature.tag) !== "validation");
   const trainers = allTrainerRecords(data);
   return (
@@ -231,6 +232,7 @@ function OverviewPage({ data }: { data: ExplorerData }) {
           <Metric label="Items" value={data.items.filter(itemIsUseful).length} />
         </div>
       </section>
+      <GlobalSearch data={data} indexes={indexes} />
       <section className="card-grid overview-feature-grid">
         {visibleFeatures.map((feature) => (
           <FeatureCard feature={feature} compact key={feature.title} />
@@ -247,6 +249,136 @@ function OverviewPage({ data }: { data: ExplorerData }) {
       </section>
     </div>
   );
+}
+
+type GlobalSearchRecord = {
+  id: string;
+  kind: string;
+  title: string;
+  subtitle: string;
+  url: string;
+  searchText: string;
+};
+
+function GlobalSearch({ data, indexes }: { data: ExplorerData; indexes: Indexes }) {
+  const [query, setQuery] = useState("");
+  const records = useMemo(() => buildGlobalSearchRecords(data, indexes), [data, indexes]);
+  const fuse = useMemo(
+    () => new Fuse(records, { keys: ["title", "subtitle", "kind", "searchText"], threshold: 0.3, ignoreLocation: true }),
+    [records]
+  );
+  const results = useMemo(() => {
+    const trimmed = query.trim();
+    if (!trimmed) return [];
+    return fuse.search(trimmed).slice(0, 16).map((result) => result.item);
+  }, [fuse, query]);
+
+  return (
+    <section className="global-search-panel">
+      <label className="global-searchbox">
+        <Search size={19} />
+        <input
+          value={query}
+          onChange={(event) => setQuery(event.currentTarget.value)}
+          placeholder="Search Pokemon, trainers, items, moves, locations..."
+          type="search"
+        />
+      </label>
+      {query.trim() ? (
+        <div className="global-results">
+          {results.map((result) => (
+            <a className="global-result" href={result.url} key={result.id}>
+              <span>{result.kind}</span>
+              <strong>{result.title}</strong>
+              <small>{result.subtitle}</small>
+            </a>
+          ))}
+          {!results.length ? <EmptyState text="No matching app records." /> : null}
+        </div>
+      ) : null}
+    </section>
+  );
+}
+
+function buildGlobalSearchRecords(data: ExplorerData, indexes: Indexes): GlobalSearchRecord[] {
+  const records: GlobalSearchRecord[] = [];
+  const add = (record: GlobalSearchRecord) => records.push(record);
+
+  data.pokemon.forEach((pokemon) => {
+    add({
+      id: `pokemon:${pokemon.id}`,
+      kind: "Pokemon",
+      title: displayPokemonName(pokemon.name, pokemon.id),
+      subtitle: `#${pokemon.dexNo} - ${pokemon.types.join(" / ")} - ${pokemon.availability.summary}`,
+      url: href("pokemon", pokemon.id),
+      searchText: [pokemon.id, pokemon.abilities.map((ability) => ability.name).join(" "), pokemon.eggGroups.join(" ")].join(" ")
+    });
+  });
+  data.moves.forEach((move) => add({
+    id: `move:${move.id}`,
+    kind: "Move",
+    title: move.name,
+    subtitle: `${move.type} - ${move.category} - ${move.learners.length} learners`,
+    url: href("moves", move.id),
+    searchText: [move.id, move.effectSummary, move.description, move.flags.join(" ")].join(" ")
+  }));
+  data.abilities.forEach((ability) => add({
+    id: `ability:${ability.id}`,
+    kind: "Ability",
+    title: ability.name,
+    subtitle: `${ability.pokemon.length} Pokemon - ${ability.description || "No description exported"}`,
+    url: href("abilities", ability.id),
+    searchText: [ability.id, ability.description, asArray(ability.pokemon).map((pokemon: any) => pokemon.name).join(" ")].join(" ")
+  }));
+  data.items.filter(itemIsUseful).forEach((item) => add({
+    id: `item:${item.id}`,
+    kind: "Item",
+    title: item.name,
+    subtitle: `${item.pocket} - ${item.availability.summary}`,
+    url: href("items", item.id),
+    searchText: [item.id, item.description, item.useEffect, asArray(item.evolutionUsage).map((evo: any) => evo.fromName).join(" ")].join(" ")
+  }));
+  buildLocationViews(data, indexes).forEach((location) => add({
+    id: `location:${location.id}`,
+    kind: "Location",
+    title: location.name,
+    subtitle: `${location.region} - ${location.encounterRows.length} wild rows - ${location.trainerRows.length} trainers - ${location.itemRows.length} items`,
+    url: href("locations", location.id),
+    searchText: location.searchText
+  }));
+  buildRareFindGroups(data.encounters).forEach((group) => add({
+    id: `rare:${group.id}`,
+    kind: "Rare Find",
+    title: group.name,
+    subtitle: `${group.locations.length} location${group.locations.length === 1 ? "" : "s"} - ${chanceRange(group)} - ${group.methods.join(" / ")}`,
+    url: href("rare-finds", group.id),
+    searchText: group.searchText
+  }));
+  allTrainerRecords(data).forEach((trainer) => add({
+    id: `trainer:${trainer.id}`,
+    kind: "Trainer",
+    title: trainer.name,
+    subtitle: `${trainer.category} - ${trainer.partySize} Pokemon - Lv. ${trainer.minLevel ?? "?"}-${trainer.maxLevel ?? "?"}`,
+    url: href("trainers", trainer.id),
+    searchText: trainerSearchText(trainer)
+  }));
+  combinedEventPokemon(data).forEach((event) => add({
+    id: `event:${event.id}`,
+    kind: asArray(event.eventGroups).includes("Legendary/Mythical") ? "Legendary Event" : "Event",
+    title: displayPokemonName(event.pokemonName, event.species),
+    subtitle: `${event.displayCategory || readableEventCategory(event.category)} - ${readableEventLocation(event.location)}`,
+    url: href("statics", event.id),
+    searchText: [event.species, event.requirements, event.caughtFlag, event.choiceGroup, event.currencyCost, event.tradeRequest?.pokemonName].join(" ")
+  }));
+  data.marts.forEach((mart) => add({
+    id: `mart:${mart.id}`,
+    kind: "Shop",
+    title: readableMartLocation(mart),
+    subtitle: `${readableShopType(mart.shopType)} - ${mart.items.length} items`,
+    url: href("marts", mart.id),
+    searchText: [mart.unlockRules, asArray(mart.items).map((item: any) => item.itemName).join(" ")].join(" ")
+  }));
+  return records;
 }
 
 function FeaturesPage({ data }: { data: ExplorerData }) {
@@ -1029,6 +1161,23 @@ function trainerDedupeKey(trainer: any): string {
   return [trainer.name, trainer.className, trainer.category, trainer.minLevel, trainer.maxLevel, party].join("|");
 }
 
+function trainerSearchText(trainer: any): string {
+  return [
+    trainer.name,
+    trainer.className,
+    trainer.classId,
+    trainer.category,
+    trainer.progression,
+    asArray(trainer.party).flatMap((member: any) => [
+      member.pokemonName,
+      member.species,
+      member.abilityName,
+      member.itemName,
+      ...asArray(member.moves).map((move: any) => move.name || move.id)
+    ]).join(" ")
+  ].join(" ");
+}
+
 function buildLocationViews(data: ExplorerData, indexes: Indexes): LocationView[] {
   const records = new Map<string, LocationView>();
   const idByName = new Map<string, string>();
@@ -1124,7 +1273,7 @@ function buildLocationViews(data: ExplorerData, indexes: Indexes): LocationView[
       record.eventRows.push({
         ...event,
         displayCategory: readableEventCategory(event.category),
-        displayLocation: readableText(event.location),
+        displayLocation: readableEventLocation(event.location),
         locationNote: link.note
       });
     }
@@ -1158,6 +1307,8 @@ function readableText(value: unknown): string {
     .replace(/Pok\S*(?=\s+Ball\b)/g, "Poke")
     .replace(/dossiers?/gi, "special encounter")
     .replace(/stationary scripted Dojo special encounter/gi, "Dojo special encounter")
+    .replace(/\bHq\b/g, "HQ")
+    .replace(/\bKirks\b/g, "Kirk's")
     .replace(/statics? & gifts?/gi, "events")
     .replace(/statics?\/gifts?/gi, "events");
 }
@@ -1166,6 +1317,13 @@ function readableEventCategory(value: unknown): string {
   const text = readableText(value);
   if (normalize(text) === "roaming") return "Roaming Pokemon";
   return text || "Event";
+}
+
+function readableEventLocation(value: unknown): string {
+  const text = readableText(value);
+  if (/kanto roaming special encounter/i.test(text)) return text.replace(/Kanto roaming special encounter,\s*/i, "Saffron Fighting Dojo - Kanto roaming unlock");
+  if (/johto roaming special encounter/i.test(text)) return text.replace(/Johto roaming special encounter,\s*/i, "Saffron Fighting Dojo - Johto roaming unlock");
+  return text;
 }
 
 function readableMartLocation(mart: any): string {
@@ -1487,7 +1645,7 @@ function LocationEventList({ events }: { events: any[] }) {
         <LinkCard key={event.id} section="statics" id={event.id}>
           <AssetImage src={event.pokemonIcon} label={displayPokemonName(event.pokemonName, event.species)} />
           <span>{displayPokemonName(event.pokemonName, event.species)}</span>
-          <small>{event.displayCategory} - Lv. {compactNumber(event.level, "?")}{event.locationNote ? ` - ${event.locationNote}` : ""}</small>
+          <small>{event.displayCategory} - {eventLevelText(event)}{event.locationNote ? ` - ${event.locationNote}` : ""}</small>
         </LinkCard>
       ))}
     </div>
@@ -1610,9 +1768,196 @@ function EncountersPage({ data, route, rareOnly }: { data: ExplorerData; indexes
   );
 }
 
+type RareFindGroup = {
+  id: string;
+  name: string;
+  species: string;
+  pokemonName: string;
+  pokemonIcon?: string | null;
+  types: string[];
+  encounters: any[];
+  locations: string[];
+  regions: string[];
+  methods: string[];
+  rarities: string[];
+  tags: string[];
+  minChance: number;
+  maxChance: number;
+  minLevel: number | null;
+  maxLevel: number | null;
+  firstProgression: number;
+  searchText: string;
+};
+
+function RareFindsPage({ data, route }: { data: ExplorerData; indexes: Indexes; route: Route }) {
+  const items = useMemo(() => buildRareFindGroups(data.encounters), [data.encounters]);
+  const filters = ["All", "Johto", "Kanto", "Very rare", "Rare", "Grass/Cave", "Surf", "Old Rod", "Good Rod", "Super Rod", "pseudo", ...TYPE_COLORS_KEYS()];
+  return (
+    <BrowserPage<RareFindGroup>
+      title="Rare Encounter Pokemon"
+      section="rare-finds"
+      route={route}
+      items={items}
+      getId={(item) => item.id}
+      searchKeys={["name", "pokemonName", "species", "types", "locations", "regions", "methods", "rarities", "tags", "searchText"]}
+      filters={filters}
+      filterFn={(item, filter) => item.regions.includes(filter) || item.rarities.includes(filter) || item.methods.includes(filter) || item.tags.includes(normalize(filter)) || item.types.includes(filter)}
+      sorters={{
+        Progression: (a, b) => a.firstProgression - b.firstProgression || (a.minLevel ?? 0) - (b.minLevel ?? 0) || a.name.localeCompare(b.name),
+        Pokemon: (a, b) => a.name.localeCompare(b.name),
+        Rarest: (a, b) => a.minChance - b.minChance || a.name.localeCompare(b.name),
+        Locations: (a, b) => b.locations.length - a.locations.length || a.name.localeCompare(b.name)
+      }}
+      renderCard={(item, selected) => (
+        <CardShell selected={selected}>
+          <AssetImage src={item.pokemonIcon} label={item.name} />
+          <div className="card-main">
+            <strong>{item.name}</strong>
+            <TypeRow types={item.types} />
+            <small>{item.locations.length} location{item.locations.length === 1 ? "" : "s"} - {item.encounters.length} slot{item.encounters.length === 1 ? "" : "s"} - {chanceRange(item)}</small>
+          </div>
+          <span className={`rarity ${normalize(item.rarities[0] || "rare").replace(" ", "-")}`}>{item.minChance}%</span>
+        </CardShell>
+      )}
+      renderDetail={(item) => <RareFindDetail group={item} />}
+      maxList={items.length}
+    />
+  );
+}
+
+function buildRareFindGroups(encounters: any[]): RareFindGroup[] {
+  const groups = new Map<string, RareFindGroup>();
+  encounters.filter(isLowEncounterRate).forEach((encounter) => {
+    const species = encounter.species || encounter.pokemonName || encounter.id;
+    const name = displayPokemonName(encounter.pokemonName, species);
+    const existing = groups.get(species);
+    const chance = Number(encounter.chance);
+    const minLevel = Number.isFinite(Number(encounter.minLevel)) ? Number(encounter.minLevel) : null;
+    const maxLevel = Number.isFinite(Number(encounter.maxLevel)) ? Number(encounter.maxLevel) : minLevel;
+    const group: RareFindGroup = existing || {
+      id: species,
+      name,
+      species,
+      pokemonName: encounter.pokemonName,
+      pokemonIcon: encounter.pokemonIcon,
+      types: encounter.types || [],
+      encounters: [],
+      locations: [],
+      regions: [],
+      methods: [],
+      rarities: [],
+      tags: [],
+      minChance: Number.isFinite(chance) ? chance : 99,
+      maxChance: Number.isFinite(chance) ? chance : 0,
+      minLevel,
+      maxLevel,
+      firstProgression: progressionScore(encounter.locationName, encounter.region),
+      searchText: ""
+    };
+    group.encounters.push(encounter);
+    group.locations = unique([...group.locations, encounter.locationName].filter(Boolean));
+    group.regions = unique([...group.regions, encounter.region].filter(Boolean));
+    group.methods = unique([...group.methods, encounter.method].filter(Boolean));
+    group.rarities = unique([...group.rarities, encounter.rarity].filter(Boolean));
+    group.tags = unique([...group.tags, ...asArray(encounter.tags)]);
+    group.types = unique([...group.types, ...asArray(encounter.types)]);
+    if (Number.isFinite(chance)) {
+      group.minChance = Math.min(group.minChance, chance);
+      group.maxChance = Math.max(group.maxChance, chance);
+    }
+    if (minLevel !== null) group.minLevel = group.minLevel === null ? minLevel : Math.min(group.minLevel, minLevel);
+    if (maxLevel !== null) group.maxLevel = group.maxLevel === null ? maxLevel : Math.max(group.maxLevel, maxLevel);
+    group.firstProgression = Math.min(group.firstProgression, progressionScore(encounter.locationName, encounter.region));
+    groups.set(species, group);
+  });
+  groups.forEach((group) => {
+    group.encounters.sort((a, b) => progressionScore(a.locationName, a.region) - progressionScore(b.locationName, b.region) || (a.chance || 99) - (b.chance || 99) || (a.minLevel || 0) - (b.minLevel || 0));
+    group.searchText = [
+      group.name,
+      group.species,
+      group.types.join(" "),
+      group.locations.join(" "),
+      group.regions.join(" "),
+      group.methods.join(" "),
+      group.rarities.join(" "),
+      group.tags.join(" "),
+      group.encounters.flatMap((row) => asArray(row.rareNotes).map((note: any) => note.note || note.raw)).join(" ")
+    ].join(" ");
+  });
+  return [...groups.values()];
+}
+
+function RareFindDetail({ group }: { group: RareFindGroup }) {
+  return (
+    <div className="detail-stack">
+      <header className="profile-header compact">
+        <AssetImage src={group.pokemonIcon} label={group.name} size="large" />
+        <div>
+          <p className="eyebrow">Low-rate wild encounter</p>
+          <h2>{group.name}</h2>
+          <TypeRow types={group.types} />
+        </div>
+      </header>
+      <div className="metric-row">
+        <Metric label="Locations" value={group.locations.length} />
+        <Metric label="Encounter slots" value={group.encounters.length} />
+        <Metric label="Chance range" value={chanceRange(group)} />
+        <Metric label="Levels" value={groupLevelRange(group)} />
+      </div>
+      <Section title="Rare Encounter Locations">
+        <div className="rare-location-list">
+          {group.encounters.map((encounter) => (
+            <a className="rare-location-row" href={href("locations", encounter.locationId)} key={encounter.id}>
+              <AssetImage src={encounter.pokemonIcon} label={group.name} />
+              <span>
+                <strong>{encounter.locationName}</strong>
+                <small>{encounter.region} - {encounter.method} - {encounter.time || "Any"} - {levelRange(encounter)}</small>
+                {rareEncounterNote(encounter) ? <em>{rareEncounterNote(encounter)}</em> : null}
+              </span>
+              <b>{encounter.chance ?? "?"}%</b>
+            </a>
+          ))}
+        </div>
+      </Section>
+      <div className="pill-row">
+        <LinkPill section="pokemon" id={group.species}>Pokemon profile</LinkPill>
+        {group.locations.slice(0, 8).map((location, index) => {
+          const encounter = group.encounters.find((row) => row.locationName === location);
+          return encounter ? <LinkPill key={`${location}-${index}`} section="locations" id={encounter.locationId}>{location}</LinkPill> : null;
+        })}
+      </div>
+    </div>
+  );
+}
+
 function isLowEncounterRate(item: any): boolean {
   const chance = Number(item?.chance);
   return Number.isFinite(chance) && chance > 0 && chance < 5;
+}
+
+function chanceRange(group: Pick<RareFindGroup, "minChance" | "maxChance">): string {
+  return group.minChance === group.maxChance ? `${group.minChance}%` : `${group.minChance}-${group.maxChance}%`;
+}
+
+function groupLevelRange(group: Pick<RareFindGroup, "minLevel" | "maxLevel">): string {
+  if (group.minLevel === null && group.maxLevel === null) return "?";
+  if (group.minLevel === group.maxLevel) return `Lv. ${group.minLevel ?? "?"}`;
+  return `Lv. ${group.minLevel ?? "?"}-${group.maxLevel ?? "?"}`;
+}
+
+function rareEncounterNote(encounter: any): string {
+  const note = asArray(encounter.rareNotes)[0];
+  if (!note) return "";
+  const text = readableText(note.note || note.raw)
+    .replace(/\bSPECIES_[A-Z0-9_]+\b/g, "")
+    .replace(/-/g, " ")
+    .replace(/\bdefault\b/gi, "")
+    .replace(/\brare layer\b/gi, "rare slot")
+    .replace(/\brare split\b/gi, "rare split")
+    .replace(/\s*\/\s*/g, " / ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text ? text.charAt(0).toUpperCase() + text.slice(1) : "";
 }
 
 function EncounterDetail({ encounter }: { encounter: any }) {
@@ -1804,11 +2149,11 @@ function BossDetail({ boss, hideSpoilers, indexes, circuit = false }: { boss: an
 
 function StaticsPage({ data, route, hideSpoilers }: { data: ExplorerData; indexes: Indexes; route: Route; hideSpoilers: boolean }) {
   const items = useMemo(() => combinedEventPokemon(data), [data]);
-  return <StaticBrowser title="Static / Gift / Trade / Legendary / Event Pokemon" section="statics" items={items} route={route} hideSpoilers={hideSpoilers} />;
+  return <StaticBrowser title="Event Pokemon, Gifts, And Trades" section="statics" items={items} route={route} hideSpoilers={hideSpoilers} />;
 }
 
 function DossiersPage({ data, route, hideSpoilers }: { data: ExplorerData; indexes: Indexes; route: Route; hideSpoilers: boolean }) {
-  return <StaticBrowser title="Legendary / Mythical Event Pokemon" section="dossiers" items={data.legendaryDossiers.map(enrichEventPokemon)} route={route} hideSpoilers={hideSpoilers} />;
+  return <StaticBrowser title="Legendary And Mythical Events" section="dossiers" items={data.legendaryDossiers.map(enrichEventPokemon)} route={route} hideSpoilers={hideSpoilers} />;
 }
 
 function combinedEventPokemon(data: ExplorerData): any[] {
@@ -1832,21 +2177,50 @@ function enrichEventPokemon(entry: any): any {
     ...entry,
     displayCategory: category,
     eventGroups: eventPokemonGroups(entry, category),
+    prerequisiteDetails: eventPrerequisiteDetails(entry),
   };
 }
 
 function eventPokemonGroups(entry: any, readableCategory = readableEventCategory(entry.category)): string[] {
-  const text = normalize(`${entry.category || ""} ${readableCategory} ${entry.location || ""}`);
+  const text = normalize(`${entry.category || ""} ${readableCategory} ${entry.location || ""} ${entry.requirements || ""}`);
   const groups: string[] = [];
-  if (text.includes("dossier") || text.includes("legendary") || text.includes("mythical") || text.includes("roaming")) groups.push("Legendary/Mythical");
+  if (text.includes("dossier") || text.includes("legendary") || text.includes("mythical") || text.includes("roaming") || text.includes("sinjoh")) groups.push("Legendary/Mythical");
+  if (text.includes("gift") || text.includes("starter") || text.includes("egg") || text.includes("loan")) groups.push("Gift");
   if (text.includes("trade")) groups.push("Trade");
+  if (text.includes("prize") || text.includes("game corner")) groups.push("Prize");
+  if (text.includes("fossil")) groups.push("Fossil");
   if (text.includes("gift")) groups.push("Gift");
   if (text.includes("static") || text.includes("stationary") || text.includes("roaming")) groups.push("Static");
   return unique(groups);
 }
 
+function eventPrerequisiteDetails(entry: any): string[] {
+  const raw = readableText(entry.requirements);
+  if (!raw) return [];
+  const text = normalize(raw);
+  const details: string[] = [];
+  if (text.includes("8 badges")) details.push("Earn all 8 Johto badges.");
+  if (text.includes("16 badges")) details.push("Earn all 16 Johto and Kanto badges.");
+  if (text.includes("red defeated")) details.push("Defeat Red.");
+  if (text.includes("lake trio caught")) details.push("Catch Uxie, Mesprit, and Azelf.");
+  if (text.includes("creation trio caught")) details.push("Catch Dialga, Palkia, and Giratina.");
+  if (text.includes("regirock") && text.includes("regice") && text.includes("registeel")) details.push("Catch Regirock, Regice, and Registeel.");
+  if (text.includes("kyogre") && text.includes("groudon")) details.push("Catch Kyogre and Groudon.");
+  if (text.includes("cresselia caught")) details.push("Catch Cresselia.");
+  if (text.includes("manaphy caught")) details.push("Catch Manaphy.");
+  if (text.includes("burned tower event")) details.push("Release the Johto roamers during the Burned Tower event.");
+  if (text.includes("trade in")) details.push(raw);
+  if (text.includes("redeem")) details.push(raw);
+  if (text.includes("choose")) details.push(raw);
+  if (text.includes("receive")) details.push(raw);
+  if (text.includes("restore")) details.push(raw);
+  if (text.includes("defeat karate king")) details.push(raw);
+  if (text.includes("dragon's den")) details.push(raw);
+  return unique(details.length ? details : [raw]);
+}
+
 function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: string; section: string; items: any[]; route: Route; hideSpoilers: boolean }) {
-  const eventGroupFilters = ["Static", "Gift", "Trade", "Legendary/Mythical"].filter((filter) => items.some((item) => asArray(item.eventGroups).includes(filter)));
+  const eventGroupFilters = ["Gift", "Trade", "Prize", "Fossil", "Static", "Legendary/Mythical"].filter((filter) => items.some((item) => asArray(item.eventGroups).includes(filter)));
   const filters = unique(["All", "Johto", "Kanto", "Other", ...eventGroupFilters, ...items.map((item) => item.displayCategory || readableEventCategory(item.category))]);
   return (
     <BrowserPage<any>
@@ -1855,7 +2229,7 @@ function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: 
       route={route}
       items={items}
       getId={(item) => item.id}
-      searchKeys={["pokemonName", "species", "location", "region", "category", "displayCategory", "eventGroups", "requirements", "caughtFlag"]}
+      searchKeys={["pokemonName", "species", "location", "region", "category", "displayCategory", "eventGroups", "requirements", "prerequisiteDetails", "caughtFlag", "choiceGroup", "currencyCost", "tradeRequest.pokemonName", "nickname", "otName"]}
       filters={filters}
       filterFn={(item, filter) => item.region === filter || asArray(item.eventGroups).includes(filter) || (item.displayCategory || readableEventCategory(item.category)) === filter}
       sorters={{
@@ -1868,8 +2242,9 @@ function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: 
           <AssetImage src={item.pokemonIcon} label={displayPokemonName(item.pokemonName, item.species)} />
           <div className="card-main">
             <strong>{displayPokemonName(item.pokemonName, item.species)}</strong>
-            <small>{item.displayCategory || readableEventCategory(item.category)} - {readableText(item.location)} - Lv. {item.level ?? "?"}</small>
+            <small>{item.displayCategory || readableEventCategory(item.category)} - {readableEventLocation(item.location)} - {eventLevelText(item)}</small>
           </div>
+          <span className="event-kind-chip">{primaryEventKind(item)}</span>
         </CardShell>
       )}
       renderDetail={(item) => (
@@ -1882,6 +2257,7 @@ function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: 
 }
 
 function StaticDetail({ entry }: { entry: any }) {
+  const details = asArray(entry.prerequisiteDetails).length ? asArray(entry.prerequisiteDetails) : eventPrerequisiteDetails(entry);
   return (
     <div className="detail-stack">
       <header className="profile-header compact">
@@ -1893,24 +2269,90 @@ function StaticDetail({ entry }: { entry: any }) {
         </div>
       </header>
       <div className="metric-row">
-        <Metric label="Location" value={readableText(entry.location) || "Unknown"} />
+        <Metric label="Location" value={readableEventLocation(entry.location) || "Unknown"} />
         <Metric label="Region" value={entry.region} />
         <Metric label="Kind" value={asArray(entry.eventGroups).join(" / ") || "Event"} />
-        <Metric label="Level" value={compactNumber(entry.level)} />
+        <Metric label="Level" value={eventLevelText(entry)} />
         <Metric label="One-time" value={entry.oneTime === null ? "Unknown" : entry.oneTime ? "Yes" : "No"} />
       </div>
-      <Section title="Requirements And Flags">
-        <p>{entry.requirements || "Requirements missing from exports."}</p>
+      <Section title="How To Get It">
+        <div className="requirement-list">
+          {details.length ? details.map((detail, index) => <p key={`${detail}-${index}`}>{detail}</p>) : <Muted>Requirements missing from exports.</Muted>}
+        </div>
         <div className="pill-row">
-          <Pill>{entry.caughtFlag || "Caught flag unknown"}</Pill>
-          <Pill>{entry.retryBehavior || "Retry behavior unknown"}</Pill>
-          <Pill>{entry.shinyLock === null ? "Shiny lock unknown" : entry.shinyLock ? "Shiny locked" : "Not shiny locked"}</Pill>
+          {entry.choiceGroup ? <Pill>{entry.choiceGroup}</Pill> : null}
+          {entry.currencyCost ? <Pill>{entry.currencyCost}</Pill> : null}
+          {entry.caughtFlag ? <Pill>{entry.caughtFlag}</Pill> : null}
+          {entry.retryBehavior ? <Pill>{entry.retryBehavior}</Pill> : null}
+          <Pill>{entry.shinyLock === null || entry.shinyLock === undefined ? "Shiny lock unknown" : entry.shinyLock ? "Shiny locked" : "Not shiny locked"}</Pill>
         </div>
       </Section>
+      {entry.tradeRequest || entry.nickname || entry.otName || entry.ivSpread || entry.ability || entry.heldItem ? (
+        <Section title={entry.tradeRequest ? "Trade Details" : "Gift Details"}>
+          <div className="event-detail-grid">
+            {entry.tradeRequest ? <Metric label="Requested" value={entry.tradeRequest.pokemonName || readableLabel(entry.tradeRequest.species)} /> : null}
+            {entry.nickname ? <Metric label="Nickname" value={entry.nickname} /> : null}
+            {entry.otName ? <Metric label="OT" value={entry.otName} /> : null}
+            {entry.ability ? <Metric label="Ability" value={entry.ability.name || readableLabel(entry.ability.id)} /> : null}
+            {entry.heldItem ? <Metric label="Held item" value={readableConstantName(entry.heldItem, "ITEM_")} /> : null}
+          </div>
+          {entry.ivSpread ? <IvSpread spread={entry.ivSpread} /> : null}
+        </Section>
+      ) : null}
+      {asArray(entry.specialMoves).length ? (
+        <Section title="Special Moves">
+          <div className="pill-row">{asArray(entry.specialMoves).map((move: string) => <Pill key={move}>{move}</Pill>)}</div>
+        </Section>
+      ) : null}
       <LinkPill section="pokemon" id={entry.species}>Pokemon profile</LinkPill>
       <ValidationFlags flags={entry.validationFlags || []} />
     </div>
   );
+}
+
+function eventLevelText(entry: any): string {
+  if (entry.level === null || entry.level === undefined) {
+    return normalize(entry.category).includes("egg") ? "Egg" : "Level varies";
+  }
+  return `Lv. ${entry.level}`;
+}
+
+function primaryEventKind(entry: any): string {
+  const groups = asArray(entry.eventGroups);
+  if (groups.includes("Trade")) return "Trade";
+  if (groups.includes("Gift")) return "Gift";
+  if (groups.includes("Prize")) return "Prize";
+  if (groups.includes("Fossil")) return "Fossil";
+  if (groups.includes("Legendary/Mythical")) return "Legendary";
+  if (groups.includes("Static")) return "Static";
+  return "Event";
+}
+
+function IvSpread({ spread }: { spread: Record<string, number> }) {
+  const order = ["hp", "attack", "defense", "spAttack", "spDefense", "speed"];
+  return (
+    <div className="iv-spread">
+      {order.map((stat) => (
+        <span key={stat}>
+          <strong>{STAT_LABELS[stat] || readableLabel(stat)}</strong>
+          {spread[stat] ?? "?"}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function readableConstantName(value: unknown, prefix = ""): string {
+  const raw = String(value ?? "").replace(new RegExp(`^${prefix}`), "");
+  if (!raw) return "";
+  return raw
+    .toLowerCase()
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase())
+    .replace(/\bHp\b/g, "HP")
+    .replace(/\bPp\b/g, "PP")
+    .replace(/\bTm\b/g, "TM")
+    .replace(/\bHm\b/g, "HM");
 }
 
 function MartsPage({ data, route }: { data: ExplorerData; indexes: Indexes; route: Route }) {

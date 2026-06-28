@@ -30519,7 +30519,8 @@
         "pokemonName": "Rampardos",
         "pokemonIcon": "assets/pokemon/icons/rampardos.png",
         "types": [
-          "Rock"
+          "Rock",
+          "Dragon"
         ],
         "level": 78,
         "item": "ITEM_CHOICE_BAND",
@@ -30593,6 +30594,10 @@
       {
         "type": "Ground",
         "count": 2
+      },
+      {
+        "type": "Dragon",
+        "count": 1
       }
     ],
     "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",

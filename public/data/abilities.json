@@ -2161,7 +2161,8 @@
         "id": "SPECIES_CARNIVINE",
         "name": "Carnivine",
         "types": [
-          "Grass"
+          "Grass",
+          "Dark"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/carnivine.png"
@@ -2170,7 +2171,8 @@
         "id": "SPECIES_CHIMECHO",
         "name": "Chimecho",
         "types": [
-          "Psychic"
+          "Psychic",
+          "Fairy"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/chimecho.png"
@@ -2179,7 +2181,8 @@
         "id": "SPECIES_CHINGLING",
         "name": "Chingling",
         "types": [
-          "Psychic"
+          "Psychic",
+          "Fairy"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/chingling.png"
@@ -2975,7 +2978,8 @@
         "id": "SPECIES_FINNEON",
         "name": "Finneon",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/finneon.png"
@@ -3002,7 +3006,8 @@
         "id": "SPECIES_GOREBYSS",
         "name": "Gorebyss",
         "types": [
-          "Water"
+          "Water",
+          "Psychic"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/gorebyss.png"
@@ -3020,7 +3025,8 @@
         "id": "SPECIES_HUNTAIL",
         "name": "Huntail",
         "types": [
-          "Water"
+          "Water",
+          "Dark"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/huntail.png"
@@ -3089,7 +3095,8 @@
         "id": "SPECIES_LUMINEON",
         "name": "Lumineon",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/lumineon.png"
@@ -8415,7 +8422,8 @@
         "id": "SPECIES_CRANIDOS",
         "name": "Cranidos",
         "types": [
-          "Rock"
+          "Rock",
+          "Dragon"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/cranidos.png"
@@ -8433,7 +8441,8 @@
         "id": "SPECIES_RAMPARDOS",
         "name": "Rampardos",
         "types": [
-          "Rock"
+          "Rock",
+          "Dragon"
         ],
         "slot": "1",
         "icon": "assets/pokemon/icons/rampardos.png"
@@ -8805,7 +8814,8 @@
         "id": "SPECIES_FINNEON",
         "name": "Finneon",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "slot": "2",
         "icon": "assets/pokemon/icons/finneon.png"
@@ -8824,7 +8834,8 @@
         "id": "SPECIES_LUMINEON",
         "name": "Lumineon",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "slot": "2",
         "icon": "assets/pokemon/icons/lumineon.png"

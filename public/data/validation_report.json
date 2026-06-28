@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T11:39:23-07:00",
+  "generatedAt": "2026-06-28T14:24:49-07:00",
   "summary": {
     "counts": {
       "pokemon": 545,
@@ -8,8 +8,8 @@
       "items": 211,
       "trainers": 740,
       "locations": 142,
-      "wildEncounterEntries": 3444,
-      "staticGiftEntries": 35,
+      "wildEncounterEntries": 3499,
+      "staticGiftEntries": 77,
       "martShopCount": 2,
       "bossFights": 86,
       "legendaryDossiers": 33
@@ -33,11 +33,11 @@
       "movesWithNoDescriptions": 33,
       "movesWithNoParsedEffects": 676,
       "pokemonOutsideApprovedScope": 0,
-      "pokemonWithNoAvailability": 19
+      "pokemonWithNoAvailability": 22
     },
     "severityCounts": {
       "critical": 0,
-      "warnings": 939
+      "warnings": 942
     },
     "status": "PASS"
   },
@@ -48,8 +48,16 @@
         "name": "Pineco"
       },
       {
+        "id": "SPECIES_SMEARGLE",
+        "name": "Smeargle"
+      },
+      {
         "id": "SPECIES_OBSTAGOON",
         "name": "Obstagoon"
+      },
+      {
+        "id": "SPECIES_CLODSIRE",
+        "name": "Clodsire"
       },
       {
         "id": "SPECIES_RATICATE_ALOLAN",
@@ -117,6 +125,10 @@
       },
       {
         "id": "SPECIES_ELECTRODE_HISUIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_WOOPER_PALDEAN",
         "name": "-----"
       }
     ],

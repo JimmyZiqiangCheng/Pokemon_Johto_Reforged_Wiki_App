@@ -885,5 +885,1548 @@
       "Missing shiny lock status",
       "Missing exact script retry flag"
     ]
+  },
+  {
+    "id": "GIFT_TYROGUE_KARATE_KING",
+    "species": "SPECIES_TYROGUE",
+    "pokemonName": "Tyrogue",
+    "pokemonIcon": "assets/pokemon/icons/tyrogue.png",
+    "types": [
+      "Fighting"
+    ],
+    "location": "Mt. Mortar B1F",
+    "region": "Johto",
+    "level": 10,
+    "category": "Gift Pokemon",
+    "requirements": "Defeat Karate King Kiyo in Mt. Mortar.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0098_D38R0104.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0098_D38R0104.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_DRATINI_DRAGONS_DEN",
+    "species": "SPECIES_DRATINI",
+    "pokemonName": "Dratini",
+    "pokemonIcon": "assets/pokemon/icons/dratini.png",
+    "types": [
+      "Dragon"
+    ],
+    "location": "Dragon's Den Shrine",
+    "region": "Johto",
+    "level": 15,
+    "category": "Gift Pokemon",
+    "requirements": "Complete the Dragon's Den elder event after Clair's Gym. Dratini receives Extreme Speed if the quiz is passed cleanly.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [
+      "Extreme Speed, if earned from the Dragon's Den quiz"
+    ],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0112_D44R0103.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0112_D44R0103.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_BULBASAUR_OAK",
+    "species": "SPECIES_BULBASAUR",
+    "pokemonName": "Bulbasaur",
+    "pokemonIcon": "assets/pokemon/icons/bulbasaur.png",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "location": "Pallet Town Oak's Lab",
+    "region": "Kanto",
+    "level": 5,
+    "category": "Starter gift",
+    "requirements": "Choose Bulbasaur from Professor Oak's Kanto starter selection.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Professor Oak Kanto starter choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_CHARMANDER_OAK",
+    "species": "SPECIES_CHARMANDER",
+    "pokemonName": "Charmander",
+    "pokemonIcon": "assets/pokemon/icons/charmander.png",
+    "types": [
+      "Fire"
+    ],
+    "location": "Pallet Town Oak's Lab",
+    "region": "Kanto",
+    "level": 5,
+    "category": "Starter gift",
+    "requirements": "Choose Charmander from Professor Oak's Kanto starter selection.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Professor Oak Kanto starter choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_SQUIRTLE_OAK",
+    "species": "SPECIES_SQUIRTLE",
+    "pokemonName": "Squirtle",
+    "pokemonIcon": "assets/pokemon/icons/squirtle.png",
+    "types": [
+      "Water"
+    ],
+    "location": "Pallet Town Oak's Lab",
+    "region": "Kanto",
+    "level": 5,
+    "category": "Starter gift",
+    "requirements": "Choose Squirtle from Professor Oak's Kanto starter selection.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Professor Oak Kanto starter choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_TREECKO_STEVEN",
+    "species": "SPECIES_TREECKO",
+    "pokemonName": "Treecko",
+    "pokemonIcon": "assets/pokemon/icons/treecko.png",
+    "types": [
+      "Grass"
+    ],
+    "location": "Saffron Silph Co HQ",
+    "region": "Kanto",
+    "level": 5,
+    "category": "Starter gift",
+    "requirements": "Choose Treecko from Steven's Hoenn starter selection at Silph Co.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Steven Hoenn starter choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_TORCHIC_STEVEN",
+    "species": "SPECIES_TORCHIC",
+    "pokemonName": "Torchic",
+    "pokemonIcon": "assets/pokemon/icons/torchic.png",
+    "types": [
+      "Fire"
+    ],
+    "location": "Saffron Silph Co HQ",
+    "region": "Kanto",
+    "level": 5,
+    "category": "Starter gift",
+    "requirements": "Choose Torchic from Steven's Hoenn starter selection at Silph Co.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Steven Hoenn starter choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_MUDKIP_STEVEN",
+    "species": "SPECIES_MUDKIP",
+    "pokemonName": "Mudkip",
+    "pokemonIcon": "assets/pokemon/icons/mudkip.png",
+    "types": [
+      "Water"
+    ],
+    "location": "Saffron Silph Co HQ",
+    "region": "Kanto",
+    "level": 5,
+    "category": "Starter gift",
+    "requirements": "Choose Mudkip from Steven's Hoenn starter selection at Silph Co.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Steven Hoenn starter choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "EGG_MAREEP_PRIMO",
+    "species": "SPECIES_MAREEP",
+    "pokemonName": "Mareep",
+    "pokemonIcon": "assets/pokemon/icons/mareep.png",
+    "types": [
+      "Electric"
+    ],
+    "location": "Violet Pokemon Center 1F",
+    "region": "Johto",
+    "level": null,
+    "category": "Egg gift",
+    "requirements": "Receive the Mareep Egg from Primo in Violet Pokemon Center.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "EGG_WOOPER_PRIMO",
+    "species": "SPECIES_WOOPER",
+    "pokemonName": "Wooper",
+    "pokemonIcon": "assets/pokemon/icons/wooper.png",
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "location": "Violet Pokemon Center 1F",
+    "region": "Johto",
+    "level": null,
+    "category": "Egg gift",
+    "requirements": "Receive the Wooper Egg from Primo in Violet Pokemon Center.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "EGG_SLUGMA_PRIMO",
+    "species": "SPECIES_SLUGMA",
+    "pokemonName": "Slugma",
+    "pokemonIcon": "assets/pokemon/icons/slugma.png",
+    "types": [
+      "Fire"
+    ],
+    "location": "Violet Pokemon Center 1F",
+    "region": "Johto",
+    "level": null,
+    "category": "Egg gift",
+    "requirements": "Receive the Slugma Egg from Primo in Violet Pokemon Center.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_TENTACOOL_CIANWOOD",
+    "species": "SPECIES_TENTACOOL",
+    "pokemonName": "Tentacool",
+    "pokemonIcon": "assets/pokemon/icons/tentacool.png",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "location": "Cianwood Pokemon Center 1F",
+    "region": "Johto",
+    "level": 15,
+    "category": "Gift Pokemon",
+    "requirements": "Available from the Cianwood Pokemon Center NPC when the party and PC checks show the player needs Surf access.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0878_T24PC0101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0878_T24PC0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_EEVEE_BILL",
+    "species": "SPECIES_EEVEE",
+    "pokemonName": "Eevee",
+    "pokemonIcon": "assets/pokemon/icons/eevee.png",
+    "types": [
+      "Normal"
+    ],
+    "location": "Goldenrod Bill's House",
+    "region": "Johto",
+    "level": 5,
+    "category": "Gift Pokemon",
+    "requirements": "Receive Eevee from Bill in Goldenrod.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0892_T25R0401.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0892_T25R0401.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_DIALGA_SINJOH",
+    "species": "SPECIES_DIALGA",
+    "pokemonName": "Dialga",
+    "pokemonIcon": "assets/pokemon/icons/dialga.png",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "location": "Sinjoh Ruins Mystri Stage",
+    "region": "Other",
+    "level": 1,
+    "category": "Legendary gift",
+    "requirements": "Choose Dialga during the Sinjoh Ruins creation trio event.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Sinjoh Ruins creation trio choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_PALKIA_SINJOH",
+    "species": "SPECIES_PALKIA",
+    "pokemonName": "Palkia",
+    "pokemonIcon": "assets/pokemon/icons/palkia.png",
+    "types": [
+      "Water",
+      "Dragon"
+    ],
+    "location": "Sinjoh Ruins Mystri Stage",
+    "region": "Other",
+    "level": 1,
+    "category": "Legendary gift",
+    "requirements": "Choose Palkia during the Sinjoh Ruins creation trio event.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Sinjoh Ruins creation trio choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "GIFT_GIRATINA_SINJOH",
+    "species": "SPECIES_GIRATINA",
+    "pokemonName": "Giratina",
+    "pokemonIcon": "assets/pokemon/icons/giratina.png",
+    "types": [
+      "Ghost",
+      "Dragon"
+    ],
+    "location": "Sinjoh Ruins Mystri Stage",
+    "region": "Other",
+    "level": 1,
+    "category": "Legendary gift",
+    "requirements": "Choose Giratina during the Sinjoh Ruins creation trio event.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": "Sinjoh Ruins creation trio choice",
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_MR_MIME_CELADON",
+    "species": "SPECIES_MR_MIME",
+    "pokemonName": "Mr. Mime",
+    "pokemonIcon": "assets/pokemon/icons/mr_mime.png",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "location": "Celadon Prize Corner",
+    "region": "Kanto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 3333 coins at Celadon Prize Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "3333 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_EEVEE_CELADON",
+    "species": "SPECIES_EEVEE",
+    "pokemonName": "Eevee",
+    "pokemonIcon": "assets/pokemon/icons/eevee.png",
+    "types": [
+      "Normal"
+    ],
+    "location": "Celadon Prize Corner",
+    "region": "Kanto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 6666 coins at Celadon Prize Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "6666 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_PORYGON_CELADON",
+    "species": "SPECIES_PORYGON",
+    "pokemonName": "Porygon",
+    "pokemonIcon": "assets/pokemon/icons/porygon.png",
+    "types": [
+      "Normal"
+    ],
+    "location": "Celadon Prize Corner",
+    "region": "Kanto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 9999 coins at Celadon Prize Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "9999 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_ABRA_GOLDENROD",
+    "species": "SPECIES_ABRA",
+    "pokemonName": "Abra",
+    "pokemonIcon": "assets/pokemon/icons/abra.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Goldenrod Game Corner",
+    "region": "Johto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 200 coins at Goldenrod Game Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "200 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_EKANS_GOLDENROD",
+    "species": "SPECIES_EKANS",
+    "pokemonName": "Ekans",
+    "pokemonIcon": "assets/pokemon/icons/ekans.png",
+    "types": [
+      "Poison"
+    ],
+    "location": "Goldenrod Game Corner",
+    "region": "Johto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 700 coins at Goldenrod Game Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "700 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_SANDSHREW_GOLDENROD",
+    "species": "SPECIES_SANDSHREW",
+    "pokemonName": "Sandshrew",
+    "pokemonIcon": "assets/pokemon/icons/sandshrew.png",
+    "types": [
+      "Ground"
+    ],
+    "location": "Goldenrod Game Corner",
+    "region": "Johto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 700 coins at Goldenrod Game Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "700 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "PRIZE_DRATINI_GOLDENROD",
+    "species": "SPECIES_DRATINI",
+    "pokemonName": "Dratini",
+    "pokemonIcon": "assets/pokemon/icons/dratini.png",
+    "types": [
+      "Dragon"
+    ],
+    "location": "Goldenrod Game Corner",
+    "region": "Johto",
+    "level": 15,
+    "category": "Prize Pokemon",
+    "requirements": "Redeem 2100 coins at Goldenrod Game Corner.",
+    "oneTime": null,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": "2100 coins",
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+    "sourceRefs": [
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_AERODACTYL",
+    "species": "SPECIES_AERODACTYL",
+    "pokemonName": "Aerodactyl",
+    "pokemonIcon": "assets/pokemon/icons/aerodactyl.png",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Old Amber at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_OLD_AMBER",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_OMANYTE",
+    "species": "SPECIES_OMANYTE",
+    "pokemonName": "Omanyte",
+    "pokemonIcon": "assets/pokemon/icons/omanyte.png",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Helix Fossil at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_HELIX_FOSSIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_KABUTO",
+    "species": "SPECIES_KABUTO",
+    "pokemonName": "Kabuto",
+    "pokemonIcon": "assets/pokemon/icons/kabuto.png",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Dome Fossil at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_DOME_FOSSIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_LILEEP",
+    "species": "SPECIES_LILEEP",
+    "pokemonName": "Lileep",
+    "pokemonIcon": "assets/pokemon/icons/lileep.png",
+    "types": [
+      "Rock",
+      "Grass"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Root Fossil at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_ROOT_FOSSIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_ANORITH",
+    "species": "SPECIES_ANORITH",
+    "pokemonName": "Anorith",
+    "pokemonIcon": "assets/pokemon/icons/anorith.png",
+    "types": [
+      "Rock",
+      "Bug"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Claw Fossil at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_CLAW_FOSSIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_SHIELDON",
+    "species": "SPECIES_SHIELDON",
+    "pokemonName": "Shieldon",
+    "pokemonIcon": "assets/pokemon/icons/shieldon.png",
+    "types": [
+      "Rock",
+      "Steel"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Armor Fossil at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_ARMOR_FOSSIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "FOSSIL_CRANIDOS",
+    "species": "SPECIES_CRANIDOS",
+    "pokemonName": "Cranidos",
+    "pokemonIcon": "assets/pokemon/icons/cranidos.png",
+    "types": [
+      "Rock",
+      "Dragon"
+    ],
+    "location": "Pewter Museum of Science",
+    "region": "Kanto",
+    "level": 20,
+    "category": "Fossil restoration",
+    "requirements": "Restore the Skull Fossil at Pewter Museum of Science.",
+    "oneTime": false,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_SKULL_FOSSIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": null,
+    "otName": null,
+    "ability": null,
+    "ivSpread": null,
+    "sourceRef": "pokeheartgold-master/src/scrcmd_fossils.c",
+    "sourceRefs": [
+      "pokeheartgold-master/src/scrcmd_fossils.c",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_ROCKY_ONIX",
+    "species": "SPECIES_ONIX",
+    "pokemonName": "Onix",
+    "pokemonIcon": "assets/pokemon/icons/onix.png",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "location": "Violet Bellsprout Onix Trade House",
+    "region": "Johto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Bellsprout; the received Onix matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_PERSIM_BERRY",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_BELLSPROUT",
+      "pokemonName": "Bellsprout"
+    },
+    "nickname": "Rocky",
+    "otName": "Rudy",
+    "ability": {
+      "id": "ABILITY_STURDY",
+      "name": "Sturdy"
+    },
+    "ivSpread": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 25,
+      "speed": 15,
+      "spAttack": 15,
+      "spDefense": 15
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0864_T22R0601.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_MUSCLE_MACHOP",
+    "species": "SPECIES_MACHOP",
+    "pokemonName": "Machop",
+    "pokemonIcon": "assets/pokemon/icons/machop.png",
+    "types": [
+      "Fighting"
+    ],
+    "location": "Goldenrod Department Store 5F",
+    "region": "Johto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Drowzee; the received Machop matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_MACHO_BRACE",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_DROWZEE",
+      "pokemonName": "Drowzee"
+    },
+    "nickname": "Muscle",
+    "otName": "Jose",
+    "ability": {
+      "id": "ABILITY_GUTS",
+      "name": "Guts"
+    },
+    "ivSpread": {
+      "hp": 15,
+      "attack": 25,
+      "defense": 20,
+      "speed": 20,
+      "spAttack": 15,
+      "spDefense": 15
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0903_T25R1005.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_BILLY_VOLTORB",
+    "species": "SPECIES_VOLTORB",
+    "pokemonName": "Voltorb",
+    "pokemonIcon": "assets/pokemon/icons/voltorb.png",
+    "types": [
+      "Electric"
+    ],
+    "location": "Olivine North House",
+    "region": "Johto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Krabby; the received Voltorb matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_CHERI_BERRY",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_KRABBY",
+      "pokemonName": "Krabby"
+    },
+    "nickname": "Billy",
+    "otName": "Richard",
+    "ability": {
+      "id": "ABILITY_STATIC",
+      "name": "Static"
+    },
+    "ivSpread": {
+      "hp": 15,
+      "attack": 20,
+      "defense": 15,
+      "speed": 25,
+      "spAttack": 25,
+      "spDefense": 15
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0916_T26R0301.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_DORIS_DODRIO",
+    "species": "SPECIES_DODRIO",
+    "pokemonName": "Dodrio",
+    "pokemonIcon": "assets/pokemon/icons/dodrio.png",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "location": "Blackthorn East House",
+    "region": "Johto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Dragonair; the received Dodrio matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_SMOKE_BALL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_DRAGONAIR",
+      "pokemonName": "Dragonair"
+    },
+    "nickname": "Doris",
+    "otName": "Ayana",
+    "ability": {
+      "id": "ABILITY_RUN_AWAY",
+      "name": "Run Away"
+    },
+    "ivSpread": {
+      "hp": 20,
+      "attack": 20,
+      "defense": 20,
+      "speed": 15,
+      "spAttack": 15,
+      "spDefense": 15
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0947_T30R0301.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_RUSTY_STEELIX",
+    "species": "SPECIES_STEELIX",
+    "pokemonName": "Steelix",
+    "pokemonIcon": "assets/pokemon/icons/steelix.png",
+    "types": [
+      "Steel",
+      "Ground"
+    ],
+    "location": "Olivine Gym",
+    "region": "Johto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Steelix; the received Steelix matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_SOOTHE_BELL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_STEELIX",
+      "pokemonName": "Steelix"
+    },
+    "nickname": "Rusty",
+    "otName": "Jasmine",
+    "ability": {
+      "id": "ABILITY_ROCK_HEAD",
+      "name": "Rock Head"
+    },
+    "ivSpread": {
+      "hp": 8,
+      "attack": 30,
+      "defense": 28,
+      "speed": 6,
+      "spAttack": 18,
+      "spDefense": 20
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0913_T26GYM0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_SHUCKIE_SHUCKLE",
+    "species": "SPECIES_SHUCKLE",
+    "pokemonName": "Shuckle",
+    "pokemonIcon": "assets/pokemon/icons/shuckle.png",
+    "types": [
+      "Bug",
+      "Rock"
+    ],
+    "location": "Cianwood Kirks House",
+    "region": "Johto",
+    "level": 20,
+    "category": "Loan gift",
+    "requirements": "Receive Shuckie from Kirk in Cianwood.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_BERRY_JUICE",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": "Shuckie",
+    "otName": "Kirk",
+    "ability": {
+      "id": "ABILITY_GLUTTONY",
+      "name": "Gluttony"
+    },
+    "ivSpread": {
+      "hp": 15,
+      "attack": 20,
+      "defense": 15,
+      "speed": 20,
+      "spAttack": 20,
+      "spDefense": 20
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0880_T24R0201.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_KENYA_SPEAROW",
+    "species": "SPECIES_SPEAROW",
+    "pokemonName": "Spearow",
+    "pokemonIcon": "assets/pokemon/icons/spearow.png",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "location": "Route 35 Goldenrod Gatehouse",
+    "region": "Johto",
+    "level": 20,
+    "category": "Loan gift",
+    "requirements": "Receive Kenya during the Route 35 delivery side quest.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_GRASS_MAIL",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": null,
+    "nickname": "Kenya",
+    "otName": "Webster",
+    "ability": {
+      "id": "ABILITY_KEEN_EYE",
+      "name": "Keen Eye"
+    },
+    "ivSpread": {
+      "hp": 15,
+      "attack": 20,
+      "defense": 15,
+      "speed": 20,
+      "spAttack": 20,
+      "spDefense": 20
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0241_R35R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_MAGGIE_MAGNETON",
+    "species": "SPECIES_MAGNETON",
+    "pokemonName": "Magneton",
+    "pokemonIcon": "assets/pokemon/icons/magneton.png",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "location": "Route 10 Power Plant",
+    "region": "Kanto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Dugtrio; the received Magneton matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_METAL_COAT",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_DUGTRIO",
+      "pokemonName": "Dugtrio"
+    },
+    "nickname": "Maggie",
+    "otName": "Lorenzo",
+    "ability": {
+      "id": "ABILITY_MAGNET_PULL",
+      "name": "Magnet Pull"
+    },
+    "ivSpread": {
+      "hp": 15,
+      "attack": 20,
+      "defense": 15,
+      "speed": 20,
+      "spAttack": 20,
+      "spDefense": 20
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0195_R10R0201.s",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0196_R10R0202.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_PAUL_XATU",
+    "species": "SPECIES_XATU",
+    "pokemonName": "Xatu",
+    "pokemonIcon": "assets/pokemon/icons/xatu.png",
+    "types": [
+      "Psychic",
+      "Flying"
+    ],
+    "location": "Pewter Pokemon Center 1F",
+    "region": "Kanto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Haunter; the received Xatu matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_WACAN_BERRY",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_HAUNTER",
+      "pokemonName": "Haunter"
+    },
+    "nickname": "Paul",
+    "otName": "Mondo",
+    "ability": {
+      "id": "ABILITY_SYNCHRONIZE",
+      "name": "Synchronize"
+    },
+    "ivSpread": {
+      "hp": 15,
+      "attack": 20,
+      "defense": 15,
+      "speed": 20,
+      "spAttack": 20,
+      "spDefense": 20
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0753_T03PC0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_VOLTY_PIKACHU",
+    "species": "SPECIES_PIKACHU",
+    "pokemonName": "Pikachu",
+    "pokemonIcon": "assets/pokemon/icons/pikachu.png",
+    "types": [
+      "Electric"
+    ],
+    "location": "Saffron Magnet Train Station 1F",
+    "region": "Kanto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Pikachu; the received Pikachu matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_YELLOW_SHARD",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_PIKACHU",
+      "pokemonName": "Pikachu"
+    },
+    "nickname": "Volty",
+    "otName": "Surge",
+    "ability": {
+      "id": "ABILITY_STATIC",
+      "name": "Static"
+    },
+    "ivSpread": {
+      "hp": 20,
+      "attack": 25,
+      "defense": 18,
+      "speed": 31,
+      "spAttack": 25,
+      "spDefense": 13
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0834_T11R0601.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_HORNLETTE_RHYHORN",
+    "species": "SPECIES_RHYHORN",
+    "pokemonName": "Rhyhorn",
+    "pokemonIcon": "assets/pokemon/icons/rhyhorn.png",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "location": "Diglett Cave",
+    "region": "Kanto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Bonsly; the received Rhyhorn matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_PASSHO_BERRY",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_BONSLY",
+      "pokemonName": "Bonsly"
+    },
+    "nickname": "Hornlette",
+    "otName": "Brock",
+    "ability": {
+      "id": "ABILITY_LIGHTNING_ROD",
+      "name": "Lightning Rod"
+    },
+    "ivSpread": {
+      "hp": 22,
+      "attack": 31,
+      "defense": 13,
+      "speed": 0,
+      "spAttack": 22,
+      "spDefense": 9
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0005_D01R0101.s"
+    ],
+    "validationFlags": []
+  },
+  {
+    "id": "TRADE_IRON_BELDUM",
+    "species": "SPECIES_BELDUM",
+    "pokemonName": "Beldum",
+    "pokemonIcon": "assets/pokemon/icons/beldum.png",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "location": "Saffron Silph Co Hq",
+    "region": "Kanto",
+    "level": null,
+    "category": "NPC trade",
+    "requirements": "Trade in Forretress; the received Beldum matches the traded Pokemon's level.",
+    "oneTime": true,
+    "caughtFlag": null,
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": "ITEM_DAWN_STONE",
+    "specialMoves": [],
+    "choiceGroup": null,
+    "currencyCost": null,
+    "tradeRequest": {
+      "species": "SPECIES_FORRETRESS",
+      "pokemonName": "Forretress"
+    },
+    "nickname": "Iron",
+    "otName": "Steven",
+    "ability": {
+      "id": "ABILITY_CLEAR_BODY",
+      "name": "Clear Body"
+    },
+    "ivSpread": {
+      "hp": 28,
+      "attack": 29,
+      "defense": 24,
+      "speed": 23,
+      "spAttack": 24,
+      "spDefense": 25
+    },
+    "sourceRef": "pokeheartgold-master/files/a/1/1/2",
+    "sourceRefs": [
+      "pokeheartgold-master/files/a/1/1/2",
+      "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"
+    ],
+    "validationFlags": []
   }
 ]

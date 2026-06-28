@@ -10,7 +10,7 @@ Generated JSON lives in `public/data/`. Source records are copied from the Pokem
 - `encounters.json`: flattened wild encounter slots with method, time, level range, chance, rarity, Pokemon, and location links.
 - `trainers.json`: trainer records with enriched party Pokemon, held items, game-scaled IV spreads plus the raw difficulty byte, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
 - `boss_fights.json`: boss-oriented subset linked back to trainer records with the same enriched party structure.
-- `statics_gifts.json`: static, roaming, gift, and dossier-style exported encounters.
+- `statics_gifts.json`: static, roaming, dossier-style encounters plus script-derived gifts, eggs, prizes, fossils, loans, and NPC trades.
 - `legendary_dossiers.json`: Phase 8 dossier subset with flags/requirements where exported.
 - `marts.json`: badge-gated shop exports.
 - `evolutions.json`: normalized evolution rows and validation flags.

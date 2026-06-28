@@ -10213,7 +10213,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 48,
         "item": "ITEM_NONE",
@@ -14411,18 +14412,13 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 22,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_WATER_GUN",
-            "name": "Water Gun",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_RAIN_DANCE",
             "name": "Rain Dance",
@@ -14433,6 +14429,12 @@
             "id": "MOVE_GUST",
             "name": "Gust",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FAIRY_WIND",
+            "name": "Fairy Wind",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -15799,18 +15801,13 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 24,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_WATER_GUN",
-            "name": "Water Gun",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_RAIN_DANCE",
             "name": "Rain Dance",
@@ -15821,6 +15818,12 @@
             "id": "MOVE_GUST",
             "name": "Gust",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FAIRY_WIND",
+            "name": "Fairy Wind",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -21098,16 +21101,17 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 30,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_GUST",
-            "name": "Gust",
-            "type": "Flying",
+            "id": "MOVE_FAIRY_WIND",
+            "name": "Fairy Wind",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -21874,12 +21878,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ICE_BEAM",
-            "name": "Ice Beam",
-            "type": "Ice",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_HYDRO_PUMP",
             "name": "Hydro Pump",
             "type": "Water",
@@ -21889,6 +21887,12 @@
             "id": "MOVE_SOAK",
             "name": "Soak",
             "type": "Water",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FLAMETHROWER",
+            "name": "Flamethrower",
+            "type": "Fire",
             "source": "Level-up learnset"
           },
           {
@@ -22711,12 +22715,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ASTONISH",
-            "name": "Astonish",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_BITE",
             "name": "Bite",
             "type": "Dark",
@@ -22732,6 +22730,12 @@
             "id": "MOVE_SAND_TOMB",
             "name": "Sand Tomb",
             "type": "Ground",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_BUG_BITE",
+            "name": "Bug Bite",
+            "type": "Bug",
             "source": "Level-up learnset"
           }
         ],
@@ -25628,9 +25632,9 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_TAKE_DOWN",
-            "name": "Take Down",
-            "type": "Normal",
+            "id": "MOVE_PLAY_ROUGH",
+            "name": "Play Rough",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -45387,18 +45391,13 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 54,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_U_TURN",
-            "name": "U-turn",
-            "type": "Bug",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_BOUNCE",
             "name": "Bounce",
@@ -45409,6 +45408,12 @@
             "id": "MOVE_TAILWIND",
             "name": "Tailwind",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_MOONBLAST",
+            "name": "Moonblast",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -52421,7 +52426,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 15,
         "item": "ITEM_NONE",
@@ -58487,15 +58493,15 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ROOST",
-            "name": "Roost",
-            "type": "Flying",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MOONBLAST",
             "name": "Moonblast",
             "type": "Fairy",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_OMINOUS_WIND",
+            "name": "Ominous Wind",
+            "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
@@ -61691,12 +61697,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ICE_BEAM",
-            "name": "Ice Beam",
-            "type": "Ice",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_HYDRO_PUMP",
             "name": "Hydro Pump",
             "type": "Water",
@@ -61706,6 +61706,12 @@
             "id": "MOVE_SOAK",
             "name": "Soak",
             "type": "Water",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FLAMETHROWER",
+            "name": "Flamethrower",
+            "type": "Fire",
             "source": "Level-up learnset"
           },
           {
@@ -62287,7 +62293,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 36,
         "item": "ITEM_NONE",
@@ -62500,7 +62507,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 38,
         "item": "ITEM_NONE",
@@ -64244,15 +64252,15 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_FIRE_SPIN",
-            "name": "Fire Spin",
-            "type": "Fire",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_TAKE_DOWN",
             "name": "Take Down",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_PLAY_ROUGH",
+            "name": "Play Rough",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -65501,7 +65509,8 @@
         "pokemonName": "Carnivine",
         "pokemonIcon": "assets/pokemon/icons/carnivine.png",
         "types": [
-          "Grass"
+          "Grass",
+          "Dark"
         ],
         "level": 56,
         "item": "ITEM_NONE",
@@ -70162,7 +70171,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 15,
         "item": "ITEM_NONE",
@@ -70607,7 +70617,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 15,
         "item": "ITEM_NONE",
@@ -70814,7 +70825,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 15,
         "item": "ITEM_NONE",
@@ -74848,12 +74860,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_BITE",
-            "name": "Bite",
-            "type": "Dark",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MUD_SLAP",
             "name": "Mud-Slap",
             "type": "Ground",
@@ -74863,6 +74869,12 @@
             "id": "MOVE_SAND_TOMB",
             "name": "Sand Tomb",
             "type": "Ground",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_BUG_BITE",
+            "name": "Bug Bite",
+            "type": "Bug",
             "source": "Level-up learnset"
           },
           {
@@ -78014,22 +78026,23 @@
         "pokemonName": "Chingling",
         "pokemonIcon": "assets/pokemon/icons/chingling.png",
         "types": [
-          "Psychic"
+          "Psychic",
+          "Fairy"
         ],
         "level": 46,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_YAWN",
-            "name": "Yawn",
+            "id": "MOVE_LAST_RESORT",
+            "name": "Last Resort",
             "type": "Normal",
             "source": "Level-up learnset"
           },
           {
-            "id": "MOVE_LAST_RESORT",
-            "name": "Last Resort",
-            "type": "Normal",
+            "id": "MOVE_DISARMING_VOICE",
+            "name": "Disarming Voice",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -82149,15 +82162,15 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ROOST",
-            "name": "Roost",
-            "type": "Flying",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MOONBLAST",
             "name": "Moonblast",
             "type": "Fairy",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_OMINOUS_WIND",
+            "name": "Ominous Wind",
+            "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
@@ -82315,7 +82328,8 @@
         "pokemonName": "Finneon",
         "pokemonIcon": "assets/pokemon/icons/finneon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 38,
         "item": "ITEM_NONE",
@@ -82901,14 +82915,14 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_DOUBLE_EDGE",
-            "name": "Double-Edge",
-            "type": "Normal",
+            "id": "MOVE_SUNNY_DAY",
+            "name": "Sunny Day",
+            "type": "Fire",
             "source": "Level-up learnset"
           },
           {
-            "id": "MOVE_SUNNY_DAY",
-            "name": "Sunny Day",
+            "id": "MOVE_FLAME_BURST",
+            "name": "Flame Burst",
             "type": "Fire",
             "source": "Level-up learnset"
           },
@@ -82965,9 +82979,9 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_TAKE_DOWN",
-            "name": "Take Down",
-            "type": "Normal",
+            "id": "MOVE_PLAY_ROUGH",
+            "name": "Play Rough",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -108196,8 +108210,8 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUNNY_DAY",
-            "name": "Sunny Day",
+            "id": "MOVE_FLAME_BURST",
+            "name": "Flame Burst",
             "type": "Fire",
             "source": "Level-up learnset"
           },
@@ -108324,9 +108338,9 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_TAKE_DOWN",
-            "name": "Take Down",
-            "type": "Normal",
+            "id": "MOVE_PLAY_ROUGH",
+            "name": "Play Rough",
+            "type": "Fairy",
             "source": "Level-up learnset"
           },
           {
@@ -109258,18 +109272,13 @@
         "pokemonName": "Lumineon",
         "pokemonIcon": "assets/pokemon/icons/lumineon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 54,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_WHIRLPOOL",
-            "name": "Whirlpool",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_U_TURN",
             "name": "U-turn",
@@ -109286,6 +109295,12 @@
             "id": "MOVE_TAILWIND",
             "name": "Tailwind",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_MOONBLAST",
+            "name": "Moonblast",
+            "type": "Fairy",
             "source": "Level-up learnset"
           }
         ],
@@ -113994,8 +114009,8 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUNNY_DAY",
-            "name": "Sunny Day",
+            "id": "MOVE_FLAME_BURST",
+            "name": "Flame Burst",
             "type": "Fire",
             "source": "Level-up learnset"
           },
@@ -114144,8 +114159,8 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUNNY_DAY",
-            "name": "Sunny Day",
+            "id": "MOVE_FLAME_BURST",
+            "name": "Flame Burst",
             "type": "Fire",
             "source": "Level-up learnset"
           },
@@ -114294,8 +114309,8 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUNNY_DAY",
-            "name": "Sunny Day",
+            "id": "MOVE_FLAME_BURST",
+            "name": "Flame Burst",
             "type": "Fire",
             "source": "Level-up learnset"
           },
@@ -118412,18 +118427,13 @@
         "pokemonName": "Lumineon",
         "pokemonIcon": "assets/pokemon/icons/lumineon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 52,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_WHIRLPOOL",
-            "name": "Whirlpool",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_U_TURN",
             "name": "U-turn",
@@ -118440,6 +118450,12 @@
             "id": "MOVE_TAILWIND",
             "name": "Tailwind",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_MOONBLAST",
+            "name": "Moonblast",
+            "type": "Fairy",
             "source": "Level-up learnset"
           }
         ],
@@ -118625,18 +118641,13 @@
         "pokemonName": "Lumineon",
         "pokemonIcon": "assets/pokemon/icons/lumineon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 55,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_WHIRLPOOL",
-            "name": "Whirlpool",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_U_TURN",
             "name": "U-turn",
@@ -118653,6 +118664,12 @@
             "id": "MOVE_TAILWIND",
             "name": "Tailwind",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_MOONBLAST",
+            "name": "Moonblast",
+            "type": "Fairy",
             "source": "Level-up learnset"
           }
         ],
@@ -118901,18 +118918,13 @@
         "pokemonName": "Lumineon",
         "pokemonIcon": "assets/pokemon/icons/lumineon.png",
         "types": [
-          "Water"
+          "Water",
+          "Fairy"
         ],
         "level": 60,
         "item": "ITEM_NONE",
         "itemName": null,
         "moves": [
-          {
-            "id": "MOVE_WHIRLPOOL",
-            "name": "Whirlpool",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
           {
             "id": "MOVE_U_TURN",
             "name": "U-turn",
@@ -118929,6 +118941,12 @@
             "id": "MOVE_TAILWIND",
             "name": "Tailwind",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_MOONBLAST",
+            "name": "Moonblast",
+            "type": "Fairy",
             "source": "Level-up learnset"
           }
         ],
@@ -121757,15 +121775,15 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ROOST",
-            "name": "Roost",
-            "type": "Flying",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MOONBLAST",
             "name": "Moonblast",
             "type": "Fairy",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_OMINOUS_WIND",
+            "name": "Ominous Wind",
+            "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
@@ -121844,15 +121862,15 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ROOST",
-            "name": "Roost",
-            "type": "Flying",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MOONBLAST",
             "name": "Moonblast",
             "type": "Fairy",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_OMINOUS_WIND",
+            "name": "Ominous Wind",
+            "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
@@ -123722,9 +123740,21 @@
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_ICE_SHARD",
+            "name": "Ice Shard",
+            "type": "Ice",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_DRILL_PECK",
             "name": "Drill Peck",
             "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_ICY_WIND",
+            "name": "Icy Wind",
+            "type": "Ice",
             "source": "Level-up learnset"
           }
         ],
@@ -131980,7 +132010,8 @@
         "pokemonName": "Rampardos",
         "pokemonIcon": "assets/pokemon/icons/rampardos.png",
         "types": [
-          "Rock"
+          "Rock",
+          "Dragon"
         ],
         "level": 78,
         "item": "ITEM_CHOICE_BAND",

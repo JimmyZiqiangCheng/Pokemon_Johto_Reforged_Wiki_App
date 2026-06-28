@@ -1,6 +1,6 @@
 # Pokemon Johto Reforged Explorer Validation Report
 
-Generated: 2026-06-28T11:39:23-07:00
+Generated: 2026-06-28T14:24:49-07:00
 Status: PASS
 
 ## Counts
@@ -11,8 +11,8 @@ Status: PASS
 - items: 211
 - trainers: 740
 - locations: 142
-- wildEncounterEntries: 3444
-- staticGiftEntries: 35
+- wildEncounterEntries: 3499
+- staticGiftEntries: 77
 - martShopCount: 2
 - bossFights: 86
 - legendaryDossiers: 33
@@ -38,13 +38,15 @@ Status: PASS
 - movesWithNoDescriptions: 33
 - movesWithNoParsedEffects: 676
 - pokemonOutsideApprovedScope: 0
-- pokemonWithNoAvailability: 19
+- pokemonWithNoAvailability: 22
 
 ## Sample Issues
 
 ### pokemonWithNoAvailability
 - `{"id": "SPECIES_PINECO", "name": "Pineco"}`
+- `{"id": "SPECIES_SMEARGLE", "name": "Smeargle"}`
 - `{"id": "SPECIES_OBSTAGOON", "name": "Obstagoon"}`
+- `{"id": "SPECIES_CLODSIRE", "name": "Clodsire"}`
 - `{"id": "SPECIES_RATICATE_ALOLAN", "name": "-----"}`
 - `{"id": "SPECIES_RAICHU_ALOLAN", "name": "-----"}`
 - `{"id": "SPECIES_SANDSLASH_ALOLAN", "name": "-----"}`
@@ -62,6 +64,7 @@ Status: PASS
 - `{"id": "SPECIES_LINOONE_GALARIAN", "name": "-----"}`
 - `{"id": "SPECIES_ARCANINE_HISUIAN", "name": "-----"}`
 - `{"id": "SPECIES_ELECTRODE_HISUIAN", "name": "-----"}`
+- `{"id": "SPECIES_WOOPER_PALDEAN", "name": "-----"}`
 
 ### movesWithNoParsedEffects
 - `{"id": "MOVE_POUND", "name": "Pound", "effect": "MOVE_EFFECT_HIT"}`

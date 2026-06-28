@@ -12,9 +12,9 @@ It does not add an interactive explorer to the ROM hack repo and it does not inc
 
 ## What Is Included
 
-- Overview with feature cards, version tab, concise version log, data coverage, caveats, and quick links.
+- Overview with feature cards, app-wide search, version tab, concise version log, data coverage, caveats, and quick links.
 - Pokemon profiles for Gen 1-4 plus approved later family exceptions only.
-- Move, ability, item, location, wild encounter, rare finds, trainer, boss, Champion Circuit, static/gift, dossier, and mart browsers.
+- Move, ability, item, location, wild encounter, grouped rare-find, trainer, boss, Champion Circuit, event/gift/trade, legendary event, and mart browsers.
 - Hash routes such as `#/pokemon/SPECIES_BULBASAUR` for static hosting.
 - Spoiler toggle for boss teams, Champion Circuit, statics/gifts, and dossiers.
 - Generated JSON data in `public/data/`.
@@ -51,6 +51,9 @@ The script reads:
 - `hg-engine-main/hg-engine-main/data/Evolutions.c`
 - `hg-engine-main/hg-engine-main/data/learnsets/learnsets.json`
 - `hg-engine-main/hg-engine-main/data/itemdata/itemdata.c`
+- `pokeheartgold-master/files/fielddata/script/scr_seq/*.s`
+- `pokeheartgold-master/files/a/1/1/2` NPC trade data
+- `pokeheartgold-master/src/scrcmd_fossils.c`
 - source text archives and graphics folders
 
 Generated files include `pokemon.json`, `moves.json`, `abilities.json`, `items.json`, `locations.json`, `encounters.json`, `trainers.json`, `boss_fights.json`, `statics_gifts.json`, `legendary_dossiers.json`, `marts.json`, `evolutions.json`, `version.json`, `version_log.json`, `assets_manifest.json`, and `validation_report.json`.
@@ -60,7 +63,14 @@ Generated files include `pokemon.json`, `moves.json`, `abilities.json`, `items.j
 - Land encounters are normalized to Day and Night only. If an older export still has a morning field, it is treated as Day for display.
 - Location pages split Grass/Cave encounter data into separate Day and Night tables.
 - Each Day/Night table aggregates duplicate Pokemon rows, merging the visible level range and summing chance across slots so a species appears once per table.
+- Rare Finds groups low-rate encounter slots by Pokemon, so each species appears once with all locations, methods, levels, and chances listed in the detail pane.
 - Trainer sprites are copied from the ROM project's assembled trainer graphics (`*_enc.png`) with the keyed background removed and the visible portrait cropped for avatar display.
+
+## Event Display Notes
+
+- `statics_gifts.json` combines the ROM hack static/dossier export with script-derived gifts, eggs, prizes, fossils, loans, and NPC trades from `pokeheartgold-master`.
+- NPC trade records include the requested Pokemon, nickname, OT name, held item, ability, and IV spread from `files/a/1/1/2`.
+- Legendary event prerequisites are expanded into player-facing notes where the source uses shorthand such as lake trio, creation trio, or Red defeated.
 
 ## Item Display Notes
 
@@ -109,7 +119,7 @@ http://127.0.0.1:5173/
 ## Known Limitations
 
 - Trainer map locations are not fully exported by the current ROM hack data.
-- Pre-existing gift Pokemon are not exhaustively exported.
+- Some static event mechanics still rely on script-derived source references when the main `exports/perfect_johto` JSON does not expose a structured row.
 - Item descriptions are intentionally missing unless a reliable project source was found.
 - Hidden ability data is not exported from an active source table.
 - Shiny lock status is not exported for static/dossier encounters.

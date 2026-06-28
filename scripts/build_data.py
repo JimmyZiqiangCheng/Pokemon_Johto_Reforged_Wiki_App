@@ -5,6 +5,7 @@ import datetime as dt
 import json
 import re
 import shutil
+import struct
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -1642,7 +1643,266 @@ def type_coverage_summary(party: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [{"type": item[0], "count": item[1]} for item in counts.most_common()]
 
 
-def parse_statics(exports: dict[str, Any], pokemon_by_id: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+SCRIPTED_GIFT_EVENTS: list[dict[str, Any]] = [
+    {
+        "id": "GIFT_TYROGUE_KARATE_KING",
+        "species": "SPECIES_TYROGUE",
+        "level": 10,
+        "location": "Mt. Mortar B1F",
+        "category": "Gift Pokemon",
+        "requirements": "Defeat Karate King Kiyo in Mt. Mortar.",
+        "oneTime": True,
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0098_D38R0104.s"],
+    },
+    {
+        "id": "GIFT_DRATINI_DRAGONS_DEN",
+        "species": "SPECIES_DRATINI",
+        "level": 15,
+        "location": "Dragon's Den Shrine",
+        "category": "Gift Pokemon",
+        "requirements": "Complete the Dragon's Den elder event after Clair's Gym. Dratini receives Extreme Speed if the quiz is passed cleanly.",
+        "oneTime": True,
+        "specialMoves": ["Extreme Speed, if earned from the Dragon's Den quiz"],
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0112_D44R0103.s"],
+    },
+    {
+        "id": "GIFT_BULBASAUR_OAK",
+        "species": "SPECIES_BULBASAUR",
+        "level": 5,
+        "location": "Pallet Town Oak's Lab",
+        "category": "Starter gift",
+        "requirements": "Choose Bulbasaur from Professor Oak's Kanto starter selection.",
+        "oneTime": True,
+        "choiceGroup": "Professor Oak Kanto starter choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s"],
+    },
+    {
+        "id": "GIFT_CHARMANDER_OAK",
+        "species": "SPECIES_CHARMANDER",
+        "level": 5,
+        "location": "Pallet Town Oak's Lab",
+        "category": "Starter gift",
+        "requirements": "Choose Charmander from Professor Oak's Kanto starter selection.",
+        "oneTime": True,
+        "choiceGroup": "Professor Oak Kanto starter choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s"],
+    },
+    {
+        "id": "GIFT_SQUIRTLE_OAK",
+        "species": "SPECIES_SQUIRTLE",
+        "level": 5,
+        "location": "Pallet Town Oak's Lab",
+        "category": "Starter gift",
+        "requirements": "Choose Squirtle from Professor Oak's Kanto starter selection.",
+        "oneTime": True,
+        "choiceGroup": "Professor Oak Kanto starter choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0740_T01R0301.s"],
+    },
+    {
+        "id": "GIFT_TREECKO_STEVEN",
+        "species": "SPECIES_TREECKO",
+        "level": 5,
+        "location": "Saffron Silph Co HQ",
+        "category": "Starter gift",
+        "requirements": "Choose Treecko from Steven's Hoenn starter selection at Silph Co.",
+        "oneTime": True,
+        "choiceGroup": "Steven Hoenn starter choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"],
+    },
+    {
+        "id": "GIFT_TORCHIC_STEVEN",
+        "species": "SPECIES_TORCHIC",
+        "level": 5,
+        "location": "Saffron Silph Co HQ",
+        "category": "Starter gift",
+        "requirements": "Choose Torchic from Steven's Hoenn starter selection at Silph Co.",
+        "oneTime": True,
+        "choiceGroup": "Steven Hoenn starter choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"],
+    },
+    {
+        "id": "GIFT_MUDKIP_STEVEN",
+        "species": "SPECIES_MUDKIP",
+        "level": 5,
+        "location": "Saffron Silph Co HQ",
+        "category": "Starter gift",
+        "requirements": "Choose Mudkip from Steven's Hoenn starter selection at Silph Co.",
+        "oneTime": True,
+        "choiceGroup": "Steven Hoenn starter choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0837_T11R0701.s"],
+    },
+    {
+        "id": "EGG_MAREEP_PRIMO",
+        "species": "SPECIES_MAREEP",
+        "level": None,
+        "location": "Violet Pokemon Center 1F",
+        "category": "Egg gift",
+        "requirements": "Receive the Mareep Egg from Primo in Violet Pokemon Center.",
+        "oneTime": True,
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s"],
+    },
+    {
+        "id": "EGG_WOOPER_PRIMO",
+        "species": "SPECIES_WOOPER",
+        "level": None,
+        "location": "Violet Pokemon Center 1F",
+        "category": "Egg gift",
+        "requirements": "Receive the Wooper Egg from Primo in Violet Pokemon Center.",
+        "oneTime": True,
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s"],
+    },
+    {
+        "id": "EGG_SLUGMA_PRIMO",
+        "species": "SPECIES_SLUGMA",
+        "level": None,
+        "location": "Violet Pokemon Center 1F",
+        "category": "Egg gift",
+        "requirements": "Receive the Slugma Egg from Primo in Violet Pokemon Center.",
+        "oneTime": True,
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0860_T22PC0101.s"],
+    },
+    {
+        "id": "GIFT_TENTACOOL_CIANWOOD",
+        "species": "SPECIES_TENTACOOL",
+        "level": 15,
+        "location": "Cianwood Pokemon Center 1F",
+        "category": "Gift Pokemon",
+        "requirements": "Available from the Cianwood Pokemon Center NPC when the party and PC checks show the player needs Surf access.",
+        "oneTime": False,
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0878_T24PC0101.s"],
+    },
+    {
+        "id": "GIFT_EEVEE_BILL",
+        "species": "SPECIES_EEVEE",
+        "level": 5,
+        "location": "Goldenrod Bill's House",
+        "category": "Gift Pokemon",
+        "requirements": "Receive Eevee from Bill in Goldenrod.",
+        "oneTime": True,
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0892_T25R0401.s"],
+    },
+    {
+        "id": "GIFT_DIALGA_SINJOH",
+        "species": "SPECIES_DIALGA",
+        "level": 1,
+        "location": "Sinjoh Ruins Mystri Stage",
+        "category": "Legendary gift",
+        "requirements": "Choose Dialga during the Sinjoh Ruins creation trio event.",
+        "oneTime": True,
+        "choiceGroup": "Sinjoh Ruins creation trio choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s"],
+    },
+    {
+        "id": "GIFT_PALKIA_SINJOH",
+        "species": "SPECIES_PALKIA",
+        "level": 1,
+        "location": "Sinjoh Ruins Mystri Stage",
+        "category": "Legendary gift",
+        "requirements": "Choose Palkia during the Sinjoh Ruins creation trio event.",
+        "oneTime": True,
+        "choiceGroup": "Sinjoh Ruins creation trio choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s"],
+    },
+    {
+        "id": "GIFT_GIRATINA_SINJOH",
+        "species": "SPECIES_GIRATINA",
+        "level": 1,
+        "location": "Sinjoh Ruins Mystri Stage",
+        "category": "Legendary gift",
+        "requirements": "Choose Giratina during the Sinjoh Ruins creation trio event.",
+        "oneTime": True,
+        "choiceGroup": "Sinjoh Ruins creation trio choice",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0131_D51R0201.s"],
+    },
+]
+
+GAME_CORNER_PRIZES: list[dict[str, Any]] = [
+    {
+        "id": "PRIZE_MR_MIME_CELADON",
+        "species": "SPECIES_MR_MIME",
+        "level": 15,
+        "location": "Celadon Prize Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 3333 coins at Celadon Prize Corner.",
+        "currencyCost": "3333 coins",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s"],
+    },
+    {
+        "id": "PRIZE_EEVEE_CELADON",
+        "species": "SPECIES_EEVEE",
+        "level": 15,
+        "location": "Celadon Prize Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 6666 coins at Celadon Prize Corner.",
+        "currencyCost": "6666 coins",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s"],
+    },
+    {
+        "id": "PRIZE_PORYGON_CELADON",
+        "species": "SPECIES_PORYGON",
+        "level": 15,
+        "location": "Celadon Prize Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 9999 coins at Celadon Prize Corner.",
+        "currencyCost": "9999 coins",
+        "sourceRefs": ["pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0804_T07R0501.s"],
+    },
+    {
+        "id": "PRIZE_ABRA_GOLDENROD",
+        "species": "SPECIES_ABRA",
+        "level": 15,
+        "location": "Goldenrod Game Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 200 coins at Goldenrod Game Corner.",
+        "currencyCost": "200 coins",
+        "sourceRefs": [
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s",
+        ],
+    },
+    {
+        "id": "PRIZE_EKANS_GOLDENROD",
+        "species": "SPECIES_EKANS",
+        "level": 15,
+        "location": "Goldenrod Game Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 700 coins at Goldenrod Game Corner.",
+        "currencyCost": "700 coins",
+        "sourceRefs": [
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s",
+        ],
+    },
+    {
+        "id": "PRIZE_SANDSHREW_GOLDENROD",
+        "species": "SPECIES_SANDSHREW",
+        "level": 15,
+        "location": "Goldenrod Game Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 700 coins at Goldenrod Game Corner.",
+        "currencyCost": "700 coins",
+        "sourceRefs": [
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s",
+        ],
+    },
+    {
+        "id": "PRIZE_DRATINI_GOLDENROD",
+        "species": "SPECIES_DRATINI",
+        "level": 15,
+        "location": "Goldenrod Game Corner",
+        "category": "Prize Pokemon",
+        "requirements": "Redeem 2100 coins at Goldenrod Game Corner.",
+        "currencyCost": "2100 coins",
+        "sourceRefs": [
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0906_T25R1101.s",
+            "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0910_T25SP0101.s",
+        ],
+    },
+]
+
+
+def parse_statics(exports: dict[str, Any], pokemon_by_id: dict[str, dict[str, Any]], engine_root: Path, heartgold_root: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     raw_static = exports.get("static_and_gift_pokemon", {}).get("static", [])
     pokemon_by_name = {slugify(mon["name"]): mon for mon in pokemon_by_id.values()}
     statics = []
@@ -1684,7 +1944,274 @@ def parse_statics(exports: dict[str, Any], pokemon_by_id: dict[str, dict[str, An
         statics.append(entry)
         if "dossier" in str(entry["category"]).lower():
             dossiers.append(entry)
+    for entry in scripted_event_pokemon(engine_root, heartgold_root, pokemon_by_id):
+        key = (entry["species"], entry["location"], entry["level"], entry["category"], entry.get("choiceGroup"))
+        if key in seen:
+            continue
+        seen.add(key)
+        statics.append(entry)
     return statics, dossiers
+
+
+def scripted_event_pokemon(engine_root: Path, heartgold_root: Path, pokemon_by_id: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    for event in [*SCRIPTED_GIFT_EVENTS, *GAME_CORNER_PRIZES]:
+        records.append(make_event_record(event, pokemon_by_id))
+    records.extend(parse_fossil_restoration_events(heartgold_root, pokemon_by_id))
+    records.extend(parse_npc_trade_events(engine_root, heartgold_root, pokemon_by_id))
+    return [record for record in records if record.get("species")]
+
+
+def make_event_record(event: dict[str, Any], pokemon_by_id: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    species_id = event.get("species")
+    mon = pokemon_by_id.get(species_id, {})
+    location = clean_text(event.get("location"))
+    source_refs = event.get("sourceRefs") or [event.get("sourceRef")]
+    source_refs = [ref for ref in source_refs if ref]
+    return {
+        "id": event["id"],
+        "species": species_id,
+        "pokemonName": mon.get("name") or labelize(species_id or "", "SPECIES_"),
+        "pokemonIcon": mon.get("assets", {}).get("icon"),
+        "types": mon.get("types", []),
+        "location": location,
+        "region": infer_region(location),
+        "level": event.get("level"),
+        "category": clean_text(event.get("category")) or "Gift Pokemon",
+        "requirements": clean_text(event.get("requirements")),
+        "oneTime": event.get("oneTime"),
+        "caughtFlag": event.get("caughtFlag"),
+        "retryBehavior": event.get("retryBehavior"),
+        "shinyLock": event.get("shinyLock"),
+        "heldItem": event.get("heldItem"),
+        "specialMoves": event.get("specialMoves", []),
+        "choiceGroup": event.get("choiceGroup"),
+        "currencyCost": event.get("currencyCost"),
+        "tradeRequest": event.get("tradeRequest"),
+        "nickname": event.get("nickname"),
+        "otName": event.get("otName"),
+        "ability": event.get("ability"),
+        "ivSpread": event.get("ivSpread"),
+        "sourceRef": source_refs[0] if source_refs else None,
+        "sourceRefs": source_refs,
+        "validationFlags": event.get("validationFlags", []),
+    }
+
+
+def parse_fossil_restoration_events(heartgold_root: Path, pokemon_by_id: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    text = read_text(heartgold_root / "src" / "scrcmd_fossils.c")
+    events = []
+    for item_id, species_id in re.findall(r"\{\s*(ITEM_[A-Z0-9_]+)\s*,\s*(SPECIES_[A-Z0-9_]+)\s*\}", text):
+        events.append(
+            make_event_record(
+                {
+                    "id": f"FOSSIL_{species_id.removeprefix('SPECIES_')}",
+                    "species": species_id,
+                    "level": 20,
+                    "location": "Pewter Museum of Science",
+                    "category": "Fossil restoration",
+                    "requirements": f"Restore the {labelize(item_id, 'ITEM_')} at Pewter Museum of Science.",
+                    "oneTime": False,
+                    "heldItem": item_id,
+                    "sourceRefs": [
+                        "pokeheartgold-master/src/scrcmd_fossils.c",
+                        "pokeheartgold-master/files/fielddata/script/scr_seq/scr_seq_0755_T03R0101.s",
+                    ],
+                },
+                pokemon_by_id,
+            )
+        )
+    return events
+
+
+def parse_npc_trade_events(engine_root: Path, heartgold_root: Path, pokemon_by_id: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    trade_files = narc_files(heartgold_root / "files" / "a" / "1" / "1" / "2")
+    if not trade_files:
+        return []
+    species_by_number = {number: ident for ident, number in parse_defines(engine_root / "include" / "constants" / "species.h", "SPECIES_").items()}
+    item_by_number = {number: ident for ident, number in parse_defines(heartgold_root / "include" / "constants" / "items.h", "ITEM_").items()}
+    ability_by_number = {number: ident for ident, number in parse_defines(engine_root / "include" / "constants" / "ability.h", "ABILITY_").items()}
+    ability_names_by_number = read_line_table(engine_root / "data" / "text" / "720.txt")
+    trade_labels = parse_npc_trade_labels(heartgold_root)
+    trade_names, ot_names = parse_npc_trade_names(heartgold_root)
+    standard_refs, loan_refs = parse_npc_trade_script_refs(heartgold_root)
+    active_trade_numbers = sorted(set(standard_refs) | set(loan_refs))
+    events: list[dict[str, Any]] = []
+    for trade_no in active_trade_numbers:
+        if trade_no >= len(trade_files):
+            continue
+        data = trade_files[trade_no]
+        if len(data) < 84:
+            continue
+        values = struct.unpack("<21i", data[:84])
+        species_id = species_by_number.get(values[0])
+        ask_species_id = species_by_number.get(values[19])
+        held_item_id = item_by_number.get(values[15])
+        ability_id = ability_by_number.get(values[7])
+        received = pokemon_by_id.get(species_id, {})
+        requested = pokemon_by_id.get(ask_species_id, {})
+        locations = compact_locations([ref["location"] for ref in standard_refs.get(trade_no, [])] + [ref["location"] for ref in loan_refs.get(trade_no, [])])
+        is_loan = trade_no in loan_refs and trade_no not in standard_refs
+        level = loan_refs.get(trade_no, [{}])[0].get("level") if is_loan else None
+        label = trade_labels[trade_no] if trade_no < len(trade_labels) else f"NPC_TRADE_{trade_no}"
+        nickname = trade_names.get(trade_no) or labelize(label.replace("NPC_TRADE_", ""), "")
+        ot_name = ot_names.get(trade_no)
+        request_text = requested.get("name") or labelize(ask_species_id or "", "SPECIES_")
+        received_name = received.get("name") or labelize(species_id or "", "SPECIES_")
+        if is_loan:
+            category = "Loan gift"
+            if trade_no == 7:
+                requirements = "Receive Kenya during the Route 35 delivery side quest."
+            elif trade_no == 6:
+                requirements = "Receive Shuckie from Kirk in Cianwood."
+            else:
+                requirements = f"Receive {received_name} from a loan Pokemon script."
+        else:
+            category = "NPC trade"
+            requirements = f"Trade in {request_text}; the received {received_name} matches the traded Pokemon's level."
+        source_refs = ["pokeheartgold-master/files/a/1/1/2"]
+        source_refs.extend(ref["sourceRef"] for ref in loan_refs.get(trade_no, []))
+        source_refs.extend(ref["sourceRef"] for ref in standard_refs.get(trade_no, []))
+        events.append(
+            make_event_record(
+                {
+                    "id": f"TRADE_{label.replace('NPC_TRADE_', '')}",
+                    "species": species_id,
+                    "level": level,
+                    "location": locations or "Scripted NPC trade",
+                    "category": category,
+                    "requirements": requirements,
+                    "oneTime": True,
+                    "heldItem": held_item_id,
+                    "nickname": nickname,
+                    "otName": ot_name,
+                    "ability": {
+                        "id": ability_id,
+                        "name": ability_names_by_number.get(values[7]) or labelize(ability_id or "", "ABILITY_"),
+                    } if ability_id else None,
+                    "ivSpread": {
+                        "hp": values[1],
+                        "attack": values[2],
+                        "defense": values[3],
+                        "speed": values[4],
+                        "spAttack": values[5],
+                        "spDefense": values[6],
+                    },
+                    "tradeRequest": {
+                        "species": ask_species_id,
+                        "pokemonName": request_text,
+                    } if ask_species_id and not is_loan else None,
+                    "sourceRefs": unique_values(source_refs),
+                    "validationFlags": [] if species_id in pokemon_by_id else ["NPC trade species is outside exported Pokemon scope"],
+                },
+                pokemon_by_id,
+            )
+        )
+    return events
+
+
+def narc_files(path: Path) -> list[bytes]:
+    if not path.exists():
+        return []
+    blob = path.read_bytes()
+    if blob[:4] != b"NARC" or len(blob) < 32:
+        return []
+    pos = 16
+    entries: list[tuple[int, int]] = []
+    gmif_start: int | None = None
+    for _ in range(3):
+        if pos + 8 > len(blob):
+            return []
+        magic = blob[pos : pos + 4]
+        size = struct.unpack_from("<I", blob, pos + 4)[0]
+        if magic == b"BTAF":
+            count = struct.unpack_from("<I", blob, pos + 8)[0]
+            entries = [struct.unpack_from("<II", blob, pos + 12 + index * 8) for index in range(count)]
+        elif magic == b"GMIF":
+            gmif_start = pos + 8
+        pos += size
+    if gmif_start is None:
+        return []
+    return [blob[gmif_start + start : gmif_start + end] for start, end in entries]
+
+
+def parse_npc_trade_labels(heartgold_root: Path) -> list[str]:
+    text = read_text(heartgold_root / "include" / "constants" / "npc_trade.h")
+    match = re.search(r"typedef\s+enum\s+NpcTradeNum\s*\{(?P<body>.*?)NPC_TRADE_MAX", text, re.S)
+    if not match:
+        return []
+    return [item.strip().rstrip(",") for item in match.group("body").splitlines() if item.strip().startswith("NPC_TRADE_")]
+
+
+def parse_npc_trade_names(heartgold_root: Path) -> tuple[dict[int, str], dict[int, str]]:
+    text = read_text(heartgold_root / "files" / "msgdata" / "msg" / "msg_0200.gmm")
+    rows = {
+        int(index): clean_text(value)
+        for index, value in re.findall(r'<row[^>]+index="(\d+)".*?<language name="English">([^<]*)</language>', text, re.S)
+    }
+    return {index: rows.get(index, "") for index in range(13)}, {index: rows.get(index + 13, "") for index in range(13)}
+
+
+def parse_npc_trade_script_refs(heartgold_root: Path) -> tuple[dict[int, list[dict[str, str]]], dict[int, list[dict[str, Any]]]]:
+    map_names = parse_map_names(heartgold_root)
+    standard: dict[int, list[dict[str, str]]] = defaultdict(list)
+    loan: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    script_root = heartgold_root / "files" / "fielddata" / "script" / "scr_seq"
+    for path in sorted(script_root.glob("*.s")):
+        text = read_text(path)
+        location = script_location_name(path, map_names)
+        rel_path = path.relative_to(heartgold_root).as_posix()
+        for trade_no in re.findall(r"\bLoadNPCTrade\s+(\d+)", text):
+            standard[int(trade_no)].append({"location": location, "sourceRef": f"pokeheartgold-master/{rel_path}"})
+        for trade_no, level, met_map in re.findall(r"\bGiveLoanMon\s+(\d+),\s*(\d+),\s*(\d+)", text):
+            loan[int(trade_no)].append(
+                {
+                    "location": location,
+                    "level": int(level),
+                    "metLocation": map_names.get(f"#{met_map}") or location,
+                    "sourceRef": f"pokeheartgold-master/{rel_path}",
+                }
+            )
+    return standard, loan
+
+
+def parse_map_names(heartgold_root: Path) -> dict[str, str]:
+    names: dict[str, str] = {}
+    text = read_text(heartgold_root / "include" / "constants" / "maps.h")
+    pattern = re.compile(r"^#define\s+(MAP_[A-Z0-9_]+)\s+(\d+)\s+//\s+MAP_([A-Z0-9]+)", re.MULTILINE)
+    for const, number, suffix in pattern.findall(text):
+        name = labelize(const, "MAP_").replace("Pokecenter", "Pokemon Center").replace("Onyx", "Onix")
+        names[suffix] = name
+        names[f"#{number}"] = name
+    return names
+
+
+def script_location_name(path: Path, map_names: dict[str, str]) -> str:
+    match = re.match(r"scr_seq_\d+_(.+)\.s$", path.name)
+    suffix = match.group(1) if match else path.stem
+    return map_names.get(suffix, labelize(suffix, ""))
+
+
+def compact_locations(locations: list[str]) -> str:
+    cleaned = unique_values([clean_text(location) for location in locations if clean_text(location)])
+    if len(cleaned) <= 1:
+        return cleaned[0] if cleaned else ""
+    without_state = unique_values([re.sub(r"\s+(Broken|Repaired)$", "", location).strip() for location in cleaned])
+    if len(without_state) == 1:
+        return without_state[0]
+    return " / ".join(cleaned)
+
+
+def unique_values(values: list[Any]) -> list[Any]:
+    result = []
+    seen = set()
+    for value in values:
+        key = json.dumps(value, sort_keys=True, ensure_ascii=False) if isinstance(value, (dict, list)) else value
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(value)
+    return result
 
 
 def parse_marts(exports: dict[str, Any], items_by_id: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
@@ -2131,7 +2658,7 @@ Generated JSON lives in `public/data/`. Source records are copied from the Pokem
 - `encounters.json`: flattened wild encounter slots with method, time, level range, chance, rarity, Pokemon, and location links.
 - `trainers.json`: trainer records with enriched party Pokemon, held items, game-scaled IV spreads plus the raw difficulty byte, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
 - `boss_fights.json`: boss-oriented subset linked back to trainer records with the same enriched party structure.
-- `statics_gifts.json`: static, roaming, gift, and dossier-style exported encounters.
+- `statics_gifts.json`: static, roaming, dossier-style encounters plus script-derived gifts, eggs, prizes, fossils, loans, and NPC trades.
 - `legendary_dossiers.json`: Phase 8 dossier subset with flags/requirements where exported.
 - `marts.json`: badge-gated shop exports.
 - `evolutions.json`: normalized evolution rows and validation flags.
@@ -2191,7 +2718,8 @@ def build(romhack_root: Path, validate_only: bool = False) -> dict[str, Any]:
     items_by_id = {item["id"]: item for item in items}
     encounters, locations = flatten_encounters(exports, pokemon_by_id)
     trainers, boss_fights, champion_circuit = parse_trainers(engine_root, exports, pokemon_by_id, moves_by_id, items_by_id)
-    statics_gifts, legendary_dossiers = parse_statics(exports, pokemon_by_id)
+    heartgold_root = romhack_root / "pokeheartgold-master"
+    statics_gifts, legendary_dossiers = parse_statics(exports, pokemon_by_id, engine_root, heartgold_root)
     marts = parse_marts(exports, items_by_id)
     data = {
         "pokemon": pokemon,
