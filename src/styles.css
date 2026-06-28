@@ -302,35 +302,55 @@ a:focus-visible {
 
 .feature-card {
   --feature-accent: var(--brand);
-  --feature-soft: #edf5ef;
-  --feature-title-bg: #f7fbf8;
+  --feature-body: #173e2b;
   --feature-border: #bfd7ca;
-  --feature-tag-bg: #e3f0e8;
+  --feature-shadow: rgba(22, 33, 29, 0.08);
   display: grid;
+  grid-template-rows: 116px 1fr;
   align-content: start;
   overflow: hidden;
   min-height: 178px;
   border: 1px solid var(--feature-border);
   border-radius: 8px;
-  background: var(--feature-soft);
-  box-shadow: 0 10px 24px rgba(22, 33, 29, 0.07);
+  background: #fff;
+  box-shadow: 0 10px 24px var(--feature-shadow);
 }
 
 .feature-card.is-compact {
-  min-height: 154px;
+  min-height: 188px;
 }
 
 .feature-card-title {
   display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 12px;
+  min-height: 116px;
+  padding: 16px;
+  background: var(--feature-accent);
+  color: #fff;
+}
+
+.feature-card-title > div {
+  display: grid;
   gap: 8px;
-  padding: 13px 14px 12px;
-  border-bottom: 1px solid var(--feature-border);
-  background: var(--feature-title-bg);
+  min-width: 0;
+}
+
+.feature-card-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
 }
 
 .feature-card h3 {
   margin: 0;
-  color: var(--feature-accent);
+  color: #fff;
   font-size: 18px;
   line-height: 1.22;
 }
@@ -338,7 +358,8 @@ a:focus-visible {
 .feature-card p {
   margin: 0;
   padding: 14px;
-  color: #4e5c56;
+  background: #fff;
+  color: var(--feature-body);
   line-height: 1.55;
 }
 
@@ -348,64 +369,58 @@ a:focus-visible {
 }
 
 .feature-card .tag {
-  background: var(--feature-tag-bg);
-  color: var(--feature-accent);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
 }
 
 .feature-tone-encounters {
   --feature-accent: #2d72b8;
-  --feature-soft: #edf4fb;
-  --feature-title-bg: #f7fbff;
+  --feature-body: #1b4f86;
   --feature-border: #bdd3ea;
-  --feature-tag-bg: #dfeefa;
+  --feature-shadow: rgba(45, 114, 184, 0.14);
 }
 
 .feature-tone-legendaries {
   --feature-accent: #8a4f9f;
-  --feature-soft: #f3eef8;
-  --feature-title-bg: #fbf8fd;
+  --feature-body: #643176;
   --feature-border: #d8c3e1;
-  --feature-tag-bg: #eadff0;
+  --feature-shadow: rgba(138, 79, 159, 0.14);
 }
 
 .feature-tone-trainers {
   --feature-accent: #b73735;
-  --feature-soft: #fbefee;
-  --feature-title-bg: #fff8f7;
+  --feature-body: #812827;
   --feature-border: #edc0bf;
-  --feature-tag-bg: #f7dddd;
+  --feature-shadow: rgba(183, 55, 53, 0.14);
 }
 
 .feature-tone-pokemon {
   --feature-accent: #2f6b4f;
-  --feature-soft: #edf5ef;
-  --feature-title-bg: #f7fbf8;
+  --feature-body: #214c38;
   --feature-border: #bfd7ca;
-  --feature-tag-bg: #e3f0e8;
+  --feature-shadow: rgba(47, 107, 79, 0.14);
 }
 
 .feature-tone-items {
   --feature-accent: #8a6a16;
-  --feature-soft: #f7f1de;
-  --feature-title-bg: #fffaf0;
+  --feature-body: #6d5007;
   --feature-border: #e1d195;
-  --feature-tag-bg: #f1e7bd;
+  --feature-shadow: rgba(138, 106, 22, 0.14);
 }
 
 .feature-tone-scope {
   --feature-accent: #4f6072;
-  --feature-soft: #f0f4f7;
-  --feature-title-bg: #f9fbfd;
+  --feature-body: #354657;
   --feature-border: #cbd5de;
-  --feature-tag-bg: #e3eaf0;
+  --feature-shadow: rgba(79, 96, 114, 0.14);
 }
 
 .feature-tone-postgame {
   --feature-accent: #5b6d2a;
-  --feature-soft: #f1f5e6;
-  --feature-title-bg: #fbfdf7;
+  --feature-body: #43520f;
   --feature-border: #cdd9a9;
-  --feature-tag-bg: #e4edc9;
+  --feature-shadow: rgba(91, 109, 42, 0.14);
 }
 
 .band p,

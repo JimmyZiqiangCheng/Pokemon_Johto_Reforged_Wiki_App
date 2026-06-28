@@ -283,11 +283,17 @@ function FeaturesPage({ data }: { data: ExplorerData }) {
 
 function FeatureCard({ feature, compact = false }: { feature: any; compact?: boolean }) {
   const body = compact ? feature.summary || firstFeatureSentence(feature.body) : feature.body;
+  const Icon = featureIcon(feature);
   return (
     <article className={`feature-card ${compact ? "is-compact" : ""} ${featureToneClass(feature.tag)}`}>
       <div className="feature-card-title">
-        <span className="tag">{feature.tag}</span>
-        <h3>{feature.title}</h3>
+        <span className="feature-card-icon" aria-hidden="true">
+          <Icon size={22} strokeWidth={2.35} />
+        </span>
+        <div>
+          <span className="tag">{feature.tag}</span>
+          <h3>{feature.title}</h3>
+        </div>
       </div>
       <p>{playerFacingFeatureCopy(body)}</p>
     </article>
@@ -302,6 +308,22 @@ function firstFeatureSentence(value: string): string {
 
 function featureToneClass(tag: string): string {
   return `feature-tone-${normalize(tag).replace(/[^a-z0-9]+/g, "-")}`;
+}
+
+function featureIcon(feature: any): LucideIcon {
+  const tag = normalize(feature.tag);
+  const title = normalize(feature.title);
+  if (title.includes("rare wild")) return Search;
+  if (title.includes("wild pokemon variety")) return MapIcon;
+  if (tag.includes("legendar")) return Sparkles;
+  if (title.includes("evolution")) return Zap;
+  if (tag.includes("item")) return ShoppingBag;
+  if (tag.includes("scope")) return Boxes;
+  if (title.includes("boss") || title.includes("rematch")) return BadgeInfo;
+  if (tag.includes("trainer")) return UserRound;
+  if (tag.includes("postgame")) return CircuitBoard;
+  if (tag.includes("pokemon")) return Shield;
+  return Info;
 }
 
 function playerFacingFeatureCopy(value: string): string {
