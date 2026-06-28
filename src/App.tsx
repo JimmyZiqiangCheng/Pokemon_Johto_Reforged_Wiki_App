@@ -50,7 +50,8 @@ const NAV: Array<{ section: string; label: string; icon: LucideIcon }> = [
   { section: "moves", label: "Moves", icon: Zap },
   { section: "abilities", label: "Abilities", icon: Shield },
   { section: "locations", label: "Locations", icon: MapIcon },
-  { section: "statics", label: "Events", icon: Boxes },
+  { section: "rare-finds", label: "Rare Finds", icon: Search },
+  { section: "statics", label: "Event Pokemon", icon: Boxes },
   { section: "trainers", label: "Trainers", icon: UserRound },
   { section: "items", label: "Items", icon: Package },
   { section: "marts", label: "Shops", icon: ShoppingBag },
@@ -69,9 +70,10 @@ type Indexes = {
 };
 
 function canonicalSection(section: string): string {
-  if (section === "encounters" || section === "rare-finds") return "locations";
+  if (section === "encounters") return "locations";
   if (section === "bosses" || section === "champion-circuit") return "trainers";
-  if (section === "dossiers" || section === "validation") return "features";
+  if (section === "dossiers") return "statics";
+  if (section === "validation") return "features";
   return section;
 }
 
@@ -174,9 +176,9 @@ function renderPage(data: ExplorerData, indexes: Indexes, route: Route, hideSpoi
     case "locations":
       return <LocationsPage data={data} indexes={indexes} route={route} />;
     case "encounters":
-      return <LocationsPage data={data} indexes={indexes} route={{ section: "locations", id: route.id ? indexes.encounters.get(route.id)?.locationId : undefined }} />;
+      return <EncountersPage data={data} indexes={indexes} route={route} rareOnly={false} />;
     case "rare-finds":
-      return <LocationsPage data={data} indexes={indexes} route={{ section: "locations" }} />;
+      return <EncountersPage data={data} indexes={indexes} route={route} rareOnly />;
     case "trainers":
       return <TrainersPage data={data} indexes={indexes} route={route} hideSpoilers={hideSpoilers} />;
     case "champion-circuit":
@@ -192,6 +194,7 @@ function renderPage(data: ExplorerData, indexes: Indexes, route: Route, hideSpoi
     case "bosses":
       return <TrainersPage data={data} indexes={indexes} route={{ ...route, section: "trainers" }} hideSpoilers={hideSpoilers} />;
     case "dossiers":
+      return <DossiersPage data={data} indexes={indexes} route={route} hideSpoilers={hideSpoilers} />;
     case "validation":
       return <FeaturesPage data={data} />;
     default:
@@ -1572,11 +1575,11 @@ function LocationDetail({ location, indexes }: { location: LocationView; indexes
 }
 
 function EncountersPage({ data, route, rareOnly }: { data: ExplorerData; indexes: Indexes; route: Route; rareOnly: boolean }) {
-  const items = rareOnly ? data.encounters.filter((item) => item.rarity !== "Common" || item.tags.includes("pseudo")) : data.encounters;
+  const items = rareOnly ? data.encounters.filter(isLowEncounterRate) : data.encounters;
   const filters = ["All", "Johto", "Kanto", "Very rare", "Rare", "Grass/Cave", "Surf", "Old Rod", "Good Rod", "Super Rod", "pseudo", ...TYPE_COLORS_KEYS()];
   return (
     <BrowserPage<any>
-      title={rareOnly ? "Rare Finds" : "Wild Encounters"}
+      title={rareOnly ? "Rare Encounter Pokemon" : "Wild Encounters"}
       section={rareOnly ? "rare-finds" : "encounters"}
       route={route}
       items={items}
@@ -1602,9 +1605,14 @@ function EncountersPage({ data, route, rareOnly }: { data: ExplorerData; indexes
         </CardShell>
       )}
       renderDetail={(item) => <EncounterDetail encounter={item} />}
-      maxList={650}
+      maxList={rareOnly ? items.length : 650}
     />
   );
+}
+
+function isLowEncounterRate(item: any): boolean {
+  const chance = Number(item?.chance);
+  return Number.isFinite(chance) && chance > 0 && chance < 5;
 }
 
 function EncounterDetail({ encounter }: { encounter: any }) {
@@ -1795,15 +1803,51 @@ function BossDetail({ boss, hideSpoilers, indexes, circuit = false }: { boss: an
 }
 
 function StaticsPage({ data, route, hideSpoilers }: { data: ExplorerData; indexes: Indexes; route: Route; hideSpoilers: boolean }) {
-  return <StaticBrowser title="Events" section="statics" items={data.staticsGifts} route={route} hideSpoilers={hideSpoilers} />;
+  const items = useMemo(() => combinedEventPokemon(data), [data]);
+  return <StaticBrowser title="Static / Gift / Trade / Legendary / Event Pokemon" section="statics" items={items} route={route} hideSpoilers={hideSpoilers} />;
 }
 
 function DossiersPage({ data, route, hideSpoilers }: { data: ExplorerData; indexes: Indexes; route: Route; hideSpoilers: boolean }) {
-  return <StaticBrowser title="Legendary/Mythical Dossiers" section="dossiers" items={data.legendaryDossiers} route={route} hideSpoilers={hideSpoilers} />;
+  return <StaticBrowser title="Legendary / Mythical Event Pokemon" section="dossiers" items={data.legendaryDossiers.map(enrichEventPokemon)} route={route} hideSpoilers={hideSpoilers} />;
+}
+
+function combinedEventPokemon(data: ExplorerData): any[] {
+  const records = new Map<string, any>();
+  [...data.staticsGifts, ...data.legendaryDossiers].forEach((entry) => {
+    const enriched = enrichEventPokemon(entry);
+    const existing = records.get(enriched.id);
+    if (existing) {
+      existing.validationFlags = unique([...(existing.validationFlags || []), ...(enriched.validationFlags || [])]);
+      existing.eventGroups = unique([...(existing.eventGroups || []), ...(enriched.eventGroups || [])]);
+      return;
+    }
+    records.set(enriched.id, enriched);
+  });
+  return [...records.values()];
+}
+
+function enrichEventPokemon(entry: any): any {
+  const category = readableEventCategory(entry.category);
+  return {
+    ...entry,
+    displayCategory: category,
+    eventGroups: eventPokemonGroups(entry, category),
+  };
+}
+
+function eventPokemonGroups(entry: any, readableCategory = readableEventCategory(entry.category)): string[] {
+  const text = normalize(`${entry.category || ""} ${readableCategory} ${entry.location || ""}`);
+  const groups: string[] = [];
+  if (text.includes("dossier") || text.includes("legendary") || text.includes("mythical") || text.includes("roaming")) groups.push("Legendary/Mythical");
+  if (text.includes("trade")) groups.push("Trade");
+  if (text.includes("gift")) groups.push("Gift");
+  if (text.includes("static") || text.includes("stationary") || text.includes("roaming")) groups.push("Static");
+  return unique(groups);
 }
 
 function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: string; section: string; items: any[]; route: Route; hideSpoilers: boolean }) {
-  const filters = ["All", "Johto", "Kanto", "Other", ...unique(items.map((item) => item.category))];
+  const eventGroupFilters = ["Static", "Gift", "Trade", "Legendary/Mythical"].filter((filter) => items.some((item) => asArray(item.eventGroups).includes(filter)));
+  const filters = unique(["All", "Johto", "Kanto", "Other", ...eventGroupFilters, ...items.map((item) => item.displayCategory || readableEventCategory(item.category))]);
   return (
     <BrowserPage<any>
       title={title}
@@ -1811,9 +1855,9 @@ function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: 
       route={route}
       items={items}
       getId={(item) => item.id}
-      searchKeys={["pokemonName", "species", "location", "region", "category", "requirements", "caughtFlag"]}
+      searchKeys={["pokemonName", "species", "location", "region", "category", "displayCategory", "eventGroups", "requirements", "caughtFlag"]}
       filters={filters}
-      filterFn={(item, filter) => item.region === filter || item.category === filter}
+      filterFn={(item, filter) => item.region === filter || asArray(item.eventGroups).includes(filter) || (item.displayCategory || readableEventCategory(item.category)) === filter}
       sorters={{
         Pokemon: (a, b) => a.pokemonName.localeCompare(b.pokemonName),
         Region: (a, b) => `${a.region}${a.location}`.localeCompare(`${b.region}${b.location}`),
@@ -1824,7 +1868,7 @@ function StaticBrowser({ title, section, items, route, hideSpoilers }: { title: 
           <AssetImage src={item.pokemonIcon} label={displayPokemonName(item.pokemonName, item.species)} />
           <div className="card-main">
             <strong>{displayPokemonName(item.pokemonName, item.species)}</strong>
-            <small>{readableEventCategory(item.category)} - {readableText(item.location)} - Lv. {item.level ?? "?"}</small>
+            <small>{item.displayCategory || readableEventCategory(item.category)} - {readableText(item.location)} - Lv. {item.level ?? "?"}</small>
           </div>
         </CardShell>
       )}
@@ -1843,7 +1887,7 @@ function StaticDetail({ entry }: { entry: any }) {
       <header className="profile-header compact">
         <AssetImage src={entry.pokemonIcon} label={displayPokemonName(entry.pokemonName, entry.species)} size="large" />
         <div>
-          <p className="eyebrow">{readableEventCategory(entry.category)}</p>
+          <p className="eyebrow">{entry.displayCategory || readableEventCategory(entry.category)}</p>
           <h2>{displayPokemonName(entry.pokemonName, entry.species)}</h2>
           <TypeRow types={entry.types} />
         </div>
@@ -1851,6 +1895,7 @@ function StaticDetail({ entry }: { entry: any }) {
       <div className="metric-row">
         <Metric label="Location" value={readableText(entry.location) || "Unknown"} />
         <Metric label="Region" value={entry.region} />
+        <Metric label="Kind" value={asArray(entry.eventGroups).join(" / ") || "Event"} />
         <Metric label="Level" value={compactNumber(entry.level)} />
         <Metric label="One-time" value={entry.oneTime === null ? "Unknown" : entry.oneTime ? "Yes" : "No"} />
       </div>
