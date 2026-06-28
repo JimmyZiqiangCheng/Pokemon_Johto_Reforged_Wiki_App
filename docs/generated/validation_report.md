@@ -1,6 +1,6 @@
 # Pokemon Johto Reforged Explorer Validation Report
 
-Generated: 2026-06-28T10:11:27-07:00
+Generated: 2026-06-28T10:56:20-07:00
 Status: PASS
 
 ## Counts
