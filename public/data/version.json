@@ -1,0 +1,66 @@
+{
+  "title": "Pokemon Johto Reforged",
+  "versionLabel": "Phase 9 validation/export phase",
+  "sourceLastUpdated": "2026-06-27",
+  "exportDate": "2026-06-28T08:34:43-07:00",
+  "sourceRepoPath": "C:\\Users\\jimmy\\Documents\\pokemon_romhacks\\perfect_johto",
+  "explorerBuildDate": "2026-06-28T08:34:43-07:00",
+  "latestCompletedPhase": "Phase 8 content complete; Phase 9 validation/export in progress",
+  "exportStatus": "Generated from existing JSON exports, HG-Engine source tables, and project docs.",
+  "completedSystems": [
+    "Approved Pokemon scope and QOL foundation",
+    "Pokemon modernization, no-trade evolutions, and learnset generation",
+    "Badge-gated item and customization economy",
+    "Wild encounter rebuild, rare layer, and random legendary overlay",
+    "Trainer roster, boss team, rematch, and level curve pass",
+    "Kanto postgame Dojo hub, legendary/mythical dossiers, and Champion Circuit"
+  ],
+  "knownIncompleteSystems": [
+    "Pre-existing gift Pokemon are not exhaustively exported",
+    "Trainer map locations are not fully linked in current exports",
+    "Shiny lock status is not exported for dossiers/statics",
+    "Hidden ability source table is not present in the active source include path",
+    "Item descriptions are only populated where reliable project data exists"
+  ],
+  "validationStatus": {
+    "counts": {
+      "pokemon": 545,
+      "moves": 955,
+      "abilities": 318,
+      "items": 211,
+      "trainers": 740,
+      "locations": 142,
+      "wildEncounterEntries": 3444,
+      "staticGiftEntries": 35,
+      "martShopCount": 2,
+      "bossFights": 86,
+      "legendaryDossiers": 33
+    },
+    "assetCoverage": {
+      "pokemonWithIcons": 545,
+      "pokemonWithSprites": 545,
+      "trainersWithSprites": 740,
+      "itemsWithIcons": 211,
+      "missingPokemonAssets": 0,
+      "missingTrainerAssets": 740,
+      "missingItemAssets": 0
+    },
+    "issueCounts": {
+      "bossTeamsWithMissingMovesItemsAbilities": 37,
+      "brokenLinks": 0,
+      "itemsMissingDescriptions": 204,
+      "locationsWithNoLinkedContent": 7,
+      "missingItemIcons": 0,
+      "missingPokemonIcons": 0,
+      "movesWithNoDescriptions": 33,
+      "movesWithNoParsedEffects": 676,
+      "pokemonOutsideApprovedScope": 0,
+      "pokemonWithNoAvailability": 19
+    },
+    "severityCounts": {
+      "critical": 0,
+      "warnings": 976
+    },
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Pokemon Johto Reforged Explorer",
+  "generatedAt": "2026-06-28T08:34:43-07:00",
+  "sourceRepoPath": "C:\\Users\\jimmy\\Documents\\pokemon_romhacks\\perfect_johto",
+  "files": {
+    "pokemon": "pokemon.json",
+    "moves": "moves.json",
+    "abilities": "abilities.json",
+    "items": "items.json",
+    "locations": "locations.json",
+    "encounters": "encounters.json",
+    "trainers": "trainers.json",
+    "bossFights": "boss_fights.json",
+    "championCircuit": "champion_circuit.json",
+    "staticsGifts": "statics_gifts.json",
+    "legendaryDossiers": "legendary_dossiers.json",
+    "marts": "marts.json",
+    "evolutions": "evolutions.json",
+    "features": "features.json",
+    "version": "version.json",
+    "versionLog": "version_log.json",
+    "randomLegendary": "random_legendary.json",
+    "knownRisks": "known_risks.json",
+    "assetsManifest": "assets_manifest.json",
+    "validationReport": "validation_report.json"
+  },
+  "counts": {
+    "pokemon": 545,
+    "moves": 955,
+    "abilities": 318,
+    "items": 211,
+    "trainers": 740,
+    "locations": 142,
+    "wildEncounterEntries": 3444,
+    "staticGiftEntries": 35,
+    "martShopCount": 2,
+    "bossFights": 86,
+    "legendaryDossiers": 33
+  }
+}

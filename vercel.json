@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm run data && pnpm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

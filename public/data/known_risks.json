@@ -1,0 +1,162 @@
+{
+  "build_readiness": {
+    "armips_dojo_assembly": {
+      "details": "armips is not available on PATH",
+      "status": "SKIP"
+    },
+    "baserom_nds": {
+      "exists": false,
+      "path": "pokeheartgold-master/baserom.nds"
+    },
+    "docker_route": "docker missing",
+    "make_dry_run": {
+      "details": "make is not available on PATH",
+      "status": "SKIP"
+    },
+    "rom_nds": {
+      "exists": true,
+      "path": "hg-engine-main/hg-engine-main/rom.nds"
+    },
+    "tools": {
+      "arm-none-eabi-gcc": {
+        "available": false,
+        "path": null
+      },
+      "armips": {
+        "available": false,
+        "path": null
+      },
+      "cmake": {
+        "available": false,
+        "path": null
+      },
+      "docker": {
+        "available": false,
+        "path": null
+      },
+      "git": {
+        "available": false,
+        "path": null
+      },
+      "make": {
+        "available": false,
+        "path": null
+      },
+      "python": {
+        "available": true,
+        "path": "C:\\Users\\jimmy\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+      }
+    }
+  },
+  "risks": [
+    {
+      "risk": "Full ROM build not confirmed locally",
+      "status": "blocked until build tools and legal rom.nds are present"
+    },
+    {
+      "risk": "Dojo script not assembled locally if armips is missing",
+      "status": "static script validation only"
+    },
+    {
+      "risk": "Runtime behavior not playtested",
+      "status": "use docs/PLAYTEST_CHECKLIST.md"
+    },
+    {
+      "risk": "Pokedex area data may need regeneration",
+      "status": "release blocker/TODO until engine behavior is confirmed"
+    },
+    {
+      "risk": "Latias/Latios dossier flags are separate from native roamer state",
+      "status": "manual duplicate-access edge-case testing required"
+    },
+    {
+      "risk": "Dudunsparce Three-Segment and Ursaluna Bloodmoon special form access",
+      "status": "not implemented; documented limitation"
+    },
+    {
+      "risk": "Approved regional/new form display text",
+      "status": "needs runtime and player-facing polish pass"
+    },
+    {
+      "risk": "Web-app explorer",
+      "status": "future separate project; not part of this ROM hack phase"
+    }
+  ],
+  "validation_status": [
+    {
+      "details": "data/learnsets/learnsets.json parsed",
+      "name": "Learnset JSON parse",
+      "status": "PASS"
+    },
+    {
+      "details": "completed",
+      "name": "Learnset generation",
+      "status": "PASS"
+    },
+    {
+      "details": "132/132 meaningful areas have rare placements",
+      "name": "Phase 6 encounter validation",
+      "status": "PASS"
+    },
+    {
+      "details": "48 mandatory leader/E4/champion/Red records have six Pokemon",
+      "name": "Phase 7 trainer validation",
+      "status": "PASS"
+    },
+    {
+      "details": "35 legendary/mythical entries validated",
+      "name": "Phase 8 postgame validation",
+      "status": "PASS"
+    },
+    {
+      "details": "completed",
+      "name": "C:\\Users\\jimmy\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/validate_trainers_s.py data/Trainers.c",
+      "status": "PASS"
+    },
+    {
+      "details": "46 archives passed",
+      "name": "text archive validation",
+      "status": "PASS"
+    },
+    {
+      "details": "forbidden configs disabled; gameplay placement files stay inside approved species scope",
+      "name": "Forbidden config and scope scan",
+      "status": "PASS"
+    },
+    {
+      "details": "35 Gen 1-4 legendary/mythical pool entries; aggregate 1% roll, flee move, and exclusions present",
+      "name": "Random legendary validation",
+      "status": "PASS"
+    },
+    {
+      "details": "Dojo labels, capture-only outcome checks, and late flag aliases validated",
+      "name": "Dojo script and flag validation",
+      "status": "PASS"
+    },
+    {
+      "details": "104 badge-mart entries; Max Candy/IV candy/customization gates validated",
+      "name": "Item, mart, and Max Candy validation",
+      "status": "PASS"
+    },
+    {
+      "details": "104 badge-mart item icons exist and are not placeholders",
+      "name": "Badge mart item icon validation",
+      "status": "PASS"
+    },
+    {
+      "details": "no trade-only approved-scope evolutions; evolution items and known-move methods validated; Dudunsparce Three-Segment special access is not implemented; Ursaluna Bloodmoon special access is not implemented",
+      "name": "Evolution and form validation",
+      "status": "WARN"
+    },
+    {
+      "details": "encounter tables changed; no Phase 9 regeneration hook confirmed for Pokedex area data",
+      "name": "Pokedex area data status",
+      "status": "WARN"
+    },
+    {
+      "details": "missing requirements: git, make, cmake, armips, docker, arm-none-eabi-gcc",
+      "name": "Build readiness",
+      "status": "WARN"
+    }
+  ]
+}

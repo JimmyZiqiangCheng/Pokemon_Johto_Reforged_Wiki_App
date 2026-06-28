@@ -1,0 +1,1921 @@
+[
+  {
+    "id": "BOSS_260",
+    "trainerId": "TRAINER_260",
+    "number": 260,
+    "name": "Red",
+    "className": "Pkmn Trainer Red",
+    "category": "Champion Circuit",
+    "location": null,
+    "region": "Unknown",
+    "progression": "Saffron Fighting Dojo Champion Circuit",
+    "rematch": false,
+    "leadPokemon": {
+      "species": "SPECIES_PIKACHU",
+      "pokemonName": "Pikachu",
+      "pokemonIcon": "assets/pokemon/icons/pikachu.png",
+      "types": [
+        "Electric"
+      ],
+      "level": 96,
+      "item": "ITEM_LIGHT_BALL",
+      "itemName": "Light Ball",
+      "moves": [
+        {
+          "id": "MOVE_VOLT_TACKLE",
+          "name": "Volt Tackle",
+          "type": "Electric"
+        },
+        {
+          "id": "MOVE_IRON_TAIL",
+          "name": "Iron Tail",
+          "type": "Steel"
+        },
+        {
+          "id": "MOVE_QUICK_ATTACK",
+          "name": "Quick Attack",
+          "type": "Normal"
+        },
+        {
+          "id": "MOVE_THUNDERBOLT",
+          "name": "Thunderbolt",
+          "type": "Electric"
+        }
+      ],
+      "ability": null,
+      "nature": null,
+      "evs": null,
+      "ivs": null
+    },
+    "sprite": "assets/trainers/pkmn_trainer_red.png",
+    "party": [
+      {
+        "species": "SPECIES_PIKACHU",
+        "pokemonName": "Pikachu",
+        "pokemonIcon": "assets/pokemon/icons/pikachu.png",
+        "types": [
+          "Electric"
+        ],
+        "level": 96,
+        "item": "ITEM_LIGHT_BALL",
+        "itemName": "Light Ball",
+        "moves": [
+          {
+            "id": "MOVE_VOLT_TACKLE",
+            "name": "Volt Tackle",
+            "type": "Electric"
+          },
+          {
+            "id": "MOVE_IRON_TAIL",
+            "name": "Iron Tail",
+            "type": "Steel"
+          },
+          {
+            "id": "MOVE_QUICK_ATTACK",
+            "name": "Quick Attack",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_THUNDERBOLT",
+            "name": "Thunderbolt",
+            "type": "Electric"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_LAPRAS",
+        "pokemonName": "Lapras",
+        "pokemonIcon": "assets/pokemon/icons/lapras.png",
+        "types": [
+          "Water",
+          "Ice"
+        ],
+        "level": 92,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_BLIZZARD",
+            "name": "Blizzard",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_BODY_SLAM",
+            "name": "Body Slam",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_REST",
+            "name": "Rest",
+            "type": "Psychic"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_SNORLAX",
+        "pokemonName": "Snorlax",
+        "pokemonIcon": "assets/pokemon/icons/snorlax.png",
+        "types": [
+          "Normal"
+        ],
+        "level": 93,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_BODY_SLAM",
+            "name": "Body Slam",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_CRUNCH",
+            "name": "Crunch",
+            "type": "Dark"
+          },
+          {
+            "id": "MOVE_REST",
+            "name": "Rest",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_SLEEP_TALK",
+            "name": "Sleep Talk",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_VENUSAUR",
+        "pokemonName": "Venusaur",
+        "pokemonIcon": "assets/pokemon/icons/venusaur.png",
+        "types": [
+          "Grass",
+          "Poison"
+        ],
+        "level": 94,
+        "item": "ITEM_BLACK_SLUDGE",
+        "itemName": "Black Sludge",
+        "moves": [
+          {
+            "id": "MOVE_FRENZY_PLANT",
+            "name": "Frenzy Plant",
+            "type": "Grass"
+          },
+          {
+            "id": "MOVE_SLUDGE_BOMB",
+            "name": "Sludge Bomb",
+            "type": "Poison"
+          },
+          {
+            "id": "MOVE_SLEEP_POWDER",
+            "name": "Sleep Powder",
+            "type": "Grass"
+          },
+          {
+            "id": "MOVE_GIGA_DRAIN",
+            "name": "Giga Drain",
+            "type": "Grass"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_CHARIZARD",
+        "pokemonName": "Charizard",
+        "pokemonIcon": "assets/pokemon/icons/charizard.png",
+        "types": [
+          "Fire",
+          "Dragon"
+        ],
+        "level": 95,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_BLAST_BURN",
+            "name": "Blast Burn",
+            "type": "Fire"
+          },
+          {
+            "id": "MOVE_AIR_SLASH",
+            "name": "Air Slash",
+            "type": "Flying"
+          },
+          {
+            "id": "MOVE_DRAGON_CLAW",
+            "name": "Dragon Claw",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_FLAMETHROWER",
+            "name": "Flamethrower",
+            "type": "Fire"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_BLASTOISE",
+        "pokemonName": "Blastoise",
+        "pokemonIcon": "assets/pokemon/icons/blastoise.png",
+        "types": [
+          "Water",
+          "Steel"
+        ],
+        "level": 95,
+        "item": "ITEM_LIFE_ORB",
+        "itemName": "Life Orb",
+        "moves": [
+          {
+            "id": "MOVE_HYDRO_CANNON",
+            "name": "Hydro Cannon",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_FOCUS_BLAST",
+            "name": "Focus Blast",
+            "type": "Fighting"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      }
+    ],
+    "partySize": 6,
+    "minLevel": 92,
+    "maxLevel": 96,
+    "typeCoverage": [
+      {
+        "type": "Water",
+        "count": 2
+      },
+      {
+        "type": "Electric",
+        "count": 1
+      },
+      {
+        "type": "Ice",
+        "count": 1
+      },
+      {
+        "type": "Normal",
+        "count": 1
+      },
+      {
+        "type": "Grass",
+        "count": 1
+      },
+      {
+        "type": "Poison",
+        "count": 1
+      },
+      {
+        "type": "Fire",
+        "count": 1
+      },
+      {
+        "type": "Dragon",
+        "count": 1
+      },
+      {
+        "type": "Steel",
+        "count": 1
+      }
+    ],
+    "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",
+    "notes": [],
+    "validationFlags": []
+  },
+  {
+    "id": "BOSS_727",
+    "trainerId": "TRAINER_727",
+    "number": 727,
+    "name": "Blue",
+    "className": "Leader Blue",
+    "category": "Champion Circuit",
+    "location": null,
+    "region": "Unknown",
+    "progression": "Saffron Fighting Dojo Champion Circuit",
+    "rematch": false,
+    "leadPokemon": {
+      "species": "SPECIES_EXEGGUTOR",
+      "pokemonName": "Exeggutor",
+      "pokemonIcon": "assets/pokemon/icons/exeggutor.png",
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "level": 92,
+      "item": "ITEM_LIFE_ORB",
+      "itemName": "Life Orb",
+      "moves": [
+        {
+          "id": "MOVE_LEAF_STORM",
+          "name": "Leaf Storm",
+          "type": "Grass"
+        },
+        {
+          "id": "MOVE_PSYCHIC",
+          "name": "Psychic",
+          "type": "Psychic"
+        },
+        {
+          "id": "MOVE_EXPLOSION",
+          "name": "Explosion",
+          "type": "Normal"
+        },
+        {
+          "id": "MOVE_TRICK_ROOM",
+          "name": "Trick Room",
+          "type": "Psychic"
+        }
+      ],
+      "ability": null,
+      "nature": null,
+      "evs": null,
+      "ivs": null
+    },
+    "sprite": "assets/trainers/leader_blue.png",
+    "party": [
+      {
+        "species": "SPECIES_EXEGGUTOR",
+        "pokemonName": "Exeggutor",
+        "pokemonIcon": "assets/pokemon/icons/exeggutor.png",
+        "types": [
+          "Grass",
+          "Psychic"
+        ],
+        "level": 92,
+        "item": "ITEM_LIFE_ORB",
+        "itemName": "Life Orb",
+        "moves": [
+          {
+            "id": "MOVE_LEAF_STORM",
+            "name": "Leaf Storm",
+            "type": "Grass"
+          },
+          {
+            "id": "MOVE_PSYCHIC",
+            "name": "Psychic",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_EXPLOSION",
+            "name": "Explosion",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_TRICK_ROOM",
+            "name": "Trick Room",
+            "type": "Psychic"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_MACHAMP",
+        "pokemonName": "Machamp",
+        "pokemonIcon": "assets/pokemon/icons/machamp.png",
+        "types": [
+          "Fighting"
+        ],
+        "level": 92,
+        "item": "ITEM_IRON_BALL",
+        "itemName": "Iron Ball",
+        "moves": [
+          {
+            "id": "MOVE_DYNAMIC_PUNCH",
+            "name": "Dynamic Punch",
+            "type": "Fighting"
+          },
+          {
+            "id": "MOVE_STONE_EDGE",
+            "name": "Stone Edge",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_FLING",
+            "name": "Fling",
+            "type": "Dark"
+          },
+          {
+            "id": "MOVE_ATTRACT",
+            "name": "Attract",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_RHYPERIOR",
+        "pokemonName": "Rhyperior",
+        "pokemonIcon": "assets/pokemon/icons/rhyperior.png",
+        "types": [
+          "Ground",
+          "Rock"
+        ],
+        "level": 93,
+        "item": "ITEM_ASSAULT_VEST",
+        "itemName": "Assault Vest",
+        "moves": [
+          {
+            "id": "MOVE_MEGAHORN",
+            "name": "Megahorn",
+            "type": "Bug"
+          },
+          {
+            "id": "MOVE_STONE_EDGE",
+            "name": "Stone Edge",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_THUNDER_FANG",
+            "name": "Thunder Fang",
+            "type": "Electric"
+          },
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_ARCANINE",
+        "pokemonName": "Arcanine",
+        "pokemonIcon": "assets/pokemon/icons/arcanine.png",
+        "types": [
+          "Fire"
+        ],
+        "level": 94,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_FLARE_BLITZ",
+            "name": "Flare Blitz",
+            "type": "Fire"
+          },
+          {
+            "id": "MOVE_EXTREME_SPEED",
+            "name": "Extreme Speed",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_THUNDER_FANG",
+            "name": "Thunder Fang",
+            "type": "Electric"
+          },
+          {
+            "id": "MOVE_CRUNCH",
+            "name": "Crunch",
+            "type": "Dark"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_TYRANITAR",
+        "pokemonName": "Tyranitar",
+        "pokemonIcon": "assets/pokemon/icons/tyranitar.png",
+        "types": [
+          "Rock",
+          "Dark"
+        ],
+        "level": 95,
+        "item": "ITEM_CHOICE_BAND",
+        "itemName": "Choice Band",
+        "moves": [
+          {
+            "id": "MOVE_LOW_KICK",
+            "name": "Low Kick",
+            "type": "Fighting"
+          },
+          {
+            "id": "MOVE_FIRE_FANG",
+            "name": "Fire Fang",
+            "type": "Fire"
+          },
+          {
+            "id": "MOVE_ROCK_SLIDE",
+            "name": "Rock Slide",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_PIDGEOT",
+        "pokemonName": "Pidgeot",
+        "pokemonIcon": "assets/pokemon/icons/pidgeot.png",
+        "types": [
+          "Normal",
+          "Flying"
+        ],
+        "level": 96,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_RETURN",
+            "name": "Return",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_DOUBLE_TEAM",
+            "name": "Double Team",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_AIR_SLASH",
+            "name": "Air Slash",
+            "type": "Flying"
+          },
+          {
+            "id": "MOVE_STEEL_WING",
+            "name": "Steel Wing",
+            "type": "Steel"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      }
+    ],
+    "partySize": 6,
+    "minLevel": 92,
+    "maxLevel": 96,
+    "typeCoverage": [
+      {
+        "type": "Rock",
+        "count": 2
+      },
+      {
+        "type": "Grass",
+        "count": 1
+      },
+      {
+        "type": "Psychic",
+        "count": 1
+      },
+      {
+        "type": "Fighting",
+        "count": 1
+      },
+      {
+        "type": "Ground",
+        "count": 1
+      },
+      {
+        "type": "Fire",
+        "count": 1
+      },
+      {
+        "type": "Dark",
+        "count": 1
+      },
+      {
+        "type": "Normal",
+        "count": 1
+      },
+      {
+        "type": "Flying",
+        "count": 1
+      }
+    ],
+    "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",
+    "notes": [],
+    "validationFlags": []
+  },
+  {
+    "id": "BOSS_733",
+    "trainerId": "TRAINER_733",
+    "number": 733,
+    "name": "Lance",
+    "className": "Champion",
+    "category": "Champion Circuit",
+    "location": null,
+    "region": "Unknown",
+    "progression": "Saffron Fighting Dojo Champion Circuit",
+    "rematch": false,
+    "leadPokemon": {
+      "species": "SPECIES_GYARADOS",
+      "pokemonName": "Gyarados",
+      "pokemonIcon": "assets/pokemon/icons/gyarados.png",
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "level": 92,
+      "item": "ITEM_HEAVY_DUTY_BOOTS",
+      "itemName": "Heavy-Duty Boots",
+      "moves": [
+        {
+          "id": "MOVE_WATERFALL",
+          "name": "Waterfall",
+          "type": "Water"
+        },
+        {
+          "id": "MOVE_ICE_FANG",
+          "name": "Ice Fang",
+          "type": "Ice"
+        },
+        {
+          "id": "MOVE_DRAGON_DANCE",
+          "name": "Dragon Dance",
+          "type": "Dragon"
+        },
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "Dark"
+        }
+      ],
+      "ability": null,
+      "nature": null,
+      "evs": null,
+      "ivs": null
+    },
+    "sprite": "assets/trainers/champion.png",
+    "party": [
+      {
+        "species": "SPECIES_GYARADOS",
+        "pokemonName": "Gyarados",
+        "pokemonIcon": "assets/pokemon/icons/gyarados.png",
+        "types": [
+          "Water",
+          "Flying"
+        ],
+        "level": 92,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_WATERFALL",
+            "name": "Waterfall",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ICE_FANG",
+            "name": "Ice Fang",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_DRAGON_DANCE",
+            "name": "Dragon Dance",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_CRUNCH",
+            "name": "Crunch",
+            "type": "Dark"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_AERODACTYL",
+        "pokemonName": "Aerodactyl",
+        "pokemonIcon": "assets/pokemon/icons/aerodactyl.png",
+        "types": [
+          "Rock",
+          "Flying"
+        ],
+        "level": 92,
+        "item": "ITEM_FOCUS_SASH",
+        "itemName": "Focus Sash",
+        "moves": [
+          {
+            "id": "MOVE_AERIAL_ACE",
+            "name": "Aerial Ace",
+            "type": "Flying"
+          },
+          {
+            "id": "MOVE_ROCK_SLIDE",
+            "name": "Rock Slide",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_CRUNCH",
+            "name": "Crunch",
+            "type": "Dark"
+          },
+          {
+            "id": "MOVE_THUNDER_FANG",
+            "name": "Thunder Fang",
+            "type": "Electric"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_KINGDRA",
+        "pokemonName": "Kingdra",
+        "pokemonIcon": "assets/pokemon/icons/kingdra.png",
+        "types": [
+          "Water",
+          "Dragon"
+        ],
+        "level": 93,
+        "item": "ITEM_LIFE_ORB",
+        "itemName": "Life Orb",
+        "moves": [
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_DRAGON_PULSE",
+            "name": "Dragon Pulse",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_YAWN",
+            "name": "Yawn",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_CHARIZARD",
+        "pokemonName": "Charizard",
+        "pokemonIcon": "assets/pokemon/icons/charizard.png",
+        "types": [
+          "Fire",
+          "Dragon"
+        ],
+        "level": 94,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_FLAMETHROWER",
+            "name": "Flamethrower",
+            "type": "Fire"
+          },
+          {
+            "id": "MOVE_AIR_SLASH",
+            "name": "Air Slash",
+            "type": "Flying"
+          },
+          {
+            "id": "MOVE_DRAGON_CLAW",
+            "name": "Dragon Claw",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_HYPER_BEAM",
+            "name": "Hyper Beam",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_AGGRON",
+        "pokemonName": "Aggron",
+        "pokemonIcon": "assets/pokemon/icons/aggron.png",
+        "types": [
+          "Steel",
+          "Rock"
+        ],
+        "level": 95,
+        "item": "ITEM_CHOICE_BAND",
+        "itemName": "Choice Band",
+        "moves": [
+          {
+            "id": "MOVE_IRON_HEAD",
+            "name": "Iron Head",
+            "type": "Steel"
+          },
+          {
+            "id": "MOVE_DRAGON_CLAW",
+            "name": "Dragon Claw",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          },
+          {
+            "id": "MOVE_STONE_EDGE",
+            "name": "Stone Edge",
+            "type": "Rock"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_DRAGONITE",
+        "pokemonName": "Dragonite",
+        "pokemonIcon": "assets/pokemon/icons/dragonite.png",
+        "types": [
+          "Dragon",
+          "Flying"
+        ],
+        "level": 96,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_FIRE_PUNCH",
+            "name": "Fire Punch",
+            "type": "Fire"
+          },
+          {
+            "id": "MOVE_SAFEGUARD",
+            "name": "Safeguard",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_DRACO_METEOR",
+            "name": "Draco Meteor",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_HYPER_BEAM",
+            "name": "Hyper Beam",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      }
+    ],
+    "partySize": 6,
+    "minLevel": 92,
+    "maxLevel": 96,
+    "typeCoverage": [
+      {
+        "type": "Flying",
+        "count": 3
+      },
+      {
+        "type": "Dragon",
+        "count": 3
+      },
+      {
+        "type": "Water",
+        "count": 2
+      },
+      {
+        "type": "Rock",
+        "count": 2
+      },
+      {
+        "type": "Fire",
+        "count": 1
+      },
+      {
+        "type": "Steel",
+        "count": 1
+      }
+    ],
+    "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",
+    "notes": [],
+    "validationFlags": []
+  },
+  {
+    "id": "BOSS_738",
+    "trainerId": "TRAINER_738",
+    "number": 738,
+    "name": "Steven",
+    "className": "Champion",
+    "category": "Champion Circuit",
+    "location": null,
+    "region": "Unknown",
+    "progression": "Saffron Fighting Dojo Champion Circuit",
+    "rematch": false,
+    "leadPokemon": {
+      "species": "SPECIES_SKARMORY",
+      "pokemonName": "Skarmory",
+      "pokemonIcon": "assets/pokemon/icons/skarmory.png",
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "level": 92,
+      "item": "ITEM_ROCKY_HELMET",
+      "itemName": "Rocky Helmet",
+      "moves": [
+        {
+          "id": "MOVE_STEEL_WING",
+          "name": "Steel Wing",
+          "type": "Steel"
+        },
+        {
+          "id": "MOVE_AIR_SLASH",
+          "name": "Air Slash",
+          "type": "Flying"
+        },
+        {
+          "id": "MOVE_NIGHT_SLASH",
+          "name": "Night Slash",
+          "type": "Dark"
+        },
+        {
+          "id": "MOVE_SPIKES",
+          "name": "Spikes",
+          "type": "Ground"
+        }
+      ],
+      "ability": null,
+      "nature": null,
+      "evs": null,
+      "ivs": null
+    },
+    "sprite": "assets/trainers/champion.png",
+    "party": [
+      {
+        "species": "SPECIES_SKARMORY",
+        "pokemonName": "Skarmory",
+        "pokemonIcon": "assets/pokemon/icons/skarmory.png",
+        "types": [
+          "Steel",
+          "Flying"
+        ],
+        "level": 92,
+        "item": "ITEM_ROCKY_HELMET",
+        "itemName": "Rocky Helmet",
+        "moves": [
+          {
+            "id": "MOVE_STEEL_WING",
+            "name": "Steel Wing",
+            "type": "Steel"
+          },
+          {
+            "id": "MOVE_AIR_SLASH",
+            "name": "Air Slash",
+            "type": "Flying"
+          },
+          {
+            "id": "MOVE_NIGHT_SLASH",
+            "name": "Night Slash",
+            "type": "Dark"
+          },
+          {
+            "id": "MOVE_SPIKES",
+            "name": "Spikes",
+            "type": "Ground"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_CLAYDOL",
+        "pokemonName": "Claydol",
+        "pokemonIcon": "assets/pokemon/icons/claydol.png",
+        "types": [
+          "Ground",
+          "Psychic"
+        ],
+        "level": 92,
+        "item": "ITEM_LIGHT_CLAY",
+        "itemName": "Light Clay",
+        "moves": [
+          {
+            "id": "MOVE_EARTH_POWER",
+            "name": "Earth Power",
+            "type": "Ground"
+          },
+          {
+            "id": "MOVE_PSYCHIC",
+            "name": "Psychic",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_ANCIENT_POWER",
+            "name": "Ancient Power",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_LIGHT_SCREEN",
+            "name": "Light Screen",
+            "type": "Psychic"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_CRADILY",
+        "pokemonName": "Cradily",
+        "pokemonIcon": "assets/pokemon/icons/cradily.png",
+        "types": [
+          "Rock",
+          "Grass"
+        ],
+        "level": 93,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_ENERGY_BALL",
+            "name": "Energy Ball",
+            "type": "Grass"
+          },
+          {
+            "id": "MOVE_STONE_EDGE",
+            "name": "Stone Edge",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_CONFUSE_RAY",
+            "name": "Confuse Ray",
+            "type": "Ghost"
+          },
+          {
+            "id": "MOVE_RECOVER",
+            "name": "Recover",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_ARMALDO",
+        "pokemonName": "Armaldo",
+        "pokemonIcon": "assets/pokemon/icons/armaldo.png",
+        "types": [
+          "Rock",
+          "Bug"
+        ],
+        "level": 94,
+        "item": "ITEM_LIFE_ORB",
+        "itemName": "Life Orb",
+        "moves": [
+          {
+            "id": "MOVE_X_SCISSOR",
+            "name": "X-Scissor",
+            "type": "Bug"
+          },
+          {
+            "id": "MOVE_ROCK_SLIDE",
+            "name": "Rock Slide",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_AQUA_TAIL",
+            "name": "Aqua Tail",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_CRUSH_CLAW",
+            "name": "Crush Claw",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_AGGRON",
+        "pokemonName": "Aggron",
+        "pokemonIcon": "assets/pokemon/icons/aggron.png",
+        "types": [
+          "Steel",
+          "Rock"
+        ],
+        "level": 95,
+        "item": "ITEM_CHOICE_BAND",
+        "itemName": "Choice Band",
+        "moves": [
+          {
+            "id": "MOVE_IRON_HEAD",
+            "name": "Iron Head",
+            "type": "Steel"
+          },
+          {
+            "id": "MOVE_STONE_EDGE",
+            "name": "Stone Edge",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          },
+          {
+            "id": "MOVE_DRAGON_CLAW",
+            "name": "Dragon Claw",
+            "type": "Dragon"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_METAGROSS",
+        "pokemonName": "Metagross",
+        "pokemonIcon": "assets/pokemon/icons/metagross.png",
+        "types": [
+          "Steel",
+          "Psychic"
+        ],
+        "level": 96,
+        "item": "ITEM_ASSAULT_VEST",
+        "itemName": "Assault Vest",
+        "moves": [
+          {
+            "id": "MOVE_METEOR_MASH",
+            "name": "Meteor Mash",
+            "type": "Steel"
+          },
+          {
+            "id": "MOVE_ZEN_HEADBUTT",
+            "name": "Zen Headbutt",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          },
+          {
+            "id": "MOVE_BULLET_PUNCH",
+            "name": "Bullet Punch",
+            "type": "Steel"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      }
+    ],
+    "partySize": 6,
+    "minLevel": 92,
+    "maxLevel": 96,
+    "typeCoverage": [
+      {
+        "type": "Steel",
+        "count": 3
+      },
+      {
+        "type": "Rock",
+        "count": 3
+      },
+      {
+        "type": "Psychic",
+        "count": 2
+      },
+      {
+        "type": "Flying",
+        "count": 1
+      },
+      {
+        "type": "Ground",
+        "count": 1
+      },
+      {
+        "type": "Grass",
+        "count": 1
+      },
+      {
+        "type": "Bug",
+        "count": 1
+      }
+    ],
+    "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",
+    "notes": [],
+    "validationFlags": []
+  },
+  {
+    "id": "BOSS_739",
+    "trainerId": "TRAINER_739",
+    "number": 739,
+    "name": "Wallace",
+    "className": "Champion",
+    "category": "Champion Circuit",
+    "location": null,
+    "region": "Unknown",
+    "progression": "Saffron Fighting Dojo Champion Circuit",
+    "rematch": false,
+    "leadPokemon": {
+      "species": "SPECIES_WAILORD",
+      "pokemonName": "Wailord",
+      "pokemonIcon": "assets/pokemon/icons/wailord.png",
+      "types": [
+        "Water"
+      ],
+      "level": 92,
+      "item": "ITEM_LEFTOVERS",
+      "itemName": "Leftovers",
+      "moves": [
+        {
+          "id": "MOVE_WATER_SPOUT",
+          "name": "Water Spout",
+          "type": "Water"
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "Ice"
+        },
+        {
+          "id": "MOVE_AMNESIA",
+          "name": "Amnesia",
+          "type": "Psychic"
+        },
+        {
+          "id": "MOVE_REST",
+          "name": "Rest",
+          "type": "Psychic"
+        }
+      ],
+      "ability": null,
+      "nature": null,
+      "evs": null,
+      "ivs": null
+    },
+    "sprite": "assets/trainers/champion.png",
+    "party": [
+      {
+        "species": "SPECIES_WAILORD",
+        "pokemonName": "Wailord",
+        "pokemonIcon": "assets/pokemon/icons/wailord.png",
+        "types": [
+          "Water"
+        ],
+        "level": 92,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_WATER_SPOUT",
+            "name": "Water Spout",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_AMNESIA",
+            "name": "Amnesia",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_REST",
+            "name": "Rest",
+            "type": "Psychic"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_TENTACRUEL",
+        "pokemonName": "Tentacruel",
+        "pokemonIcon": "assets/pokemon/icons/tentacruel.png",
+        "types": [
+          "Water",
+          "Poison"
+        ],
+        "level": 92,
+        "item": "ITEM_BLACK_SLUDGE",
+        "itemName": "Black Sludge",
+        "moves": [
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_SLUDGE_BOMB",
+            "name": "Sludge Bomb",
+            "type": "Poison"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_TOXIC_SPIKES",
+            "name": "Toxic Spikes",
+            "type": "Poison"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_GYARADOS",
+        "pokemonName": "Gyarados",
+        "pokemonIcon": "assets/pokemon/icons/gyarados.png",
+        "types": [
+          "Water",
+          "Flying"
+        ],
+        "level": 93,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_WATERFALL",
+            "name": "Waterfall",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ICE_FANG",
+            "name": "Ice Fang",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_DRAGON_DANCE",
+            "name": "Dragon Dance",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_CRUNCH",
+            "name": "Crunch",
+            "type": "Dark"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_LUDICOLO",
+        "pokemonName": "Ludicolo",
+        "pokemonIcon": "assets/pokemon/icons/ludicolo.png",
+        "types": [
+          "Water",
+          "Grass"
+        ],
+        "level": 94,
+        "item": "ITEM_LIFE_ORB",
+        "itemName": "Life Orb",
+        "moves": [
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ENERGY_BALL",
+            "name": "Energy Ball",
+            "type": "Grass"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_RAIN_DANCE",
+            "name": "Rain Dance",
+            "type": "Water"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_WHISCASH",
+        "pokemonName": "Whiscash",
+        "pokemonIcon": "assets/pokemon/icons/whiscash.png",
+        "types": [
+          "Water",
+          "Ground"
+        ],
+        "level": 95,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          },
+          {
+            "id": "MOVE_AQUA_TAIL",
+            "name": "Aqua Tail",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ZEN_HEADBUTT",
+            "name": "Zen Headbutt",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_REST",
+            "name": "Rest",
+            "type": "Psychic"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_MILOTIC",
+        "pokemonName": "Milotic",
+        "pokemonIcon": "assets/pokemon/icons/milotic.png",
+        "types": [
+          "Water",
+          "Fairy"
+        ],
+        "level": 96,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_AQUA_RING",
+            "name": "Aqua Ring",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_RECOVER",
+            "name": "Recover",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      }
+    ],
+    "partySize": 6,
+    "minLevel": 92,
+    "maxLevel": 96,
+    "typeCoverage": [
+      {
+        "type": "Water",
+        "count": 6
+      },
+      {
+        "type": "Poison",
+        "count": 1
+      },
+      {
+        "type": "Flying",
+        "count": 1
+      },
+      {
+        "type": "Grass",
+        "count": 1
+      },
+      {
+        "type": "Ground",
+        "count": 1
+      },
+      {
+        "type": "Fairy",
+        "count": 1
+      }
+    ],
+    "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",
+    "notes": [],
+    "validationFlags": []
+  },
+  {
+    "id": "BOSS_740",
+    "trainerId": "TRAINER_740",
+    "number": 740,
+    "name": "Cynthia",
+    "className": "Champion",
+    "category": "Champion Circuit",
+    "location": null,
+    "region": "Unknown",
+    "progression": "Saffron Fighting Dojo Champion Circuit",
+    "rematch": false,
+    "leadPokemon": {
+      "species": "SPECIES_SPIRITOMB",
+      "pokemonName": "Spiritomb",
+      "pokemonIcon": "assets/pokemon/icons/spiritomb.png",
+      "types": [
+        "Ghost",
+        "Dark"
+      ],
+      "level": 92,
+      "item": "ITEM_LEFTOVERS",
+      "itemName": "Leftovers",
+      "moves": [
+        {
+          "id": "MOVE_DARK_PULSE",
+          "name": "Dark Pulse",
+          "type": "Dark"
+        },
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "Ghost"
+        },
+        {
+          "id": "MOVE_WILL_O_WISP",
+          "name": "Will-O-Wisp",
+          "type": "Fire"
+        },
+        {
+          "id": "MOVE_SILVER_WIND",
+          "name": "Silver Wind",
+          "type": "Bug"
+        }
+      ],
+      "ability": null,
+      "nature": null,
+      "evs": null,
+      "ivs": null
+    },
+    "sprite": "assets/trainers/champion.png",
+    "party": [
+      {
+        "species": "SPECIES_SPIRITOMB",
+        "pokemonName": "Spiritomb",
+        "pokemonIcon": "assets/pokemon/icons/spiritomb.png",
+        "types": [
+          "Ghost",
+          "Dark"
+        ],
+        "level": 92,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_DARK_PULSE",
+            "name": "Dark Pulse",
+            "type": "Dark"
+          },
+          {
+            "id": "MOVE_SHADOW_BALL",
+            "name": "Shadow Ball",
+            "type": "Ghost"
+          },
+          {
+            "id": "MOVE_WILL_O_WISP",
+            "name": "Will-O-Wisp",
+            "type": "Fire"
+          },
+          {
+            "id": "MOVE_SILVER_WIND",
+            "name": "Silver Wind",
+            "type": "Bug"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_ROSERADE",
+        "pokemonName": "Roserade",
+        "pokemonIcon": "assets/pokemon/icons/roserade.png",
+        "types": [
+          "Grass",
+          "Poison"
+        ],
+        "level": 92,
+        "item": "ITEM_BLACK_SLUDGE",
+        "itemName": "Black Sludge",
+        "moves": [
+          {
+            "id": "MOVE_ENERGY_BALL",
+            "name": "Energy Ball",
+            "type": "Grass"
+          },
+          {
+            "id": "MOVE_SLUDGE_BOMB",
+            "name": "Sludge Bomb",
+            "type": "Poison"
+          },
+          {
+            "id": "MOVE_SHADOW_BALL",
+            "name": "Shadow Ball",
+            "type": "Ghost"
+          },
+          {
+            "id": "MOVE_STUN_SPORE",
+            "name": "Stun Spore",
+            "type": "Grass"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_TOGEKISS",
+        "pokemonName": "Togekiss",
+        "pokemonIcon": "assets/pokemon/icons/togekiss.png",
+        "types": [
+          "Fairy",
+          "Flying"
+        ],
+        "level": 93,
+        "item": "ITEM_HEAVY_DUTY_BOOTS",
+        "itemName": "Heavy-Duty Boots",
+        "moves": [
+          {
+            "id": "MOVE_AIR_SLASH",
+            "name": "Air Slash",
+            "type": "Flying"
+          },
+          {
+            "id": "MOVE_AURA_SPHERE",
+            "name": "Aura Sphere",
+            "type": "Fighting"
+          },
+          {
+            "id": "MOVE_EXTREME_SPEED",
+            "name": "Extreme Speed",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_ROOST",
+            "name": "Roost",
+            "type": "Flying"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_LUCARIO",
+        "pokemonName": "Lucario",
+        "pokemonIcon": "assets/pokemon/icons/lucario.png",
+        "types": [
+          "Fighting",
+          "Steel"
+        ],
+        "level": 94,
+        "item": "ITEM_LIFE_ORB",
+        "itemName": "Life Orb",
+        "moves": [
+          {
+            "id": "MOVE_AURA_SPHERE",
+            "name": "Aura Sphere",
+            "type": "Fighting"
+          },
+          {
+            "id": "MOVE_DRAGON_PULSE",
+            "name": "Dragon Pulse",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_EXTREME_SPEED",
+            "name": "Extreme Speed",
+            "type": "Normal"
+          },
+          {
+            "id": "MOVE_DARK_PULSE",
+            "name": "Dark Pulse",
+            "type": "Dark"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_MILOTIC",
+        "pokemonName": "Milotic",
+        "pokemonIcon": "assets/pokemon/icons/milotic.png",
+        "types": [
+          "Water",
+          "Fairy"
+        ],
+        "level": 95,
+        "item": "ITEM_LEFTOVERS",
+        "itemName": "Leftovers",
+        "moves": [
+          {
+            "id": "MOVE_SURF",
+            "name": "Surf",
+            "type": "Water"
+          },
+          {
+            "id": "MOVE_ICE_BEAM",
+            "name": "Ice Beam",
+            "type": "Ice"
+          },
+          {
+            "id": "MOVE_MIRROR_COAT",
+            "name": "Mirror Coat",
+            "type": "Psychic"
+          },
+          {
+            "id": "MOVE_RECOVER",
+            "name": "Recover",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      },
+      {
+        "species": "SPECIES_GARCHOMP",
+        "pokemonName": "Garchomp",
+        "pokemonIcon": "assets/pokemon/icons/garchomp.png",
+        "types": [
+          "Dragon",
+          "Ground"
+        ],
+        "level": 96,
+        "item": "ITEM_CLEAR_AMULET",
+        "itemName": "Clear Amulet",
+        "moves": [
+          {
+            "id": "MOVE_DRAGON_RUSH",
+            "name": "Dragon Rush",
+            "type": "Dragon"
+          },
+          {
+            "id": "MOVE_EARTHQUAKE",
+            "name": "Earthquake",
+            "type": "Ground"
+          },
+          {
+            "id": "MOVE_STONE_EDGE",
+            "name": "Stone Edge",
+            "type": "Rock"
+          },
+          {
+            "id": "MOVE_SWORDS_DANCE",
+            "name": "Swords Dance",
+            "type": "Normal"
+          }
+        ],
+        "ability": null,
+        "nature": null,
+        "evs": null,
+        "ivs": null
+      }
+    ],
+    "partySize": 6,
+    "minLevel": 92,
+    "maxLevel": 96,
+    "typeCoverage": [
+      {
+        "type": "Fairy",
+        "count": 2
+      },
+      {
+        "type": "Ghost",
+        "count": 1
+      },
+      {
+        "type": "Dark",
+        "count": 1
+      },
+      {
+        "type": "Grass",
+        "count": 1
+      },
+      {
+        "type": "Poison",
+        "count": 1
+      },
+      {
+        "type": "Flying",
+        "count": 1
+      },
+      {
+        "type": "Fighting",
+        "count": 1
+      },
+      {
+        "type": "Steel",
+        "count": 1
+      },
+      {
+        "type": "Water",
+        "count": 1
+      },
+      {
+        "type": "Dragon",
+        "count": 1
+      },
+      {
+        "type": "Ground",
+        "count": 1
+      }
+    ],
+    "weaknessSummary": "Not computed: type chart is intentionally not part of this explorer.",
+    "notes": [],
+    "validationFlags": []
+  }
+]

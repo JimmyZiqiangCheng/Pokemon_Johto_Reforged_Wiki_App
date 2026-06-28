@@ -1,0 +1,90 @@
+[
+  {
+    "phase": "Phase 3 - Scope/QOL Foundation",
+    "date": null,
+    "highlights": [
+      "Approved family-based scope policy",
+      "Forbidden later battle gimmicks remain disabled",
+      "Core HGSS-style QOL switches documented"
+    ],
+    "links": [
+      "FEATURES_AND_CHANGES.md#phase-3"
+    ]
+  },
+  {
+    "phase": "Phase 4 - Pokemon Modernization",
+    "date": null,
+    "highlights": [
+      "Selected type modernization",
+      "No-trade evolution replacements",
+      "Level-up learnset cleanup and inheritance work"
+    ],
+    "links": [
+      "FEATURES_AND_CHANGES.md#phase-4"
+    ]
+  },
+  {
+    "phase": "Phase 5 - Item/TM/HM/Mart Economy",
+    "date": null,
+    "highlights": [
+      "Badge-gated mart stock",
+      "Customization item prices",
+      "Max Candy and IV candy support"
+    ],
+    "links": [
+      "FEATURES_AND_CHANGES.md#phase-5"
+    ]
+  },
+  {
+    "phase": "Phase 6 - Encounters and Obtainability",
+    "date": null,
+    "highlights": [
+      "Main wild encounter overhaul",
+      "Rare encounter layer",
+      "Obtainability report",
+      "Random legendary overlay"
+    ],
+    "links": [
+      "docs/phase6_obtainability_report.md"
+    ]
+  },
+  {
+    "phase": "Phase 7 - Trainer Rosters",
+    "date": null,
+    "highlights": [
+      "Six-Pokemon boss teams where implemented",
+      "Gym/E4/Champion/Red level curve",
+      "Rematch teams",
+      "Trainer validation report"
+    ],
+    "links": [
+      "docs/phase7_trainer_report.md"
+    ]
+  },
+  {
+    "phase": "Phase 8 - Kanto Postgame",
+    "date": null,
+    "highlights": [
+      "Saffron Fighting Dojo hub",
+      "Legendary/mythical dossier encounters",
+      "Champion Circuit",
+      "Postgame validation report"
+    ],
+    "links": [
+      "docs/phase8_postgame_report.md"
+    ]
+  },
+  {
+    "phase": "Phase 9 - Explorer Export Readiness",
+    "date": "2026-06-27",
+    "highlights": [
+      "Structured exports present",
+      "Static validation reports generated",
+      "Explorer data pipeline consumes source exports without modifying the ROM hack"
+    ],
+    "links": [
+      "exports/perfect_johto",
+      "docs/generated/validation_report.md"
+    ]
+  }
+]

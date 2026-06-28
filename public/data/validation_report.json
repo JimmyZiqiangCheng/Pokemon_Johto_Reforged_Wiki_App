@@ -1,0 +1,4679 @@
+{
+  "generatedAt": "2026-06-28T08:34:43-07:00",
+  "summary": {
+    "counts": {
+      "pokemon": 545,
+      "moves": 955,
+      "abilities": 318,
+      "items": 211,
+      "trainers": 740,
+      "locations": 142,
+      "wildEncounterEntries": 3444,
+      "staticGiftEntries": 35,
+      "martShopCount": 2,
+      "bossFights": 86,
+      "legendaryDossiers": 33
+    },
+    "assetCoverage": {
+      "pokemonWithIcons": 545,
+      "pokemonWithSprites": 545,
+      "trainersWithSprites": 740,
+      "itemsWithIcons": 211,
+      "missingPokemonAssets": 0,
+      "missingTrainerAssets": 740,
+      "missingItemAssets": 0
+    },
+    "issueCounts": {
+      "bossTeamsWithMissingMovesItemsAbilities": 37,
+      "brokenLinks": 0,
+      "itemsMissingDescriptions": 204,
+      "locationsWithNoLinkedContent": 7,
+      "missingItemIcons": 0,
+      "missingPokemonIcons": 0,
+      "movesWithNoDescriptions": 33,
+      "movesWithNoParsedEffects": 676,
+      "pokemonOutsideApprovedScope": 0,
+      "pokemonWithNoAvailability": 19
+    },
+    "severityCounts": {
+      "critical": 0,
+      "warnings": 976
+    },
+    "status": "PASS"
+  },
+  "issues": {
+    "pokemonWithNoAvailability": [
+      {
+        "id": "SPECIES_PINECO",
+        "name": "Pineco"
+      },
+      {
+        "id": "SPECIES_OBSTAGOON",
+        "name": "Obstagoon"
+      },
+      {
+        "id": "SPECIES_RATICATE_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_RAICHU_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_SANDSLASH_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_NINETALES_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_DUGTRIO_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_PERSIAN_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_GOLEM_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_MUK_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_EXEGGUTOR_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_MAROWAK_ALOLAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_RAPIDASH_GALARIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_SLOWBRO_GALARIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_WEEZING_GALARIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_SLOWKING_GALARIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_LINOONE_GALARIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_ARCANINE_HISUIAN",
+        "name": "-----"
+      },
+      {
+        "id": "SPECIES_ELECTRODE_HISUIAN",
+        "name": "-----"
+      }
+    ],
+    "movesWithNoParsedEffects": [
+      {
+        "id": "MOVE_POUND",
+        "name": "Pound",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MEGA_PUNCH",
+        "name": "Mega Punch",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_PAY_DAY",
+        "name": "Pay Day",
+        "effect": "MOVE_EFFECT_INCREASE_PRIZE_MONEY"
+      },
+      {
+        "id": "MOVE_SCRATCH",
+        "name": "Scratch",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_VICE_GRIP",
+        "name": "Vise Grip",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_RAZOR_WIND",
+        "name": "Razor Wind",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_HIGH_CRIT"
+      },
+      {
+        "id": "MOVE_CUT",
+        "name": "Cut",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GUST",
+        "name": "Gust",
+        "effect": "MOVE_EFFECT_DOUBLE_DAMAGE_FLY_OR_BOUNCE"
+      },
+      {
+        "id": "MOVE_WING_ATTACK",
+        "name": "Wing Attack",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_WHIRLWIND",
+        "name": "Whirlwind",
+        "effect": "MOVE_EFFECT_FORCE_SWITCH"
+      },
+      {
+        "id": "MOVE_FLY",
+        "name": "Fly",
+        "effect": "MOVE_EFFECT_FLY"
+      },
+      {
+        "id": "MOVE_BIND",
+        "name": "Bind",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_SLAM",
+        "name": "Slam",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_VINE_WHIP",
+        "name": "Vine Whip",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_STOMP",
+        "name": "Stomp",
+        "effect": "MOVE_EFFECT_FLINCH_MINIMIZE_DOUBLE_HIT"
+      },
+      {
+        "id": "MOVE_MEGA_KICK",
+        "name": "Mega Kick",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_JUMP_KICK",
+        "name": "Jump Kick",
+        "effect": "MOVE_EFFECT_CRASH_ON_MISS"
+      },
+      {
+        "id": "MOVE_HORN_ATTACK",
+        "name": "Horn Attack",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TACKLE",
+        "name": "Tackle",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_WRAP",
+        "name": "Wrap",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_THRASH",
+        "name": "Thrash",
+        "effect": "MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF"
+      },
+      {
+        "id": "MOVE_TWINEEDLE",
+        "name": "Twineedle",
+        "effect": "MOVE_EFFECT_POISON_MULTI_HIT"
+      },
+      {
+        "id": "MOVE_ROAR",
+        "name": "Roar",
+        "effect": "MOVE_EFFECT_FORCE_SWITCH"
+      },
+      {
+        "id": "MOVE_SONIC_BOOM",
+        "name": "Sonic Boom",
+        "effect": "MOVE_EFFECT_10_DAMAGE_FLAT"
+      },
+      {
+        "id": "MOVE_DISABLE",
+        "name": "Disable",
+        "effect": "MOVE_EFFECT_DISABLE"
+      },
+      {
+        "id": "MOVE_MIST",
+        "name": "Mist",
+        "effect": "MOVE_EFFECT_PREVENT_STAT_REDUCTION"
+      },
+      {
+        "id": "MOVE_WATER_GUN",
+        "name": "Water Gun",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HYDRO_PUMP",
+        "name": "Hydro Pump",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SURF",
+        "name": "Surf",
+        "effect": "MOVE_EFFECT_DOUBLE_DAMAGE_DIVE"
+      },
+      {
+        "id": "MOVE_BLIZZARD",
+        "name": "Blizzard",
+        "effect": "MOVE_EFFECT_BLIZZARD"
+      },
+      {
+        "id": "MOVE_HYPER_BEAM",
+        "name": "Hyper Beam",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_PECK",
+        "name": "Peck",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DRILL_PECK",
+        "name": "Drill Peck",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_LOW_KICK",
+        "name": "Low Kick",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_WEIGHT"
+      },
+      {
+        "id": "MOVE_COUNTER",
+        "name": "Counter",
+        "effect": "MOVE_EFFECT_COUNTER"
+      },
+      {
+        "id": "MOVE_SEISMIC_TOSS",
+        "name": "Seismic Toss",
+        "effect": "MOVE_EFFECT_LEVEL_DAMAGE_FLAT"
+      },
+      {
+        "id": "MOVE_STRENGTH",
+        "name": "Strength",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_LEECH_SEED",
+        "name": "Leech Seed",
+        "effect": "MOVE_EFFECT_STATUS_LEECH_SEED"
+      },
+      {
+        "id": "MOVE_SOLAR_BEAM",
+        "name": "Solar Beam",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_SUN_SKIPS"
+      },
+      {
+        "id": "MOVE_PETAL_DANCE",
+        "name": "Petal Dance",
+        "effect": "MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF"
+      },
+      {
+        "id": "MOVE_DRAGON_RAGE",
+        "name": "Dragon Rage",
+        "effect": "MOVE_EFFECT_40_DAMAGE_FLAT"
+      },
+      {
+        "id": "MOVE_FIRE_SPIN",
+        "name": "Fire Spin",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_THUNDER",
+        "name": "Thunder",
+        "effect": "MOVE_EFFECT_THUNDER"
+      },
+      {
+        "id": "MOVE_ROCK_THROW",
+        "name": "Rock Throw",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_EARTHQUAKE",
+        "name": "Earthquake",
+        "effect": "MOVE_EFFECT_DOUBLE_DAMAGE_DIG"
+      },
+      {
+        "id": "MOVE_DIG",
+        "name": "Dig",
+        "effect": "MOVE_EFFECT_DIG"
+      },
+      {
+        "id": "MOVE_QUICK_ATTACK",
+        "name": "Quick Attack",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_RAGE",
+        "name": "Rage",
+        "effect": "MOVE_EFFECT_RAISE_ATK_WHEN_HIT"
+      },
+      {
+        "id": "MOVE_TELEPORT",
+        "name": "Teleport",
+        "effect": "MOVE_EFFECT_FLEE_FROM_WILD_BATTLE"
+      },
+      {
+        "id": "MOVE_NIGHT_SHADE",
+        "name": "Night Shade",
+        "effect": "MOVE_EFFECT_LEVEL_DAMAGE_FLAT"
+      },
+      {
+        "id": "MOVE_MIMIC",
+        "name": "Mimic",
+        "effect": "MOVE_EFFECT_COPY_MOVE_FOR_BATTLE"
+      },
+      {
+        "id": "MOVE_RECOVER",
+        "name": "Recover",
+        "effect": "MOVE_EFFECT_RESTORE_HALF_HP"
+      },
+      {
+        "id": "MOVE_MINIMIZE",
+        "name": "Minimize",
+        "effect": "MOVE_EFFECT_EVA_UP_2_MINIMIZE"
+      },
+      {
+        "id": "MOVE_DEFENSE_CURL",
+        "name": "Defense Curl",
+        "effect": "MOVE_EFFECT_DEF_UP_DOUBLE_ROLLOUT_POWER"
+      },
+      {
+        "id": "MOVE_LIGHT_SCREEN",
+        "name": "Light Screen",
+        "effect": "MOVE_EFFECT_SET_LIGHT_SCREEN"
+      },
+      {
+        "id": "MOVE_HAZE",
+        "name": "Haze",
+        "effect": "MOVE_EFFECT_RESET_STAT_CHANGES"
+      },
+      {
+        "id": "MOVE_REFLECT",
+        "name": "Reflect",
+        "effect": "MOVE_EFFECT_SET_REFLECT"
+      },
+      {
+        "id": "MOVE_FOCUS_ENERGY",
+        "name": "Focus Energy",
+        "effect": "MOVE_EFFECT_CRIT_UP_2"
+      },
+      {
+        "id": "MOVE_BIDE",
+        "name": "Bide",
+        "effect": "MOVE_EFFECT_BIDE"
+      },
+      {
+        "id": "MOVE_METRONOME",
+        "name": "Metronome",
+        "effect": "MOVE_EFFECT_CALL_RANDOM_MOVE"
+      },
+      {
+        "id": "MOVE_MIRROR_MOVE",
+        "name": "Mirror Move",
+        "effect": "MOVE_EFFECT_COPY_MOVE"
+      },
+      {
+        "id": "MOVE_SELF_DESTRUCT",
+        "name": "Self-Destruct",
+        "effect": "MOVE_EFFECT_HALVE_DEFENSE"
+      },
+      {
+        "id": "MOVE_EGG_BOMB",
+        "name": "Egg Bomb",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CLAMP",
+        "name": "Clamp",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_SWIFT",
+        "name": "Swift",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_SKULL_BASH",
+        "name": "Skull Bash",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_DEF_UP"
+      },
+      {
+        "id": "MOVE_SOFT_BOILED",
+        "name": "Soft-Boiled",
+        "effect": "MOVE_EFFECT_RESTORE_HALF_HP"
+      },
+      {
+        "id": "MOVE_HIGH_JUMP_KICK",
+        "name": "High Jump Kick",
+        "effect": "MOVE_EFFECT_CRASH_ON_MISS"
+      },
+      {
+        "id": "MOVE_DREAM_EATER",
+        "name": "Dream Eater",
+        "effect": "MOVE_EFFECT_RECOVER_DAMAGE_SLEEP"
+      },
+      {
+        "id": "MOVE_SKY_ATTACK",
+        "name": "Sky Attack",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_HIGH_CRIT_FLINCH"
+      },
+      {
+        "id": "MOVE_TRANSFORM",
+        "name": "Transform",
+        "effect": "MOVE_EFFECT_TRANSFORM"
+      },
+      {
+        "id": "MOVE_PSYWAVE",
+        "name": "Psywave",
+        "effect": "MOVE_EFFECT_RANDOM_DAMAGE_1_TO_150_LEVEL"
+      },
+      {
+        "id": "MOVE_SPLASH",
+        "name": "Splash",
+        "effect": "MOVE_EFFECT_DO_NOTHING"
+      },
+      {
+        "id": "MOVE_EXPLOSION",
+        "name": "Explosion",
+        "effect": "MOVE_EFFECT_HALVE_DEFENSE"
+      },
+      {
+        "id": "MOVE_REST",
+        "name": "Rest",
+        "effect": "MOVE_EFFECT_RECOVER_HEALTH_AND_SLEEP"
+      },
+      {
+        "id": "MOVE_CONVERSION",
+        "name": "Conversion",
+        "effect": "MOVE_EFFECT_CONVERSION"
+      },
+      {
+        "id": "MOVE_TRI_ATTACK",
+        "name": "Tri Attack",
+        "effect": "MOVE_EFFECT_RANDOM_PRIMARY_STATUS_HIT"
+      },
+      {
+        "id": "MOVE_SUPER_FANG",
+        "name": "Super Fang",
+        "effect": "MOVE_EFFECT_HALVE_HP"
+      },
+      {
+        "id": "MOVE_SUBSTITUTE",
+        "name": "Substitute",
+        "effect": "MOVE_EFFECT_SET_SUBSTITUTE"
+      },
+      {
+        "id": "MOVE_STRUGGLE",
+        "name": "Struggle",
+        "effect": "MOVE_EFFECT_STRUGGLE"
+      },
+      {
+        "id": "MOVE_SKETCH",
+        "name": "Sketch",
+        "effect": "MOVE_EFFECT_LEARN_MOVE_PERMANENT"
+      },
+      {
+        "id": "MOVE_TRIPLE_KICK",
+        "name": "Triple Kick",
+        "effect": "MOVE_EFFECT_HIT_THREE_TIMES_INCREMENT_BASE_POWER_10"
+      },
+      {
+        "id": "MOVE_THIEF",
+        "name": "Thief",
+        "effect": "MOVE_EFFECT_STEAL_HELD_ITEM"
+      },
+      {
+        "id": "MOVE_SPIDER_WEB",
+        "name": "Spider Web",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE"
+      },
+      {
+        "id": "MOVE_MIND_READER",
+        "name": "Mind Reader",
+        "effect": "MOVE_EFFECT_NEXT_ATTACK_ALWAYS_HITS"
+      },
+      {
+        "id": "MOVE_NIGHTMARE",
+        "name": "Nightmare",
+        "effect": "MOVE_EFFECT_STATUS_NIGHTMARE"
+      },
+      {
+        "id": "MOVE_FLAME_WHEEL",
+        "name": "Flame Wheel",
+        "effect": "MOVE_EFFECT_THAW_AND_BURN_HIT"
+      },
+      {
+        "id": "MOVE_SNORE",
+        "name": "Snore",
+        "effect": "MOVE_EFFECT_DAMAGE_WHILE_ASLEEP"
+      },
+      {
+        "id": "MOVE_CURSE",
+        "name": "Curse",
+        "effect": "MOVE_EFFECT_CURSE"
+      },
+      {
+        "id": "MOVE_FLAIL",
+        "name": "Flail",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_LESS_HP"
+      },
+      {
+        "id": "MOVE_CONVERSION_2",
+        "name": "Conversion 2",
+        "effect": "MOVE_EFFECT_CONVERSION2"
+      },
+      {
+        "id": "MOVE_REVERSAL",
+        "name": "Reversal",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_LESS_HP"
+      },
+      {
+        "id": "MOVE_SPITE",
+        "name": "Spite",
+        "effect": "MOVE_EFFECT_DECREASE_LAST_MOVE_PP"
+      },
+      {
+        "id": "MOVE_PROTECT",
+        "name": "Protect",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_MACH_PUNCH",
+        "name": "Mach Punch",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_FEINT_ATTACK",
+        "name": "Feint Attack",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_BELLY_DRUM",
+        "name": "Belly Drum",
+        "effect": "MOVE_EFFECT_MAX_ATK_LOSE_HALF_MAX_HP"
+      },
+      {
+        "id": "MOVE_SPIKES",
+        "name": "Spikes",
+        "effect": "MOVE_EFFECT_SET_SPIKES"
+      },
+      {
+        "id": "MOVE_FORESIGHT",
+        "name": "Foresight",
+        "effect": "MOVE_EFFECT_IGNORE_EVASION_REMOVE_GHOST_IMMUNE"
+      },
+      {
+        "id": "MOVE_DESTINY_BOND",
+        "name": "Destiny Bond",
+        "effect": "MOVE_EFFECT_KO_MON_THAT_DEFEATED_USER"
+      },
+      {
+        "id": "MOVE_PERISH_SONG",
+        "name": "Perish Song",
+        "effect": "MOVE_EFFECT_ALL_FAINT_3_TURNS"
+      },
+      {
+        "id": "MOVE_DETECT",
+        "name": "Detect",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_LOCK_ON",
+        "name": "Lock-On",
+        "effect": "MOVE_EFFECT_NEXT_ATTACK_ALWAYS_HITS"
+      },
+      {
+        "id": "MOVE_OUTRAGE",
+        "name": "Outrage",
+        "effect": "MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF"
+      },
+      {
+        "id": "MOVE_SANDSTORM",
+        "name": "Sandstorm",
+        "effect": "MOVE_EFFECT_WEATHER_SANDSTORM"
+      },
+      {
+        "id": "MOVE_ENDURE",
+        "name": "Endure",
+        "effect": "MOVE_EFFECT_SURVIVE_WITH_1_HP"
+      },
+      {
+        "id": "MOVE_ROLLOUT",
+        "name": "Rollout",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_EACH_TURN_LOCK_INTO"
+      },
+      {
+        "id": "MOVE_FALSE_SWIPE",
+        "name": "False Swipe",
+        "effect": "MOVE_EFFECT_LEAVE_WITH_1_HP"
+      },
+      {
+        "id": "MOVE_SWAGGER",
+        "name": "Swagger",
+        "effect": "MOVE_EFFECT_ATK_UP_2_STATUS_CONFUSION"
+      },
+      {
+        "id": "MOVE_MILK_DRINK",
+        "name": "Milk Drink",
+        "effect": "MOVE_EFFECT_RESTORE_HALF_HP"
+      },
+      {
+        "id": "MOVE_FURY_CUTTER",
+        "name": "Fury Cutter",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_EACH_TURN"
+      },
+      {
+        "id": "MOVE_STEEL_WING",
+        "name": "Steel Wing",
+        "effect": "MOVE_EFFECT_RAISE_DEF_HIT"
+      },
+      {
+        "id": "MOVE_MEAN_LOOK",
+        "name": "Mean Look",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE"
+      },
+      {
+        "id": "MOVE_ATTRACT",
+        "name": "Attract",
+        "effect": "MOVE_EFFECT_INFATUATE"
+      },
+      {
+        "id": "MOVE_SLEEP_TALK",
+        "name": "Sleep Talk",
+        "effect": "MOVE_EFFECT_USE_RANDOM_LEARNED_MOVE_SLEEP"
+      },
+      {
+        "id": "MOVE_HEAL_BELL",
+        "name": "Heal Bell",
+        "effect": "MOVE_EFFECT_CURE_PARTY_STATUS"
+      },
+      {
+        "id": "MOVE_RETURN",
+        "name": "Return",
+        "effect": "MOVE_EFFECT_POWER_BASED_ON_FRIENDSHIP"
+      },
+      {
+        "id": "MOVE_PRESENT",
+        "name": "Present",
+        "effect": "MOVE_EFFECT_RANDOM_POWER_MAYBE_HEAL"
+      },
+      {
+        "id": "MOVE_FRUSTRATION",
+        "name": "Frustration",
+        "effect": "MOVE_EFFECT_POWER_BASED_ON_LOW_FRIENDSHIP"
+      },
+      {
+        "id": "MOVE_SAFEGUARD",
+        "name": "Safeguard",
+        "effect": "MOVE_EFFECT_PREVENT_STATUS"
+      },
+      {
+        "id": "MOVE_PAIN_SPLIT",
+        "name": "Pain Split",
+        "effect": "MOVE_EFFECT_AVERAGE_HP"
+      },
+      {
+        "id": "MOVE_SACRED_FIRE",
+        "name": "Sacred Fire",
+        "effect": "MOVE_EFFECT_THAW_AND_BURN_HIT"
+      },
+      {
+        "id": "MOVE_MAGNITUDE",
+        "name": "Magnitude",
+        "effect": "MOVE_EFFECT_RANDOM_POWER_10_CASES"
+      },
+      {
+        "id": "MOVE_MEGAHORN",
+        "name": "Megahorn",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BATON_PASS",
+        "name": "Baton Pass",
+        "effect": "MOVE_EFFECT_PASS_STATS_AND_STATUS"
+      },
+      {
+        "id": "MOVE_ENCORE",
+        "name": "Encore",
+        "effect": "MOVE_EFFECT_ENCORE"
+      },
+      {
+        "id": "MOVE_PURSUIT",
+        "name": "Pursuit",
+        "effect": "MOVE_EFFECT_HIT_BEFORE_SWITCH"
+      },
+      {
+        "id": "MOVE_RAPID_SPIN",
+        "name": "Rapid Spin",
+        "effect": "MOVE_EFFECT_REMOVE_HAZARDS_AND_BINDING"
+      },
+      {
+        "id": "MOVE_METAL_CLAW",
+        "name": "Metal Claw",
+        "effect": "MOVE_EFFECT_RAISE_ATTACK_HIT"
+      },
+      {
+        "id": "MOVE_VITAL_THROW",
+        "name": "Vital Throw",
+        "effect": "MOVE_EFFECT_PRIORITY_NEG_1_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_MORNING_SUN",
+        "name": "Morning Sun",
+        "effect": "MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER"
+      },
+      {
+        "id": "MOVE_SYNTHESIS",
+        "name": "Synthesis",
+        "effect": "MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER"
+      },
+      {
+        "id": "MOVE_MOONLIGHT",
+        "name": "Moonlight",
+        "effect": "MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER"
+      },
+      {
+        "id": "MOVE_HIDDEN_POWER",
+        "name": "Hidden Power",
+        "effect": "MOVE_EFFECT_RANDOM_TYPE_BASED_ON_IVS"
+      },
+      {
+        "id": "MOVE_TWISTER",
+        "name": "Twister",
+        "effect": "MOVE_EFFECT_FLINCH_DOUBLE_DAMAGE_FLY_OR_BOUNCE"
+      },
+      {
+        "id": "MOVE_RAIN_DANCE",
+        "name": "Rain Dance",
+        "effect": "MOVE_EFFECT_WEATHER_RAIN"
+      },
+      {
+        "id": "MOVE_SUNNY_DAY",
+        "name": "Sunny Day",
+        "effect": "MOVE_EFFECT_WEATHER_SUN"
+      },
+      {
+        "id": "MOVE_MIRROR_COAT",
+        "name": "Mirror Coat",
+        "effect": "MOVE_EFFECT_MIRROR_COAT"
+      },
+      {
+        "id": "MOVE_PSYCH_UP",
+        "name": "Psych Up",
+        "effect": "MOVE_EFFECT_COPY_STAT_CHANGES"
+      },
+      {
+        "id": "MOVE_EXTREME_SPEED",
+        "name": "Extreme Speed",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_ANCIENT_POWER",
+        "name": "Ancient Power",
+        "effect": "MOVE_EFFECT_RAISE_ALL_STATS_HIT"
+      },
+      {
+        "id": "MOVE_FUTURE_SIGHT",
+        "name": "Future Sight",
+        "effect": "MOVE_EFFECT_HIT_IN_3_TURNS"
+      },
+      {
+        "id": "MOVE_WHIRLPOOL",
+        "name": "Whirlpool",
+        "effect": "MOVE_EFFECT_WHIRLPOOL"
+      },
+      {
+        "id": "MOVE_BEAT_UP",
+        "name": "Beat Up",
+        "effect": "MOVE_EFFECT_BEAT_UP"
+      },
+      {
+        "id": "MOVE_FAKE_OUT",
+        "name": "Fake Out",
+        "effect": "MOVE_EFFECT_ALWAYS_FLINCH_FIRST_TURN_ONLY"
+      },
+      {
+        "id": "MOVE_UPROAR",
+        "name": "Uproar",
+        "effect": "MOVE_EFFECT_UPROAR"
+      },
+      {
+        "id": "MOVE_STOCKPILE",
+        "name": "Stockpile",
+        "effect": "MOVE_EFFECT_STOCKPILE"
+      },
+      {
+        "id": "MOVE_SPIT_UP",
+        "name": "Spit Up",
+        "effect": "MOVE_EFFECT_SPIT_UP"
+      },
+      {
+        "id": "MOVE_SWALLOW",
+        "name": "Swallow",
+        "effect": "MOVE_EFFECT_SWALLOW"
+      },
+      {
+        "id": "MOVE_HAIL",
+        "name": "Hail",
+        "effect": "MOVE_EFFECT_WEATHER_HAIL"
+      },
+      {
+        "id": "MOVE_TORMENT",
+        "name": "Torment",
+        "effect": "MOVE_EFFECT_TORMENT"
+      },
+      {
+        "id": "MOVE_FLATTER",
+        "name": "Flatter",
+        "effect": "MOVE_EFFECT_SP_ATK_UP_CAUSE_CONFUSION"
+      },
+      {
+        "id": "MOVE_MEMENTO",
+        "name": "Memento",
+        "effect": "MOVE_EFFECT_FAINT_AND_ATK_SP_ATK_DOWN_2"
+      },
+      {
+        "id": "MOVE_FACADE",
+        "name": "Facade",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_WHEN_STATUSED"
+      },
+      {
+        "id": "MOVE_FOCUS_PUNCH",
+        "name": "Focus Punch",
+        "effect": "MOVE_EFFECT_HIT_LAST_WHIFF_IF_HIT"
+      },
+      {
+        "id": "MOVE_SMELLING_SALTS",
+        "name": "Smelling Salts",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_AND_CURE_PARALYSIS"
+      },
+      {
+        "id": "MOVE_FOLLOW_ME",
+        "name": "Follow Me",
+        "effect": "MOVE_EFFECT_MAKE_GLOBAL_TARGET"
+      },
+      {
+        "id": "MOVE_NATURE_POWER",
+        "name": "Nature Power",
+        "effect": "MOVE_EFFECT_NATURE_POWER"
+      },
+      {
+        "id": "MOVE_CHARGE",
+        "name": "Charge",
+        "effect": "MOVE_EFFECT_SP_DEF_UP_DOUBLE_ELECTRIC_POWER"
+      },
+      {
+        "id": "MOVE_TAUNT",
+        "name": "Taunt",
+        "effect": "MOVE_EFFECT_TAUNT"
+      },
+      {
+        "id": "MOVE_HELPING_HAND",
+        "name": "Helping Hand",
+        "effect": "MOVE_EFFECT_BOOST_ALLY_POWER_BY_50_PERCENT"
+      },
+      {
+        "id": "MOVE_TRICK",
+        "name": "Trick",
+        "effect": "MOVE_EFFECT_SWITCH_HELD_ITEMS"
+      },
+      {
+        "id": "MOVE_ROLE_PLAY",
+        "name": "Role Play",
+        "effect": "MOVE_EFFECT_COPY_ABILITY"
+      },
+      {
+        "id": "MOVE_WISH",
+        "name": "Wish",
+        "effect": "MOVE_EFFECT_HEAL_IN_3_TURNS"
+      },
+      {
+        "id": "MOVE_ASSIST",
+        "name": "Assist",
+        "effect": "MOVE_EFFECT_USE_RANDOM_ALLY_MOVE"
+      },
+      {
+        "id": "MOVE_INGRAIN",
+        "name": "Ingrain",
+        "effect": "MOVE_EFFECT_GROUND_TRAP_USER_CONTINUOUS_HEAL"
+      },
+      {
+        "id": "MOVE_MAGIC_COAT",
+        "name": "Magic Coat",
+        "effect": "MOVE_EFFECT_MAGIC_COAT"
+      },
+      {
+        "id": "MOVE_RECYCLE",
+        "name": "Recycle",
+        "effect": "MOVE_EFFECT_RECYCLE"
+      },
+      {
+        "id": "MOVE_REVENGE",
+        "name": "Revenge",
+        "effect": "MOVE_EFFECT_DOUBLE_DAMAGE_IF_HIT"
+      },
+      {
+        "id": "MOVE_BRICK_BREAK",
+        "name": "Brick Break",
+        "effect": "MOVE_EFFECT_REMOVE_SCREENS"
+      },
+      {
+        "id": "MOVE_YAWN",
+        "name": "Yawn",
+        "effect": "MOVE_EFFECT_STATUS_SLEEP_NEXT_TURN"
+      },
+      {
+        "id": "MOVE_KNOCK_OFF",
+        "name": "Knock Off",
+        "effect": "MOVE_EFFECT_REMOVE_HELD_ITEM"
+      },
+      {
+        "id": "MOVE_ENDEAVOR",
+        "name": "Endeavor",
+        "effect": "MOVE_EFFECT_SET_HP_EQUAL_TO_USER"
+      },
+      {
+        "id": "MOVE_ERUPTION",
+        "name": "Eruption",
+        "effect": "MOVE_EFFECT_DECREASE_POWER_WITH_LESS_USER_HP"
+      },
+      {
+        "id": "MOVE_SKILL_SWAP",
+        "name": "Skill Swap",
+        "effect": "MOVE_EFFECT_SWITCH_ABILITIES"
+      },
+      {
+        "id": "MOVE_IMPRISON",
+        "name": "Imprison",
+        "effect": "MOVE_EFFECT_MAKE_SHARED_MOVES_UNUSEABLE"
+      },
+      {
+        "id": "MOVE_REFRESH",
+        "name": "Refresh",
+        "effect": "MOVE_EFFECT_HEAL_STATUS"
+      },
+      {
+        "id": "MOVE_GRUDGE",
+        "name": "Grudge",
+        "effect": "MOVE_EFFECT_REMOVE_ALL_PP_ON_DEFEAT"
+      },
+      {
+        "id": "MOVE_SNATCH",
+        "name": "Snatch",
+        "effect": "MOVE_EFFECT_STEAL_STATUS_MOVE"
+      },
+      {
+        "id": "MOVE_SECRET_POWER",
+        "name": "Secret Power",
+        "effect": "MOVE_EFFECT_SECRET_POWER"
+      },
+      {
+        "id": "MOVE_DIVE",
+        "name": "Dive",
+        "effect": "MOVE_EFFECT_DIVE"
+      },
+      {
+        "id": "MOVE_CAMOUFLAGE",
+        "name": "Camouflage",
+        "effect": "MOVE_EFFECT_CAMOUFLAGE"
+      },
+      {
+        "id": "MOVE_TEETER_DANCE",
+        "name": "Teeter Dance",
+        "effect": "MOVE_EFFECT_CONFUSE_ALL_ADJACENT"
+      },
+      {
+        "id": "MOVE_BLAZE_KICK",
+        "name": "Blaze Kick",
+        "effect": "MOVE_EFFECT_HIGH_CRITICAL_BURN_HIT"
+      },
+      {
+        "id": "MOVE_MUD_SPORT",
+        "name": "Mud Sport",
+        "effect": "MOVE_EFFECT_HALVE_ELECTRIC_DAMAGE"
+      },
+      {
+        "id": "MOVE_ICE_BALL",
+        "name": "Ice Ball",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_EACH_TURN_LOCK_INTO"
+      },
+      {
+        "id": "MOVE_SLACK_OFF",
+        "name": "Slack Off",
+        "effect": "MOVE_EFFECT_RESTORE_HALF_HP"
+      },
+      {
+        "id": "MOVE_HYPER_VOICE",
+        "name": "Hyper Voice",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_POISON_FANG",
+        "name": "Poison Fang",
+        "effect": "MOVE_EFFECT_BADLY_POISON_HIT"
+      },
+      {
+        "id": "MOVE_BLAST_BURN",
+        "name": "Blast Burn",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_HYDRO_CANNON",
+        "name": "Hydro Cannon",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_METEOR_MASH",
+        "name": "Meteor Mash",
+        "effect": "MOVE_EFFECT_RAISE_ATTACK_HIT"
+      },
+      {
+        "id": "MOVE_WEATHER_BALL",
+        "name": "Weather Ball",
+        "effect": "MOVE_EFFECT_CHANGE_TYPE_WITH_WEATHER"
+      },
+      {
+        "id": "MOVE_AROMATHERAPY",
+        "name": "Aromatherapy",
+        "effect": "MOVE_EFFECT_CURE_PARTY_STATUS"
+      },
+      {
+        "id": "MOVE_ODOR_SLEUTH",
+        "name": "Odor Sleuth",
+        "effect": "MOVE_EFFECT_IGNORE_EVASION_REMOVE_GHOST_IMMUNE"
+      },
+      {
+        "id": "MOVE_SILVER_WIND",
+        "name": "Silver Wind",
+        "effect": "MOVE_EFFECT_RAISE_ALL_STATS_HIT"
+      },
+      {
+        "id": "MOVE_TICKLE",
+        "name": "Tickle",
+        "effect": "MOVE_EFFECT_ATK_DEF_DOWN"
+      },
+      {
+        "id": "MOVE_WATER_SPOUT",
+        "name": "Water Spout",
+        "effect": "MOVE_EFFECT_DECREASE_POWER_WITH_LESS_USER_HP"
+      },
+      {
+        "id": "MOVE_SHADOW_PUNCH",
+        "name": "Shadow Punch",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_SKY_UPPERCUT",
+        "name": "Sky Uppercut",
+        "effect": "MOVE_EFFECT_HIT_FLY"
+      },
+      {
+        "id": "MOVE_SAND_TOMB",
+        "name": "Sand Tomb",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_AERIAL_ACE",
+        "name": "Aerial Ace",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_BLOCK",
+        "name": "Block",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE"
+      },
+      {
+        "id": "MOVE_DRAGON_CLAW",
+        "name": "Dragon Claw",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FRENZY_PLANT",
+        "name": "Frenzy Plant",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_BOUNCE",
+        "name": "Bounce",
+        "effect": "MOVE_EFFECT_BOUNCE"
+      },
+      {
+        "id": "MOVE_POISON_TAIL",
+        "name": "Poison Tail",
+        "effect": "MOVE_EFFECT_HIGH_CRITICAL_POISON_HIT"
+      },
+      {
+        "id": "MOVE_COVET",
+        "name": "Covet",
+        "effect": "MOVE_EFFECT_STEAL_HELD_ITEM"
+      },
+      {
+        "id": "MOVE_VOLT_TACKLE",
+        "name": "Volt Tackle",
+        "effect": "MOVE_EFFECT_RECOIL_PARALYZE_HIT"
+      },
+      {
+        "id": "MOVE_MAGICAL_LEAF",
+        "name": "Magical Leaf",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_WATER_SPORT",
+        "name": "Water Sport",
+        "effect": "MOVE_EFFECT_HALVE_FIRE_DAMAGE"
+      },
+      {
+        "id": "MOVE_SHOCK_WAVE",
+        "name": "Shock Wave",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_DOOM_DESIRE",
+        "name": "Doom Desire",
+        "effect": "MOVE_EFFECT_HIT_IN_3_TURNS"
+      },
+      {
+        "id": "MOVE_ROOST",
+        "name": "Roost",
+        "effect": "MOVE_EFFECT_HEAL_HALF_REMOVE_FLYING_TYPE"
+      },
+      {
+        "id": "MOVE_GRAVITY",
+        "name": "Gravity",
+        "effect": "MOVE_EFFECT_GRAVITY"
+      },
+      {
+        "id": "MOVE_MIRACLE_EYE",
+        "name": "Miracle Eye",
+        "effect": "MOVE_EFFECT_IGNORE_EVATION_REMOVE_DARK_IMMUNE"
+      },
+      {
+        "id": "MOVE_WAKE_UP_SLAP",
+        "name": "Wake-Up Slap",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_HEAL_SLEEP"
+      },
+      {
+        "id": "MOVE_GYRO_BALL",
+        "name": "Gyro Ball",
+        "effect": "MOVE_EFFECT_POWER_BASED_ON_LOW_SPEED"
+      },
+      {
+        "id": "MOVE_HEALING_WISH",
+        "name": "Healing Wish",
+        "effect": "MOVE_EFFECT_FAINT_AND_FULL_HEAL_NEXT_MON"
+      },
+      {
+        "id": "MOVE_BRINE",
+        "name": "Brine",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_WHEN_BELOW_HALF"
+      },
+      {
+        "id": "MOVE_NATURAL_GIFT",
+        "name": "Natural Gift",
+        "effect": "MOVE_EFFECT_NATURAL_GIFT"
+      },
+      {
+        "id": "MOVE_FEINT",
+        "name": "Feint",
+        "effect": "MOVE_EFFECT_REMOVE_PROTECT"
+      },
+      {
+        "id": "MOVE_PLUCK",
+        "name": "Pluck",
+        "effect": "MOVE_EFFECT_EAT_BERRY"
+      },
+      {
+        "id": "MOVE_TAILWIND",
+        "name": "Tailwind",
+        "effect": "MOVE_EFFECT_DOUBLE_SPEED_3_TURNS"
+      },
+      {
+        "id": "MOVE_ACUPRESSURE",
+        "name": "Acupressure",
+        "effect": "MOVE_EFFECT_RANDOM_STAT_UP_2"
+      },
+      {
+        "id": "MOVE_METAL_BURST",
+        "name": "Metal Burst",
+        "effect": "MOVE_EFFECT_METAL_BURST"
+      },
+      {
+        "id": "MOVE_U_TURN",
+        "name": "U-turn",
+        "effect": "MOVE_EFFECT_SWITCH_HIT"
+      },
+      {
+        "id": "MOVE_PAYBACK",
+        "name": "Payback",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_IF_HIT"
+      },
+      {
+        "id": "MOVE_ASSURANCE",
+        "name": "Assurance",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_IF_TARGET_HIT"
+      },
+      {
+        "id": "MOVE_EMBARGO",
+        "name": "Embargo",
+        "effect": "MOVE_EFFECT_PREVENT_ITEM_USE"
+      },
+      {
+        "id": "MOVE_FLING",
+        "name": "Fling",
+        "effect": "MOVE_EFFECT_FLING"
+      },
+      {
+        "id": "MOVE_PSYCHO_SHIFT",
+        "name": "Psycho Shift",
+        "effect": "MOVE_EFFECT_TRANSFER_STATUS"
+      },
+      {
+        "id": "MOVE_TRUMP_CARD",
+        "name": "Trump Card",
+        "effect": "MOVE_EFFECT_HIGHER_POWER_WHEN_LOW_PP"
+      },
+      {
+        "id": "MOVE_HEAL_BLOCK",
+        "name": "Heal Block",
+        "effect": "MOVE_EFFECT_PREVENT_HEALING"
+      },
+      {
+        "id": "MOVE_WRING_OUT",
+        "name": "Wring Out",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_MORE_HP"
+      },
+      {
+        "id": "MOVE_POWER_TRICK",
+        "name": "Power Trick",
+        "effect": "MOVE_EFFECT_SWAP_ATK_DEF"
+      },
+      {
+        "id": "MOVE_GASTRO_ACID",
+        "name": "Gastro Acid",
+        "effect": "MOVE_EFFECT_SUPRESS_ABILITY"
+      },
+      {
+        "id": "MOVE_LUCKY_CHANT",
+        "name": "Lucky Chant",
+        "effect": "MOVE_EFFECT_PREVENT_CRITS"
+      },
+      {
+        "id": "MOVE_ME_FIRST",
+        "name": "Me First",
+        "effect": "MOVE_EFFECT_USE_MOVE_FIRST"
+      },
+      {
+        "id": "MOVE_COPYCAT",
+        "name": "Copycat",
+        "effect": "MOVE_EFFECT_USE_LAST_USED_MOVE"
+      },
+      {
+        "id": "MOVE_POWER_SWAP",
+        "name": "Power Swap",
+        "effect": "MOVE_EFFECT_SWAP_ATK_SP_ATK_STAT_CHANGES"
+      },
+      {
+        "id": "MOVE_GUARD_SWAP",
+        "name": "Guard Swap",
+        "effect": "MOVE_EFFECT_SWAP_DEF_SP_DEF_STAT_CHANGES"
+      },
+      {
+        "id": "MOVE_PUNISHMENT",
+        "name": "Punishment",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_MORE_STAT_UP"
+      },
+      {
+        "id": "MOVE_LAST_RESORT",
+        "name": "Last Resort",
+        "effect": "MOVE_EFFECT_FAIL_IF_NOT_USED_ALL_OTHER_MOVES"
+      },
+      {
+        "id": "MOVE_WORRY_SEED",
+        "name": "Worry Seed",
+        "effect": "MOVE_EFFECT_SET_ABILITY_TO_INSOMNIA"
+      },
+      {
+        "id": "MOVE_SUCKER_PUNCH",
+        "name": "Sucker Punch",
+        "effect": "MOVE_EFFECT_HIT_FIRST_IF_TARGET_ATTACKING"
+      },
+      {
+        "id": "MOVE_TOXIC_SPIKES",
+        "name": "Toxic Spikes",
+        "effect": "MOVE_EFFECT_TOXIC_SPIKES"
+      },
+      {
+        "id": "MOVE_HEART_SWAP",
+        "name": "Heart Swap",
+        "effect": "MOVE_EFFECT_SWAP_STAT_CHANGES"
+      },
+      {
+        "id": "MOVE_AQUA_RING",
+        "name": "Aqua Ring",
+        "effect": "MOVE_EFFECT_RESTORE_HP_EVERY_TURN"
+      },
+      {
+        "id": "MOVE_MAGNET_RISE",
+        "name": "Magnet Rise",
+        "effect": "MOVE_EFFECT_GIVE_GROUND_IMMUNITY"
+      },
+      {
+        "id": "MOVE_FLARE_BLITZ",
+        "name": "Flare Blitz",
+        "effect": "MOVE_EFFECT_RECOIL_BURN_HIT"
+      },
+      {
+        "id": "MOVE_AURA_SPHERE",
+        "name": "Aura Sphere",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_AQUA_TAIL",
+        "name": "Aqua Tail",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SEED_BOMB",
+        "name": "Seed Bomb",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_X_SCISSOR",
+        "name": "X-Scissor",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DRAGON_PULSE",
+        "name": "Dragon Pulse",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_POWER_GEM",
+        "name": "Power Gem",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_VACUUM_WAVE",
+        "name": "Vacuum Wave",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_SWITCHEROO",
+        "name": "Switcheroo",
+        "effect": "MOVE_EFFECT_SWITCH_HELD_ITEMS"
+      },
+      {
+        "id": "MOVE_GIGA_IMPACT",
+        "name": "Giga Impact",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_BULLET_PUNCH",
+        "name": "Bullet Punch",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_AVALANCHE",
+        "name": "Avalanche",
+        "effect": "MOVE_EFFECT_DOUBLE_DAMAGE_IF_HIT"
+      },
+      {
+        "id": "MOVE_ICE_SHARD",
+        "name": "Ice Shard",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_THUNDER_FANG",
+        "name": "Thunder Fang",
+        "effect": "MOVE_EFFECT_FLINCH_PARALYZE_HIT"
+      },
+      {
+        "id": "MOVE_ICE_FANG",
+        "name": "Ice Fang",
+        "effect": "MOVE_EFFECT_FLINCH_FREEZE_HIT"
+      },
+      {
+        "id": "MOVE_FIRE_FANG",
+        "name": "Fire Fang",
+        "effect": "MOVE_EFFECT_FLINCH_BURN_HIT"
+      },
+      {
+        "id": "MOVE_SHADOW_SNEAK",
+        "name": "Shadow Sneak",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_DEFOG",
+        "name": "Defog",
+        "effect": "MOVE_EFFECT_REMOVE_HAZARDS_SCREENS_EVA_DOWN"
+      },
+      {
+        "id": "MOVE_TRICK_ROOM",
+        "name": "Trick Room",
+        "effect": "MOVE_EFFECT_TRICK_ROOM"
+      },
+      {
+        "id": "MOVE_POWER_WHIP",
+        "name": "Power Whip",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ROCK_WRECKER",
+        "name": "Rock Wrecker",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_CROSS_POISON",
+        "name": "Cross Poison",
+        "effect": "MOVE_EFFECT_HIGH_CRITICAL_POISON_HIT"
+      },
+      {
+        "id": "MOVE_MAGNET_BOMB",
+        "name": "Magnet Bomb",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_CAPTIVATE",
+        "name": "Captivate",
+        "effect": "MOVE_EFFECT_SP_ATK_DOWN_2_OPPOSITE_GENDER"
+      },
+      {
+        "id": "MOVE_STEALTH_ROCK",
+        "name": "Stealth Rock",
+        "effect": "MOVE_EFFECT_STEALTH_ROCK"
+      },
+      {
+        "id": "MOVE_GRASS_KNOT",
+        "name": "Grass Knot",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_WEIGHT"
+      },
+      {
+        "id": "MOVE_JUDGMENT",
+        "name": "Judgment",
+        "effect": "MOVE_EFFECT_JUDGMENT"
+      },
+      {
+        "id": "MOVE_BUG_BITE",
+        "name": "Bug Bite",
+        "effect": "MOVE_EFFECT_EAT_BERRY"
+      },
+      {
+        "id": "MOVE_CHARGE_BEAM",
+        "name": "Charge Beam",
+        "effect": "MOVE_EFFECT_RAISE_SP_ATK_HIT"
+      },
+      {
+        "id": "MOVE_AQUA_JET",
+        "name": "Aqua Jet",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_HEAL_ORDER",
+        "name": "Heal Order",
+        "effect": "MOVE_EFFECT_RESTORE_HALF_HP"
+      },
+      {
+        "id": "MOVE_ROAR_OF_TIME",
+        "name": "Roar of Time",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_LUNAR_DANCE",
+        "name": "Lunar Dance",
+        "effect": "MOVE_EFFECT_FAINT_FULL_RESTORE_NEXT_MON"
+      },
+      {
+        "id": "MOVE_CRUSH_GRIP",
+        "name": "Crush Grip",
+        "effect": "MOVE_EFFECT_INCREASE_POWER_WITH_MORE_HP"
+      },
+      {
+        "id": "MOVE_MAGMA_STORM",
+        "name": "Magma Storm",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_OMINOUS_WIND",
+        "name": "Ominous Wind",
+        "effect": "MOVE_EFFECT_RAISE_ALL_STATS_HIT"
+      },
+      {
+        "id": "MOVE_SHADOW_FORCE",
+        "name": "Shadow Force",
+        "effect": "MOVE_EFFECT_SHADOW_FORCE"
+      },
+      {
+        "id": "MOVE_468",
+        "name": "MOVE_468",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_469",
+        "name": "MOVE_469",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_470",
+        "name": "MOVE_470",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HONE_CLAWS",
+        "name": "Hone Claws",
+        "effect": "MOVE_EFFECT_ATK_ACC_UP"
+      },
+      {
+        "id": "MOVE_WIDE_GUARD",
+        "name": "Wide Guard",
+        "effect": "MOVE_EFFECT_PROTECT_USER_SIDE"
+      },
+      {
+        "id": "MOVE_GUARD_SPLIT",
+        "name": "Guard Split",
+        "effect": "MOVE_EFFECT_GUARD_SPLIT"
+      },
+      {
+        "id": "MOVE_POWER_SPLIT",
+        "name": "Power Split",
+        "effect": "MOVE_EFFECT_POWER_SPLIT"
+      },
+      {
+        "id": "MOVE_WONDER_ROOM",
+        "name": "Wonder Room",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_PSYSHOCK",
+        "name": "Psyshock",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_VENOSHOCK",
+        "name": "Venoshock",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_ON_POISONED"
+      },
+      {
+        "id": "MOVE_AUTOTOMIZE",
+        "name": "Autotomize",
+        "effect": "MOVE_EFFECT_AUTOTOMIZE"
+      },
+      {
+        "id": "MOVE_RAGE_POWDER",
+        "name": "Rage Powder",
+        "effect": "MOVE_EFFECT_MAKE_GLOBAL_TARGET"
+      },
+      {
+        "id": "MOVE_TELEKINESIS",
+        "name": "Telekinesis",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAGIC_ROOM",
+        "name": "Magic Room",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SMACK_DOWN",
+        "name": "Smack Down",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_STORM_THROW",
+        "name": "Storm Throw",
+        "effect": "MOVE_EFFECT_ALWAYS_CRITICAL"
+      },
+      {
+        "id": "MOVE_FLAME_BURST",
+        "name": "Flame Burst",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HEAVY_SLAM",
+        "name": "Heavy Slam",
+        "effect": "MOVE_EFFECT_HEAVY_SLAM"
+      },
+      {
+        "id": "MOVE_SYNCHRONOISE",
+        "name": "Synchronoise",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ELECTRO_BALL",
+        "name": "Electro Ball",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SOAK",
+        "name": "Soak",
+        "effect": "MOVE_EFFECT_CHANGE_TO_WATER_TYPE"
+      },
+      {
+        "id": "MOVE_FLAME_CHARGE",
+        "name": "Flame Charge",
+        "effect": "MOVE_EFFECT_RAISE_SPEED_HIT"
+      },
+      {
+        "id": "MOVE_FOUL_PLAY",
+        "name": "Foul Play",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SIMPLE_BEAM",
+        "name": "Simple Beam",
+        "effect": "MOVE_EFFECT_SET_ABILITY_TO_SIMPLE"
+      },
+      {
+        "id": "MOVE_ENTRAINMENT",
+        "name": "Entrainment",
+        "effect": "MOVE_EFFECT_ENTRAINMENT"
+      },
+      {
+        "id": "MOVE_AFTER_YOU",
+        "name": "After You",
+        "effect": "MOVE_EFFECT_AFTER_YOU"
+      },
+      {
+        "id": "MOVE_ROUND",
+        "name": "Round",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ECHOED_VOICE",
+        "name": "Echoed Voice",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CHIP_AWAY",
+        "name": "Chip Away",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CLEAR_SMOG",
+        "name": "Clear Smog",
+        "effect": "MOVE_EFFECT_CLEAR_SMOG"
+      },
+      {
+        "id": "MOVE_STORED_POWER",
+        "name": "Stored Power",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_QUICK_GUARD",
+        "name": "Quick Guard",
+        "effect": "MOVE_EFFECT_PROTECT_USER_SIDE"
+      },
+      {
+        "id": "MOVE_ALLY_SWITCH",
+        "name": "Ally Switch",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SCALD",
+        "name": "Scald",
+        "effect": "MOVE_EFFECT_THAW_AND_BURN_HIT"
+      },
+      {
+        "id": "MOVE_HEAL_PULSE",
+        "name": "Heal Pulse",
+        "effect": "MOVE_EFFECT_HEAL_TARGET"
+      },
+      {
+        "id": "MOVE_HEX",
+        "name": "Hex",
+        "effect": "MOVE_EFFECT_DOUBLE_DAMAGE_ON_STATUS"
+      },
+      {
+        "id": "MOVE_SKY_DROP",
+        "name": "Sky Drop",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SHIFT_GEAR",
+        "name": "Shift Gear",
+        "effect": "MOVE_EFFECT_SPEED_UP_2_ATK_UP"
+      },
+      {
+        "id": "MOVE_CIRCLE_THROW",
+        "name": "Circle Throw",
+        "effect": "MOVE_EFFECT_FORCE_SWITCH_HIT"
+      },
+      {
+        "id": "MOVE_INCINERATE",
+        "name": "Incinerate",
+        "effect": "MOVE_EFFECT_INCINERATE"
+      },
+      {
+        "id": "MOVE_QUASH",
+        "name": "Quash",
+        "effect": "MOVE_EFFECT_QUASH"
+      },
+      {
+        "id": "MOVE_ACROBATICS",
+        "name": "Acrobatics",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_WITHOUT_ITEM"
+      },
+      {
+        "id": "MOVE_REFLECT_TYPE",
+        "name": "Reflect Type",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_RETALIATE",
+        "name": "Retaliate",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FINAL_GAMBIT",
+        "name": "Final Gambit",
+        "effect": "MOVE_EFFECT_FINAL_GAMBIT"
+      },
+      {
+        "id": "MOVE_BESTOW",
+        "name": "Bestow",
+        "effect": "MOVE_EFFECT_GIVE_HELD_ITEM"
+      },
+      {
+        "id": "MOVE_WATER_PLEDGE",
+        "name": "Water Pledge",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FIRE_PLEDGE",
+        "name": "Fire Pledge",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GRASS_PLEDGE",
+        "name": "Grass Pledge",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_VOLT_SWITCH",
+        "name": "Volt Switch",
+        "effect": "MOVE_EFFECT_SWITCH_HIT"
+      },
+      {
+        "id": "MOVE_FROST_BREATH",
+        "name": "Frost Breath",
+        "effect": "MOVE_EFFECT_ALWAYS_CRITICAL"
+      },
+      {
+        "id": "MOVE_DRAGON_TAIL",
+        "name": "Dragon Tail",
+        "effect": "MOVE_EFFECT_FORCE_SWITCH_HIT"
+      },
+      {
+        "id": "MOVE_SACRED_SWORD",
+        "name": "Sacred Sword",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HEAT_CRASH",
+        "name": "Heat Crash",
+        "effect": "MOVE_EFFECT_HEAVY_SLAM"
+      },
+      {
+        "id": "MOVE_STEAMROLLER",
+        "name": "Steamroller",
+        "effect": "MOVE_EFFECT_FLINCH_MINIMIZE_DOUBLE_HIT"
+      },
+      {
+        "id": "MOVE_PSYSTRIKE",
+        "name": "Psystrike",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HURRICANE",
+        "name": "Hurricane",
+        "effect": "MOVE_EFFECT_HURRICANE"
+      },
+      {
+        "id": "MOVE_TECHNO_BLAST",
+        "name": "Techno Blast",
+        "effect": "MOVE_EFFECT_TECHNO_BLAST"
+      },
+      {
+        "id": "MOVE_RELIC_SONG",
+        "name": "Relic Song",
+        "effect": "MOVE_EFFECT_SLEEP_HIT"
+      },
+      {
+        "id": "MOVE_SECRET_SWORD",
+        "name": "Secret Sword",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FIERY_DANCE",
+        "name": "Fiery Dance",
+        "effect": "MOVE_EFFECT_RAISE_SP_ATK_HIT"
+      },
+      {
+        "id": "MOVE_FREEZE_SHOCK",
+        "name": "Freeze Shock",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_PARALYZE_HIT"
+      },
+      {
+        "id": "MOVE_ICE_BURN",
+        "name": "Ice Burn",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_BURN_HIT"
+      },
+      {
+        "id": "MOVE_V_CREATE",
+        "name": "V-create",
+        "effect": "MOVE_EFFECT_USER_DEF_SP_DEF_SPEED_DOWN_HIT"
+      },
+      {
+        "id": "MOVE_FUSION_FLARE",
+        "name": "Fusion Flare",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FUSION_BOLT",
+        "name": "Fusion Bolt",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FLYING_PRESS",
+        "name": "Flying Press",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAT_BLOCK",
+        "name": "Mat Block",
+        "effect": "MOVE_EFFECT_PROTECT_USER_SIDE"
+      },
+      {
+        "id": "MOVE_BELCH",
+        "name": "Belch",
+        "effect": "MOVE_EFFECT_BELCH"
+      },
+      {
+        "id": "MOVE_ROTOTILLER",
+        "name": "Rototiller",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_STICKY_WEB",
+        "name": "Sticky Web",
+        "effect": "MOVE_EFFECT_STICKY_WEB"
+      },
+      {
+        "id": "MOVE_FELL_STINGER",
+        "name": "Fell Stinger",
+        "effect": "MOVE_EFFECT_FELL_STINGER"
+      },
+      {
+        "id": "MOVE_PHANTOM_FORCE",
+        "name": "Phantom Force",
+        "effect": "MOVE_EFFECT_SHADOW_FORCE"
+      },
+      {
+        "id": "MOVE_TRICK_OR_TREAT",
+        "name": "Trick-or-Treat",
+        "effect": "MOVE_EFFECT_ADD_TYPE_GHOST"
+      },
+      {
+        "id": "MOVE_NOBLE_ROAR",
+        "name": "Noble Roar",
+        "effect": "MOVE_EFFECT_ATK_SP_ATK_DOWN"
+      },
+      {
+        "id": "MOVE_ION_DELUGE",
+        "name": "Ion Deluge",
+        "effect": "MOVE_EFFECT_ION_DELUGE"
+      },
+      {
+        "id": "MOVE_FORESTS_CURSE",
+        "name": "Forest's Curse",
+        "effect": "MOVE_EFFECT_ADD_TYPE_GRASS"
+      },
+      {
+        "id": "MOVE_PETAL_BLIZZARD",
+        "name": "Petal Blizzard",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DISARMING_VOICE",
+        "name": "Disarming Voice",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_PARTING_SHOT",
+        "name": "Parting Shot",
+        "effect": "MOVE_EFFECT_PARTING_SHOT"
+      },
+      {
+        "id": "MOVE_TOPSY_TURVY",
+        "name": "Topsy-Turvy",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CRAFTY_SHIELD",
+        "name": "Crafty Shield",
+        "effect": "MOVE_EFFECT_PROTECT_USER_SIDE"
+      },
+      {
+        "id": "MOVE_FLOWER_SHIELD",
+        "name": "Flower Shield",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GRASSY_TERRAIN",
+        "name": "Grassy Terrain",
+        "effect": "MOVE_EFFECT_APPLY_TERRAINS"
+      },
+      {
+        "id": "MOVE_MISTY_TERRAIN",
+        "name": "Misty Terrain",
+        "effect": "MOVE_EFFECT_APPLY_TERRAINS"
+      },
+      {
+        "id": "MOVE_ELECTRIFY",
+        "name": "Electrify",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FAIRY_WIND",
+        "name": "Fairy Wind",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BOOMBURST",
+        "name": "Boomburst",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FAIRY_LOCK",
+        "name": "Fairy Lock",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_KINGS_SHIELD",
+        "name": "King's Shield",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_CONFIDE",
+        "name": "Confide",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DIAMOND_STORM",
+        "name": "Diamond Storm",
+        "effect": "MOVE_EFFECT_RAISE_DEF_2_HIT"
+      },
+      {
+        "id": "MOVE_STEAM_ERUPTION",
+        "name": "Steam Eruption",
+        "effect": "MOVE_EFFECT_THAW_AND_BURN_HIT"
+      },
+      {
+        "id": "MOVE_HYPERSPACE_HOLE",
+        "name": "Hyperspace Hole",
+        "effect": "MOVE_EFFECT_REMOVE_PROTECT"
+      },
+      {
+        "id": "MOVE_SPIKY_SHIELD",
+        "name": "Spiky Shield",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_AROMATIC_MIST",
+        "name": "Aromatic Mist",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_VENOM_DRENCH",
+        "name": "Venom Drench",
+        "effect": "MOVE_EFFECT_VENOM_DRENCH"
+      },
+      {
+        "id": "MOVE_POWDER",
+        "name": "Powder",
+        "effect": "MOVE_EFFECT_POWDER"
+      },
+      {
+        "id": "MOVE_GEOMANCY",
+        "name": "Geomancy",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_ATK_SP_ATK_SPEED_UP_2"
+      },
+      {
+        "id": "MOVE_MAGNETIC_FLUX",
+        "name": "Magnetic Flux",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HAPPY_HOUR",
+        "name": "Happy Hour",
+        "effect": "MOVE_EFFECT_DO_NOTHING"
+      },
+      {
+        "id": "MOVE_ELECTRIC_TERRAIN",
+        "name": "ElectricTerrain",
+        "effect": "MOVE_EFFECT_APPLY_TERRAINS"
+      },
+      {
+        "id": "MOVE_DAZZLING_GLEAM",
+        "name": "Dazzling Gleam",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CELEBRATE",
+        "name": "Celebrate",
+        "effect": "MOVE_EFFECT_DO_NOTHING"
+      },
+      {
+        "id": "MOVE_HOLD_HANDS",
+        "name": "Hold Hands",
+        "effect": "MOVE_EFFECT_DO_NOTHING"
+      },
+      {
+        "id": "MOVE_HOLD_BACK",
+        "name": "Hold Back",
+        "effect": "MOVE_EFFECT_LEAVE_WITH_1_HP"
+      },
+      {
+        "id": "MOVE_INFESTATION",
+        "name": "Infestation",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_POWER_UP_PUNCH",
+        "name": "Power-Up Punch",
+        "effect": "MOVE_EFFECT_RAISE_ATTACK_HIT"
+      },
+      {
+        "id": "MOVE_THOUSAND_ARROWS",
+        "name": "Thousand Arrows",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_THOUSAND_WAVES",
+        "name": "Thousand Waves",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE_HIT"
+      },
+      {
+        "id": "MOVE_LANDS_WRATH",
+        "name": "Land's Wrath",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ORIGIN_PULSE",
+        "name": "Origin Pulse",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_PRECIPICE_BLADES",
+        "name": "PrecipiceBlades",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HYPERSPACE_FURY",
+        "name": "Hyperspace Fury",
+        "effect": "MOVE_EFFECT_USER_DEF_DOWN_HIT_REMOVE_PROTECT"
+      },
+      {
+        "id": "MOVE_BREAKNECK_BLITZ_PHYSICAL",
+        "name": "Breakneck Blitz",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BREAKNECK_BLITZ_SPECIAL",
+        "name": "Breakneck Blitz",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ALL_OUT_PUMMELING_PHYSICAL",
+        "name": "All-Out Pummel",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ALL_OUT_PUMMELING_SPECIAL",
+        "name": "All-Out Pummel",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SUPERSONIC_SKYSTRIKE_PHYSICAL",
+        "name": "Super Skystrike",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SUPERSONIC_SKYSTRIKE_SPECIAL",
+        "name": "Super Skystrike",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ACID_DOWNPOUR_PHYSICAL",
+        "name": "Acid Downpour",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ACID_DOWNPOUR_SPECIAL",
+        "name": "Acid Downpour",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TECTONIC_RAGE_PHYSICAL",
+        "name": "Tectonic Rage",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TECTONIC_RAGE_SPECIAL",
+        "name": "Tectonic Rage",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CONTINENTAL_CRUSH_PHYSICAL",
+        "name": "Continent Crush",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CONTINENTAL_CRUSH_SPECIAL",
+        "name": "Continent Crush",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SAVAGE_SPIN_OUT_PHYSICAL",
+        "name": "Savage Spin-Out",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SAVAGE_SPIN_OUT_SPECIAL",
+        "name": "Savage Spin-Out",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_NEVER_ENDING_NIGHTMARE_PHYSICAL",
+        "name": "EndlessNitemare",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_NEVER_ENDING_NIGHTMARE_SPECIAL",
+        "name": "EndlessNitemare",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CORKSCREW_CRASH_PHYSICAL",
+        "name": "Corkscrew Crash",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CORKSCREW_CRASH_SPECIAL",
+        "name": "Corkscrew Crash",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_INFERNO_OVERDRIVE_PHYSICAL",
+        "name": "Inferno Drive",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_INFERNO_OVERDRIVE_SPECIAL",
+        "name": "Inferno Drive",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HYDRO_VORTEX_PHYSICAL",
+        "name": "Hydro Vortex",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HYDRO_VORTEX_SPECIAL",
+        "name": "Hydro Vortex",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BLOOM_DOOM_PHYSICAL",
+        "name": "Bloom Doom",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BLOOM_DOOM_SPECIAL",
+        "name": "Bloom Doom",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GIGAVOLT_HAVOC_PHYSICAL",
+        "name": "Gigavolt Havoc",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GIGAVOLT_HAVOC_SPECIAL",
+        "name": "Gigavolt Havoc",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SHATTERED_PSYCHE_PHYSICAL",
+        "name": "ShatteredPsyche",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SHATTERED_PSYCHE_SPECIAL",
+        "name": "ShatteredPsyche",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SUBZERO_SLAMMER_PHYSICAL",
+        "name": "Subzero Slammer",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SUBZERO_SLAMMER_SPECIAL",
+        "name": "Subzero Slammer",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DEVASTATING_DRAKE_PHYSICAL",
+        "name": "Ultimate Drake",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DEVASTATING_DRAKE_SPECIAL",
+        "name": "Ultimate Drake",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL",
+        "name": "Black Eclipse",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BLACK_HOLE_ECLIPSE_SPECIAL",
+        "name": "Black Eclipse",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TWINKLE_TACKLE_PHYSICAL",
+        "name": "Twinkle Tackle",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TWINKLE_TACKLE_SPECIAL",
+        "name": "Twinkle Tackle",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CATASTROPIKA",
+        "name": "Catastropika",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SHORE_UP",
+        "name": "Shore Up",
+        "effect": "MOVE_EFFECT_HEAL_HALF_DIFFERENT_IN_WEATHER"
+      },
+      {
+        "id": "MOVE_FIRST_IMPRESSION",
+        "name": "FirstImpression",
+        "effect": "MOVE_EFFECT_FIRST_TURN_ONLY"
+      },
+      {
+        "id": "MOVE_BANEFUL_BUNKER",
+        "name": "Baneful Bunker",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_SPIRIT_SHACKLE",
+        "name": "Spirit Shackle",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE_HIT"
+      },
+      {
+        "id": "MOVE_DARKEST_LARIAT",
+        "name": "Darkest Lariat",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SPARKLING_ARIA",
+        "name": "Sparkling Aria",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FLORAL_HEALING",
+        "name": "Floral Healing",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HIGH_HORSEPOWER",
+        "name": "High Horsepower",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_STRENGTH_SAP",
+        "name": "Strength Sap",
+        "effect": "MOVE_EFFECT_STRENGTH_SAP"
+      },
+      {
+        "id": "MOVE_SOLAR_BLADE",
+        "name": "Solar Blade",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_SUN_SKIPS"
+      },
+      {
+        "id": "MOVE_LEAFAGE",
+        "name": "Leafage",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SPOTLIGHT",
+        "name": "Spotlight",
+        "effect": "MOVE_EFFECT_MAKE_GLOBAL_TARGET"
+      },
+      {
+        "id": "MOVE_TOXIC_THREAD",
+        "name": "Toxic Thread",
+        "effect": "MOVE_EFFECT_TOXIC_THREAD"
+      },
+      {
+        "id": "MOVE_LASER_FOCUS",
+        "name": "Laser Focus",
+        "effect": "MOVE_EFFECT_LASER_FOCUS"
+      },
+      {
+        "id": "MOVE_GEAR_UP",
+        "name": "Gear Up",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_THROAT_CHOP",
+        "name": "Throat Chop",
+        "effect": "MOVE_EFFECT_THROAT_CHOP"
+      },
+      {
+        "id": "MOVE_POLLEN_PUFF",
+        "name": "Pollen Puff",
+        "effect": "MOVE_EFFECT_POLLEN_PUFF"
+      },
+      {
+        "id": "MOVE_ANCHOR_SHOT",
+        "name": "Anchor Shot",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE_HIT"
+      },
+      {
+        "id": "MOVE_PSYCHIC_TERRAIN",
+        "name": "Psychic Terrain",
+        "effect": "MOVE_EFFECT_APPLY_TERRAINS"
+      },
+      {
+        "id": "MOVE_POWER_TRIP",
+        "name": "Power Trip",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BURN_UP",
+        "name": "Burn Up",
+        "effect": "MOVE_EFFECT_REMOVE_USER_FIRE_TYPE_HIT"
+      },
+      {
+        "id": "MOVE_SPEED_SWAP",
+        "name": "Speed Swap",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SMART_STRIKE",
+        "name": "Smart Strike",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_PURIFY",
+        "name": "Purify",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_REVELATION_DANCE",
+        "name": "RevelationDance",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CORE_ENFORCER",
+        "name": "Core Enforcer",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_INSTRUCT",
+        "name": "Instruct",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BEAK_BLAST",
+        "name": "Beak Blast",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CLANGING_SCALES",
+        "name": "Clanging Scales",
+        "effect": "MOVE_EFFECT_USER_DEF_DOWN_HIT"
+      },
+      {
+        "id": "MOVE_DRAGON_HAMMER",
+        "name": "Dragon Hammer",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BRUTAL_SWING",
+        "name": "Brutal Swing",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_AURORA_VEIL",
+        "name": "Aurora Veil",
+        "effect": "MOVE_EFFECT_SET_AURORA_VEIL"
+      },
+      {
+        "id": "MOVE_SINISTER_ARROW_RAID",
+        "name": "Sinister Raid",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MALICIOUS_MOONSAULT",
+        "name": "Moonsault",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_OCEANIC_OPERETTA",
+        "name": "OceanicOperetta",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GUARDIAN_OF_ALOLA",
+        "name": "Alolan Guardian",
+        "effect": "MOVE_EFFECT_QUARTER_HP"
+      },
+      {
+        "id": "MOVE_SOUL_STEALING_7_STAR_STRIKE",
+        "name": "7-Star Strike",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_PULVERIZING_PANCAKE",
+        "name": "Pulver-Pancake",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_EXTREME_EVOBOOST",
+        "name": "ExtremeEvoboost",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_GENESIS_SUPERNOVA",
+        "name": "OriginSupernova",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SHELL_TRAP",
+        "name": "Shell Trap",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_PSYCHIC_FANGS",
+        "name": "Psychic Fangs",
+        "effect": "MOVE_EFFECT_REMOVE_SCREENS"
+      },
+      {
+        "id": "MOVE_STOMPING_TANTRUM",
+        "name": "StompingTantrum",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ACCELEROCK",
+        "name": "Accelerock",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_PRISMATIC_LASER",
+        "name": "Prismatic Laser",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_SPECTRAL_THIEF",
+        "name": "Spectral Thief",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SUNSTEEL_STRIKE",
+        "name": "Sunsteel Strike",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MOONGEIST_BEAM",
+        "name": "Moongeist Beam",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TEARFUL_LOOK",
+        "name": "Tearful Look",
+        "effect": "MOVE_EFFECT_ATK_SP_ATK_DOWN"
+      },
+      {
+        "id": "MOVE_NATURES_MADNESS",
+        "name": "Nature'sMadness",
+        "effect": "MOVE_EFFECT_HALVE_HP"
+      },
+      {
+        "id": "MOVE_MULTI_ATTACK",
+        "name": "Multi-Attack",
+        "effect": "MOVE_EFFECT_MULTI_ATTACK"
+      },
+      {
+        "id": "MOVE_10_000_000_VOLT_THUNDERBOLT",
+        "name": "10,000,000 Bolt",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MIND_BLOWN",
+        "name": "Mind Blown",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_PLASMA_FISTS",
+        "name": "Plasma Fists",
+        "effect": "MOVE_EFFECT_ION_DELUGE_HIT"
+      },
+      {
+        "id": "MOVE_PHOTON_GEYSER",
+        "name": "Photon Geyser",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_LIGHT_THAT_BURNS_THE_SKY",
+        "name": "LightBurnSky",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SEARING_SUNRAZE_SMASH",
+        "name": "Sunraze Smash",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MENACING_MOONRAZE_MAELSTROM",
+        "name": "Moonraze Storm",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_LETS_SNUGGLE_FOREVER",
+        "name": "Let's Snuggle",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SPLINTERED_STORMSHARDS",
+        "name": "Stormshards",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_CLANGOROUS_SOULBLAZE",
+        "name": "Soulblaze",
+        "effect": "MOVE_EFFECT_RAISE_ALL_STATS_HIT"
+      },
+      {
+        "id": "MOVE_ZIPPY_ZAP",
+        "name": "Zippy Zap",
+        "effect": "MOVE_EFFECT_RAISE_EVA_HIT"
+      },
+      {
+        "id": "MOVE_PIKA_PAPOW",
+        "name": "Pika Papow",
+        "effect": "MOVE_EFFECT_POWER_BASED_ON_FRIENDSHIP"
+      },
+      {
+        "id": "MOVE_GLITZY_GLOW",
+        "name": "Glitzy Glow",
+        "effect": "MOVE_EFFECT_SET_LIGHT_SCREEN_HIT"
+      },
+      {
+        "id": "MOVE_BADDY_BAD",
+        "name": "Baddy Bad",
+        "effect": "MOVE_EFFECT_SET_REFLECT_HIT"
+      },
+      {
+        "id": "MOVE_SAPPY_SEED",
+        "name": "Sappy Seed",
+        "effect": "MOVE_EFFECT_LEECH_SEED_HIT"
+      },
+      {
+        "id": "MOVE_FREEZY_FROST",
+        "name": "Freezy Frost",
+        "effect": "MOVE_EFFECT_RESET_STAT_CHANGES_HIT"
+      },
+      {
+        "id": "MOVE_SPARKLY_SWIRL",
+        "name": "Sparkly Swirl",
+        "effect": "MOVE_EFFECT_CURE_PARTY_STATUS_HIT"
+      },
+      {
+        "id": "MOVE_VEEVEE_VOLLEY",
+        "name": "Veevee Volley",
+        "effect": "MOVE_EFFECT_POWER_BASED_ON_FRIENDSHIP"
+      },
+      {
+        "id": "MOVE_DOUBLE_IRON_BASH",
+        "name": "Double IronBash",
+        "effect": "MOVE_EFFECT_HIT_TWICE_AND_FLINCH"
+      },
+      {
+        "id": "MOVE_MAX_GUARD",
+        "name": "Max Guard",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_DYNAMAX_CANNON",
+        "name": "Dynamax Cannon",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_JAW_LOCK",
+        "name": "Jaw Lock",
+        "effect": "MOVE_EFFECT_PREVENT_ESCAPE_BOTH_HIT"
+      },
+      {
+        "id": "MOVE_STUFF_CHEEKS",
+        "name": "Stuff Cheeks",
+        "effect": "MOVE_EFFECT_STUFF_CHEEKS"
+      },
+      {
+        "id": "MOVE_NO_RETREAT",
+        "name": "No Retreat",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TAR_SHOT",
+        "name": "Tar Shot",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAGIC_POWDER",
+        "name": "Magic Powder",
+        "effect": "MOVE_EFFECT_CHANGE_TO_PSYCHIC_TYPE"
+      },
+      {
+        "id": "MOVE_TEATIME",
+        "name": "Teatime",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_OCTOLOCK",
+        "name": "Octolock",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BOLT_BEAK",
+        "name": "Bolt Beak",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_IF_FASTER"
+      },
+      {
+        "id": "MOVE_FISHIOUS_REND",
+        "name": "Fishious Rend",
+        "effect": "MOVE_EFFECT_DOUBLE_POWER_IF_FASTER"
+      },
+      {
+        "id": "MOVE_COURT_CHANGE",
+        "name": "Court Change",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_FLARE",
+        "name": "Max Flare",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_LIGHTNING",
+        "name": "Max Lightning",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_KNUCKLE",
+        "name": "Max Knuckle",
+        "effect": "MOVE_EFFECT_RAISE_ATTACK_HIT"
+      },
+      {
+        "id": "MOVE_MAX_HAILSTORM",
+        "name": "Max Hailstorm",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_OOZE",
+        "name": "Max Ooze",
+        "effect": "MOVE_EFFECT_RAISE_SP_ATK_HIT"
+      },
+      {
+        "id": "MOVE_MAX_GEYSER",
+        "name": "Max Geyser",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_AIRSTREAM",
+        "name": "Max Airstream",
+        "effect": "MOVE_EFFECT_RAISE_SPEED_HIT"
+      },
+      {
+        "id": "MOVE_MAX_STARFALL",
+        "name": "Max Starfall",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_MINDSTORM",
+        "name": "Max Mindstorm",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_ROCKFALL",
+        "name": "Max Rockfall",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_QUAKE",
+        "name": "Max Quake",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_OVERGROWTH",
+        "name": "Max Overgrowth",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MAX_STEELSPIKE",
+        "name": "Max Steelspike",
+        "effect": "MOVE_EFFECT_RAISE_DEF_HIT"
+      },
+      {
+        "id": "MOVE_CLANGOROUS_SOUL",
+        "name": "Clangorous Soul",
+        "effect": "MOVE_EFFECT_RAISE_ALL_STATS_LOSE_THIRD_MAX_HP"
+      },
+      {
+        "id": "MOVE_BODY_PRESS",
+        "name": "Body Press",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DECORATE",
+        "name": "Decorate",
+        "effect": "MOVE_EFFECT_DECORATE"
+      },
+      {
+        "id": "MOVE_SNAP_TRAP",
+        "name": "Snap Trap",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_BEHEMOTH_BLADE",
+        "name": "Behemoth Blade",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_BEHEMOTH_BASH",
+        "name": "Behemoth Bash",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_AURA_WHEEL",
+        "name": "Aura Wheel",
+        "effect": "MOVE_EFFECT_RAISE_SPEED_HIT"
+      },
+      {
+        "id": "MOVE_BRANCH_POKE",
+        "name": "Branch Poke",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_OVERDRIVE",
+        "name": "Overdrive",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_LIFE_DEW",
+        "name": "Life Dew",
+        "effect": "MOVE_EFFECT_LIFE_DEW"
+      },
+      {
+        "id": "MOVE_OBSTRUCT",
+        "name": "Obstruct",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_FALSE_SURRENDER",
+        "name": "False Surrender",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_METEOR_ASSAULT",
+        "name": "Meteor Assault",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_ETERNABEAM",
+        "name": "Eternabeam",
+        "effect": "MOVE_EFFECT_RECHARGE_AFTER"
+      },
+      {
+        "id": "MOVE_STEEL_BEAM",
+        "name": "Steel Beam",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_EXPANDING_FORCE",
+        "name": "Expanding Force",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_STEEL_ROLLER",
+        "name": "Steel Roller",
+        "effect": "MOVE_EFFECT_END_TERRAIN"
+      },
+      {
+        "id": "MOVE_METEOR_BEAM",
+        "name": "Meteor Beam",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_SP_ATK_UP"
+      },
+      {
+        "id": "MOVE_SHELL_SIDE_ARM",
+        "name": "Shell Side Arm",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MISTY_EXPLOSION",
+        "name": "Misty Explosion",
+        "effect": "MOVE_EFFECT_HALVE_DEFENSE"
+      },
+      {
+        "id": "MOVE_GRASSY_GLIDE",
+        "name": "Grassy Glide",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_RISING_VOLTAGE",
+        "name": "Rising Voltage",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TERRAIN_PULSE",
+        "name": "Terrain Pulse",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_LASH_OUT",
+        "name": "Lash Out",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_POLTERGEIST",
+        "name": "Poltergeist",
+        "effect": "MOVE_EFFECT_POLTERGEIST"
+      },
+      {
+        "id": "MOVE_CORROSIVE_GAS",
+        "name": "Corrosive Gas",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_COACHING",
+        "name": "Coaching",
+        "effect": "MOVE_EFFECT_COACHING"
+      },
+      {
+        "id": "MOVE_FLIP_TURN",
+        "name": "Flip Turn",
+        "effect": "MOVE_EFFECT_SWITCH_HIT"
+      },
+      {
+        "id": "MOVE_TRIPLE_AXEL",
+        "name": "Triple Axel",
+        "effect": "MOVE_EFFECT_HIT_THREE_TIMES_INCREMENT_BASE_POWER_20"
+      },
+      {
+        "id": "MOVE_JUNGLE_HEALING",
+        "name": "Jungle Healing",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_WICKED_BLOW",
+        "name": "Wicked Blow",
+        "effect": "MOVE_EFFECT_ALWAYS_CRITICAL"
+      },
+      {
+        "id": "MOVE_SURGING_STRIKES",
+        "name": "Surging Strikes",
+        "effect": "MOVE_EFFECT_HIT_THREE_TIMES_ALWAYS_CRITICAL"
+      },
+      {
+        "id": "MOVE_THUNDER_CAGE",
+        "name": "Thunder Cage",
+        "effect": "MOVE_EFFECT_BIND_HIT"
+      },
+      {
+        "id": "MOVE_DRAGON_ENERGY",
+        "name": "Dragon Energy",
+        "effect": "MOVE_EFFECT_DECREASE_POWER_WITH_LESS_USER_HP"
+      },
+      {
+        "id": "MOVE_GLACIAL_LANCE",
+        "name": "Glacial Lance",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ASTRAL_BARRAGE",
+        "name": "Astral Barrage",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_EERIE_SPELL",
+        "name": "Eerie Spell",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DIRE_CLAW",
+        "name": "Dire Claw",
+        "effect": "MOVE_EFFECT_SLEEP_POISON_PARALYZE_HIT"
+      },
+      {
+        "id": "MOVE_PSYSHIELD_BASH",
+        "name": "Psyshield Bash",
+        "effect": "MOVE_EFFECT_RAISE_DEF_HIT"
+      },
+      {
+        "id": "MOVE_POWER_SHIFT",
+        "name": "Power Shift",
+        "effect": "MOVE_EFFECT_SWAP_ATK_DEF"
+      },
+      {
+        "id": "MOVE_STONE_AXE",
+        "name": "Stone Axe",
+        "effect": "MOVE_EFFECT_STEALTH_ROCK_HIT"
+      },
+      {
+        "id": "MOVE_MYSTICAL_POWER",
+        "name": "Mystical Power",
+        "effect": "MOVE_EFFECT_RAISE_SP_ATK_HIT"
+      },
+      {
+        "id": "MOVE_RAGING_FURY",
+        "name": "Raging Fury",
+        "effect": "MOVE_EFFECT_CONTINUE_AND_CONFUSE_SELF"
+      },
+      {
+        "id": "MOVE_CHLOROBLAST",
+        "name": "Chloroblast",
+        "effect": "MOVE_EFFECT_RECOIL_HALF_MAX_HP"
+      },
+      {
+        "id": "MOVE_VICTORY_DANCE",
+        "name": "Victory Dance",
+        "effect": "MOVE_EFFECT_ATK_DEF_SPEED_UP"
+      },
+      {
+        "id": "MOVE_BARB_BARRAGE",
+        "name": "Barb Barrage",
+        "effect": "MOVE_EFFECT_POISON_HIT_DOUBLE_POWER_ON_POISONED"
+      },
+      {
+        "id": "MOVE_ESPER_WING",
+        "name": "Esper Wing",
+        "effect": "MOVE_EFFECT_HIGH_CRITICAL_RAISE_SPEED_HIT"
+      },
+      {
+        "id": "MOVE_TRIPLE_ARROWS",
+        "name": "Triple Arrows",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_INFERNAL_PARADE",
+        "name": "Infernal Parade",
+        "effect": "MOVE_EFFECT_BURN_HIT_DOUBLE_POWER_ON_STATUS"
+      },
+      {
+        "id": "MOVE_CEASELESS_EDGE",
+        "name": "Ceaseless Edge",
+        "effect": "MOVE_EFFECT_SET_SPIKES_HIT"
+      },
+      {
+        "id": "MOVE_BLEAKWIND_STORM",
+        "name": "BleakwindStorm",
+        "effect": "MOVE_EFFECT_BLEAKWIND_STORM"
+      },
+      {
+        "id": "MOVE_WILDBOLT_STORM",
+        "name": "WildboltStorm",
+        "effect": "MOVE_EFFECT_WILDBOLT_STORM"
+      },
+      {
+        "id": "MOVE_SANDSEAR_STORM",
+        "name": "SandsearStorm",
+        "effect": "MOVE_EFFECT_SANDSEAR_STORM"
+      },
+      {
+        "id": "MOVE_LUNAR_BLESSING",
+        "name": "Lunar Blessing",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TAKE_HEART",
+        "name": "Take Heart",
+        "effect": "MOVE_EFFECT_TAKE_HEART"
+      },
+      {
+        "id": "MOVE_TERA_BLAST",
+        "name": "Tera Blast",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SILK_TRAP",
+        "name": "Silk Trap",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_AXE_KICK",
+        "name": "Axe Kick",
+        "effect": "MOVE_EFFECT_CONFUSE_HIT_CRASH_ON_MISS"
+      },
+      {
+        "id": "MOVE_LAST_RESPECTS",
+        "name": "Last Respects",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ORDER_UP",
+        "name": "Order Up",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_JET_PUNCH",
+        "name": "Jet Punch",
+        "effect": "MOVE_EFFECT_PRIORITY_1"
+      },
+      {
+        "id": "MOVE_SPICY_EXTRACT",
+        "name": "Spicy Extract",
+        "effect": "MOVE_EFFECT_SPICY_EXTRACT"
+      },
+      {
+        "id": "MOVE_POPULATION_BOMB",
+        "name": "Population Bomb",
+        "effect": "MOVE_EFFECT_UP_TO_10_HITS"
+      },
+      {
+        "id": "MOVE_ICE_SPINNER",
+        "name": "Ice Spinner",
+        "effect": "MOVE_EFFECT_END_TERRAIN"
+      },
+      {
+        "id": "MOVE_GLAIVE_RUSH",
+        "name": "Glaive Rush",
+        "effect": "MOVE_EFFECT_GLAIVE_RUSH"
+      },
+      {
+        "id": "MOVE_REVIVAL_BLESSING",
+        "name": "RevivalBlessing",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SALT_CURE",
+        "name": "Salt Cure",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TRIPLE_DIVE",
+        "name": "Triple Dive",
+        "effect": "MOVE_EFFECT_HIT_THREE_TIMES"
+      },
+      {
+        "id": "MOVE_MORTAL_SPIN",
+        "name": "Mortal Spin",
+        "effect": "MOVE_EFFECT_MORTAL_SPIN"
+      },
+      {
+        "id": "MOVE_DOODLE",
+        "name": "Doodle",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FILLET_AWAY",
+        "name": "Fillet Away",
+        "effect": "MOVE_EFFECT_ATK_SP_ATK_SPEED_UP_2_LOSE_HALF_MAX_HP"
+      },
+      {
+        "id": "MOVE_KOWTOW_CLEAVE",
+        "name": "Kowtow Cleave",
+        "effect": "MOVE_EFFECT_BYPASS_ACCURACY"
+      },
+      {
+        "id": "MOVE_FLOWER_TRICK",
+        "name": "Flower Trick",
+        "effect": "MOVE_EFFECT_ALWAYS_CRITICAL"
+      },
+      {
+        "id": "MOVE_TORCH_SONG",
+        "name": "Torch Song",
+        "effect": "MOVE_EFFECT_RAISE_SP_ATK_HIT"
+      },
+      {
+        "id": "MOVE_AQUA_STEP",
+        "name": "Aqua Step",
+        "effect": "MOVE_EFFECT_RAISE_SPEED_HIT"
+      },
+      {
+        "id": "MOVE_RAGING_BULL",
+        "name": "Raging Bull",
+        "effect": "MOVE_EFFECT_REMOVE_SCREENS"
+      },
+      {
+        "id": "MOVE_MAKE_IT_RAIN",
+        "name": "Make It Rain",
+        "effect": "MOVE_EFFECT_MAKE_IT_RAIN"
+      },
+      {
+        "id": "MOVE_PSYBLADE",
+        "name": "Psyblade",
+        "effect": "MOVE_EFFECT_PSYBLADE"
+      },
+      {
+        "id": "MOVE_HYDRO_STEAM",
+        "name": "Hydro Steam",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_RUINATION",
+        "name": "Ruination",
+        "effect": "MOVE_EFFECT_HALVE_HP"
+      },
+      {
+        "id": "MOVE_COLLISION_COURSE",
+        "name": "ColisionCourse",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ELECTRO_DRIFT",
+        "name": "Electro Drift",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SHED_TAIL",
+        "name": "Shed Tail",
+        "effect": "MOVE_EFFECT_SHED_TAIL"
+      },
+      {
+        "id": "MOVE_CHILLY_RECEPTION",
+        "name": "ChillyReception",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TIDY_UP",
+        "name": "Tidy Up",
+        "effect": "MOVE_EFFECT_TIDY_UP"
+      },
+      {
+        "id": "MOVE_SNOWSCAPE",
+        "name": "Snowscape",
+        "effect": "MOVE_EFFECT_WEATHER_SNOW"
+      },
+      {
+        "id": "MOVE_TRAILBLAZE",
+        "name": "Trailblaze",
+        "effect": "MOVE_EFFECT_RAISE_SPEED_HIT"
+      },
+      {
+        "id": "MOVE_HYPER_DRILL",
+        "name": "Hyper Drill",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_RAGE_FIST",
+        "name": "Rage Fist",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DOUBLE_SHOCK",
+        "name": "Double Shock",
+        "effect": "MOVE_EFFECT_REMOVE_USER_ELECTRIC_TYPE_HIT"
+      },
+      {
+        "id": "MOVE_GIGATON_HAMMER",
+        "name": "Gigaton Hammer",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_COMEUPPANCE",
+        "name": "Comeuppance",
+        "effect": "MOVE_EFFECT_METAL_BURST"
+      },
+      {
+        "id": "MOVE_WICKED_TORQUE",
+        "name": "Wicked Torque",
+        "effect": "MOVE_EFFECT_SLEEP_HIT"
+      },
+      {
+        "id": "MOVE_BLOOD_MOON",
+        "name": "Blood Moon",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SYRUP_BOMB",
+        "name": "Syrup Bomb",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_IVY_CUDGEL",
+        "name": "Ivy Cudgel",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ELECTRO_SHOT",
+        "name": "Electro Shot",
+        "effect": "MOVE_EFFECT_CHARGE_TURN_SP_ATK_UP_RAIN_SKIPS"
+      },
+      {
+        "id": "MOVE_TERA_STARSTORM",
+        "name": "Tera Starstorm",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_FICKLE_BEAM",
+        "name": "Fickle Beam",
+        "effect": "MOVE_EFFECT_FICKLE_BEAM"
+      },
+      {
+        "id": "MOVE_BURNING_BULWARK",
+        "name": "Burning Bulwark",
+        "effect": "MOVE_EFFECT_PROTECT"
+      },
+      {
+        "id": "MOVE_THUNDERCLAP",
+        "name": "Thunderclap",
+        "effect": "MOVE_EFFECT_HIT_FIRST_IF_TARGET_ATTACKING"
+      },
+      {
+        "id": "MOVE_MIGHTY_CLEAVE",
+        "name": "Mighty Cleave",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_HARD_PRESS",
+        "name": "Hard Press",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_DRAGON_CHEER",
+        "name": "Dragon Cheer",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_ALLURING_VOICE",
+        "name": "Alluring Voice",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_TEMPER_FLARE",
+        "name": "Temper Flare",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_SUPERCELL_SLAM",
+        "name": "Supercell Slam",
+        "effect": "MOVE_EFFECT_CRASH_ON_MISS"
+      },
+      {
+        "id": "MOVE_PSYCHIC_NOISE",
+        "name": "Psychic Noise",
+        "effect": "MOVE_EFFECT_PREVENT_HEALING_HIT"
+      },
+      {
+        "id": "MOVE_UPPER_HAND",
+        "name": "Upper Hand",
+        "effect": "MOVE_EFFECT_HIT"
+      },
+      {
+        "id": "MOVE_MALIGNANT_CHAIN",
+        "name": "Malignant Chain",
+        "effect": "MOVE_EFFECT_BADLY_POISON_HIT"
+      },
+      {
+        "id": "MOVE_G_MAX_WILDFIRE",
+        "name": "G Max Wildfire",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_BEFUDDLE",
+        "name": "G Max Befuddle",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_VOLT_CRASH",
+        "name": "G Max Volt Crash",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_GOLD_RUSH",
+        "name": "G Max Gold Rush",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_CHI_STRIKE",
+        "name": "G Max Chi Strike",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_TERROR",
+        "name": "G Max Terror",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_RESONANCE",
+        "name": "G Max Resonance",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_CUDDLE",
+        "name": "G Max Cuddle",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_REPLENISH",
+        "name": "G Max Replenish",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_MALODOR",
+        "name": "G Max Malodor",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_STONESURGE",
+        "name": "G Max Stonesurge",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_WIND_RAGE",
+        "name": "G Max Wind Rage",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_STUN_SHOCK",
+        "name": "G Max Stun Shock",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_FINALE",
+        "name": "G Max Finale",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_DEPLETION",
+        "name": "G Max Depletion",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_GRAVITAS",
+        "name": "G Max Gravitas",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_VOLCALITH",
+        "name": "G Max Volcalith",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_SANDBLAST",
+        "name": "G Max Sandblast",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_SNOOZE",
+        "name": "G Max Snooze",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_TARTNESS",
+        "name": "G Max Tartness",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_SWEETNESS",
+        "name": "G Max Sweetness",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_SMITE",
+        "name": "G Max Smite",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_STEELSURGE",
+        "name": "G Max Steelsurge",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_MELTDOWN",
+        "name": "G Max Meltdown",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_FOAM_BURST",
+        "name": "G Max Foam Burst",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_CENTIFERNO",
+        "name": "G Max Centiferno",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_VINE_LASH",
+        "name": "G Max Vine Lash",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_CANNONADE",
+        "name": "G Max Cannonade",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_DRUM_SOLO",
+        "name": "G Max Drum Solo",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_FIREBALL",
+        "name": "G Max Fireball",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_HYDROSNIPE",
+        "name": "G Max Hydrosnipe",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_ONE_BLOW",
+        "name": "G Max One Blow",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      },
+      {
+        "id": "MOVE_G_MAX_RAPID_FLOW",
+        "name": "G Max Rapid Flow",
+        "effect": "MOVE_EFFECT_UNKNOWN"
+      }
+    ],
+    "movesWithNoDescriptions": [
+      {
+        "id": "MOVE_G_MAX_WILDFIRE",
+        "name": "G Max Wildfire"
+      },
+      {
+        "id": "MOVE_G_MAX_BEFUDDLE",
+        "name": "G Max Befuddle"
+      },
+      {
+        "id": "MOVE_G_MAX_VOLT_CRASH",
+        "name": "G Max Volt Crash"
+      },
+      {
+        "id": "MOVE_G_MAX_GOLD_RUSH",
+        "name": "G Max Gold Rush"
+      },
+      {
+        "id": "MOVE_G_MAX_CHI_STRIKE",
+        "name": "G Max Chi Strike"
+      },
+      {
+        "id": "MOVE_G_MAX_TERROR",
+        "name": "G Max Terror"
+      },
+      {
+        "id": "MOVE_G_MAX_RESONANCE",
+        "name": "G Max Resonance"
+      },
+      {
+        "id": "MOVE_G_MAX_CUDDLE",
+        "name": "G Max Cuddle"
+      },
+      {
+        "id": "MOVE_G_MAX_REPLENISH",
+        "name": "G Max Replenish"
+      },
+      {
+        "id": "MOVE_G_MAX_MALODOR",
+        "name": "G Max Malodor"
+      },
+      {
+        "id": "MOVE_G_MAX_STONESURGE",
+        "name": "G Max Stonesurge"
+      },
+      {
+        "id": "MOVE_G_MAX_WIND_RAGE",
+        "name": "G Max Wind Rage"
+      },
+      {
+        "id": "MOVE_G_MAX_STUN_SHOCK",
+        "name": "G Max Stun Shock"
+      },
+      {
+        "id": "MOVE_G_MAX_FINALE",
+        "name": "G Max Finale"
+      },
+      {
+        "id": "MOVE_G_MAX_DEPLETION",
+        "name": "G Max Depletion"
+      },
+      {
+        "id": "MOVE_G_MAX_GRAVITAS",
+        "name": "G Max Gravitas"
+      },
+      {
+        "id": "MOVE_G_MAX_VOLCALITH",
+        "name": "G Max Volcalith"
+      },
+      {
+        "id": "MOVE_G_MAX_SANDBLAST",
+        "name": "G Max Sandblast"
+      },
+      {
+        "id": "MOVE_G_MAX_SNOOZE",
+        "name": "G Max Snooze"
+      },
+      {
+        "id": "MOVE_G_MAX_TARTNESS",
+        "name": "G Max Tartness"
+      },
+      {
+        "id": "MOVE_G_MAX_SWEETNESS",
+        "name": "G Max Sweetness"
+      },
+      {
+        "id": "MOVE_G_MAX_SMITE",
+        "name": "G Max Smite"
+      },
+      {
+        "id": "MOVE_G_MAX_STEELSURGE",
+        "name": "G Max Steelsurge"
+      },
+      {
+        "id": "MOVE_G_MAX_MELTDOWN",
+        "name": "G Max Meltdown"
+      },
+      {
+        "id": "MOVE_G_MAX_FOAM_BURST",
+        "name": "G Max Foam Burst"
+      },
+      {
+        "id": "MOVE_G_MAX_CENTIFERNO",
+        "name": "G Max Centiferno"
+      },
+      {
+        "id": "MOVE_G_MAX_VINE_LASH",
+        "name": "G Max Vine Lash"
+      },
+      {
+        "id": "MOVE_G_MAX_CANNONADE",
+        "name": "G Max Cannonade"
+      },
+      {
+        "id": "MOVE_G_MAX_DRUM_SOLO",
+        "name": "G Max Drum Solo"
+      },
+      {
+        "id": "MOVE_G_MAX_FIREBALL",
+        "name": "G Max Fireball"
+      },
+      {
+        "id": "MOVE_G_MAX_HYDROSNIPE",
+        "name": "G Max Hydrosnipe"
+      },
+      {
+        "id": "MOVE_G_MAX_ONE_BLOW",
+        "name": "G Max One Blow"
+      },
+      {
+        "id": "MOVE_G_MAX_RAPID_FLOW",
+        "name": "G Max Rapid Flow"
+      }
+    ],
+    "itemsMissingDescriptions": [
+      {
+        "id": "ITEM_ULTRA_BALL",
+        "name": "Ultra Ball"
+      },
+      {
+        "id": "ITEM_GREAT_BALL",
+        "name": "Great Ball"
+      },
+      {
+        "id": "ITEM_POKE_BALL",
+        "name": "Poké Ball"
+      },
+      {
+        "id": "ITEM_POTION",
+        "name": "Potion"
+      },
+      {
+        "id": "ITEM_ANTIDOTE",
+        "name": "Antidote"
+      },
+      {
+        "id": "ITEM_BURN_HEAL",
+        "name": "Burn Heal"
+      },
+      {
+        "id": "ITEM_ICE_HEAL",
+        "name": "Ice Heal"
+      },
+      {
+        "id": "ITEM_AWAKENING",
+        "name": "Awakening"
+      },
+      {
+        "id": "ITEM_PARALYZE_HEAL",
+        "name": "Paralyze Heal"
+      },
+      {
+        "id": "ITEM_FULL_RESTORE",
+        "name": "Full Restore"
+      },
+      {
+        "id": "ITEM_MAX_POTION",
+        "name": "Max Potion"
+      },
+      {
+        "id": "ITEM_HYPER_POTION",
+        "name": "Hyper Potion"
+      },
+      {
+        "id": "ITEM_SUPER_POTION",
+        "name": "Super Potion"
+      },
+      {
+        "id": "ITEM_FULL_HEAL",
+        "name": "Full Heal"
+      },
+      {
+        "id": "ITEM_REVIVE",
+        "name": "Revive"
+      },
+      {
+        "id": "ITEM_MAX_REVIVE",
+        "name": "Max Revive"
+      },
+      {
+        "id": "ITEM_MOOMOO_MILK",
+        "name": "Moomoo Milk"
+      },
+      {
+        "id": "ITEM_BERRY_JUICE",
+        "name": "Berry Juice"
+      },
+      {
+        "id": "ITEM_SACRED_ASH",
+        "name": "Sacred Ash"
+      },
+      {
+        "id": "ITEM_HP_UP",
+        "name": "HP Up"
+      },
+      {
+        "id": "ITEM_PROTEIN",
+        "name": "Protein"
+      },
+      {
+        "id": "ITEM_IRON",
+        "name": "Iron"
+      },
+      {
+        "id": "ITEM_CARBOS",
+        "name": "Carbos"
+      },
+      {
+        "id": "ITEM_CALCIUM",
+        "name": "Calcium"
+      },
+      {
+        "id": "ITEM_ZINC",
+        "name": "Zinc"
+      },
+      {
+        "id": "ITEM_RED_SHARD",
+        "name": "Red Shard"
+      },
+      {
+        "id": "ITEM_BLUE_SHARD",
+        "name": "Blue Shard"
+      },
+      {
+        "id": "ITEM_YELLOW_SHARD",
+        "name": "Yellow Shard"
+      },
+      {
+        "id": "ITEM_GREEN_SHARD",
+        "name": "Green Shard"
+      },
+      {
+        "id": "ITEM_SUPER_REPEL",
+        "name": "Super Repel"
+      },
+      {
+        "id": "ITEM_MAX_REPEL",
+        "name": "Max Repel"
+      },
+      {
+        "id": "ITEM_ESCAPE_ROPE",
+        "name": "Escape Rope"
+      },
+      {
+        "id": "ITEM_REPEL",
+        "name": "Repel"
+      },
+      {
+        "id": "ITEM_SUN_STONE",
+        "name": "Sun Stone"
+      },
+      {
+        "id": "ITEM_MOON_STONE",
+        "name": "Moon Stone"
+      },
+      {
+        "id": "ITEM_FIRE_STONE",
+        "name": "Fire Stone"
+      },
+      {
+        "id": "ITEM_THUNDER_STONE",
+        "name": "Thunder Stone"
+      },
+      {
+        "id": "ITEM_WATER_STONE",
+        "name": "Water Stone"
+      },
+      {
+        "id": "ITEM_LEAF_STONE",
+        "name": "Leaf Stone"
+      },
+      {
+        "id": "ITEM_TINY_MUSHROOM",
+        "name": "Tiny Mushroom"
+      },
+      {
+        "id": "ITEM_BIG_MUSHROOM",
+        "name": "Big Mushroom"
+      },
+      {
+        "id": "ITEM_PEARL",
+        "name": "Pearl"
+      },
+      {
+        "id": "ITEM_BIG_PEARL",
+        "name": "Big Pearl"
+      },
+      {
+        "id": "ITEM_STARDUST",
+        "name": "Stardust"
+      },
+      {
+        "id": "ITEM_STAR_PIECE",
+        "name": "Star Piece"
+      },
+      {
+        "id": "ITEM_NUGGET",
+        "name": "Nugget"
+      },
+      {
+        "id": "ITEM_HEART_SCALE",
+        "name": "Heart Scale"
+      },
+      {
+        "id": "ITEM_HONEY",
+        "name": "Honey"
+      },
+      {
+        "id": "ITEM_SHINY_STONE",
+        "name": "Shiny Stone"
+      },
+      {
+        "id": "ITEM_DUSK_STONE",
+        "name": "Dusk Stone"
+      },
+      {
+        "id": "ITEM_DAWN_STONE",
+        "name": "Dawn Stone"
+      },
+      {
+        "id": "ITEM_OVAL_STONE",
+        "name": "Oval Stone"
+      },
+      {
+        "id": "ITEM_CHERI_BERRY",
+        "name": "Cheri Berry"
+      },
+      {
+        "id": "ITEM_CHESTO_BERRY",
+        "name": "Chesto Berry"
+      },
+      {
+        "id": "ITEM_PECHA_BERRY",
+        "name": "Pecha Berry"
+      },
+      {
+        "id": "ITEM_RAWST_BERRY",
+        "name": "Rawst Berry"
+      },
+      {
+        "id": "ITEM_ASPEAR_BERRY",
+        "name": "Aspear Berry"
+      },
+      {
+        "id": "ITEM_LEPPA_BERRY",
+        "name": "Leppa Berry"
+      },
+      {
+        "id": "ITEM_ORAN_BERRY",
+        "name": "Oran Berry"
+      },
+      {
+        "id": "ITEM_PERSIM_BERRY",
+        "name": "Persim Berry"
+      },
+      {
+        "id": "ITEM_LUM_BERRY",
+        "name": "Lum Berry"
+      },
+      {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "Sitrus Berry"
+      },
+      {
+        "id": "ITEM_POMEG_BERRY",
+        "name": "Pomeg Berry"
+      },
+      {
+        "id": "ITEM_KELPSY_BERRY",
+        "name": "Kelpsy Berry"
+      },
+      {
+        "id": "ITEM_QUALOT_BERRY",
+        "name": "Qualot Berry"
+      },
+      {
+        "id": "ITEM_HONDEW_BERRY",
+        "name": "Hondew Berry"
+      },
+      {
+        "id": "ITEM_GREPA_BERRY",
+        "name": "Grepa Berry"
+      },
+      {
+        "id": "ITEM_TAMATO_BERRY",
+        "name": "Tamato Berry"
+      },
+      {
+        "id": "ITEM_OCCA_BERRY",
+        "name": "Occa Berry"
+      },
+      {
+        "id": "ITEM_PASSHO_BERRY",
+        "name": "Passho Berry"
+      },
+      {
+        "id": "ITEM_WACAN_BERRY",
+        "name": "Wacan Berry"
+      },
+      {
+        "id": "ITEM_RINDO_BERRY",
+        "name": "Rindo Berry"
+      },
+      {
+        "id": "ITEM_YACHE_BERRY",
+        "name": "Yache Berry"
+      },
+      {
+        "id": "ITEM_CHOPLE_BERRY",
+        "name": "Chople Berry"
+      },
+      {
+        "id": "ITEM_SHUCA_BERRY",
+        "name": "Shuca Berry"
+      },
+      {
+        "id": "ITEM_COBA_BERRY",
+        "name": "Coba Berry"
+      },
+      {
+        "id": "ITEM_PAYAPA_BERRY",
+        "name": "Payapa Berry"
+      },
+      {
+        "id": "ITEM_TANGA_BERRY",
+        "name": "Tanga Berry"
+      },
+      {
+        "id": "ITEM_CHARTI_BERRY",
+        "name": "Charti Berry"
+      },
+      {
+        "id": "ITEM_KASIB_BERRY",
+        "name": "Kasib Berry"
+      },
+      {
+        "id": "ITEM_HABAN_BERRY",
+        "name": "Haban Berry"
+      },
+      {
+        "id": "ITEM_COLBUR_BERRY",
+        "name": "Colbur Berry"
+      },
+      {
+        "id": "ITEM_BABIRI_BERRY",
+        "name": "Babiri Berry"
+      },
+      {
+        "id": "ITEM_CHILAN_BERRY",
+        "name": "Chilan Berry"
+      },
+      {
+        "id": "ITEM_BRIGHT_POWDER",
+        "name": "Bright Powder"
+      },
+      {
+        "id": "ITEM_MACHO_BRACE",
+        "name": "Macho Brace"
+      },
+      {
+        "id": "ITEM_QUICK_CLAW",
+        "name": "Quick Claw"
+      },
+      {
+        "id": "ITEM_MENTAL_HERB",
+        "name": "Mental Herb"
+      },
+      {
+        "id": "ITEM_CHOICE_BAND",
+        "name": "Choice Band"
+      },
+      {
+        "id": "ITEM_KINGS_ROCK",
+        "name": "King's Rock"
+      },
+      {
+        "id": "ITEM_SILVER_POWDER",
+        "name": "Silver Powder"
+      },
+      {
+        "id": "ITEM_CLEANSE_TAG",
+        "name": "Cleanse Tag"
+      },
+      {
+        "id": "ITEM_DEEP_SEA_TOOTH",
+        "name": "Deep Sea Tooth"
+      },
+      {
+        "id": "ITEM_DEEP_SEA_SCALE",
+        "name": "Deep Sea Scale"
+      },
+      {
+        "id": "ITEM_SMOKE_BALL",
+        "name": "Smoke Ball"
+      },
+      {
+        "id": "ITEM_EVERSTONE",
+        "name": "Everstone"
+      },
+      {
+        "id": "ITEM_FOCUS_BAND",
+        "name": "Focus Band"
+      },
+      {
+        "id": "ITEM_LUCKY_EGG",
+        "name": "Lucky Egg"
+      },
+      {
+        "id": "ITEM_SCOPE_LENS",
+        "name": "Scope Lens"
+      },
+      {
+        "id": "ITEM_METAL_COAT",
+        "name": "Metal Coat"
+      },
+      {
+        "id": "ITEM_LEFTOVERS",
+        "name": "Leftovers"
+      },
+      {
+        "id": "ITEM_DRAGON_SCALE",
+        "name": "Dragon Scale"
+      },
+      {
+        "id": "ITEM_LIGHT_BALL",
+        "name": "Light Ball"
+      },
+      {
+        "id": "ITEM_SOFT_SAND",
+        "name": "Soft Sand"
+      },
+      {
+        "id": "ITEM_HARD_STONE",
+        "name": "Hard Stone"
+      },
+      {
+        "id": "ITEM_MIRACLE_SEED",
+        "name": "Miracle Seed"
+      },
+      {
+        "id": "ITEM_BLACK_BELT",
+        "name": "Black Belt"
+      },
+      {
+        "id": "ITEM_MAGNET",
+        "name": "Magnet"
+      },
+      {
+        "id": "ITEM_MYSTIC_WATER",
+        "name": "Mystic Water"
+      },
+      {
+        "id": "ITEM_SHARP_BEAK",
+        "name": "Sharp Beak"
+      },
+      {
+        "id": "ITEM_POISON_BARB",
+        "name": "Poison Barb"
+      },
+      {
+        "id": "ITEM_NEVER_MELT_ICE",
+        "name": "Never-Melt Ice"
+      },
+      {
+        "id": "ITEM_SPELL_TAG",
+        "name": "Spell Tag"
+      },
+      {
+        "id": "ITEM_TWISTED_SPOON",
+        "name": "Twisted Spoon"
+      },
+      {
+        "id": "ITEM_CHARCOAL",
+        "name": "Charcoal"
+      },
+      {
+        "id": "ITEM_DRAGON_FANG",
+        "name": "Dragon Fang"
+      },
+      {
+        "id": "ITEM_SILK_SCARF",
+        "name": "Silk Scarf"
+      },
+      {
+        "id": "ITEM_UP_GRADE",
+        "name": "Upgrade"
+      },
+      {
+        "id": "ITEM_METAL_POWDER",
+        "name": "Metal Powder"
+      },
+      {
+        "id": "ITEM_THICK_CLUB",
+        "name": "Thick Club"
+      },
+      {
+        "id": "ITEM_LEEK",
+        "name": "Leek"
+      },
+      {
+        "id": "ITEM_WIDE_LENS",
+        "name": "Wide Lens"
+      },
+      {
+        "id": "ITEM_EXPERT_BELT",
+        "name": "Expert Belt"
+      },
+      {
+        "id": "ITEM_LIGHT_CLAY",
+        "name": "Light Clay"
+      },
+      {
+        "id": "ITEM_LIFE_ORB",
+        "name": "Life Orb"
+      },
+      {
+        "id": "ITEM_POWER_HERB",
+        "name": "Power Herb"
+      },
+      {
+        "id": "ITEM_TOXIC_ORB",
+        "name": "Toxic Orb"
+      },
+      {
+        "id": "ITEM_FLAME_ORB",
+        "name": "Flame Orb"
+      },
+      {
+        "id": "ITEM_QUICK_POWDER",
+        "name": "Quick Powder"
+      },
+      {
+        "id": "ITEM_FOCUS_SASH",
+        "name": "Focus Sash"
+      },
+      {
+        "id": "ITEM_METRONOME",
+        "name": "Metronome"
+      },
+      {
+        "id": "ITEM_IRON_BALL",
+        "name": "Iron Ball"
+      },
+      {
+        "id": "ITEM_LAGGING_TAIL",
+        "name": "Lagging Tail"
+      },
+      {
+        "id": "ITEM_BLACK_SLUDGE",
+        "name": "Black Sludge"
+      },
+      {
+        "id": "ITEM_ICY_ROCK",
+        "name": "Icy Rock"
+      },
+      {
+        "id": "ITEM_HEAT_ROCK",
+        "name": "Heat Rock"
+      },
+      {
+        "id": "ITEM_GRIP_CLAW",
+        "name": "Grip Claw"
+      },
+      {
+        "id": "ITEM_CHOICE_SCARF",
+        "name": "Choice Scarf"
+      },
+      {
+        "id": "ITEM_STICKY_BARB",
+        "name": "Sticky Barb"
+      },
+      {
+        "id": "ITEM_POWER_BRACER",
+        "name": "Power Bracer"
+      },
+      {
+        "id": "ITEM_POWER_BELT",
+        "name": "Power Belt"
+      },
+      {
+        "id": "ITEM_POWER_LENS",
+        "name": "Power Lens"
+      },
+      {
+        "id": "ITEM_POWER_BAND",
+        "name": "Power Band"
+      },
+      {
+        "id": "ITEM_POWER_ANKLET",
+        "name": "Power Anklet"
+      },
+      {
+        "id": "ITEM_POWER_WEIGHT",
+        "name": "Power Weight"
+      },
+      {
+        "id": "ITEM_SHED_SHELL",
+        "name": "Shed Shell"
+      },
+      {
+        "id": "ITEM_BIG_ROOT",
+        "name": "Big Root"
+      },
+      {
+        "id": "ITEM_CHOICE_SPECS",
+        "name": "Choice Specs"
+      },
+      {
+        "id": "ITEM_PROTECTOR",
+        "name": "Protector"
+      },
+      {
+        "id": "ITEM_ELECTIRIZER",
+        "name": "Electirizer"
+      },
+      {
+        "id": "ITEM_MAGMARIZER",
+        "name": "Magmarizer"
+      },
+      {
+        "id": "ITEM_DUBIOUS_DISC",
+        "name": "Dubious Disc"
+      },
+      {
+        "id": "ITEM_REAPER_CLOTH",
+        "name": "Reaper Cloth"
+      },
+      {
+        "id": "ITEM_RAZOR_CLAW",
+        "name": "Razor Claw"
+      },
+      {
+        "id": "ITEM_RAZOR_FANG",
+        "name": "Razor Fang"
+      },
+      {
+        "id": "ITEM_PRISM_SCALE",
+        "name": "Prism Scale"
+      },
+      {
+        "id": "ITEM_EVIOLITE",
+        "name": "Eviolite"
+      },
+      {
+        "id": "ITEM_ROCKY_HELMET",
+        "name": "Rocky Helmet"
+      },
+      {
+        "id": "ITEM_AIR_BALLOON",
+        "name": "Air Balloon"
+      },
+      {
+        "id": "ITEM_ABSORB_BULB",
+        "name": "Absorb Bulb"
+      },
+      {
+        "id": "ITEM_CELL_BATTERY",
+        "name": "Cell Battery"
+      },
+      {
+        "id": "ITEM_HEALTH_FEATHER",
+        "name": "Health Feather"
+      },
+      {
+        "id": "ITEM_MUSCLE_FEATHER",
+        "name": "Muscle Feather"
+      },
+      {
+        "id": "ITEM_RESIST_FEATHER",
+        "name": "Resist Feather"
+      },
+      {
+        "id": "ITEM_GENIUS_FEATHER",
+        "name": "Genius Feather"
+      },
+      {
+        "id": "ITEM_CLEVER_FEATHER",
+        "name": "Clever Feather"
+      },
+      {
+        "id": "ITEM_SWIFT_FEATHER",
+        "name": "Swift Feather"
+      },
+      {
+        "id": "ITEM_PRETTY_FEATHER",
+        "name": "Pretty Feather"
+      },
+      {
+        "id": "ITEM_WEAKNESS_POLICY",
+        "name": "Weakness Policy"
+      },
+      {
+        "id": "ITEM_ASSAULT_VEST",
+        "name": "Assault Vest"
+      },
+      {
+        "id": "ITEM_ABILITY_CAPSULE",
+        "name": "Ability Capsule"
+      },
+      {
+        "id": "ITEM_SNOWBALL",
+        "name": "Snowball"
+      },
+      {
+        "id": "ITEM_ICE_STONE",
+        "name": "Ice Stone"
+      },
+      {
+        "id": "ITEM_PSYCHIC_SEED",
+        "name": "Psychic Seed"
+      },
+      {
+        "id": "ITEM_MISTY_SEED",
+        "name": "Misty Seed"
+      },
+      {
+        "id": "ITEM_HEAVY_DUTY_BOOTS",
+        "name": "Heavy-Duty Boots"
+      },
+      {
+        "id": "ITEM_LONELY_MINT",
+        "name": "Lonely Mint"
+      },
+      {
+        "id": "ITEM_ADAMANT_MINT",
+        "name": "Adamant Mint"
+      },
+      {
+        "id": "ITEM_NAUGHTY_MINT",
+        "name": "Naughty Mint"
+      },
+      {
+        "id": "ITEM_BRAVE_MINT",
+        "name": "Brave Mint"
+      },
+      {
+        "id": "ITEM_BOLD_MINT",
+        "name": "Bold Mint"
+      },
+      {
+        "id": "ITEM_IMPISH_MINT",
+        "name": "Impish Mint"
+      },
+      {
+        "id": "ITEM_LAX_MINT",
+        "name": "Lax Mint"
+      },
+      {
+        "id": "ITEM_RELAXED_MINT",
+        "name": "Relaxed Mint"
+      },
+      {
+        "id": "ITEM_MODEST_MINT",
+        "name": "Modest Mint"
+      },
+      {
+        "id": "ITEM_MILD_MINT",
+        "name": "Mild Mint"
+      },
+      {
+        "id": "ITEM_RASH_MINT",
+        "name": "Rash Mint"
+      },
+      {
+        "id": "ITEM_QUIET_MINT",
+        "name": "Quiet Mint"
+      },
+      {
+        "id": "ITEM_CALM_MINT",
+        "name": "Calm Mint"
+      },
+      {
+        "id": "ITEM_GENTLE_MINT",
+        "name": "Gentle Mint"
+      },
+      {
+        "id": "ITEM_CAREFUL_MINT",
+        "name": "Careful Mint"
+      },
+      {
+        "id": "ITEM_SASSY_MINT",
+        "name": "Sassy Mint"
+      },
+      {
+        "id": "ITEM_TIMID_MINT",
+        "name": "Timid Mint"
+      },
+      {
+        "id": "ITEM_HASTY_MINT",
+        "name": "Hasty Mint"
+      },
+      {
+        "id": "ITEM_JOLLY_MINT",
+        "name": "Jolly Mint"
+      },
+      {
+        "id": "ITEM_NAIVE_MINT",
+        "name": "Naive Mint"
+      },
+      {
+        "id": "ITEM_SERIOUS_MINT",
+        "name": "Serious Mint"
+      },
+      {
+        "id": "ITEM_GALARICA_CUFF",
+        "name": "Galarica Cuff"
+      },
+      {
+        "id": "ITEM_GALARICA_WREATH",
+        "name": "Galarica Wreath"
+      },
+      {
+        "id": "ITEM_ABILITY_PATCH",
+        "name": "Ability Patch"
+      },
+      {
+        "id": "ITEM_LINKING_CORD",
+        "name": "Linking Cord"
+      },
+      {
+        "id": "ITEM_BLACK_AUGURITE",
+        "name": "Black Augurite"
+      },
+      {
+        "id": "ITEM_PEAT_BLOCK",
+        "name": "Peat Block"
+      },
+      {
+        "id": "ITEM_CLEAR_AMULET",
+        "name": "Clear Amulet"
+      }
+    ],
+    "locationsWithNoLinkedContent": [
+      {
+        "id": "ENCDATA_UNUSED_045_UNKNOWN_045",
+        "name": "Unused 045 Unknown 045"
+      },
+      {
+        "id": "ENCDATA_UNUSED_047_UNKNOWN_047",
+        "name": "Unused 047 Unknown 047"
+      },
+      {
+        "id": "ENCDATA_UNUSED_049_UNKNOWN_049",
+        "name": "Unused 049 Unknown 049"
+      },
+      {
+        "id": "ENCDATA_UNUSED_050_UNKNOWN_050",
+        "name": "Unused 050 Unknown 050"
+      },
+      {
+        "id": "ENCDATA_UNUSED_064_UNKNOWN_064",
+        "name": "Unused 064 Unknown 064"
+      },
+      {
+        "id": "ENCDATA_UNUSED_090_UNKNOWN_090",
+        "name": "Unused 090 Unknown 090"
+      },
+      {
+        "id": "ENCDATA_UNUSED_138_UNKNOWN_138",
+        "name": "Unused 138 Unknown 138"
+      }
+    ],
+    "bossTeamsWithMissingMovesItemsAbilities": [
+      {
+        "boss": "Silver",
+        "pokemon": "Gastly",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Zubat",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Bayleef",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Cyndaquil",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Totodile",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Chikorita",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Gastly",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Zubat",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Quilava",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Gastly",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Zubat",
+        "field": "moves"
+      },
+      {
+        "boss": "Silver",
+        "pokemon": "Croconaw",
+        "field": "moves"
+      },
+      {
+        "boss": "Ariana",
+        "pokemon": "Arbok",
+        "field": "moves"
+      },
+      {
+        "boss": "Ariana",
+        "pokemon": "Gloom",
+        "field": "moves"
+      },
+      {
+        "boss": "Ariana",
+        "pokemon": "Murkrow",
+        "field": "moves"
+      },
+      {
+        "boss": "Ariana",
+        "pokemon": "Golbat",
+        "field": "moves"
+      },
+      {
+        "boss": "Ariana",
+        "pokemon": "Vileplume",
+        "field": "moves"
+      },
+      {
+        "boss": "Ariana",
+        "pokemon": "Honchkrow",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Zubat",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Koffing",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Ekans",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Raticate",
+        "field": "moves"
+      },
+      {
+        "boss": "Petrel",
+        "pokemon": "Golbat",
+        "field": "moves"
+      },
+      {
+        "boss": "Petrel",
+        "pokemon": "Raticate",
+        "field": "moves"
+      },
+      {
+        "boss": "Petrel",
+        "pokemon": "Koffing",
+        "field": "moves"
+      },
+      {
+        "boss": "Petrel",
+        "pokemon": "Grimer",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Golbat",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Weezing",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Raticate",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Arbok",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Murkrow",
+        "field": "moves"
+      },
+      {
+        "boss": "Proton",
+        "pokemon": "Skuntank",
+        "field": "moves"
+      },
+      {
+        "boss": "Palmer",
+        "pokemon": "Rattata",
+        "field": "moves"
+      },
+      {
+        "boss": "Argenta",
+        "pokemon": "Rattata",
+        "field": "moves"
+      },
+      {
+        "boss": "Thorton",
+        "pokemon": "Rattata",
+        "field": "moves"
+      },
+      {
+        "boss": "Dahlia",
+        "pokemon": "Rattata",
+        "field": "moves"
+      },
+      {
+        "boss": "Darach",
+        "pokemon": "Rattata",
+        "field": "moves"
+      }
+    ],
+    "missingPokemonIcons": [],
+    "missingItemIcons": [],
+    "brokenLinks": [],
+    "pokemonOutsideApprovedScope": []
+  }
+}

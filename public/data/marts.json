@@ -1,0 +1,1132 @@
+[
+  {
+    "id": "badge-gated-standard-mart",
+    "location": "All standard Pokemon Marts",
+    "region": "Johto/Kanto",
+    "shopType": "Badge-gated standard mart",
+    "unlockRules": "Stock expands by badge count.",
+    "items": [
+      {
+        "item": "ITEM_POKE_BALL",
+        "itemName": "Poké Ball",
+        "price": 200,
+        "requiredBadges": 0,
+        "asset": "assets/items/poke_ball.png"
+      },
+      {
+        "item": "ITEM_GREAT_BALL",
+        "itemName": "Great Ball",
+        "price": 600,
+        "requiredBadges": 3,
+        "asset": "assets/items/great_ball.png"
+      },
+      {
+        "item": "ITEM_ULTRA_BALL",
+        "itemName": "Ultra Ball",
+        "price": 800,
+        "requiredBadges": 5,
+        "asset": "assets/items/ultra_ball.png"
+      },
+      {
+        "item": "ITEM_POTION",
+        "itemName": "Potion",
+        "price": 200,
+        "requiredBadges": 0,
+        "asset": "assets/items/potion.png"
+      },
+      {
+        "item": "ITEM_SUPER_POTION",
+        "itemName": "Super Potion",
+        "price": 700,
+        "requiredBadges": 1,
+        "asset": "assets/items/super_potion.png"
+      },
+      {
+        "item": "ITEM_HYPER_POTION",
+        "itemName": "Hyper Potion",
+        "price": 1500,
+        "requiredBadges": 5,
+        "asset": "assets/items/hyper_potion.png"
+      },
+      {
+        "item": "ITEM_MAX_POTION",
+        "itemName": "Max Potion",
+        "price": 2500,
+        "requiredBadges": 7,
+        "asset": "assets/items/max_potion.png"
+      },
+      {
+        "item": "ITEM_FULL_RESTORE",
+        "itemName": "Full Restore",
+        "price": 3000,
+        "requiredBadges": 8,
+        "asset": "assets/items/full_restore.png"
+      },
+      {
+        "item": "ITEM_REVIVE",
+        "itemName": "Revive",
+        "price": 2000,
+        "requiredBadges": 3,
+        "asset": "assets/items/revive.png"
+      },
+      {
+        "item": "ITEM_ANTIDOTE",
+        "itemName": "Antidote",
+        "price": 200,
+        "requiredBadges": 0,
+        "asset": "assets/items/antidote.png"
+      },
+      {
+        "item": "ITEM_PARALYZE_HEAL",
+        "itemName": "Paralyze Heal",
+        "price": 200,
+        "requiredBadges": 0,
+        "asset": "assets/items/paralyze_heal.png"
+      },
+      {
+        "item": "ITEM_AWAKENING",
+        "itemName": "Awakening",
+        "price": 200,
+        "requiredBadges": 1,
+        "asset": "assets/items/awakening.png"
+      },
+      {
+        "item": "ITEM_BURN_HEAL",
+        "itemName": "Burn Heal",
+        "price": 200,
+        "requiredBadges": 1,
+        "asset": "assets/items/burn_heal.png"
+      },
+      {
+        "item": "ITEM_ICE_HEAL",
+        "itemName": "Ice Heal",
+        "price": 200,
+        "requiredBadges": 1,
+        "asset": "assets/items/ice_heal.png"
+      },
+      {
+        "item": "ITEM_FULL_HEAL",
+        "itemName": "Full Heal",
+        "price": 400,
+        "requiredBadges": 5,
+        "asset": "assets/items/full_heal.png"
+      },
+      {
+        "item": "ITEM_ESCAPE_ROPE",
+        "itemName": "Escape Rope",
+        "price": 550,
+        "requiredBadges": 1,
+        "asset": "assets/items/escape_rope.png"
+      },
+      {
+        "item": "ITEM_REPEL",
+        "itemName": "Repel",
+        "price": 350,
+        "requiredBadges": 1,
+        "asset": "assets/items/repel.png"
+      },
+      {
+        "item": "ITEM_SUPER_REPEL",
+        "itemName": "Super Repel",
+        "price": 500,
+        "requiredBadges": 3,
+        "asset": "assets/items/super_repel.png"
+      },
+      {
+        "item": "ITEM_MAX_REPEL",
+        "itemName": "Max Repel",
+        "price": 700,
+        "requiredBadges": 5,
+        "asset": "assets/items/max_repel.png"
+      },
+      {
+        "item": "ITEM_HEALTH_FEATHER",
+        "itemName": "Health Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/health_feather.png"
+      },
+      {
+        "item": "ITEM_MUSCLE_FEATHER",
+        "itemName": "Muscle Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/muscle_feather.png"
+      },
+      {
+        "item": "ITEM_RESIST_FEATHER",
+        "itemName": "Resist Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/resist_feather.png"
+      },
+      {
+        "item": "ITEM_GENIUS_FEATHER",
+        "itemName": "Genius Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/genius_feather.png"
+      },
+      {
+        "item": "ITEM_CLEVER_FEATHER",
+        "itemName": "Clever Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/clever_feather.png"
+      },
+      {
+        "item": "ITEM_SWIFT_FEATHER",
+        "itemName": "Swift Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/swift_feather.png"
+      },
+      {
+        "item": "ITEM_POMEG_BERRY",
+        "itemName": "Pomeg Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/pomeg_berry.png"
+      },
+      {
+        "item": "ITEM_KELPSY_BERRY",
+        "itemName": "Kelpsy Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/kelpsy_berry.png"
+      },
+      {
+        "item": "ITEM_QUALOT_BERRY",
+        "itemName": "Qualot Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/qualot_berry.png"
+      },
+      {
+        "item": "ITEM_HONDEW_BERRY",
+        "itemName": "Hondew Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/hondew_berry.png"
+      },
+      {
+        "item": "ITEM_GREPA_BERRY",
+        "itemName": "Grepa Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/grepa_berry.png"
+      },
+      {
+        "item": "ITEM_TAMATO_BERRY",
+        "itemName": "Tamato Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/tamato_berry.png"
+      },
+      {
+        "item": "ITEM_ABILITY_CAPSULE",
+        "itemName": "Ability Capsule",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/ability_capsule.png"
+      },
+      {
+        "item": "ITEM_LONELY_MINT",
+        "itemName": "Lonely Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/lonely_mint.png"
+      },
+      {
+        "item": "ITEM_ADAMANT_MINT",
+        "itemName": "Adamant Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/adamant_mint.png"
+      },
+      {
+        "item": "ITEM_NAUGHTY_MINT",
+        "itemName": "Naughty Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/naughty_mint.png"
+      },
+      {
+        "item": "ITEM_BRAVE_MINT",
+        "itemName": "Brave Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/brave_mint.png"
+      },
+      {
+        "item": "ITEM_BOLD_MINT",
+        "itemName": "Bold Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/bold_mint.png"
+      },
+      {
+        "item": "ITEM_IMPISH_MINT",
+        "itemName": "Impish Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/impish_mint.png"
+      },
+      {
+        "item": "ITEM_LAX_MINT",
+        "itemName": "Lax Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/lax_mint.png"
+      },
+      {
+        "item": "ITEM_RELAXED_MINT",
+        "itemName": "Relaxed Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/relaxed_mint.png"
+      },
+      {
+        "item": "ITEM_MODEST_MINT",
+        "itemName": "Modest Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/modest_mint.png"
+      },
+      {
+        "item": "ITEM_MILD_MINT",
+        "itemName": "Mild Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/mild_mint.png"
+      },
+      {
+        "item": "ITEM_RASH_MINT",
+        "itemName": "Rash Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/rash_mint.png"
+      },
+      {
+        "item": "ITEM_QUIET_MINT",
+        "itemName": "Quiet Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/quiet_mint.png"
+      },
+      {
+        "item": "ITEM_CALM_MINT",
+        "itemName": "Calm Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/calm_mint.png"
+      },
+      {
+        "item": "ITEM_GENTLE_MINT",
+        "itemName": "Gentle Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/gentle_mint.png"
+      },
+      {
+        "item": "ITEM_CAREFUL_MINT",
+        "itemName": "Careful Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/careful_mint.png"
+      },
+      {
+        "item": "ITEM_SASSY_MINT",
+        "itemName": "Sassy Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/sassy_mint.png"
+      },
+      {
+        "item": "ITEM_TIMID_MINT",
+        "itemName": "Timid Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/timid_mint.png"
+      },
+      {
+        "item": "ITEM_HASTY_MINT",
+        "itemName": "Hasty Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/hasty_mint.png"
+      },
+      {
+        "item": "ITEM_JOLLY_MINT",
+        "itemName": "Jolly Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/jolly_mint.png"
+      },
+      {
+        "item": "ITEM_NAIVE_MINT",
+        "itemName": "Naive Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/naive_mint.png"
+      },
+      {
+        "item": "ITEM_SERIOUS_MINT",
+        "itemName": "Serious Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/serious_mint.png"
+      },
+      {
+        "item": "ITEM_HP_UP",
+        "itemName": "HP Up",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/hp_up.png"
+      },
+      {
+        "item": "ITEM_PROTEIN",
+        "itemName": "Protein",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/protein.png"
+      },
+      {
+        "item": "ITEM_IRON",
+        "itemName": "Iron",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/iron.png"
+      },
+      {
+        "item": "ITEM_CALCIUM",
+        "itemName": "Calcium",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/calcium.png"
+      },
+      {
+        "item": "ITEM_ZINC",
+        "itemName": "Zinc",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/zinc.png"
+      },
+      {
+        "item": "ITEM_CARBOS",
+        "itemName": "Carbos",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/carbos.png"
+      },
+      {
+        "item": "ITEM_FIRE_STONE",
+        "itemName": "Fire Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/fire_stone.png"
+      },
+      {
+        "item": "ITEM_THUNDER_STONE",
+        "itemName": "Thunder Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/thunder_stone.png"
+      },
+      {
+        "item": "ITEM_WATER_STONE",
+        "itemName": "Water Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/water_stone.png"
+      },
+      {
+        "item": "ITEM_LEAF_STONE",
+        "itemName": "Leaf Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/leaf_stone.png"
+      },
+      {
+        "item": "ITEM_MOON_STONE",
+        "itemName": "Moon Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/moon_stone.png"
+      },
+      {
+        "item": "ITEM_SUN_STONE",
+        "itemName": "Sun Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/sun_stone.png"
+      },
+      {
+        "item": "ITEM_SHINY_STONE",
+        "itemName": "Shiny Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/shiny_stone.png"
+      },
+      {
+        "item": "ITEM_DUSK_STONE",
+        "itemName": "Dusk Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/dusk_stone.png"
+      },
+      {
+        "item": "ITEM_DAWN_STONE",
+        "itemName": "Dawn Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/dawn_stone.png"
+      },
+      {
+        "item": "ITEM_ICE_STONE",
+        "itemName": "Ice Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/ice_stone.png"
+      },
+      {
+        "item": "ITEM_OVAL_STONE",
+        "itemName": "Oval Stone",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/oval_stone.png"
+      },
+      {
+        "item": "ITEM_LINKING_CORD",
+        "itemName": "Linking Cord",
+        "price": 2500,
+        "requiredBadges": 4,
+        "asset": "assets/items/linking_cord.png"
+      },
+      {
+        "item": "ITEM_HEALTH_CANDY",
+        "itemName": "Health Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/health_candy.png"
+      },
+      {
+        "item": "ITEM_MIGHTY_CANDY",
+        "itemName": "Mighty Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/mighty_candy.png"
+      },
+      {
+        "item": "ITEM_TOUGH_CANDY",
+        "itemName": "Tough Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/tough_candy.png"
+      },
+      {
+        "item": "ITEM_SMART_CANDY",
+        "itemName": "Smart Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/smart_candy.png"
+      },
+      {
+        "item": "ITEM_COURAGE_CANDY",
+        "itemName": "Courage Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/courage_candy.png"
+      },
+      {
+        "item": "ITEM_QUICK_CANDY",
+        "itemName": "Quick Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/quick_candy.png"
+      },
+      {
+        "item": "ITEM_MACHO_BRACE",
+        "itemName": "Macho Brace",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/macho_brace.png"
+      },
+      {
+        "item": "ITEM_POWER_WEIGHT",
+        "itemName": "Power Weight",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_weight.png"
+      },
+      {
+        "item": "ITEM_POWER_BRACER",
+        "itemName": "Power Bracer",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_bracer.png"
+      },
+      {
+        "item": "ITEM_POWER_BELT",
+        "itemName": "Power Belt",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_belt.png"
+      },
+      {
+        "item": "ITEM_POWER_LENS",
+        "itemName": "Power Lens",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_lens.png"
+      },
+      {
+        "item": "ITEM_POWER_BAND",
+        "itemName": "Power Band",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_band.png"
+      },
+      {
+        "item": "ITEM_POWER_ANKLET",
+        "itemName": "Power Anklet",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_anklet.png"
+      },
+      {
+        "item": "ITEM_KINGS_ROCK",
+        "itemName": "King's Rock",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/kings_rock.png"
+      },
+      {
+        "item": "ITEM_METAL_COAT",
+        "itemName": "Metal Coat",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/metal_coat.png"
+      },
+      {
+        "item": "ITEM_DRAGON_SCALE",
+        "itemName": "Dragon Scale",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/dragon_scale.png"
+      },
+      {
+        "item": "ITEM_UP_GRADE",
+        "itemName": "Upgrade",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/up_grade.png"
+      },
+      {
+        "item": "ITEM_DUBIOUS_DISC",
+        "itemName": "Dubious Disc",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/dubious_disc.png"
+      },
+      {
+        "item": "ITEM_DEEP_SEA_TOOTH",
+        "itemName": "Deep Sea Tooth",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/deep_sea_tooth.png"
+      },
+      {
+        "item": "ITEM_DEEP_SEA_SCALE",
+        "itemName": "Deep Sea Scale",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/deep_sea_scale.png"
+      },
+      {
+        "item": "ITEM_PRISM_SCALE",
+        "itemName": "Prism Scale",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/prism_scale.png"
+      },
+      {
+        "item": "ITEM_RAZOR_CLAW",
+        "itemName": "Razor Claw",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/razor_claw.png"
+      },
+      {
+        "item": "ITEM_RAZOR_FANG",
+        "itemName": "Razor Fang",
+        "price": 2500,
+        "requiredBadges": 5,
+        "asset": "assets/items/razor_fang.png"
+      },
+      {
+        "item": "ITEM_ABILITY_PATCH",
+        "itemName": "Ability Patch",
+        "price": 1000,
+        "requiredBadges": 6,
+        "asset": "assets/items/ability_patch.png"
+      },
+      {
+        "item": "ITEM_PROTECTOR",
+        "itemName": "Protector",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/protector.png"
+      },
+      {
+        "item": "ITEM_ELECTIRIZER",
+        "itemName": "Electirizer",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/electirizer.png"
+      },
+      {
+        "item": "ITEM_MAGMARIZER",
+        "itemName": "Magmarizer",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/magmarizer.png"
+      },
+      {
+        "item": "ITEM_REAPER_CLOTH",
+        "itemName": "Reaper Cloth",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/reaper_cloth.png"
+      },
+      {
+        "item": "ITEM_BLACK_AUGURITE",
+        "itemName": "Black Augurite",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/black_augurite.png"
+      },
+      {
+        "item": "ITEM_PEAT_BLOCK",
+        "itemName": "Peat Block",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/peat_block.png"
+      },
+      {
+        "item": "ITEM_GALARICA_CUFF",
+        "itemName": "Galarica Cuff",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/galarica_cuff.png"
+      },
+      {
+        "item": "ITEM_GALARICA_WREATH",
+        "itemName": "Galarica Wreath",
+        "price": 2500,
+        "requiredBadges": 6,
+        "asset": "assets/items/galarica_wreath.png"
+      },
+      {
+        "item": "ITEM_MAX_CANDY",
+        "itemName": "Max Candy",
+        "price": 8000,
+        "requiredBadges": 12,
+        "asset": "assets/items/max_candy.png"
+      }
+    ],
+    "sourceRefs": [
+      "exports/perfect_johto/items_and_marts.json"
+    ]
+  },
+  {
+    "id": "customization-item-economy",
+    "location": "Badge-gated standard mart",
+    "region": "Johto/Kanto",
+    "shopType": "Customization and evolution economy",
+    "unlockRules": "Mints, capsules, patches, candies, Power items, and evolution items unlock through badge progression.",
+    "items": [
+      {
+        "item": "ITEM_LONELY_MINT",
+        "itemName": "Lonely Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/lonely_mint.png"
+      },
+      {
+        "item": "ITEM_ADAMANT_MINT",
+        "itemName": "Adamant Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/adamant_mint.png"
+      },
+      {
+        "item": "ITEM_NAUGHTY_MINT",
+        "itemName": "Naughty Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/naughty_mint.png"
+      },
+      {
+        "item": "ITEM_BRAVE_MINT",
+        "itemName": "Brave Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/brave_mint.png"
+      },
+      {
+        "item": "ITEM_BOLD_MINT",
+        "itemName": "Bold Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/bold_mint.png"
+      },
+      {
+        "item": "ITEM_IMPISH_MINT",
+        "itemName": "Impish Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/impish_mint.png"
+      },
+      {
+        "item": "ITEM_LAX_MINT",
+        "itemName": "Lax Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/lax_mint.png"
+      },
+      {
+        "item": "ITEM_RELAXED_MINT",
+        "itemName": "Relaxed Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/relaxed_mint.png"
+      },
+      {
+        "item": "ITEM_MODEST_MINT",
+        "itemName": "Modest Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/modest_mint.png"
+      },
+      {
+        "item": "ITEM_MILD_MINT",
+        "itemName": "Mild Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/mild_mint.png"
+      },
+      {
+        "item": "ITEM_RASH_MINT",
+        "itemName": "Rash Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/rash_mint.png"
+      },
+      {
+        "item": "ITEM_QUIET_MINT",
+        "itemName": "Quiet Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/quiet_mint.png"
+      },
+      {
+        "item": "ITEM_CALM_MINT",
+        "itemName": "Calm Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/calm_mint.png"
+      },
+      {
+        "item": "ITEM_GENTLE_MINT",
+        "itemName": "Gentle Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/gentle_mint.png"
+      },
+      {
+        "item": "ITEM_CAREFUL_MINT",
+        "itemName": "Careful Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/careful_mint.png"
+      },
+      {
+        "item": "ITEM_SASSY_MINT",
+        "itemName": "Sassy Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/sassy_mint.png"
+      },
+      {
+        "item": "ITEM_TIMID_MINT",
+        "itemName": "Timid Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/timid_mint.png"
+      },
+      {
+        "item": "ITEM_HASTY_MINT",
+        "itemName": "Hasty Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/hasty_mint.png"
+      },
+      {
+        "item": "ITEM_JOLLY_MINT",
+        "itemName": "Jolly Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/jolly_mint.png"
+      },
+      {
+        "item": "ITEM_NAIVE_MINT",
+        "itemName": "Naive Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/naive_mint.png"
+      },
+      {
+        "item": "ITEM_SERIOUS_MINT",
+        "itemName": "Serious Mint",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/serious_mint.png"
+      },
+      {
+        "item": "ITEM_ABILITY_CAPSULE",
+        "itemName": "Ability Capsule",
+        "price": 1000,
+        "requiredBadges": 3,
+        "asset": "assets/items/ability_capsule.png"
+      },
+      {
+        "item": "ITEM_ABILITY_PATCH",
+        "itemName": "Ability Patch",
+        "price": 1000,
+        "requiredBadges": 6,
+        "asset": "assets/items/ability_patch.png"
+      },
+      {
+        "item": "ITEM_HEALTH_CANDY",
+        "itemName": "Health Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/health_candy.png"
+      },
+      {
+        "item": "ITEM_MIGHTY_CANDY",
+        "itemName": "Mighty Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/mighty_candy.png"
+      },
+      {
+        "item": "ITEM_TOUGH_CANDY",
+        "itemName": "Tough Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/tough_candy.png"
+      },
+      {
+        "item": "ITEM_SMART_CANDY",
+        "itemName": "Smart Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/smart_candy.png"
+      },
+      {
+        "item": "ITEM_COURAGE_CANDY",
+        "itemName": "Courage Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/courage_candy.png"
+      },
+      {
+        "item": "ITEM_QUICK_CANDY",
+        "itemName": "Quick Candy",
+        "price": 2000,
+        "requiredBadges": 5,
+        "asset": "assets/items/quick_candy.png"
+      },
+      {
+        "item": "ITEM_HP_UP",
+        "itemName": "HP Up",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/hp_up.png"
+      },
+      {
+        "item": "ITEM_PROTEIN",
+        "itemName": "Protein",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/protein.png"
+      },
+      {
+        "item": "ITEM_IRON",
+        "itemName": "Iron",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/iron.png"
+      },
+      {
+        "item": "ITEM_CALCIUM",
+        "itemName": "Calcium",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/calcium.png"
+      },
+      {
+        "item": "ITEM_ZINC",
+        "itemName": "Zinc",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/zinc.png"
+      },
+      {
+        "item": "ITEM_CARBOS",
+        "itemName": "Carbos",
+        "price": 3000,
+        "requiredBadges": 4,
+        "asset": "assets/items/carbos.png"
+      },
+      {
+        "item": "ITEM_HEALTH_FEATHER",
+        "itemName": "Health Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/health_feather.png"
+      },
+      {
+        "item": "ITEM_MUSCLE_FEATHER",
+        "itemName": "Muscle Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/muscle_feather.png"
+      },
+      {
+        "item": "ITEM_RESIST_FEATHER",
+        "itemName": "Resist Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/resist_feather.png"
+      },
+      {
+        "item": "ITEM_GENIUS_FEATHER",
+        "itemName": "Genius Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/genius_feather.png"
+      },
+      {
+        "item": "ITEM_CLEVER_FEATHER",
+        "itemName": "Clever Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/clever_feather.png"
+      },
+      {
+        "item": "ITEM_SWIFT_FEATHER",
+        "itemName": "Swift Feather",
+        "price": 300,
+        "requiredBadges": 3,
+        "asset": "assets/items/swift_feather.png"
+      },
+      {
+        "item": "ITEM_POMEG_BERRY",
+        "itemName": "Pomeg Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/pomeg_berry.png"
+      },
+      {
+        "item": "ITEM_KELPSY_BERRY",
+        "itemName": "Kelpsy Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/kelpsy_berry.png"
+      },
+      {
+        "item": "ITEM_QUALOT_BERRY",
+        "itemName": "Qualot Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/qualot_berry.png"
+      },
+      {
+        "item": "ITEM_HONDEW_BERRY",
+        "itemName": "Hondew Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/hondew_berry.png"
+      },
+      {
+        "item": "ITEM_GREPA_BERRY",
+        "itemName": "Grepa Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/grepa_berry.png"
+      },
+      {
+        "item": "ITEM_TAMATO_BERRY",
+        "itemName": "Tamato Berry",
+        "price": 200,
+        "requiredBadges": 3,
+        "asset": "assets/items/tamato_berry.png"
+      },
+      {
+        "item": "ITEM_MACHO_BRACE",
+        "itemName": "Macho Brace",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/macho_brace.png"
+      },
+      {
+        "item": "ITEM_POWER_WEIGHT",
+        "itemName": "Power Weight",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_weight.png"
+      },
+      {
+        "item": "ITEM_POWER_BRACER",
+        "itemName": "Power Bracer",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_bracer.png"
+      },
+      {
+        "item": "ITEM_POWER_BELT",
+        "itemName": "Power Belt",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_belt.png"
+      },
+      {
+        "item": "ITEM_POWER_LENS",
+        "itemName": "Power Lens",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_lens.png"
+      },
+      {
+        "item": "ITEM_POWER_BAND",
+        "itemName": "Power Band",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_band.png"
+      },
+      {
+        "item": "ITEM_POWER_ANKLET",
+        "itemName": "Power Anklet",
+        "price": 3000,
+        "requiredBadges": 5,
+        "asset": "assets/items/power_anklet.png"
+      }
+    ],
+    "sourceRefs": [
+      "exports/perfect_johto/customization_items.json"
+    ]
+  }
+]

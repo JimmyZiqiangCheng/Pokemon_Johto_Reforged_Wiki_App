@@ -1,0 +1,889 @@
+[
+  {
+    "id": "STATIC_0_SPECIES_RAIKOU",
+    "species": "SPECIES_RAIKOU",
+    "pokemonName": "Raikou",
+    "pokemonIcon": "assets/pokemon/icons/raikou.png",
+    "types": [
+      "Electric"
+    ],
+    "location": "Burned Tower release",
+    "region": "Johto",
+    "level": 40,
+    "category": "roaming",
+    "requirements": "Burned Tower event releases the Johto roamer",
+    "oneTime": null,
+    "caughtFlag": "native roamer",
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Gift/static export is not exhaustive"
+    ]
+  },
+  {
+    "id": "STATIC_1_SPECIES_ENTEI",
+    "species": "SPECIES_ENTEI",
+    "pokemonName": "Entei",
+    "pokemonIcon": "assets/pokemon/icons/entei.png",
+    "types": [
+      "Fire"
+    ],
+    "location": "Burned Tower release",
+    "region": "Johto",
+    "level": 40,
+    "category": "roaming",
+    "requirements": "Burned Tower event releases the Johto roamer",
+    "oneTime": null,
+    "caughtFlag": "native roamer",
+    "retryBehavior": null,
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Gift/static export is not exhaustive"
+    ]
+  },
+  {
+    "id": "STATIC_2_SPECIES_ARTICUNO",
+    "species": "SPECIES_ARTICUNO",
+    "pokemonName": "Articuno",
+    "pokemonIcon": "assets/pokemon/icons/articuno.png",
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "location": "Seafoam dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 60,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "8 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_ARTICUNO",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_3_SPECIES_ZAPDOS",
+    "species": "SPECIES_ZAPDOS",
+    "pokemonName": "Zapdos",
+    "pokemonIcon": "assets/pokemon/icons/zapdos.png",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "location": "Power Plant dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 60,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "8 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_ZAPDOS",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_4_SPECIES_MOLTRES",
+    "species": "SPECIES_MOLTRES",
+    "pokemonName": "Moltres",
+    "pokemonIcon": "assets/pokemon/icons/moltres.png",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "location": "Mt. Silver dossier, Saffron Fighting Dojo",
+    "region": "Johto",
+    "level": 72,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_MOLTRES",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_5_SPECIES_MEWTWO",
+    "species": "SPECIES_MEWTWO",
+    "pokemonName": "Mewtwo",
+    "pokemonIcon": "assets/pokemon/icons/mewtwo.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Cerulean Cave dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 80,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_MEWTWO",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_6_SPECIES_LUGIA",
+    "species": "SPECIES_LUGIA",
+    "pokemonName": "Lugia",
+    "pokemonIcon": "assets/pokemon/icons/lugia.png",
+    "types": [
+      "Psychic",
+      "Flying"
+    ],
+    "location": "Whirl Islands dossier, Saffron Fighting Dojo",
+    "region": "Johto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_LUGIA",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_7_SPECIES_HO_OH",
+    "species": "SPECIES_HO_OH",
+    "pokemonName": "Ho-oh",
+    "pokemonIcon": "assets/pokemon/icons/ho_oh.png",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "location": "Bell Tower dossier, Saffron Fighting Dojo",
+    "region": "Johto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_HO_OH",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_8_SPECIES_SUICUNE",
+    "species": "SPECIES_SUICUNE",
+    "pokemonName": "Suicune",
+    "pokemonIcon": "assets/pokemon/icons/suicune.png",
+    "types": [
+      "Water"
+    ],
+    "location": "Eusine dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 55,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "8 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_SUICUNE",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_9_SPECIES_LATIAS",
+    "species": "SPECIES_LATIAS",
+    "pokemonName": "Latias",
+    "pokemonIcon": "assets/pokemon/icons/latias.png",
+    "types": [
+      "Dragon",
+      "Psychic"
+    ],
+    "location": "Kanto roaming dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 68,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_LATIAS",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_10_SPECIES_LATIOS",
+    "species": "SPECIES_LATIOS",
+    "pokemonName": "Latios",
+    "pokemonIcon": "assets/pokemon/icons/latios.png",
+    "types": [
+      "Dragon",
+      "Psychic"
+    ],
+    "location": "Kanto roaming dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 68,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_LATIOS",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_11_SPECIES_REGIROCK",
+    "species": "SPECIES_REGIROCK",
+    "pokemonName": "Regirock",
+    "pokemonIcon": "assets/pokemon/icons/regirock.png",
+    "types": [
+      "Rock"
+    ],
+    "location": "Ruins of Alph seal dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 70,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_REGIROCK",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_12_SPECIES_REGICE",
+    "species": "SPECIES_REGICE",
+    "pokemonName": "Regice",
+    "pokemonIcon": "assets/pokemon/icons/regice.png",
+    "types": [
+      "Ice"
+    ],
+    "location": "Ruins of Alph seal dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 70,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_REGICE",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_13_SPECIES_REGISTEEL",
+    "species": "SPECIES_REGISTEEL",
+    "pokemonName": "Registeel",
+    "pokemonIcon": "assets/pokemon/icons/registeel.png",
+    "types": [
+      "Steel"
+    ],
+    "location": "Ruins of Alph seal dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 70,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_REGISTEEL",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_14_SPECIES_REGIGIGAS",
+    "species": "SPECIES_REGIGIGAS",
+    "pokemonName": "Regigigas",
+    "pokemonIcon": "assets/pokemon/icons/regigigas.png",
+    "types": [
+      "Normal"
+    ],
+    "location": "Ruins of Alph seal dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 80,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges plus Regirock, Regice, and Registeel caught",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_REGIGIGAS",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_15_SPECIES_KYOGRE",
+    "species": "SPECIES_KYOGRE",
+    "pokemonName": "Kyogre",
+    "pokemonIcon": "assets/pokemon/icons/kyogre.png",
+    "types": [
+      "Water"
+    ],
+    "location": "Embedded Tower weather dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_KYOGRE",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_16_SPECIES_GROUDON",
+    "species": "SPECIES_GROUDON",
+    "pokemonName": "Groudon",
+    "pokemonIcon": "assets/pokemon/icons/groudon.png",
+    "types": [
+      "Ground"
+    ],
+    "location": "Embedded Tower weather dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_GROUDON",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_17_SPECIES_RAYQUAZA",
+    "species": "SPECIES_RAYQUAZA",
+    "pokemonName": "Rayquaza",
+    "pokemonIcon": "assets/pokemon/icons/rayquaza.png",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "location": "Embedded Tower sky dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 80,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges plus Kyogre and Groudon caught",
+    "oneTime": true,
+    "caughtFlag": "FLAG_CAUGHT_RAYQUAZA",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_18_SPECIES_MEW",
+    "species": "SPECIES_MEW",
+    "pokemonName": "Mew",
+    "pokemonIcon": "assets/pokemon/icons/mew.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Faraway dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 70,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_MEW",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_19_SPECIES_CELEBI",
+    "species": "SPECIES_CELEBI",
+    "pokemonName": "Celebi",
+    "pokemonIcon": "assets/pokemon/icons/celebi.png",
+    "types": [
+      "Psychic",
+      "Grass"
+    ],
+    "location": "Ilex Shrine dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 70,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_CELEBI",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_20_SPECIES_JIRACHI",
+    "species": "SPECIES_JIRACHI",
+    "pokemonName": "Jirachi",
+    "pokemonIcon": "assets/pokemon/icons/jirachi.png",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "location": "Mt. Moon stargazing dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_JIRACHI",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_21_SPECIES_DEOXYS",
+    "species": "SPECIES_DEOXYS",
+    "pokemonName": "Deoxys",
+    "pokemonIcon": "assets/pokemon/icons/deoxys.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Pewter meteorite dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 80,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_DEOXYS",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_22_SPECIES_HEATRAN",
+    "species": "SPECIES_HEATRAN",
+    "pokemonName": "Heatran",
+    "pokemonIcon": "assets/pokemon/icons/heatran.png",
+    "types": [
+      "Fire",
+      "Steel"
+    ],
+    "location": "Volcanic dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 78,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_HEATRAN",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_23_SPECIES_CRESSELIA",
+    "species": "SPECIES_CRESSELIA",
+    "pokemonName": "Cresselia",
+    "pokemonIcon": "assets/pokemon/icons/cresselia.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Dream dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 78,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_CRESSELIA",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_24_SPECIES_DARKRAI",
+    "species": "SPECIES_DARKRAI",
+    "pokemonName": "Darkrai",
+    "pokemonIcon": "assets/pokemon/icons/darkrai.png",
+    "types": [
+      "Dark"
+    ],
+    "location": "Nightmare dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 82,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges plus Cresselia caught",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_DARKRAI",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_25_SPECIES_SHAYMIN",
+    "species": "SPECIES_SHAYMIN",
+    "pokemonName": "Shaymin",
+    "pokemonIcon": "assets/pokemon/icons/shaymin.png",
+    "types": [
+      "Grass"
+    ],
+    "location": "Flower restoration dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_SHAYMIN",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_26_SPECIES_MANAPHY",
+    "species": "SPECIES_MANAPHY",
+    "pokemonName": "Manaphy",
+    "pokemonIcon": "assets/pokemon/icons/manaphy.png",
+    "types": [
+      "Water"
+    ],
+    "location": "Ocean egg dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 75,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_MANAPHY",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_27_SPECIES_PHIONE",
+    "species": "SPECIES_PHIONE",
+    "pokemonName": "Phione",
+    "pokemonIcon": "assets/pokemon/icons/phione.png",
+    "types": [
+      "Water"
+    ],
+    "location": "Ocean egg dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 65,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges plus Manaphy caught",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_PHIONE",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_28_SPECIES_UXIE",
+    "species": "SPECIES_UXIE",
+    "pokemonName": "Uxie",
+    "pokemonIcon": "assets/pokemon/icons/uxie.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Lake insight dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 72,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_UXIE",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_29_SPECIES_MESPRIT",
+    "species": "SPECIES_MESPRIT",
+    "pokemonName": "Mesprit",
+    "pokemonIcon": "assets/pokemon/icons/mesprit.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Lake emotion dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 72,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_MESPRIT",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_30_SPECIES_AZELF",
+    "species": "SPECIES_AZELF",
+    "pokemonName": "Azelf",
+    "pokemonIcon": "assets/pokemon/icons/azelf.png",
+    "types": [
+      "Psychic"
+    ],
+    "location": "Lake willpower dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 72,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_AZELF",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_31_SPECIES_DIALGA",
+    "species": "SPECIES_DIALGA",
+    "pokemonName": "Dialga",
+    "pokemonIcon": "assets/pokemon/icons/dialga.png",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "location": "Sinjoh time dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 82,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_DIALGA",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_32_SPECIES_PALKIA",
+    "species": "SPECIES_PALKIA",
+    "pokemonName": "Palkia",
+    "pokemonIcon": "assets/pokemon/icons/palkia.png",
+    "types": [
+      "Water",
+      "Dragon"
+    ],
+    "location": "Sinjoh space dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 82,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_PALKIA",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_33_SPECIES_GIRATINA",
+    "species": "SPECIES_GIRATINA",
+    "pokemonName": "Giratina",
+    "pokemonIcon": "assets/pokemon/icons/giratina.png",
+    "types": [
+      "Ghost",
+      "Dragon"
+    ],
+    "location": "Sinjoh distortion dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 82,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_GIRATINA",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  },
+  {
+    "id": "STATIC_34_SPECIES_ARCEUS",
+    "species": "SPECIES_ARCEUS",
+    "pokemonName": "Arceus",
+    "pokemonIcon": "assets/pokemon/icons/arceus.png",
+    "types": [
+      "Normal"
+    ],
+    "location": "Ultimate Sinjoh dossier, Saffron Fighting Dojo",
+    "region": "Kanto",
+    "level": 100,
+    "category": "stationary scripted Dojo dossier",
+    "requirements": "16 badges, Red defeated, lake trio caught, and creation trio caught",
+    "oneTime": true,
+    "caughtFlag": "FLAG_PHASE8_CAUGHT_ARCEUS",
+    "retryBehavior": "Retryable if failed/fled/fainted; caught flag is set only on successful capture.",
+    "shinyLock": null,
+    "heldItem": null,
+    "specialMoves": [],
+    "sourceRef": "exports/perfect_johto/static_and_gift_pokemon.json",
+    "validationFlags": [
+      "Missing shiny lock status",
+      "Missing exact script retry flag"
+    ]
+  }
+]

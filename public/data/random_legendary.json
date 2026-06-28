@@ -1,0 +1,268 @@
+{
+  "blocked_battle_types": [
+    "BATTLE_TYPE_TRAINER",
+    "BATTLE_TYPE_SAFARI",
+    "BATTLE_TYPE_ROAMER",
+    "BATTLE_TYPE_PAL_PARK",
+    "BATTLE_TYPE_CATCHING_DEMO",
+    "BATTLE_TYPE_BUG_CONTEST"
+  ],
+  "flee_behavior": "Generated surprise legendaries receive Teleport in move slot 4, giving wild AI a move-based chance to flee each turn.",
+  "level_clamps": [
+    {
+      "badges": "4",
+      "max_level": 32,
+      "min_level": 25
+    },
+    {
+      "badges": "5",
+      "max_level": 38,
+      "min_level": 32
+    },
+    {
+      "badges": "6-7",
+      "max_level": 45,
+      "min_level": 38
+    },
+    {
+      "badges": "8-11",
+      "max_level": 55,
+      "min_level": 45
+    },
+    {
+      "badges": "12-15",
+      "max_level": 60,
+      "min_level": 50
+    },
+    {
+      "badges": "16",
+      "max_level": 70,
+      "min_level": 55
+    }
+  ],
+  "pool": [
+    {
+      "min_badges": 4,
+      "name": "Articuno",
+      "species": "SPECIES_ARTICUNO",
+      "species_id": 144
+    },
+    {
+      "min_badges": 4,
+      "name": "Zapdos",
+      "species": "SPECIES_ZAPDOS",
+      "species_id": 145
+    },
+    {
+      "min_badges": 4,
+      "name": "Moltres",
+      "species": "SPECIES_MOLTRES",
+      "species_id": 146
+    },
+    {
+      "min_badges": 4,
+      "name": "Raikou",
+      "species": "SPECIES_RAIKOU",
+      "species_id": 243
+    },
+    {
+      "min_badges": 4,
+      "name": "Entei",
+      "species": "SPECIES_ENTEI",
+      "species_id": 244
+    },
+    {
+      "min_badges": 4,
+      "name": "Suicune",
+      "species": "SPECIES_SUICUNE",
+      "species_id": 245
+    },
+    {
+      "min_badges": 5,
+      "name": "Regirock",
+      "species": "SPECIES_REGIROCK",
+      "species_id": 377
+    },
+    {
+      "min_badges": 5,
+      "name": "Regice",
+      "species": "SPECIES_REGICE",
+      "species_id": 378
+    },
+    {
+      "min_badges": 5,
+      "name": "Registeel",
+      "species": "SPECIES_REGISTEEL",
+      "species_id": 379
+    },
+    {
+      "min_badges": 5,
+      "name": "Latias",
+      "species": "SPECIES_LATIAS",
+      "species_id": 380
+    },
+    {
+      "min_badges": 5,
+      "name": "Latios",
+      "species": "SPECIES_LATIOS",
+      "species_id": 381
+    },
+    {
+      "min_badges": 5,
+      "name": "Uxie",
+      "species": "SPECIES_UXIE",
+      "species_id": 480
+    },
+    {
+      "min_badges": 5,
+      "name": "Mesprit",
+      "species": "SPECIES_MESPRIT",
+      "species_id": 481
+    },
+    {
+      "min_badges": 5,
+      "name": "Azelf",
+      "species": "SPECIES_AZELF",
+      "species_id": 482
+    },
+    {
+      "min_badges": 5,
+      "name": "Heatran",
+      "species": "SPECIES_HEATRAN",
+      "species_id": 485
+    },
+    {
+      "min_badges": 5,
+      "name": "Cresselia",
+      "species": "SPECIES_CRESSELIA",
+      "species_id": 488
+    },
+    {
+      "min_badges": 6,
+      "name": "Mewtwo",
+      "species": "SPECIES_MEWTWO",
+      "species_id": 150
+    },
+    {
+      "min_badges": 6,
+      "name": "Lugia",
+      "species": "SPECIES_LUGIA",
+      "species_id": 249
+    },
+    {
+      "min_badges": 6,
+      "name": "Ho Oh",
+      "species": "SPECIES_HO_OH",
+      "species_id": 250
+    },
+    {
+      "min_badges": 6,
+      "name": "Kyogre",
+      "species": "SPECIES_KYOGRE",
+      "species_id": 382
+    },
+    {
+      "min_badges": 6,
+      "name": "Groudon",
+      "species": "SPECIES_GROUDON",
+      "species_id": 383
+    },
+    {
+      "min_badges": 6,
+      "name": "Rayquaza",
+      "species": "SPECIES_RAYQUAZA",
+      "species_id": 384
+    },
+    {
+      "min_badges": 6,
+      "name": "Dialga",
+      "species": "SPECIES_DIALGA",
+      "species_id": 483
+    },
+    {
+      "min_badges": 6,
+      "name": "Palkia",
+      "species": "SPECIES_PALKIA",
+      "species_id": 484
+    },
+    {
+      "min_badges": 6,
+      "name": "Giratina",
+      "species": "SPECIES_GIRATINA",
+      "species_id": 487
+    },
+    {
+      "min_badges": 6,
+      "name": "Regigigas",
+      "species": "SPECIES_REGIGIGAS",
+      "species_id": 486
+    },
+    {
+      "min_badges": 16,
+      "name": "Mew",
+      "species": "SPECIES_MEW",
+      "species_id": 151
+    },
+    {
+      "min_badges": 16,
+      "name": "Celebi",
+      "species": "SPECIES_CELEBI",
+      "species_id": 251
+    },
+    {
+      "min_badges": 16,
+      "name": "Jirachi",
+      "species": "SPECIES_JIRACHI",
+      "species_id": 385
+    },
+    {
+      "min_badges": 16,
+      "name": "Deoxys",
+      "species": "SPECIES_DEOXYS",
+      "species_id": 386
+    },
+    {
+      "min_badges": 16,
+      "name": "Phione",
+      "species": "SPECIES_PHIONE",
+      "species_id": 489
+    },
+    {
+      "min_badges": 16,
+      "name": "Manaphy",
+      "species": "SPECIES_MANAPHY",
+      "species_id": 490
+    },
+    {
+      "min_badges": 16,
+      "name": "Darkrai",
+      "species": "SPECIES_DARKRAI",
+      "species_id": 491
+    },
+    {
+      "min_badges": 16,
+      "name": "Shaymin",
+      "species": "SPECIES_SHAYMIN",
+      "species_id": 492
+    },
+    {
+      "min_badges": 16,
+      "name": "Arceus",
+      "species": "SPECIES_ARCEUS",
+      "species_id": 493
+    }
+  ],
+  "rates": [
+    {
+      "badges": "0-3",
+      "denominator": 0,
+      "description": "disabled"
+    },
+    {
+      "badges": "4+",
+      "denominator": 100,
+      "description": "1/100 aggregate unlocked-pool roll"
+    }
+  ],
+  "roll_model": "One 1/100 overlay roll is made after a normal eligible wild encounter succeeds, then one species is selected from the unlocked pool."
+}

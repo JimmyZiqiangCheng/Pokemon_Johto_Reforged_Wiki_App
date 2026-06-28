@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Rare wild surprises",
+    "summary": "Every route and dungeon is worth exploring because many areas hide a low-chance surprise if you keep looking.",
+    "body": "Johto and Kanto now have a rare encounter layer built for players who like to hunt. Many routes, caves, waters, and fishing spots include a special low-chance Pokemon that fits the area, from unusual regional forms to starters, fossils, baby Pokemon, and pseudo-legendary lines. You can play normally and occasionally get lucky, or come back later and deliberately hunt the route until its surprise appears.",
+    "tag": "Encounters"
+  },
+  {
+    "title": "More wild Pokemon variety",
+    "summary": "Wild tables have been rebuilt so new team options appear throughout the journey instead of clustering late.",
+    "body": "The wild encounter spread is wider across Johto and Kanto, giving you more meaningful choices while your team is still taking shape. Common encounters still keep each route recognizable, but the expanded tables add more habitats, alternate time-of-day finds, water encounters, fishing options, and late-route upgrades so building a fresh team does not depend on the same small set of early Pokemon every run.",
+    "tag": "Encounters"
+  },
+  {
+    "title": "Roaming legendary surprises",
+    "summary": "Legendaries are not just sleeping in caves: if you are lucky, some can cross your path in the wild like the anime.",
+    "body": "After you have enough badges, eligible wild encounters can rarely become legendary or mythical Pokemon. More Pokemon join the surprise pool as your badge count rises, their levels scale with your progress, and they generally try to flee instead of waiting politely in one cave. Bring status, trapping, Repels, and plenty of Balls when you decide to hunt them.",
+    "tag": "Legendaries"
+  },
+  {
+    "title": "Smarter trainer teams",
+    "summary": "Regular trainers and bosses use more varied teams that fit who they are and where you meet them.",
+    "body": "Trainer rosters have been rebuilt to feel less repetitive without making every battle a competitive puzzle. Hikers lean into rugged Pokemon, swimmers feel at home near water, Rocket teams use rougher or sneakier picks, and boss fights get fuller teams with better level progression. The goal is for battles to be more interesting while still making sense in the world.",
+    "tag": "Trainers"
+  },
+  {
+    "title": "Updated Pokemon typing",
+    "summary": "Selected Pokemon receive intuitive type updates inspired by Renegade Platinum and Polished Crystal.",
+    "body": "A focused set of Pokemon have type updates chosen for flavor, usefulness, and better team variety. The changes follow the spirit of projects like Renegade Platinum and Polished Crystal: make obvious theme matches feel right, give overlooked Pokemon clearer identities, and open up new counters without rewriting the whole type chart.",
+    "tag": "Pokemon"
+  },
+  {
+    "title": "Earlier team training items",
+    "summary": "Mints, feathers, Ability Capsule, vitamins, candies, and evolution tools arrive earlier through badge-gated shops.",
+    "body": "Team tuning is available much earlier than in vanilla. As you earn badges, shops begin offering practical training and customization items such as feathers, EV-reducing berries, mints, Ability Capsule, vitamins, stat candies, Power items, and key evolution items. You can polish favorites during the main story instead of waiting until the run is basically over.",
+    "tag": "Items"
+  },
+  {
+    "title": "No-trade evolution fixes",
+    "summary": "Trade evolutions have in-game paths so a single player can complete families without another cartridge.",
+    "body": "Trade-only and trade-item evolutions are moved to practical in-game methods. Some use direct evolution items, some use familiar move or condition checks, and the relevant items are worked into the badge-gated economy. The result is simple: if a Pokemon is part of the intended scope, you should be able to raise and evolve it in one save.",
+    "tag": "Pokemon"
+  },
+  {
+    "title": "One-save Gen 1-4 adventure",
+    "summary": "The game is built around making Gen 1-4 Pokemon obtainable in one playthrough where possible.",
+    "body": "Johto Reforged is planned around broad Gen 1-4 availability in a single save, with a small number of approved family extensions where they make sense. Wild encounters, gifts, events, evolution changes, and postgame rewards all work toward letting you build teams from across the first four generations without relying on trading or external games.",
+    "tag": "Scope"
+  },
+  {
+    "title": "Stronger bosses and rematches",
+    "summary": "Gym Leaders, Elite Four, Champion-level fights, and rematches are paced for a fuller Johto-to-Kanto journey.",
+    "body": "Major battles use stronger team structures and a smoother level curve so the campaign keeps asking you to adapt. Gym Leaders and higher-tier bosses have more complete rosters, important rematches are available where they belong, and the late game gives trained teams a reason to keep improving after the first credits.",
+    "tag": "Trainers"
+  },
+  {
+    "title": "Kanto postgame challenges",
+    "summary": "The postgame adds Fighting Dojo rematches, Champion Circuit battles, and legendary or mythical encounters.",
+    "body": "Kanto has more to do once the badge journey opens up. The Saffron Fighting Dojo becomes a postgame hub for rematches and Champion Circuit battles, including high-end fights against Lance, Blue, Red, Steven, Wallace, and Cynthia. Legendary and mythical encounters round out the hunt so postgame exploration feels like a real second act.",
+    "tag": "Postgame"
+  }
+]
