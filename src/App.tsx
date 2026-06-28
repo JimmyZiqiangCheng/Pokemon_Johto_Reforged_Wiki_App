@@ -316,6 +316,10 @@ function featureIcon(feature: any): LucideIcon {
   if (title.includes("rare wild")) return Search;
   if (title.includes("wild pokemon variety")) return MapIcon;
   if (tag.includes("legendar")) return Sparkles;
+  if (tag.includes("qol") && title.includes("flow")) return Zap;
+  if (tag.includes("qol") && title.includes("information")) return ListFilter;
+  if (tag.includes("qol") && title.includes("catching")) return Sparkles;
+  if (tag.includes("qol")) return ShoppingBag;
   if (title.includes("evolution")) return Zap;
   if (tag.includes("item")) return ShoppingBag;
   if (tag.includes("scope")) return Boxes;

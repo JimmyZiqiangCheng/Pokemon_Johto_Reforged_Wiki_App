@@ -1755,6 +1755,24 @@ def feature_cards(exports: dict[str, Any]) -> list[dict[str, str]]:
             "tag": "Legendaries",
         },
         {
+            "title": "Faster adventure flow",
+            "summary": "Fast text, reusable Repels, reusable TMs, deletable HMs, and disabled overworld poison damage reduce routine friction.",
+            "body": "Several foundational quality-of-life settings are enabled from the start. Text prints faster, TMs can be reused, Repels can prompt for reuse, HMs can be deleted, and poison no longer chips away at the party while walking in the overworld. These changes keep the HGSS structure intact while cutting down on repeated menu and recovery chores.",
+            "tag": "QOL",
+        },
+        {
+            "title": "Clearer team information",
+            "summary": "The EV/IV viewer, nature stat indicators, Hidden Abilities support, and expanded PC boxes make team management easier.",
+            "body": "Team inspection is more transparent than vanilla HGSS. The enhanced EV/IV viewer is enabled with nature up/down indicators, Hidden Abilities are supported by the engine configuration, and expanded PC storage gives long one-save collection runs more room without constant box cleanup.",
+            "tag": "QOL",
+        },
+        {
+            "title": "Smoother catching and growth",
+            "summary": "Capture EXP, critical captures, updated vitamin EV caps, and stat candies make normal play less grind-heavy.",
+            "body": "Catching Pokemon contributes EXP, critical captures can speed up successful catches, and vitamins use the updated 252 EV cap behavior. Phase 5 also adds party-use IV stat candies and Max Candy, giving players direct ways to finish training favorites once those tools are unlocked.",
+            "tag": "QOL",
+        },
+        {
             "title": "Smarter trainer teams",
             "summary": "Regular trainers and bosses use more varied teams that fit who they are and where you meet them.",
             "body": "Trainer rosters have been rebuilt to feel less repetitive without making every battle a competitive puzzle. Hikers lean into rugged Pokemon, swimmers feel at home near water, Rocket teams use rougher or sneakier picks, and boss fights get fuller teams with better level progression. The goal is for battles to be more interesting while still making sense in the world.",
@@ -1767,10 +1785,10 @@ def feature_cards(exports: dict[str, Any]) -> list[dict[str, str]]:
             "tag": "Pokemon",
         },
         {
-            "title": "Earlier team training items",
-            "summary": "Mints, feathers, Ability Capsule, vitamins, candies, and evolution tools arrive earlier through badge-gated shops.",
-            "body": "Team tuning is available much earlier than in vanilla. As you earn badges, shops begin offering practical training and customization items such as feathers, EV-reducing berries, mints, Ability Capsule, vitamins, stat candies, Power items, and key evolution items. You can polish favorites during the main story instead of waiting until the run is basically over.",
-            "tag": "Items",
+            "title": "Badge-gated training economy",
+            "summary": "Mints, feathers, Ability Capsule, vitamins, Power items, IV candies, Max Candy, and evolution tools unlock through shops.",
+            "body": "Team tuning is available much earlier than in vanilla, but still paced by badge progress. Shops add EV feathers, EV-reducing berries, mints, and Ability Capsule at 3 badges; vitamins and common evolution stones at 4; IV stat candies, Power items, and trade-item replacements at 5; Ability Patch and broader modern evolution items at 6; and Max Candy at 12 badges.",
+            "tag": "QOL",
         },
         {
             "title": "No-trade evolution fixes",

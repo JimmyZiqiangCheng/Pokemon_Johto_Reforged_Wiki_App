@@ -409,6 +409,13 @@ a:focus-visible {
   --feature-shadow: rgba(138, 106, 22, 0.14);
 }
 
+.feature-tone-qol {
+  --feature-accent: #7a4aa0;
+  --feature-body: #55306f;
+  --feature-border: #d2bfdf;
+  --feature-shadow: rgba(122, 74, 160, 0.14);
+}
+
 .feature-tone-scope {
   --feature-accent: #4f6072;
   --feature-body: #354657;

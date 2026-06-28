@@ -2,9 +2,9 @@
   "title": "Pokemon Johto Reforged",
   "versionLabel": "Phase 9 validation/export phase",
   "sourceLastUpdated": "2026-06-27",
-  "exportDate": "2026-06-28T10:56:20-07:00",
+  "exportDate": "2026-06-28T11:39:23-07:00",
   "sourceRepoPath": "C:\\Users\\jimmy\\Documents\\pokemon_romhacks\\perfect_johto",
-  "explorerBuildDate": "2026-06-28T10:56:20-07:00",
+  "explorerBuildDate": "2026-06-28T11:39:23-07:00",
   "latestCompletedPhase": "Phase 8 content complete; Phase 9 validation/export in progress",
   "exportStatus": "Generated from existing JSON exports, HG-Engine source tables, and project docs.",
   "completedSystems": [
