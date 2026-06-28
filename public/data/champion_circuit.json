@@ -60,8 +60,17 @@
       "nature": null,
       "evs": null,
       "evSummary": "No explicit EV spread in trainer source",
-      "ivs": 250,
-      "ivSummary": "Source IV setting 250",
+      "ivs": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "spAttack": 30,
+        "spDefense": 30,
+        "speed": 30
+      },
+      "ivDifficulty": 250,
+      "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+      "ivSummary": "All stats 30 IV (source difficulty byte 250)",
       "setIvs": null
     },
     "sprite": "assets/trainers/pkmn_trainer_red.png",
@@ -116,8 +125,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -171,8 +189,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -225,8 +252,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -280,8 +316,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -335,8 +380,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -390,8 +444,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       }
     ],
@@ -502,8 +565,17 @@
       "nature": null,
       "evs": null,
       "evSummary": "No explicit EV spread in trainer source",
-      "ivs": 100,
-      "ivSummary": "Source IV setting 100",
+      "ivs": {
+        "hp": 12,
+        "attack": 12,
+        "defense": 12,
+        "spAttack": 12,
+        "spDefense": 12,
+        "speed": 12
+      },
+      "ivDifficulty": 100,
+      "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+      "ivSummary": "All stats 12 IV (source difficulty byte 100)",
       "setIvs": null
     },
     "sprite": "assets/trainers/leader_blue.png",
@@ -559,8 +631,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 100,
-        "ivSummary": "Source IV setting 100",
+        "ivs": {
+          "hp": 12,
+          "attack": 12,
+          "defense": 12,
+          "spAttack": 12,
+          "spDefense": 12,
+          "speed": 12
+        },
+        "ivDifficulty": 100,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 12 IV (source difficulty byte 100)",
         "setIvs": null
       },
       {
@@ -613,8 +694,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -668,8 +758,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -722,8 +821,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -777,8 +885,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -832,8 +949,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       }
     ],
@@ -944,8 +1070,17 @@
       "nature": null,
       "evs": null,
       "evSummary": "No explicit EV spread in trainer source",
-      "ivs": 250,
-      "ivSummary": "Source IV setting 250",
+      "ivs": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "spAttack": 30,
+        "spDefense": 30,
+        "speed": 30
+      },
+      "ivDifficulty": 250,
+      "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+      "ivSummary": "All stats 30 IV (source difficulty byte 250)",
       "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
@@ -1001,8 +1136,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1056,8 +1200,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1111,8 +1264,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1166,8 +1328,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1221,8 +1392,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1276,8 +1456,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       }
     ],
@@ -1376,8 +1565,17 @@
       "nature": null,
       "evs": null,
       "evSummary": "No explicit EV spread in trainer source",
-      "ivs": 250,
-      "ivSummary": "Source IV setting 250",
+      "ivs": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "spAttack": 30,
+        "spDefense": 30,
+        "speed": 30
+      },
+      "ivDifficulty": 250,
+      "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+      "ivSummary": "All stats 30 IV (source difficulty byte 250)",
       "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
@@ -1433,8 +1631,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1488,8 +1695,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1543,8 +1759,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1598,8 +1823,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1653,8 +1887,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1708,8 +1951,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 255,
-        "ivSummary": "Source IV setting 255",
+        "ivs": {
+          "hp": 31,
+          "attack": 31,
+          "defense": 31,
+          "spAttack": 31,
+          "spDefense": 31,
+          "speed": 31
+        },
+        "ivDifficulty": 255,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 31 IV (source difficulty byte 255)",
         "setIvs": null
       }
     ],
@@ -1811,8 +2063,17 @@
       "nature": null,
       "evs": null,
       "evSummary": "No explicit EV spread in trainer source",
-      "ivs": 250,
-      "ivSummary": "Source IV setting 250",
+      "ivs": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "spAttack": 30,
+        "spDefense": 30,
+        "speed": 30
+      },
+      "ivDifficulty": 250,
+      "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+      "ivSummary": "All stats 30 IV (source difficulty byte 250)",
       "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
@@ -1867,8 +2128,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1922,8 +2192,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -1977,8 +2256,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2032,8 +2320,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2087,8 +2384,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2142,8 +2448,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 255,
-        "ivSummary": "Source IV setting 255",
+        "ivs": {
+          "hp": 31,
+          "attack": 31,
+          "defense": 31,
+          "spAttack": 31,
+          "spDefense": 31,
+          "speed": 31
+        },
+        "ivDifficulty": 255,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 31 IV (source difficulty byte 255)",
         "setIvs": null
       }
     ],
@@ -2242,8 +2557,17 @@
       "nature": null,
       "evs": null,
       "evSummary": "No explicit EV spread in trainer source",
-      "ivs": 250,
-      "ivSummary": "Source IV setting 250",
+      "ivs": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "spAttack": 30,
+        "spDefense": 30,
+        "speed": 30
+      },
+      "ivDifficulty": 250,
+      "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+      "ivSummary": "All stats 30 IV (source difficulty byte 250)",
       "setIvs": null
     },
     "sprite": "assets/trainers/champion.png",
@@ -2299,8 +2623,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2354,8 +2687,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2409,8 +2751,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2464,8 +2815,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2519,8 +2879,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 250,
-        "ivSummary": "Source IV setting 250",
+        "ivs": {
+          "hp": 30,
+          "attack": 30,
+          "defense": 30,
+          "spAttack": 30,
+          "spDefense": 30,
+          "speed": 30
+        },
+        "ivDifficulty": 250,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 30 IV (source difficulty byte 250)",
         "setIvs": null
       },
       {
@@ -2574,8 +2943,17 @@
         "nature": null,
         "evs": null,
         "evSummary": "No explicit EV spread in trainer source",
-        "ivs": 255,
-        "ivSummary": "Source IV setting 255",
+        "ivs": {
+          "hp": 31,
+          "attack": 31,
+          "defense": 31,
+          "spAttack": 31,
+          "spDefense": 31,
+          "speed": 31
+        },
+        "ivDifficulty": 255,
+        "ivSource": "Trainer difficulty byte scaled by floor(byte * 31 / 255)",
+        "ivSummary": "All stats 31 IV (source difficulty byte 255)",
         "setIvs": null
       }
     ],

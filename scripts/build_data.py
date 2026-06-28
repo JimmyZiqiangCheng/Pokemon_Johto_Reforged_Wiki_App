@@ -23,6 +23,7 @@ ASSET_DIR = PUBLIC_DIR / "assets"
 DOCS_DIR = PROJECT_ROOT / "docs" / "generated"
 
 STAT_FIELDS = ("hp", "attack", "defense", "spAttack", "spDefense", "speed")
+TRAINER_SOURCE_STAT_FIELDS = ("hp", "attack", "defense", "speed", "spAttack", "spDefense")
 STAT_LABELS = {
     "hp": "HP",
     "attack": "Attack",
@@ -1304,9 +1305,25 @@ def parse_stat_override(body: str, field_name: str) -> dict[str, int] | None:
     if any(value is not None for value in values.values()):
         return {stat: int(value or 0) for stat, value in values.items()}
     positional = [int(value) for value in re.findall(r"\b[0-9]+\b", block)]
-    if len(positional) >= len(STAT_FIELDS):
-        return dict(zip(STAT_FIELDS, positional[: len(STAT_FIELDS)]))
+    if len(positional) >= len(TRAINER_SOURCE_STAT_FIELDS):
+        source_values = dict(zip(TRAINER_SOURCE_STAT_FIELDS, positional[: len(TRAINER_SOURCE_STAT_FIELDS)]))
+        return {stat: source_values.get(stat, 0) for stat in STAT_FIELDS}
     return None
+
+
+def trainer_scaled_iv(raw_value: int | None) -> int | None:
+    if raw_value is None:
+        return None
+    return max(0, min(31, int(raw_value) * 31 // 255))
+
+
+def trainer_iv_spread(raw_value: int | None, explicit_ivs: dict[str, int] | None) -> dict[str, int] | None:
+    if explicit_ivs:
+        return {stat: max(0, min(31, int(explicit_ivs.get(stat) or 0))) for stat in STAT_FIELDS}
+    scaled = trainer_scaled_iv(raw_value)
+    if scaled is None:
+        return None
+    return {stat: scaled for stat in STAT_FIELDS}
 
 
 def parse_trainer_source_party(engine_root: Path) -> dict[int, list[dict[str, Any]]]:
@@ -1442,9 +1459,20 @@ def normalize_party(
         else:
             move_ids = trainer_default_move_ids(species_id, level, pokemon_by_id)
             move_source = "Level-up learnset"
-        iv_setting = source_member.get("ivs") if source_member.get("ivs") is not None else member.get("ivs")
+        iv_difficulty = source_member.get("ivs") if source_member.get("ivs") is not None else member.get("ivs")
         evs = source_member.get("setEvs") or member.get("evs")
         explicit_ivs = source_member.get("setIvs")
+        ivs = trainer_iv_spread(iv_difficulty, explicit_ivs)
+        scaled_iv = trainer_scaled_iv(iv_difficulty)
+        if explicit_ivs:
+            iv_summary = "Explicit trainer IV spread"
+            iv_source = "TRAINER_DATA_TYPE_IV_EV_SET override"
+        elif scaled_iv is not None:
+            iv_summary = f"All stats {scaled_iv} IV (source difficulty byte {iv_difficulty})"
+            iv_source = "Trainer difficulty byte scaled by floor(byte * 31 / 255)"
+        else:
+            iv_summary = "No IV setting exported"
+            iv_source = None
         ability_slot = source_member.get("abilitySlot") or member.get("abilitySlot")
         ability = trainer_ability_from_slot(source_member.get("ability") or member.get("ability"), ability_slot, mon)
         party.append(
@@ -1464,8 +1492,10 @@ def normalize_party(
                 "nature": source_member.get("nature") or member.get("nature"),
                 "evs": evs,
                 "evSummary": "Explicit EV spread" if evs else "No explicit EV spread in trainer source",
-                "ivs": iv_setting,
-                "ivSummary": f"Source IV setting {iv_setting}" if iv_setting is not None else "No IV setting exported",
+                "ivs": ivs,
+                "ivDifficulty": iv_difficulty,
+                "ivSource": iv_source,
+                "ivSummary": iv_summary,
                 "setIvs": explicit_ivs,
             }
         )
@@ -2081,7 +2111,7 @@ Generated JSON lives in `public/data/`. Source records are copied from the Pokem
 - `items.json`: item constants, names, prices, pockets, mart availability, held/evolution usage, technical fields, and icons when available.
 - `locations.json`: inferred location records linked to encounters and future location-scoped exports.
 - `encounters.json`: flattened wild encounter slots with method, time, level range, chance, rarity, Pokemon, and location links.
-- `trainers.json`: trainer records with enriched party Pokemon, held items, source IV settings, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
+- `trainers.json`: trainer records with enriched party Pokemon, held items, game-scaled IV spreads plus the raw difficulty byte, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
 - `boss_fights.json`: boss-oriented subset linked back to trainer records with the same enriched party structure.
 - `statics_gifts.json`: static, roaming, gift, and dossier-style exported encounters.
 - `legendary_dossiers.json`: Phase 8 dossier subset with flags/requirements where exported.

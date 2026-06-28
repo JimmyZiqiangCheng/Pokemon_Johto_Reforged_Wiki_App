@@ -2111,9 +2111,9 @@ function formatStatSpread(values: Record<string, unknown> | null | undefined, em
 }
 
 function ivSummary(member: any): string {
+  if (member.ivSummary) return member.ivSummary;
   if (member.setIvs) return formatStatSpread(member.setIvs, "No IV override");
-  if (member.ivs !== null && member.ivs !== undefined) return `Source setting ${member.ivs}`;
-  return member.ivSummary || "No IV setting exported";
+  return formatStatSpread(member.ivs, "No IV setting exported");
 }
 
 function evSummary(member: any): string {
