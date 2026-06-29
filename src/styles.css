@@ -1148,6 +1148,59 @@ a:focus-visible {
   white-space: nowrap;
 }
 
+.ability-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.ability-summary-card {
+  display: grid;
+  gap: 8px;
+  min-height: 112px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 11px;
+  text-decoration: none;
+}
+
+.ability-summary-card:hover {
+  border-color: #7a9a6f;
+  background: #f7faf4;
+}
+
+.ability-summary-card strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.ability-effect-rows {
+  display: grid;
+  gap: 7px;
+}
+
+.ability-effect-rows p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.ability-effect-rows span {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ability-effect-rows.detail {
+  max-width: 760px;
+}
+
 .party-card {
   align-content: start;
 }

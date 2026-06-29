@@ -846,16 +846,10 @@ function PokemonDetail({ pokemon, indexes }: { pokemon: Pokemon; indexes: Indexe
         </div>
       </Section>
       <Section title="Abilities">
-        <div className="pill-row">
-          {pokemon.abilities.length ? pokemon.abilities.map((ability) => {
-            const abilityDetail = indexes.abilities.get(ability.id);
-            return (
-              <PopupPill key={ability.id + ability.slot} label={ability.name}>
-                <strong>{ability.name}</strong>
-                <p>{abilityDetail?.description || "No description available."}</p>
-              </PopupPill>
-            );
-          }) : <Muted>None exported</Muted>}
+        <div className="ability-list">
+          {pokemon.abilities.length ? pokemon.abilities.map((ability) => (
+            <AbilitySummaryCard key={ability.id + ability.slot} ability={ability} detail={indexes.abilities.get(ability.id)} />
+          )) : <Muted>None exported</Muted>}
         </div>
       </Section>
       <Section title="Breeding">
@@ -980,11 +974,19 @@ function AbilitiesPage({ data, route }: { data: ExplorerData; indexes: Indexes; 
 }
 
 function AbilityDetail({ ability }: { ability: any }) {
+  const rows = abilityInfoRows(ability);
   return (
     <div className="detail-stack">
       <h2>{ability.name}</h2>
-      <Section title="Description">
-        <p>{ability.description || "Description missing from source text."}</p>
+      <Section title="Ability Effect">
+        <div className="ability-effect-rows detail">
+          {rows.map((row) => (
+            <p key={row.label}>
+              <span>{row.label}</span>
+              {row.text}
+            </p>
+          ))}
+        </div>
       </Section>
       <Section title="Pokemon">
         <div className="entity-grid">
@@ -1003,6 +1005,35 @@ function AbilityDetail({ ability }: { ability: any }) {
       <ValidationFlags flags={ability.validationFlags || []} />
     </div>
   );
+}
+
+function AbilitySummaryCard({ ability, detail }: { ability: any; detail?: any }) {
+  const rows = abilityInfoRows(detail);
+  return (
+    <a className="ability-summary-card" href={href("abilities", ability.id)}>
+      <strong>{ability.name}</strong>
+      <div className="ability-effect-rows">
+        {rows.map((row) => (
+          <p key={row.label}>
+            <span>{row.label}</span>
+            {row.text}
+          </p>
+        ))}
+      </div>
+    </a>
+  );
+}
+
+function abilityInfoRows(ability: any): Array<{ label: string; text: string }> {
+  const description = cleanDescription(ability?.description);
+  const effect = cleanDescription(ability?.effectSummary);
+  if (description && effect && normalize(description) !== normalize(effect)) {
+    return [
+      { label: "Description", text: description },
+      { label: "Effect", text: effect }
+    ];
+  }
+  return [{ label: "Effect", text: effect || description || "No ability effect text available." }];
 }
 
 function ItemsPage({ data, route }: { data: ExplorerData; indexes: Indexes; route: Route }) {
