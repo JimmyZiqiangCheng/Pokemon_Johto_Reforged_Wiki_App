@@ -54,6 +54,7 @@ Primary live sources:
 - `hg-engine-main/hg-engine-main/data/Evolutions.c`
 - `hg-engine-main/hg-engine-main/data/learnsets/learnsets.json`
 - `hg-engine-main/hg-engine-main/data/itemdata/itemdata.c`
+- `hg-engine-main/hg-engine-main/src/item.c` for TM/HM move labels
 - `pokeheartgold-master/files/fielddata/script/scr_seq/*.s`
 - `pokeheartgold-master/files/a/1/1/2` NPC trade data
 - `pokeheartgold-master/src/scrcmd_fossils.c`
@@ -108,6 +109,8 @@ http://127.0.0.1:5173/
    ```powershell
    python scripts/build_data.py
    ```
+
+   TM/HM learnset labels are read from `hg-engine-main/hg-engine-main/src/item.c` (`sMachineMoves[]`). The app only displays machine learnset rows that map to an actual numbered TM/HM in that table.
 
 2. If a supplemental system changed and only exists in `exports/perfect_johto`, refresh the ROM hack exports, then rerun the explorer generator:
 

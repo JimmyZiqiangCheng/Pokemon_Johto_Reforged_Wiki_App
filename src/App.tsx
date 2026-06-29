@@ -317,7 +317,7 @@ function buildGlobalSearchRecords(data: ExplorerData, indexes: Indexes): GlobalS
     id: `move:${move.id}`,
     kind: "Move",
     title: move.name,
-    subtitle: `${move.type} - ${move.category} - ${move.learners.length} learners`,
+    subtitle: `${move.type} - ${move.category} - ${uniqueLearnerCount(move.learners)} learners`,
     url: href("moves", move.id),
     searchText: [move.id, move.effectSummary, move.description, move.flags.join(" ")].join(" ")
   }));
@@ -824,6 +824,7 @@ function pokemonGeneration(item: Pick<Pokemon, "dexNo" | "id">): string {
 function PokemonDetail({ pokemon, indexes }: { pokemon: Pokemon; indexes: Indexes }) {
   const encounterRows = pokemon.encounters.map((id) => indexes.encounters.get(id)).filter(Boolean);
   const pokemonName = displayPokemonName(pokemon.name, pokemon.id);
+  const eggRows = asArray(pokemon.learnsets.egg);
   return (
     <div className="detail-stack pokemon-profile">
       <header className="profile-header pokemon-hero">
@@ -864,10 +865,10 @@ function PokemonDetail({ pokemon, indexes }: { pokemon: Pokemon; indexes: Indexe
         <EvolutionRows rows={[...pokemon.evolvesFrom, ...pokemon.evolvesTo]} current={pokemon.id} />
       </Section>
       <Section title="Learnsets">
-        <LearnsetBlock title="Level-up" rows={pokemon.learnsets.level} moves={indexes.moves} />
-        <MoveChipList title="Machine" rows={pokemon.learnsets.machine} moves={indexes.moves} />
-        <MoveChipList title="Tutor" rows={pokemon.learnsets.tutor} moves={indexes.moves} />
-        <MoveChipList title="Egg" rows={pokemon.learnsets.egg} moves={indexes.moves} />
+        <MovePool title="Level Up" rows={pokemon.learnsets.level} moves={indexes.moves} method="level" defaultOpen />
+        <MovePool title="TM/HM" rows={pokemon.learnsets.machine} moves={indexes.moves} method="machine" />
+        <MovePool title="Tutor" rows={pokemon.learnsets.tutor} moves={indexes.moves} method="tutor" />
+        <MovePool title="Egg Moves" rows={eggRows} moves={indexes.moves} method="egg" summaryLabel={eggMoveSummary(eggRows)} />
       </Section>
       <Section title="Where To Get It">
         <EncounterMiniList rows={encounterRows.slice(0, 40)} />
@@ -896,14 +897,14 @@ function MovesPage({ data, route }: { data: ExplorerData; indexes: Indexes; rout
       sorters={{
         Name: (a, b) => a.name.localeCompare(b.name),
         Power: (a, b) => (b.power || 0) - (a.power || 0),
-        Learners: (a, b) => b.learners.length - a.learners.length
+        Learners: (a, b) => uniqueLearnerCount(b.learners) - uniqueLearnerCount(a.learners)
       }}
       renderCard={(item, selected) => (
         <CardShell selected={selected} className="move-record-card">
           <MoveBadge move={item} />
           <div className="card-main">
             <strong>{item.name}</strong>
-            <small>{item.category} - {compactNumber(item.power)} pow - {item.learners.length} learners</small>
+            <small>{item.category} - {compactNumber(item.power)} pow - {uniqueLearnerCount(item.learners)} learners</small>
           </div>
         </CardShell>
       )}
@@ -1329,6 +1330,22 @@ function buildLocationViews(data: ExplorerData, indexes: Indexes): LocationView[
 
 function asArray<T = any>(value: T[] | null | undefined): T[] {
   return Array.isArray(value) ? value : [];
+}
+
+function moveCountText(count: number): string {
+  return `${count} move${count === 1 ? "" : "s"}`;
+}
+
+function uniqueLearnerCount(learners: any[]): number {
+  return new Set(asArray(learners).map((row) => row?.pokemonId).filter(Boolean)).size;
+}
+
+function eggMoveSummary(rows: any[]): string {
+  const count = rows.length;
+  const levelUpCount = rows.filter((row) => row.levelUpAccessible).length;
+  if (!count || !levelUpCount) return moveCountText(count);
+  if (levelUpCount === count) return `${moveCountText(count)} - level-up`;
+  return `${moveCountText(count)} - ${levelUpCount} level-up`;
 }
 
 function readableText(value: unknown): string {
@@ -2583,31 +2600,89 @@ function EvolutionRows({ rows, current }: { rows: any[]; current: string }) {
   );
 }
 
-function LearnsetBlock({ title, rows, moves }: { title: string; rows: any[]; moves?: Map<string, Move> }) {
+type MovePoolMethod = "level" | "machine" | "tutor" | "egg";
+
+function MovePool({ title, rows, moves, method, defaultOpen = false, summaryLabel }: { title: string; rows: any[]; moves?: Map<string, Move>; method: MovePoolMethod; defaultOpen?: boolean; summaryLabel?: string }) {
+  const sortedRows = [...rows].sort((a, b) => learnsetRowRank(a, method) - learnsetRowRank(b, method) || (a.moveName || "").localeCompare(b.moveName || ""));
   return (
-    <div className="learnset-group">
-      <h4>{title}</h4>
-      <div className="learnset-grid">
-        {rows.slice(0, 80).map((row) => (
-          <MovePopupPill key={`${row.level}-${row.moveId}`} moveId={row.moveId} fallbackName={row.moveName} moves={moves} prefix={`Lv. ${row.level}`} />
+    <details className="move-pool" open={defaultOpen}>
+      <summary>
+        <span className="move-pool-title">
+          <ChevronRight size={15} />
+          <strong>{title}</strong>
+        </span>
+        <span>{summaryLabel || moveCountText(rows.length)}</span>
+      </summary>
+      <div className="move-table" role="table" aria-label={`${title} moves`}>
+        <div className="move-table-header" role="row">
+          <span>{method === "level" ? "Lv." : method === "machine" ? "No." : "Method"}</span>
+          <span>Move</span>
+          <span>Type</span>
+          <span>Cat.</span>
+          <span>Pow</span>
+          <span>Acc</span>
+          <span>PP</span>
+          <span>Effect</span>
+        </div>
+        {sortedRows.map((row, index) => (
+          <MoveInfoRow key={`${title}-${row.level ?? "any"}-${row.moveId || row.moveName}-${index}`} row={row} move={row.moveId ? moves?.get(row.moveId) : undefined} method={method} />
         ))}
-        {!rows.length ? <Muted>No entries exported.</Muted> : null}
+        {!rows.length ? <div className="move-table-empty"><Muted>No entries exported.</Muted></div> : null}
       </div>
+    </details>
+  );
+}
+
+function MoveInfoRow({ row, move, method }: { row: any; move?: Move; method: MovePoolMethod }) {
+  const name = move?.name || row.moveName || readableLabel(row.moveId || "");
+  const effect = move?.effectSummary || cleanDescription(move?.description) || "No effect text available.";
+  return (
+    <div className="move-info-row" role="row">
+      <span className="move-learn-method">{learnsetMethodLabel(row, method)}</span>
+      <strong className="move-name-cell">
+        <span>{name}</span>
+        {row.alsoEggMove ? <span className="move-source-chip">Egg</span> : null}
+      </strong>
+      {move ? <MoveBadge move={move} /> : <span className="move-badge">?</span>}
+      <span className="move-category">{move?.category || "-"}</span>
+      <span className="move-stat">{formatMoveNumber(move?.power)}</span>
+      <span className="move-stat">{formatMoveNumber(move?.accuracy, "%")}</span>
+      <span className="move-stat">{formatMoveNumber(move?.pp)}</span>
+      <span className="move-effect-text">{effect}</span>
     </div>
   );
 }
 
-function MoveChipList({ title, rows, moves }: { title: string; rows: any[]; moves?: Map<string, Move> }) {
-  return (
-    <div className="learnset-group">
-      <h4>{title}</h4>
-      <div className="pill-row">
-        {rows.slice(0, 60).map((row) => <MovePopupPill key={`${title}-${row.moveId}`} moveId={row.moveId} fallbackName={row.moveName} moves={moves} />)}
-        {rows.length > 60 ? <Pill>+{rows.length - 60} more</Pill> : null}
-        {!rows.length ? <Muted>No entries exported.</Muted> : null}
-      </div>
-    </div>
-  );
+function learnsetRowRank(row: any, method: MovePoolMethod): number {
+  if (method === "level") return Number.isFinite(Number(row.level)) ? Number(row.level) : 999;
+  if (method === "machine") return Number.isFinite(Number(row.machineSort)) ? Number(row.machineSort) : 99999;
+  return normalize(row.moveName || row.moveId || "").charCodeAt(0) || 999;
+}
+
+function learnsetMethodLabel(row: any, method: MovePoolMethod): string {
+  if (method === "level") {
+    const level = Number(row.level);
+    if (level === 0) return "Evo";
+    return Number.isFinite(level) ? String(level) : "-";
+  }
+  if (method === "machine") return machineLabelText(row);
+  if (method === "tutor") return "Tutor";
+  if (method === "egg" && row.levelUpAccessible) {
+    const level = Number(row.levelUpLevel);
+    return Number.isFinite(level) ? `Lv. ${level}` : "Level Up";
+  }
+  return "Egg";
+}
+
+function machineLabelText(row: any): string {
+  if (row.machineLabel) return String(row.machineLabel);
+  const labels = asArray(row.machineLabels).filter(Boolean);
+  return labels.length ? labels.join(" / ") : "TM/HM";
+}
+
+function formatMoveNumber(value: unknown, suffix = ""): string {
+  if (value === null || value === undefined || value === "" || Number(value) === 0) return "-";
+  return `${value}${suffix}`;
 }
 
 function EncounterMiniList({ rows }: { rows: any[] }) {
@@ -2640,10 +2715,18 @@ function learnerMethodRank(method: string): number {
 function readableLearnerMethod(method: string): string {
   const normalized = normalize(method);
   if (normalized === "level") return "Level Up";
-  if (normalized === "machine") return "Machine";
+  if (normalized === "machine") return "TM/HM";
   if (normalized === "egg") return "Egg";
   if (normalized === "tutor") return "Tutor";
   return readableLabel(method);
+}
+
+function learnerMethodText(row: any, method: string): string {
+  if (method === "egg" && row.levelUpAccessible) {
+    const level = Number(row.levelUpLevel);
+    return Number.isFinite(level) ? `Egg / Lv. ${level}` : "Egg / Level Up";
+  }
+  return row.level ? `Lv. ${row.level}` : readableLearnerMethod(method);
 }
 
 function GroupedLearners({ learners }: { learners: any[] }) {
@@ -2659,7 +2742,7 @@ function GroupedLearners({ learners }: { learners: any[] }) {
               <LinkCard key={`${method}-${row.pokemonId}-${row.level || ""}`} section="pokemon" id={row.pokemonId}>
                 <AssetImage src={row.icon} label={displayPokemonName(row.pokemonName, row.pokemonId)} />
                 <span>{displayPokemonName(row.pokemonName, row.pokemonId)}</span>
-                <small>{row.level ? `Lv. ${row.level}` : readableLearnerMethod(method)}</small>
+                <small>{learnerMethodText(row, method)}</small>
               </LinkCard>
             ))}
           </div>

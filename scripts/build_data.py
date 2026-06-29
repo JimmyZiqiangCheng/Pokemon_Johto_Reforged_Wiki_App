@@ -1076,11 +1076,43 @@ def evolution_method(method: str, parameter: str) -> str:
     return labelize(method, "EVO_") + (f" ({labelize(parameter)})" if parameter else "")
 
 
+def parse_machine_move_labels(engine_root: Path) -> dict[str, list[dict[str, Any]]]:
+    path = engine_root / "src" / "item.c"
+    if not path.exists():
+        return {}
+    text = read_text(path)
+    match = re.search(r"\bsMachineMoves\s*\[\]\s*=\s*\{", text)
+    if not match:
+        return {}
+    start = text.find("{", match.start())
+    end = matching_brace(text, start)
+    body = text[start + 1 : end]
+    labels_by_move: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for move_id, label in re.findall(r"\b(MOVE_[A-Z0-9_]+)\s*,\s*//\s*((?:TM|HM)[0-9A-Z_]+)", body):
+        kind_match = re.match(r"(TM|HM)(.+)", label)
+        kind = kind_match.group(1) if kind_match else "TM"
+        suffix = kind_match.group(2) if kind_match else label
+        number_match = re.search(r"\d+", suffix)
+        number = int(number_match.group(0)) if number_match else 999
+        labels_by_move[move_id].append(
+            {
+                "label": label,
+                "kind": kind,
+                "number": number,
+                "sort": (0 if kind == "TM" else 1) * 1000 + number,
+            }
+        )
+    for labels in labels_by_move.values():
+        labels.sort(key=lambda item: (item["sort"], item["label"]))
+    return labels_by_move
+
+
 def parse_learnsets(engine_root: Path, pokemon: list[dict[str, Any]], moves: list[dict[str, Any]]) -> None:
     data = load_json(engine_root / "data" / "learnsets" / "learnsets.json", {})
     moves_by_id = {move["id"]: move for move in moves}
     pokemon_by_id = {mon["id"]: mon for mon in pokemon}
     learners_by_move: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    machine_labels_by_move = parse_machine_move_labels(engine_root)
     method_map = {
         "LevelMoves": "level",
         "MachineMoves": "machine",
@@ -1091,6 +1123,12 @@ def parse_learnsets(engine_root: Path, pokemon: list[dict[str, Any]], moves: lis
         mon = pokemon_by_id.get(species_id)
         if not mon:
             continue
+        egg_moves = {move_id for move_id in learnset.get("EggMoves", []) if move_id}
+        level_by_move = {
+            entry.get("Move"): entry.get("Level")
+            for entry in learnset.get("LevelMoves", [])
+            if entry.get("Move")
+        }
         for source_key, method in method_map.items():
             values = learnset.get(source_key, [])
             for entry in values:
@@ -1101,21 +1139,36 @@ def parse_learnsets(engine_root: Path, pokemon: list[dict[str, Any]], moves: lis
                         "moveId": move_id,
                         "moveName": moves_by_id.get(move_id, {}).get("name") or labelize(move_id or "", "MOVE_"),
                     }
+                    if move_id in egg_moves:
+                        item["alsoEggMove"] = True
                 else:
                     move_id = entry
                     item = {"moveId": move_id, "moveName": moves_by_id.get(move_id, {}).get("name") or labelize(move_id or "", "MOVE_")}
+                    if method == "machine":
+                        machine_labels = machine_labels_by_move.get(move_id or "", [])
+                        if not machine_labels:
+                            continue
+                        item["machineLabel"] = " / ".join(label["label"] for label in machine_labels)
+                        item["machineSort"] = machine_labels[0]["sort"]
+                    if method == "egg" and move_id in level_by_move:
+                        item["levelUpAccessible"] = True
+                        item["levelUpLevel"] = level_by_move[move_id]
                 mon["learnsets"][method].append(item)
                 if move_id:
-                    learners_by_move[move_id].append(
-                        {
-                            "pokemonId": species_id,
-                            "pokemonName": mon["name"],
-                            "dexNo": mon["dexNo"],
-                            "method": method,
-                            "level": item.get("level"),
-                            "icon": mon["assets"].get("icon"),
-                        }
-                    )
+                    learner = {
+                        "pokemonId": species_id,
+                        "pokemonName": mon["name"],
+                        "dexNo": mon["dexNo"],
+                        "method": method,
+                        "level": item.get("level"),
+                        "icon": mon["assets"].get("icon"),
+                    }
+                    if item.get("alsoEggMove"):
+                        learner["alsoEggMove"] = True
+                    if item.get("levelUpAccessible"):
+                        learner["levelUpAccessible"] = True
+                        learner["levelUpLevel"] = item.get("levelUpLevel")
+                    learners_by_move[move_id].append(learner)
     for move in moves:
         move["learners"] = sorted(learners_by_move.get(move["id"], []), key=lambda item: (item["dexNo"], item["method"], item.get("level") or 999))
 
@@ -2574,6 +2627,18 @@ def validate(data: dict[str, Any], exports: dict[str, Any]) -> dict[str, Any]:
             issues["missingPokemonIcons"].append({"id": mon["id"], "name": mon["name"]})
         if not mon["assets"].get("sprite"):
             issues["missingPokemonSprites"].append({"id": mon["id"], "name": mon["name"]})
+        level_moves = {row.get("moveId") for row in mon.get("learnsets", {}).get("level", []) if row.get("moveId")}
+        for row in mon.get("learnsets", {}).get("egg", []):
+            move_id = row.get("moveId")
+            if move_id and move_id not in level_moves:
+                issues["eggMovesMissingFromLevelUp"].append(
+                    {
+                        "id": mon["id"],
+                        "name": mon["name"],
+                        "moveId": move_id,
+                        "moveName": row.get("moveName"),
+                    }
+                )
     purchased_items = {entry["item"] for mart in data["marts"] for entry in mart["items"]}
     for evo in data["evolutions"]:
         if "Trade evolution still present" in evo["validationFlags"]:
@@ -2744,7 +2809,7 @@ def write_schema_docs() -> None:
 
 Generated JSON lives in `public/data/`. Source records are copied from the Pokemon Johto Reforged repo and normalized for static browsing. Live HG-Engine source tables take priority over `exports/perfect_johto` when both exist.
 
-- `pokemon.json`: species profile records with stats, typing, regular abilities, hidden abilities, learnsets, evolutions, availability links, and asset references.
+- `pokemon.json`: species profile records with stats, typing, regular abilities, hidden abilities, learnsets, source-derived TM/HM labels, evolutions, availability links, and asset references.
 - `moves.json`: move records with type/category/power/accuracy/PP/flags/descriptions/effect summaries and linked learners.
 - `abilities.json`: ability names/descriptions and linked Pokemon slots.
 - `items.json`: item constants, names, prices, pockets, mart availability, held/evolution usage, technical fields, and icons when available.
@@ -2759,6 +2824,8 @@ Generated JSON lives in `public/data/`. Source records are copied from the Pokem
 - `features.json`, `version.json`, `version_log.json`: docs-derived overview and release state.
 - `assets_manifest.json`: copied asset coverage summary.
 - `validation_report.json`: machine-readable validation output.
+
+TM/HM learnset labels come from `hg-engine-main/hg-engine-main/src/item.c` (`sMachineMoves[]`). Machine compatibility rows without an actual numbered TM/HM entry are not included in the Pokemon TM/HM learnset tables.
 
 Unknown fields are intentionally represented as `null`, empty arrays, or validation flags instead of guessed values.
 """

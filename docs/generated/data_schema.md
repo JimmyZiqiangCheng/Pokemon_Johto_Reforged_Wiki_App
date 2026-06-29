@@ -2,7 +2,7 @@
 
 Generated JSON lives in `public/data/`. Source records are copied from the Pokemon Johto Reforged repo and normalized for static browsing. Live HG-Engine source tables take priority over `exports/perfect_johto` when both exist.
 
-- `pokemon.json`: species profile records with stats, typing, regular abilities, hidden abilities, learnsets, evolutions, availability links, and asset references.
+- `pokemon.json`: species profile records with stats, typing, regular abilities, hidden abilities, learnsets, source-derived TM/HM labels, evolutions, availability links, and asset references.
 - `moves.json`: move records with type/category/power/accuracy/PP/flags/descriptions/effect summaries and linked learners.
 - `abilities.json`: ability names/descriptions and linked Pokemon slots.
 - `items.json`: item constants, names, prices, pockets, mart availability, held/evolution usage, technical fields, and icons when available.
@@ -17,5 +17,7 @@ Generated JSON lives in `public/data/`. Source records are copied from the Pokem
 - `features.json`, `version.json`, `version_log.json`: docs-derived overview and release state.
 - `assets_manifest.json`: copied asset coverage summary.
 - `validation_report.json`: machine-readable validation output.
+
+TM/HM learnset labels come from `hg-engine-main/hg-engine-main/src/item.c` (`sMachineMoves[]`). Machine compatibility rows without an actual numbered TM/HM entry are not included in the Pokemon TM/HM learnset tables.
 
 Unknown fields are intentionally represented as `null`, empty arrays, or validation flags instead of guessed values.
