@@ -37,7 +37,6 @@ import {
   levelRange,
   normalize,
   progressionScore,
-  readableAbilitySlot,
   readableLabel,
   routeFromHash,
   trainerProgressionScore,
@@ -851,7 +850,7 @@ function PokemonDetail({ pokemon, indexes }: { pokemon: Pokemon; indexes: Indexe
           {pokemon.abilities.length ? pokemon.abilities.map((ability) => {
             const abilityDetail = indexes.abilities.get(ability.id);
             return (
-              <PopupPill key={ability.id + ability.slot} label={`${ability.name} ${readableAbilitySlot(ability.slot)}`}>
+              <PopupPill key={ability.id + ability.slot} label={ability.name}>
                 <strong>{ability.name}</strong>
                 <p>{abilityDetail?.description || "No description available."}</p>
               </PopupPill>
@@ -995,7 +994,6 @@ function AbilityDetail({ ability }: { ability: any }) {
               <span className="ability-card-body">
                 <strong>{displayPokemonName(mon.name, mon.id)}</strong>
                 <TypeRow types={mon.types} />
-                <small>{readableAbilitySlot(mon.slot)}</small>
               </span>
             </LinkCard>
           ))}
@@ -2648,11 +2646,8 @@ function AbilityPopupPill({ ability, abilities }: { ability?: any; abilities?: M
     <PopupPill label={label}>
       <div className="popup-content">
         <strong>{label}</strong>
-        <div className="move-preview-meta">
-          <span>{ability.slotName || readableAbilitySlot(ability.slot)}</span>
-          <span>{ability.source || "Trainer source"}</span>
-        </div>
-        <p>{detail?.description || (ability.resolved === false ? "Ability slot is present in the trainer source, but no species ability entry resolved for it." : "No ability description available.")}</p>
+        {ability.source ? <div className="move-preview-meta"><span>{ability.source}</span></div> : null}
+        <p>{detail?.description || (ability.resolved === false ? "Trainer source lists an ability, but no species ability entry resolved for it." : "No ability description available.")}</p>
       </div>
     </PopupPill>
   );
