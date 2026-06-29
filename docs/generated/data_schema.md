@@ -1,13 +1,13 @@
 # Data Schema
 
-Generated JSON lives in `public/data/`. Source records are copied from the Pokemon Johto Reforged repo and normalized for static browsing.
+Generated JSON lives in `public/data/`. Source records are copied from the Pokemon Johto Reforged repo and normalized for static browsing. Live HG-Engine source tables take priority over `exports/perfect_johto` when both exist.
 
-- `pokemon.json`: species profile records with stats, typing, abilities, learnsets, evolutions, availability links, and asset references.
+- `pokemon.json`: species profile records with stats, typing, regular abilities, hidden abilities, learnsets, evolutions, availability links, and asset references.
 - `moves.json`: move records with type/category/power/accuracy/PP/flags/descriptions/effect summaries and linked learners.
 - `abilities.json`: ability names/descriptions and linked Pokemon slots.
 - `items.json`: item constants, names, prices, pockets, mart availability, held/evolution usage, technical fields, and icons when available.
-- `locations.json`: inferred location records linked to encounters and future location-scoped exports.
-- `encounters.json`: flattened wild encounter slots with method, time, level range, chance, rarity, Pokemon, and location links.
+- `locations.json`: inferred location records linked to source-derived encounters and location-scoped supplemental exports.
+- `encounters.json`: flattened wild encounter slots read from `hg-engine-main/hg-engine-main/data/Encounters.c`, with method, time, level range, chance, rarity, Pokemon, and location links.
 - `trainers.json`: trainer records with enriched party Pokemon, held items, game-scaled IV spreads plus the raw difficulty byte, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
 - `boss_fights.json`: boss-oriented subset linked back to trainer records with the same enriched party structure.
 - `statics_gifts.json`: static, roaming, dossier-style encounters plus script-derived gifts, eggs, prizes, fossils, loans, and NPC trades.

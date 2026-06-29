@@ -1,12 +1,12 @@
 {
   "title": "Pokemon Johto Reforged",
   "versionLabel": "Phase 9 validation/export phase",
-  "sourceLastUpdated": "2026-06-28",
-  "exportDate": "2026-06-28T14:24:49-07:00",
+  "sourceLastUpdated": "2026-06-29",
+  "exportDate": "2026-06-28T20:11:50-07:00",
   "sourceRepoPath": "C:\\Users\\jimmy\\Documents\\pokemon_romhacks\\perfect_johto",
-  "explorerBuildDate": "2026-06-28T14:24:49-07:00",
+  "explorerBuildDate": "2026-06-28T20:11:50-07:00",
   "latestCompletedPhase": "Phase 8 content complete; Phase 9 validation/export in progress",
-  "exportStatus": "Generated from existing JSON exports, HG-Engine source tables, and project docs.",
+  "exportStatus": "Generated source-first from HG-Engine tables, live learnsets, hidden ability data, project docs, and JSON exports only where no live source parser exists.",
   "completedSystems": [
     "Approved Pokemon scope and QOL foundation",
     "Pokemon modernization, no-trade evolutions, and learnset generation",

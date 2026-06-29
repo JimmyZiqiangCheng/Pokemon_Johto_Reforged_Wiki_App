@@ -124,7 +124,7 @@
       "status": "PASS"
     },
     {
-      "details": "35 Gen 1-4 legendary/mythical pool entries; aggregate 1% roll, flee move, and exclusions present",
+      "details": "35 Gen 1-4 legendary/mythical pool entries; 24 weaker at 1/500 and 11 true-tier at 1/1000; flee move and exclusions present",
       "name": "Random legendary validation",
       "status": "PASS"
     },

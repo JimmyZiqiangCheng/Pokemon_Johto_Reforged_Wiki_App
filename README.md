@@ -2,7 +2,7 @@
 
 Static React/TypeScript companion wiki for Pokemon Johto Reforged.
 
-The explorer is separate from the ROM hack implementation. It reads generated exports and source tables from:
+The explorer is separate from the ROM hack implementation. It reads live source tables, project docs, and supplemental generated exports from:
 
 ```text
 C:\Users\jimmy\Documents\pokemon_romhacks\perfect_johto
@@ -39,15 +39,18 @@ vercel.json                  Vercel static config
 python scripts/build_data.py
 ```
 
-The script reads:
+The script is source-first. For frequently edited gameplay data, the live source files are authoritative even if `exports/perfect_johto` has not been regenerated yet.
 
-- `exports/perfect_johto/*.json`
+Primary live sources:
+
 - `FEATURES_AND_CHANGES.md`
 - `docs/phase6_obtainability_report.md`
 - `docs/phase7_trainer_report.md`
 - `docs/phase8_postgame_report.md`
 - `hg-engine-main/hg-engine-main/data/Species.c`
 - `hg-engine-main/hg-engine-main/data/Moves.c`
+- `hg-engine-main/hg-engine-main/data/Encounters.c`
+- `hg-engine-main/hg-engine-main/data/HiddenAbilityTable.c`
 - `hg-engine-main/hg-engine-main/data/Evolutions.c`
 - `hg-engine-main/hg-engine-main/data/learnsets/learnsets.json`
 - `hg-engine-main/hg-engine-main/data/itemdata/itemdata.c`
@@ -55,6 +58,8 @@ The script reads:
 - `pokeheartgold-master/files/a/1/1/2` NPC trade data
 - `pokeheartgold-master/src/scrcmd_fossils.c`
 - source text archives and graphics folders
+
+Supplemental generated exports are still read from `exports/perfect_johto/*.json` for systems that are not fully parsed from source yet, such as boss/rematch group metadata, marts/custom shop rows, rare-note annotations, static/dossier rows, postgame/champion-circuit metadata, known risks, and version-supporting reports.
 
 Generated files include `pokemon.json`, `moves.json`, `abilities.json`, `items.json`, `locations.json`, `encounters.json`, `trainers.json`, `boss_fights.json`, `statics_gifts.json`, `legendary_dossiers.json`, `marts.json`, `evolutions.json`, `version.json`, `version_log.json`, `assets_manifest.json`, and `validation_report.json`.
 
@@ -98,15 +103,18 @@ http://127.0.0.1:5173/
 
 ## Updating Data
 
-1. Regenerate ROM hack exports in `perfect_johto`:
+1. If Pokemon stats, typing, regular abilities, hidden abilities, moves, learnsets, or wild encounter tables changed, regenerate explorer data directly from source:
 
    ```powershell
-   python tools/perfect_johto/validate_project.py --write
+   python scripts/build_data.py
    ```
 
-2. Regenerate explorer data:
+2. If a supplemental system changed and only exists in `exports/perfect_johto`, refresh the ROM hack exports, then rerun the explorer generator:
 
    ```powershell
+   cd C:\Users\jimmy\Documents\pokemon_romhacks\perfect_johto
+   python tools/perfect_johto/validate_project.py --write
+   cd C:\Users\jimmy\Documents\pokemon_romhacks\Pokemon_Johto_Reforged_WebApp
    python scripts/build_data.py
    ```
 
@@ -121,7 +129,7 @@ http://127.0.0.1:5173/
 - Trainer map locations are not fully exported by the current ROM hack data.
 - Some static event mechanics still rely on script-derived source references when the main `exports/perfect_johto` JSON does not expose a structured row.
 - Item descriptions are intentionally missing unless a reliable project source was found.
-- Hidden ability data is not exported from an active source table.
+- Hidden ability data is read directly from `hg-engine-main/hg-engine-main/data/HiddenAbilityTable.c`.
 - Shiny lock status is not exported for static/dossier encounters.
 - Team weakness summaries are not computed because this app intentionally has no type chart page.
 

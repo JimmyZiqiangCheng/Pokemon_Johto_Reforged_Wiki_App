@@ -25,6 +25,10 @@ DOCS_DIR = PROJECT_ROOT / "docs" / "generated"
 
 STAT_FIELDS = ("hp", "attack", "defense", "spAttack", "spDefense", "speed")
 TRAINER_SOURCE_STAT_FIELDS = ("hp", "attack", "defense", "speed", "spAttack", "spDefense")
+LAND_RATES = [20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1]
+SURF_RATES = [60, 30, 5, 4, 1]
+ROCK_SMASH_RATES = [80, 20]
+FISH_RATES = [40, 30, 16, 10, 4]
 STAT_LABELS = {
     "hp": "HP",
     "attack": "Attack",
@@ -512,11 +516,28 @@ def find_trainer_sprite(engine_root: Path, trainer_class_id: str | None, trainer
     return copy_trainer_sprite_asset(src if src.exists() else None, f"trainers/{slug}.png")
 
 
+def parse_hidden_ability_table(engine_root: Path, ability_names: dict[str, str]) -> dict[str, dict[str, str]]:
+    path = engine_root / "data" / "HiddenAbilityTable.c"
+    if not path.exists():
+        return {}
+    hidden: dict[str, dict[str, str]] = {}
+    for species_id, ability_id in re.findall(r"\[\s*(SPECIES_[A-Z0-9_]+)\s*\]\s*=\s*(ABILITY_[A-Z0-9_]+)", read_text(path)):
+        if ability_id == "ABILITY_NONE":
+            continue
+        hidden[species_id] = {
+            "slot": "hidden",
+            "id": ability_id,
+            "name": ability_names.get(ability_id, labelize(ability_id, "ABILITY_")),
+        }
+    return hidden
+
+
 def parse_species(engine_root: Path, approved_scope: dict[str, Any]) -> list[dict[str, Any]]:
     species_ids = parse_defines(engine_root / "include" / "constants" / "species.h", "SPECIES_")
     ability_ids = parse_defines(engine_root / "include" / "constants" / "ability.h", "ABILITY_")
     ability_names_by_number = read_line_table(engine_root / "data" / "text" / "720.txt")
     ability_names = {ident: ability_names_by_number.get(num) or labelize(ident, "ABILITY_") for ident, num in ability_ids.items()}
+    hidden_abilities = parse_hidden_ability_table(engine_root, ability_names)
     entries = designated_entries(read_text(engine_root / "data" / "Species.c"), "SPECIES_")
     approved_later = set(approved_scope.get("approved_later_exceptions", []))
     gen_min = approved_scope.get("gen1_4_range", {}).get("min", 1)
@@ -542,6 +563,9 @@ def parse_species(engine_root: Path, approved_scope: dict[str, Any]) -> list[dic
                         "name": ability_names.get(ability_id, labelize(ability_id, "ABILITY_")),
                     }
                 )
+        hidden_ability = hidden_abilities.get(species_id)
+        if hidden_ability:
+            ability_entries.append(hidden_ability)
         if gen_min <= number <= gen_max:
             scope_status = "Gen 1-4"
         elif species_id in approved_later:
@@ -561,7 +585,7 @@ def parse_species(engine_root: Path, approved_scope: dict[str, Any]) -> list[dic
                 "baseStats": base_stats,
                 "bst": sum(base_stats.values()),
                 "abilities": ability_entries,
-                "hiddenAbility": None,
+                "hiddenAbility": hidden_ability,
                 "heldItems": {
                     "common": field_ident(held_block, "common") or "ITEM_NONE",
                     "rare": field_ident(held_block, "rare") or "ITEM_NONE",
@@ -1154,6 +1178,75 @@ def parse_rare_notes(exports: dict[str, Any]) -> dict[str, list[dict[str, Any]]]
     return notes
 
 
+def parse_c_int_array(block: str) -> list[int]:
+    return [int(value) for value in re.findall(r"\b\d+\b", block)]
+
+
+def parse_c_species_array(block: str) -> list[str]:
+    return re.findall(r"SPECIES_[A-Z0-9_]+", block)
+
+
+def parse_c_encounter_slots(block: str) -> list[dict[str, Any]]:
+    slots: list[dict[str, Any]] = []
+    for min_level, max_level, species_id in re.findall(r"\{\s*(\d+)\s*,\s*(\d+)\s*,\s*(SPECIES_[A-Z0-9_]+)\s*\}", block):
+        slots.append({"min_level": int(min_level), "max_level": int(max_level), "species": species_id})
+    return slots
+
+
+def pad_get(values: list[Any], index: int, fallback: Any) -> Any:
+    return values[index] if index < len(values) else fallback
+
+
+def apply_slot_rates(slots: list[dict[str, Any]], rates: list[int]) -> list[dict[str, Any]]:
+    rows = []
+    for index, slot in enumerate(slots):
+        rows.append({**slot, "rate_percent": rates[index] if index < len(rates) else None})
+    return rows
+
+
+def parse_source_wild_encounters(engine_root: Path, exports: dict[str, Any]) -> list[dict[str, Any]]:
+    path = engine_root / "data" / "Encounters.c"
+    if not path.exists():
+        return exports.get("wild_encounters", [])
+    entries = designated_entries(read_text(path), "ENCDATA_")
+    if not entries:
+        return exports.get("wild_encounters", [])
+    annotation_by_area = {row.get("area"): row for row in exports.get("wild_encounters", []) if row.get("area")}
+    rows: list[dict[str, Any]] = []
+    for area, body in entries.items():
+        land = named_block(body, "landSlots")
+        levels = parse_c_int_array(named_block(land, "levels"))
+        morning = parse_c_species_array(named_block(land, "speciesMorning"))
+        day = parse_c_species_array(named_block(land, "speciesDay"))
+        night = parse_c_species_array(named_block(land, "speciesNight"))
+        row: dict[str, Any] = {
+            "area": area,
+            "land": [
+                {
+                    "slot": index,
+                    "level": pad_get(levels, index, 0),
+                    "morning": pad_get(morning, index, "SPECIES_NONE"),
+                    "day": pad_get(day, index, "SPECIES_NONE"),
+                    "night": pad_get(night, index, "SPECIES_NONE"),
+                    "rate_percent": LAND_RATES[index] if index < len(LAND_RATES) else None,
+                }
+                for index in range(max(len(levels), len(morning), len(day), len(night), len(LAND_RATES)))
+            ],
+            "surf": apply_slot_rates(parse_c_encounter_slots(named_block(body, "surfSlots")), SURF_RATES),
+            "rock_smash": apply_slot_rates(parse_c_encounter_slots(named_block(body, "rockSmashSlots")), ROCK_SMASH_RATES),
+            "old_rod": apply_slot_rates(parse_c_encounter_slots(named_block(body, "oldRodSlots")), FISH_RATES),
+            "good_rod": apply_slot_rates(parse_c_encounter_slots(named_block(body, "goodRodSlots")), FISH_RATES),
+            "super_rod": apply_slot_rates(parse_c_encounter_slots(named_block(body, "superRodSlots")), FISH_RATES),
+            "sourceRefs": [f"hg-engine-main/hg-engine-main/data/Encounters.c#{area}"],
+        }
+        annotations = annotation_by_area.get(area, {})
+        for key in ("common_notes", "rare_notes"):
+            if annotations.get(key):
+                row[key] = annotations[key]
+        rows.append(row)
+    return rows
+
+
 def flatten_encounters(exports: dict[str, Any], pokemon_by_id: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     rare_by_area = parse_rare_notes(exports)
     encounters: list[dict[str, Any]] = []
@@ -1172,6 +1265,7 @@ def flatten_encounters(exports: dict[str, Any], pokemon_by_id: dict[str, dict[st
         if not area:
             continue
         loc_name = area_name(area)
+        source_refs = table.get("sourceRefs") or [f"hg-engine-main/hg-engine-main/data/Encounters.c#{area}"]
         location = locations.setdefault(
             area,
             {
@@ -1186,7 +1280,7 @@ def flatten_encounters(exports: dict[str, Any], pokemon_by_id: dict[str, dict[st
                 "staticsGifts": [],
                 "marts": [],
                 "bossFights": [],
-                "sourceRefs": [f"exports/perfect_johto/wild_encounters.json#{area}"],
+                "sourceRefs": source_refs,
                 "validationFlags": [],
             },
         )
@@ -2355,7 +2449,7 @@ def version_data(romhack_root: Path, exports: dict[str, Any], validation: dict[s
         "sourceRepoPath": str(romhack_root),
         "explorerBuildDate": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
         "latestCompletedPhase": "Phase 8 content complete; Phase 9 validation/export in progress",
-        "exportStatus": "Generated from existing JSON exports, HG-Engine source tables, and project docs.",
+        "exportStatus": "Generated source-first from HG-Engine tables, live learnsets, hidden ability data, project docs, and JSON exports only where no live source parser exists.",
         "completedSystems": [
             "Approved Pokemon scope and QOL foundation",
             "Pokemon modernization, no-trade evolutions, and learnset generation",
@@ -2648,14 +2742,14 @@ def write_schema_docs() -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     content = """# Data Schema
 
-Generated JSON lives in `public/data/`. Source records are copied from the Pokemon Johto Reforged repo and normalized for static browsing.
+Generated JSON lives in `public/data/`. Source records are copied from the Pokemon Johto Reforged repo and normalized for static browsing. Live HG-Engine source tables take priority over `exports/perfect_johto` when both exist.
 
-- `pokemon.json`: species profile records with stats, typing, abilities, learnsets, evolutions, availability links, and asset references.
+- `pokemon.json`: species profile records with stats, typing, regular abilities, hidden abilities, learnsets, evolutions, availability links, and asset references.
 - `moves.json`: move records with type/category/power/accuracy/PP/flags/descriptions/effect summaries and linked learners.
 - `abilities.json`: ability names/descriptions and linked Pokemon slots.
 - `items.json`: item constants, names, prices, pockets, mart availability, held/evolution usage, technical fields, and icons when available.
-- `locations.json`: inferred location records linked to encounters and future location-scoped exports.
-- `encounters.json`: flattened wild encounter slots with method, time, level range, chance, rarity, Pokemon, and location links.
+- `locations.json`: inferred location records linked to source-derived encounters and location-scoped supplemental exports.
+- `encounters.json`: flattened wild encounter slots read from `hg-engine-main/hg-engine-main/data/Encounters.c`, with method, time, level range, chance, rarity, Pokemon, and location links.
 - `trainers.json`: trainer records with enriched party Pokemon, held items, game-scaled IV spreads plus the raw difficulty byte, explicit EV spreads when present, resolved ability slots, and explicit-or-derived moves.
 - `boss_fights.json`: boss-oriented subset linked back to trainer records with the same enriched party structure.
 - `statics_gifts.json`: static, roaming, dossier-style encounters plus script-derived gifts, eggs, prizes, fossils, loans, and NPC trades.
@@ -2705,8 +2799,9 @@ def build(romhack_root: Path, validate_only: bool = False) -> dict[str, Any]:
         raise SystemExit(f"Romhack root not found: {romhack_root}")
     if ASSET_DIR.exists() and not validate_only:
         shutil.rmtree(ASSET_DIR)
-    exports = load_exports(romhack_root)
     engine_root = romhack_root / "hg-engine-main" / "hg-engine-main"
+    exports = load_exports(romhack_root)
+    exports["wild_encounters"] = parse_source_wild_encounters(engine_root, exports)
     evolutions = parse_evolutions(exports)
     pokemon = parse_species(engine_root, exports.get("approved_scope", {}))
     moves = parse_moves(engine_root)

@@ -23,27 +23,27 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_LICK",
-          "name": "Lick",
-          "type": "Ghost",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_HYPNOSIS",
-          "name": "Hypnosis",
-          "type": "Psychic",
-          "source": "Level-up learnset"
-        },
-        {
           "id": "MOVE_MEAN_LOOK",
           "name": "Mean Look",
           "type": "Normal",
           "source": "Level-up learnset"
         },
         {
+          "id": "MOVE_SMOG",
+          "name": "Smog",
+          "type": "Poison",
+          "source": "Level-up learnset"
+        },
+        {
           "id": "MOVE_PAYBACK",
           "name": "Payback",
           "type": "Dark",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_TOXIC",
+          "name": "Toxic",
+          "type": "Poison",
           "source": "Level-up learnset"
         }
       ],
@@ -89,27 +89,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_LICK",
-            "name": "Lick",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_HYPNOSIS",
-            "name": "Hypnosis",
-            "type": "Psychic",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_SMOG",
+            "name": "Smog",
+            "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_PAYBACK",
             "name": "Payback",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_TOXIC",
+            "name": "Toxic",
+            "type": "Poison",
             "source": "Level-up learnset"
           }
         ],
@@ -153,21 +153,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUPERSONIC",
-            "name": "Supersonic",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_ASTONISH",
-            "name": "Astonish",
-            "type": "Ghost",
+            "id": "MOVE_GUST",
+            "name": "Gust",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_WING_ATTACK",
+            "name": "Wing Attack",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
@@ -216,21 +216,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_RAZOR_LEAF",
-            "name": "Razor Leaf",
+            "id": "MOVE_VINE_WHIP",
+            "name": "Vine Whip",
             "type": "Grass",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_POISON_POWDER",
-            "name": "Poison Powder",
-            "type": "Poison",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_SYNTHESIS",
             "name": "Synthesis",
             "type": "Grass",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_COUNTER",
+            "name": "Counter",
+            "type": "Fighting",
             "source": "Level-up learnset"
           },
           {
@@ -242,14 +242,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -326,18 +326,24 @@
           "name": "Leer",
           "type": "Normal",
           "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_DOUBLE_KICK",
+          "name": "Double Kick",
+          "type": "Fighting",
+          "source": "Level-up learnset"
         }
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_BLAZE",
-        "name": "Blaze",
+        "id": "ABILITY_ADAPTABILITY",
+        "name": "Adaptability",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Blaze",
+      "abilityName": "Adaptability",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -379,18 +385,24 @@
             "name": "Leer",
             "type": "Normal",
             "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_DOUBLE_KICK",
+            "name": "Double Kick",
+            "type": "Fighting",
+            "source": "Level-up learnset"
           }
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -455,18 +467,24 @@
           "name": "Leer",
           "type": "Normal",
           "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_COUNTER",
+          "name": "Counter",
+          "type": "Fighting",
+          "source": "Level-up learnset"
         }
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_TORRENT",
-        "name": "Torrent",
+        "id": "ABILITY_STRONG_JAW",
+        "name": "Strong Jaw",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Torrent",
+      "abilityName": "Strong Jaw",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -508,18 +526,24 @@
             "name": "Leer",
             "type": "Normal",
             "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_COUNTER",
+            "name": "Counter",
+            "type": "Fighting",
+            "source": "Level-up learnset"
           }
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -601,14 +625,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_TANGLED_FEET",
+        "name": "Tangled Feet",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Tangled Feet",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -667,14 +691,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_TANGLED_FEET",
+          "name": "Tangled Feet",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Tangled Feet",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -731,14 +755,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -795,14 +819,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_SOUNDPROOF",
+          "name": "Soundproof",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Soundproof",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -859,14 +883,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -923,14 +947,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_CLOUD_NINE",
+          "name": "Cloud Nine",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Cloud Nine",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1088,14 +1112,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_COMPOUND_EYES",
-        "name": "CompoundEyes",
+        "id": "ABILITY_TINTED_LENS",
+        "name": "Tinted Lens",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "CompoundEyes",
+      "abilityName": "Tinted Lens",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -1154,14 +1178,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_COMPOUND_EYES",
-          "name": "CompoundEyes",
+          "id": "ABILITY_TINTED_LENS",
+          "name": "Tinted Lens",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "CompoundEyes",
+        "abilityName": "Tinted Lens",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1282,14 +1306,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1346,14 +1370,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_GUTS",
+          "name": "Guts",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Guts",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1409,14 +1433,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_HYPER_CUTTER",
-          "name": "Hyper Cutter",
+          "id": "ABILITY_GUTS",
+          "name": "Guts",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Hyper Cutter",
+        "abilityName": "Guts",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1473,14 +1497,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1577,14 +1601,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_OWN_TEMPO",
-        "name": "Own Tempo",
+        "id": "ABILITY_OBLIVIOUS",
+        "name": "Oblivious",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Own Tempo",
+      "abilityName": "Oblivious",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -1642,14 +1666,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OWN_TEMPO",
-          "name": "Own Tempo",
+          "id": "ABILITY_OBLIVIOUS",
+          "name": "Oblivious",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Own Tempo",
+        "abilityName": "Oblivious",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1706,14 +1730,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CUTE_CHARM",
-          "name": "Cute Charm",
+          "id": "ABILITY_SCRAPPY",
+          "name": "Scrappy",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cute Charm",
+        "abilityName": "Scrappy",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -1834,14 +1858,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CUTE_CHARM",
-          "name": "Cute Charm",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cute Charm",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -2188,14 +2212,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_FRISK",
+          "name": "Frisk",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Frisk",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -2380,14 +2404,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_MAGIC_BOUNCE",
+          "name": "Magic Bounce",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Magic Bounce",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -2444,14 +2468,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -2675,14 +2699,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SNOW_CLOAK",
-          "name": "Snow Cloak",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Snow Cloak",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -2739,14 +2763,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -2931,14 +2955,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OBLIVIOUS",
-          "name": "Oblivious",
+          "id": "ABILITY_THICK_FAT",
+          "name": "Thick Fat",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Oblivious",
+        "abilityName": "Thick Fat",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -3040,14 +3064,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_CLEAR_BODY",
-        "name": "Clear Body",
+        "id": "ABILITY_IRON_FIST",
+        "name": "Iron Fist",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Clear Body",
+      "abilityName": "Iron Fist",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -3106,14 +3130,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CLEAR_BODY",
-          "name": "Clear Body",
+          "id": "ABILITY_IRON_FIST",
+          "name": "Iron Fist",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Clear Body",
+        "abilityName": "Iron Fist",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -3426,14 +3450,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ROCK_HEAD",
-          "name": "Rock Head",
+          "id": "ABILITY_SAND_FORCE",
+          "name": "Sand Force",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Rock Head",
+        "abilityName": "Sand Force",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -3663,14 +3687,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_EFFECT_SPORE",
-          "name": "Effect Spore",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Effect Spore",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -3789,14 +3813,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LIMBER",
-          "name": "Limber",
+          "id": "ABILITY_RECKLESS",
+          "name": "Reckless",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Limber",
+        "abilityName": "Reckless",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -3852,14 +3876,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_IRON_FIST",
+          "name": "Iron Fist",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Iron Fist",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -3916,14 +3940,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_WATER_ABSORB",
-          "name": "Water Absorb",
+          "id": "ABILITY_SWIFT_SWIM",
+          "name": "Swift Swim",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Water Absorb",
+        "abilityName": "Swift Swim",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4142,14 +4166,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHED_SKIN",
-          "name": "Shed Skin",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shed Skin",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4206,14 +4230,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_CLOUD_NINE",
+          "name": "Cloud Nine",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Cloud Nine",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4270,14 +4294,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LEVITATE",
-          "name": "Levitate",
+          "id": "ABILITY_COMPOUND_EYES",
+          "name": "CompoundEyes",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Levitate",
+        "abilityName": "CompoundEyes",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4398,14 +4422,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4761,14 +4785,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4825,14 +4849,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STURDY",
-          "name": "Sturdy",
+          "id": "ABILITY_ROCK_HEAD",
+          "name": "Rock Head",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sturdy",
+        "abilityName": "Rock Head",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4889,14 +4913,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -4998,14 +5022,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_OBLIVIOUS",
-        "name": "Oblivious",
+        "id": "ABILITY_DRY_SKIN",
+        "name": "Dry Skin",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Oblivious",
+      "abilityName": "Dry Skin",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -5064,14 +5088,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OBLIVIOUS",
-          "name": "Oblivious",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Oblivious",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -5684,14 +5708,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -5748,14 +5772,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -5812,14 +5836,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -5876,14 +5900,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_EARLY_BIRD",
-          "name": "Early Bird",
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Early Bird",
+        "abilityName": "Intimidate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -5981,14 +6005,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_SHIELD_DUST",
-        "name": "Shield Dust",
+        "id": "ABILITY_TINTED_LENS",
+        "name": "Tinted Lens",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Shield Dust",
+      "abilityName": "Tinted Lens",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -6047,14 +6071,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHIELD_DUST",
-          "name": "Shield Dust",
+          "id": "ABILITY_TINTED_LENS",
+          "name": "Tinted Lens",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shield Dust",
+        "abilityName": "Tinted Lens",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -6174,14 +6198,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ANTICIPATION",
-          "name": "Anticipation",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Anticipation",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -6238,14 +6262,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CLEAR_BODY",
-          "name": "Clear Body",
+          "id": "ABILITY_LIQUID_OOZE",
+          "name": "Liquid Ooze",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Clear Body",
+        "abilityName": "Liquid Ooze",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -6727,14 +6751,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STURDY",
-          "name": "Sturdy",
+          "id": "ABILITY_ROCK_HEAD",
+          "name": "Rock Head",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sturdy",
+        "abilityName": "Rock Head",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -6791,14 +6815,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LIGHTNING_ROD",
-          "name": "Lightning Rod",
+          "id": "ABILITY_SOLID_ROCK",
+          "name": "Solid Rock",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Lightning Rod",
+        "abilityName": "Solid Rock",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -6855,14 +6879,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ROCK_HEAD",
-          "name": "Rock Head",
+          "id": "ABILITY_SAND_FORCE",
+          "name": "Sand Force",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Rock Head",
+        "abilityName": "Sand Force",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -6956,14 +6980,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_WATER_ABSORB",
-        "name": "Water Absorb",
+        "id": "ABILITY_DRIZZLE",
+        "name": "Drizzle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Water Absorb",
+      "abilityName": "Drizzle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -7022,14 +7046,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_WATER_ABSORB",
-          "name": "Water Absorb",
+          "id": "ABILITY_DRIZZLE",
+          "name": "Drizzle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Water Absorb",
+        "abilityName": "Drizzle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -7086,14 +7110,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_DAMP",
-          "name": "Damp",
+          "id": "ABILITY_WATER_ABSORB",
+          "name": "Water Absorb",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Damp",
+        "abilityName": "Water Absorb",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -7341,14 +7365,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ILLUMINATE",
-          "name": "Illuminate",
+          "id": "ABILITY_NATURAL_CURE",
+          "name": "Natural Cure",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Illuminate",
+        "abilityName": "Natural Cure",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -8317,14 +8341,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -8611,14 +8635,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_INSOMNIA",
+          "name": "Insomnia",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Insomnia",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -8675,14 +8699,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHIELD_DUST",
-          "name": "Shield Dust",
+          "id": "ABILITY_TINTED_LENS",
+          "name": "Tinted Lens",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shield Dust",
+        "abilityName": "Tinted Lens",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -8739,14 +8763,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ANTICIPATION",
-          "name": "Anticipation",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Anticipation",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -8907,14 +8931,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_SYNCHRONIZE",
-        "name": "Synchronize",
+        "id": "ABILITY_MAGIC_GUARD",
+        "name": "Magic Guard",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Synchronize",
+      "abilityName": "Magic Guard",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -8972,14 +8996,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -9099,14 +9123,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SOUNDPROOF",
-          "name": "Soundproof",
+          "id": "ABILITY_FILTER",
+          "name": "Filter",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Soundproof",
+        "abilityName": "Filter",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -9163,14 +9187,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OBLIVIOUS",
-          "name": "Oblivious",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Oblivious",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -9396,14 +9420,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_FLASH_FIRE",
-        "name": "Flash Fire",
+        "id": "ABILITY_DROUGHT",
+        "name": "Drought",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Flash Fire",
+      "abilityName": "Drought",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -9462,14 +9486,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_FLASH_FIRE",
-          "name": "Flash Fire",
+          "id": "ABILITY_DROUGHT",
+          "name": "Drought",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Flash Fire",
+        "abilityName": "Drought",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -9526,14 +9550,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_FLAME_BODY",
+          "name": "Flame Body",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Flame Body",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -9590,14 +9614,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_MAGMA_ARMOR",
-          "name": "Magma Armor",
+          "id": "ABILITY_SOLID_ROCK",
+          "name": "Solid Rock",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Magma Armor",
+        "abilityName": "Solid Rock",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -9654,14 +9678,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_EARLY_BIRD",
-          "name": "Early Bird",
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Early Bird",
+        "abilityName": "Intimidate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10076,14 +10100,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_IMMUNITY",
-          "name": "Immunity",
+          "id": "ABILITY_THICK_FAT",
+          "name": "Thick Fat",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Immunity",
+        "abilityName": "Thick Fat",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10140,14 +10164,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_CHLOROPHYLL",
+          "name": "Chlorophyll",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Chlorophyll",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10204,14 +10228,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10268,14 +10292,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_MEGA_LAUNCHER",
+          "name": "MegaLauncher",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "MegaLauncher",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10389,14 +10413,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_KEEN_EYE",
-        "name": "Keen Eye",
+        "id": "ABILITY_NO_GUARD",
+        "name": "No Guard",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Keen Eye",
+      "abilityName": "No Guard",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -10455,14 +10479,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_NO_GUARD",
+          "name": "No Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "No Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10518,14 +10542,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -10582,14 +10606,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LIGHTNING_ROD",
-          "name": "Lightning Rod",
+          "id": "ABILITY_SOLID_ROCK",
+          "name": "Solid Rock",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Lightning Rod",
+        "abilityName": "Solid Rock",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -11147,14 +11171,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -11256,14 +11280,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -11322,14 +11346,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -11577,14 +11601,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -11641,14 +11665,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -11749,18 +11773,24 @@
           "name": "Growl",
           "type": "Normal",
           "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_VINE_WHIP",
+          "name": "Vine Whip",
+          "type": "Grass",
+          "source": "Level-up learnset"
         }
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_OVERGROW",
-        "name": "Overgrow",
+        "id": "ABILITY_SERENE_GRACE",
+        "name": "Serene Grace",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Overgrow",
+      "abilityName": "Serene Grace",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -11802,18 +11832,24 @@
             "name": "Growl",
             "type": "Normal",
             "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_VINE_WHIP",
+            "name": "Vine Whip",
+            "type": "Grass",
+            "source": "Level-up learnset"
           }
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -11869,27 +11905,27 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_LICK",
-          "name": "Lick",
-          "type": "Ghost",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_HYPNOSIS",
-          "name": "Hypnosis",
-          "type": "Psychic",
-          "source": "Level-up learnset"
-        },
-        {
           "id": "MOVE_MEAN_LOOK",
           "name": "Mean Look",
           "type": "Normal",
           "source": "Level-up learnset"
         },
         {
+          "id": "MOVE_SMOG",
+          "name": "Smog",
+          "type": "Poison",
+          "source": "Level-up learnset"
+        },
+        {
           "id": "MOVE_PAYBACK",
           "name": "Payback",
           "type": "Dark",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_TOXIC",
+          "name": "Toxic",
+          "type": "Poison",
           "source": "Level-up learnset"
         }
       ],
@@ -11935,27 +11971,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_LICK",
-            "name": "Lick",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_HYPNOSIS",
-            "name": "Hypnosis",
-            "type": "Psychic",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_SMOG",
+            "name": "Smog",
+            "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_PAYBACK",
             "name": "Payback",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_TOXIC",
+            "name": "Toxic",
+            "type": "Poison",
             "source": "Level-up learnset"
           }
         ],
@@ -11999,21 +12035,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUPERSONIC",
-            "name": "Supersonic",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_ASTONISH",
-            "name": "Astonish",
-            "type": "Ghost",
+            "id": "MOVE_GUST",
+            "name": "Gust",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_WING_ATTACK",
+            "name": "Wing Attack",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
@@ -12062,18 +12098,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_LEER",
-            "name": "Leer",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_SMOKESCREEN",
-            "name": "Smokescreen",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_EMBER",
             "name": "Ember",
             "type": "Fire",
@@ -12084,18 +12108,30 @@
             "name": "Quick Attack",
             "type": "Normal",
             "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_DOUBLE_KICK",
+            "name": "Double Kick",
+            "type": "Fighting",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_CURSE",
+            "name": "Curse",
+            "type": "Ghost",
+            "source": "Level-up learnset"
           }
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -12446,14 +12482,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -12555,14 +12591,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -12621,14 +12657,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -12876,14 +12912,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -12940,14 +12976,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -13039,27 +13075,27 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_LICK",
-          "name": "Lick",
-          "type": "Ghost",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_HYPNOSIS",
-          "name": "Hypnosis",
-          "type": "Psychic",
-          "source": "Level-up learnset"
-        },
-        {
           "id": "MOVE_MEAN_LOOK",
           "name": "Mean Look",
           "type": "Normal",
           "source": "Level-up learnset"
         },
         {
+          "id": "MOVE_SMOG",
+          "name": "Smog",
+          "type": "Poison",
+          "source": "Level-up learnset"
+        },
+        {
           "id": "MOVE_PAYBACK",
           "name": "Payback",
           "type": "Dark",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_TOXIC",
+          "name": "Toxic",
+          "type": "Poison",
           "source": "Level-up learnset"
         }
       ],
@@ -13105,27 +13141,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_LICK",
-            "name": "Lick",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_HYPNOSIS",
-            "name": "Hypnosis",
-            "type": "Psychic",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_SMOG",
+            "name": "Smog",
+            "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_PAYBACK",
             "name": "Payback",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_TOXIC",
+            "name": "Toxic",
+            "type": "Poison",
             "source": "Level-up learnset"
           }
         ],
@@ -13169,21 +13205,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUPERSONIC",
-            "name": "Supersonic",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_ASTONISH",
-            "name": "Astonish",
-            "type": "Ghost",
+            "id": "MOVE_GUST",
+            "name": "Gust",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_WING_ATTACK",
+            "name": "Wing Attack",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
@@ -13232,18 +13268,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_LEER",
-            "name": "Leer",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_WATER_GUN",
-            "name": "Water Gun",
-            "type": "Water",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_BITE",
             "name": "Bite",
             "type": "Dark",
@@ -13254,18 +13278,30 @@
             "name": "Scary Face",
             "type": "Normal",
             "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_AQUA_JET",
+            "name": "Aqua Jet",
+            "type": "Water",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_ANCIENT_POWER",
+            "name": "Ancient Power",
+            "type": "Rock",
+            "source": "Level-up learnset"
           }
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -13616,14 +13652,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -13725,14 +13761,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -13791,14 +13827,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -14046,14 +14082,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -14110,14 +14146,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -14231,14 +14267,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -14297,14 +14333,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -14552,14 +14588,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -14616,14 +14652,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -14737,14 +14773,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -14803,14 +14839,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -15058,14 +15094,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -15122,14 +15158,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -15247,14 +15283,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -15313,14 +15349,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -15568,14 +15604,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -15632,14 +15668,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -15757,14 +15793,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -15823,14 +15859,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -16078,14 +16114,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -16142,14 +16178,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -16263,14 +16299,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -16329,14 +16365,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -16584,14 +16620,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -16648,14 +16684,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -16773,14 +16809,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -16839,14 +16875,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17094,14 +17130,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17157,14 +17193,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17277,14 +17313,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INTIMIDATE",
-        "name": "Intimidate",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Intimidate",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -17342,14 +17378,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INTIMIDATE",
-          "name": "Intimidate",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Intimidate",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17405,14 +17441,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LIMBER",
-          "name": "Limber",
+          "id": "ABILITY_RECKLESS",
+          "name": "Reckless",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Limber",
+        "abilityName": "Reckless",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17468,14 +17504,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_IRON_FIST",
+          "name": "Iron Fist",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Iron Fist",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17532,14 +17568,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STEADFAST",
-          "name": "Steadfast",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Steadfast",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -17879,14 +17915,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OBLIVIOUS",
-          "name": "Oblivious",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Oblivious",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -18134,14 +18170,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -18228,12 +18264,6 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_SWALLOW",
-          "name": "Swallow",
-          "type": "Normal",
-          "source": "Level-up learnset"
-        },
-        {
           "id": "MOVE_STOCKPILE",
           "name": "Stockpile",
           "type": "Normal",
@@ -18248,6 +18278,12 @@
         {
           "id": "MOVE_ACID_SPRAY",
           "name": "Acid Spray",
+          "type": "Poison",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_POISON_TAIL",
+          "name": "Poison Tail",
           "type": "Poison",
           "source": "Level-up learnset"
         }
@@ -18293,12 +18329,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SWALLOW",
-            "name": "Swallow",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_STOCKPILE",
             "name": "Stockpile",
             "type": "Normal",
@@ -18313,6 +18343,12 @@
           {
             "id": "MOVE_ACID_SPRAY",
             "name": "Acid Spray",
+            "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_POISON_TAIL",
+            "name": "Poison Tail",
             "type": "Poison",
             "source": "Level-up learnset"
           }
@@ -18357,27 +18393,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SLEEP_POWDER",
-            "name": "Sleep Powder",
-            "type": "Grass",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_GIGA_DRAIN",
-            "name": "Giga Drain",
-            "type": "Grass",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_TOXIC",
             "name": "Toxic",
             "type": "Poison",
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_SYNTHESIS",
+            "name": "Synthesis",
+            "type": "Grass",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_MOONBLAST",
             "name": "Moonblast",
             "type": "Fairy",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_INGRAIN",
+            "name": "Ingrain",
+            "type": "Grass",
             "source": "Level-up learnset"
           }
         ],
@@ -18421,21 +18457,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_WING_ATTACK",
-            "name": "Wing Attack",
+            "id": "MOVE_ASSURANCE",
+            "name": "Assurance",
+            "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_DRILL_PECK",
+            "name": "Drill Peck",
             "type": "Flying",
             "source": "Level-up learnset"
           },
           {
-            "id": "MOVE_NIGHT_SHADE",
-            "name": "Night Shade",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_ASSURANCE",
-            "name": "Assurance",
-            "type": "Dark",
+            "id": "MOVE_SKY_ATTACK",
+            "name": "Sky Attack",
+            "type": "Flying",
             "source": "Level-up learnset"
           },
           {
@@ -18447,14 +18483,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -18485,27 +18521,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_POISON_FANG",
-            "name": "Poison Fang",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_QUICK_GUARD",
-            "name": "Quick Guard",
-            "type": "Fighting",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_AIR_CUTTER",
-            "name": "Air Cutter",
-            "type": "Flying",
+            "id": "MOVE_SWIFT",
+            "name": "Swift",
+            "type": "Normal",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_BITE",
             "name": "Bite",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_QUICK_ATTACK",
+            "name": "Quick Attack",
+            "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_HYPNOSIS",
+            "name": "Hypnosis",
+            "type": "Psychic",
             "source": "Level-up learnset"
           }
         ],
@@ -18549,27 +18585,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SWEET_SCENT",
-            "name": "Sweet Scent",
+            "id": "MOVE_FLAIL",
+            "name": "Flail",
             "type": "Normal",
             "source": "Level-up learnset"
           },
           {
-            "id": "MOVE_MOONLIGHT",
-            "name": "Moonlight",
-            "type": "Fairy",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_GRASSY_TERRAIN",
-            "name": "Grassy Terrain",
+            "id": "MOVE_SYNTHESIS",
+            "name": "Synthesis",
             "type": "Grass",
             "source": "Level-up learnset"
           },
           {
-            "id": "MOVE_MOONBLAST",
-            "name": "Moonblast",
-            "type": "Fairy",
+            "id": "MOVE_INGRAIN",
+            "name": "Ingrain",
+            "type": "Grass",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_LEAF_BLADE",
+            "name": "Leaf Blade",
+            "type": "Grass",
             "source": "Level-up learnset"
           }
         ],
@@ -18613,12 +18649,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_NIGHT_SHADE",
-            "name": "Night Shade",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_SWAGGER",
             "name": "Swagger",
             "type": "Normal",
@@ -18631,6 +18661,12 @@
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_SKY_ATTACK",
+            "name": "Sky Attack",
+            "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_TAUNT",
             "name": "Taunt",
             "type": "Dark",
@@ -18639,14 +18675,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -18932,14 +18968,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -19123,14 +19159,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_EARLY_BIRD",
-          "name": "Early Bird",
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Early Bird",
+        "abilityName": "Intimidate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -19218,27 +19254,27 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_ABSORB",
-          "name": "Absorb",
-          "type": "Grass",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_SUPERSONIC",
-          "name": "Supersonic",
-          "type": "Normal",
-          "source": "Level-up learnset"
-        },
-        {
           "id": "MOVE_ASTONISH",
           "name": "Astonish",
           "type": "Ghost",
           "source": "Level-up learnset"
         },
         {
+          "id": "MOVE_GUST",
+          "name": "Gust",
+          "type": "Flying",
+          "source": "Level-up learnset"
+        },
+        {
           "id": "MOVE_MEAN_LOOK",
           "name": "Mean Look",
           "type": "Normal",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_WING_ATTACK",
+          "name": "Wing Attack",
+          "type": "Flying",
           "source": "Level-up learnset"
         }
       ],
@@ -19284,27 +19320,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_ABSORB",
-            "name": "Absorb",
-            "type": "Grass",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_SUPERSONIC",
-            "name": "Supersonic",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_ASTONISH",
             "name": "Astonish",
             "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_GUST",
+            "name": "Gust",
+            "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_WING_ATTACK",
+            "name": "Wing Attack",
+            "type": "Flying",
             "source": "Level-up learnset"
           }
         ],
@@ -19347,18 +19383,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_POISON_GAS",
-            "name": "Poison Gas",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_SMOG",
-            "name": "Smog",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_SMOKESCREEN",
             "name": "Smokescreen",
             "type": "Normal",
@@ -19368,6 +19392,18 @@
             "id": "MOVE_CLEAR_SMOG",
             "name": "Clear Smog",
             "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_PAIN_SPLIT",
+            "name": "Pain Split",
+            "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_SPITE",
+            "name": "Spite",
+            "type": "Ghost",
             "source": "Level-up learnset"
           }
         ],
@@ -19410,15 +19446,9 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_LEER",
-            "name": "Leer",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_POISON_STING",
-            "name": "Poison Sting",
-            "type": "Poison",
+            "id": "MOVE_SPITE",
+            "name": "Spite",
+            "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
@@ -19430,6 +19460,12 @@
           {
             "id": "MOVE_GLARE",
             "name": "Glare",
+            "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_SCARY_FACE",
+            "name": "Scary Face",
             "type": "Normal",
             "source": "Level-up learnset"
           }
@@ -19473,18 +19509,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_TAIL_WHIP",
-            "name": "Tail Whip",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_BITE",
-            "name": "Bite",
-            "type": "Dark",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_LASER_FOCUS",
             "name": "Laser Focus",
             "type": "Normal",
@@ -19493,6 +19517,18 @@
           {
             "id": "MOVE_TAKE_DOWN",
             "name": "Take Down",
+            "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_DIZZY_PUNCH",
+            "name": "Dizzy Punch",
+            "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_SCREECH",
+            "name": "Screech",
             "type": "Normal",
             "source": "Level-up learnset"
           }
@@ -19595,14 +19631,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_HUSTLE",
+        "name": "Hustle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Hustle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -19660,14 +19696,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Hustle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -19724,14 +19760,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STENCH",
-          "name": "Stench",
+          "id": "ABILITY_AFTERMATH",
+          "name": "Aftermath",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Stench",
+        "abilityName": "Aftermath",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -19851,14 +19887,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ANTICIPATION",
-          "name": "Anticipation",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Anticipation",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -20060,21 +20096,21 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_SUPERSONIC",
-          "name": "Supersonic",
+          "id": "MOVE_WHIRLWIND",
+          "name": "Whirlwind",
           "type": "Normal",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_POISON_FANG",
-          "name": "Poison Fang",
-          "type": "Poison",
           "source": "Level-up learnset"
         },
         {
           "id": "MOVE_QUICK_GUARD",
           "name": "Quick Guard",
           "type": "Fighting",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "Dark",
           "source": "Level-up learnset"
         },
         {
@@ -20126,21 +20162,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SUPERSONIC",
-            "name": "Supersonic",
+            "id": "MOVE_WHIRLWIND",
+            "name": "Whirlwind",
             "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_POISON_FANG",
-            "name": "Poison Fang",
-            "type": "Poison",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_QUICK_GUARD",
             "name": "Quick Guard",
             "type": "Fighting",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_CRUNCH",
+            "name": "Crunch",
+            "type": "Dark",
             "source": "Level-up learnset"
           },
           {
@@ -20189,12 +20225,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_TAKE_DOWN",
-            "name": "Take Down",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_ASSURANCE",
             "name": "Assurance",
             "type": "Dark",
@@ -20204,6 +20234,12 @@
             "id": "MOVE_CRUNCH",
             "name": "Crunch",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FURY_SWIPES",
+            "name": "Fury Swipes",
+            "type": "Normal",
             "source": "Level-up learnset"
           },
           {
@@ -20252,12 +20288,6 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_CLEAR_SMOG",
-            "name": "Clear Smog",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_ASSURANCE",
             "name": "Assurance",
             "type": "Dark",
@@ -20273,6 +20303,12 @@
             "id": "MOVE_HAZE",
             "name": "Haze",
             "type": "Ice",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_GYRO_BALL",
+            "name": "Gyro Ball",
+            "type": "Steel",
             "source": "Level-up learnset"
           }
         ],
@@ -20315,21 +20351,21 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SLUDGE",
-            "name": "Sludge",
-            "type": "Poison",
+            "id": "MOVE_SHADOW_SNEAK",
+            "name": "Shadow Sneak",
+            "type": "Ghost",
             "source": "Level-up learnset"
           },
           {
-            "id": "MOVE_MUD_SHOT",
-            "name": "Mud Shot",
-            "type": "Ground",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_MINIMIZE",
-            "name": "Minimize",
+            "id": "MOVE_STOCKPILE",
+            "name": "Stockpile",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FLING",
+            "name": "Fling",
+            "type": "Dark",
             "source": "Level-up learnset"
           },
           {
@@ -20438,14 +20474,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -20504,14 +20540,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -20696,14 +20732,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -20759,14 +20795,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -20823,14 +20859,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -20948,14 +20984,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -21014,14 +21050,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21206,14 +21242,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21269,14 +21305,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21333,14 +21369,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21458,14 +21494,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -21524,14 +21560,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21716,14 +21752,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21779,14 +21815,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21843,14 +21879,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -21964,14 +22000,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INNER_FOCUS",
-        "name": "Inner Focus",
+        "id": "ABILITY_MARVEL_SCALE",
+        "name": "Marvel Scale",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Inner Focus",
+      "abilityName": "Marvel Scale",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -22030,14 +22066,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22252,14 +22288,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_EARLY_BIRD",
-          "name": "Early Bird",
+          "id": "ABILITY_SCRAPPY",
+          "name": "Scrappy",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Early Bird",
+        "abilityName": "Scrappy",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22316,14 +22352,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22380,14 +22416,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LIGHTNING_ROD",
-          "name": "Lightning Rod",
+          "id": "ABILITY_SOLID_ROCK",
+          "name": "Solid Rock",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Lightning Rod",
+        "abilityName": "Solid Rock",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22443,14 +22479,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_LIMBER",
-          "name": "Limber",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Limber",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22810,14 +22846,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SAND_VEIL",
-          "name": "Sand Veil",
+          "id": "ABILITY_ROUGH_SKIN",
+          "name": "Rough Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sand Veil",
+        "abilityName": "Rough Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22874,14 +22910,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_CLOUD_NINE",
+          "name": "Cloud Nine",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Cloud Nine",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -22938,14 +22974,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -23002,14 +23038,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -23241,14 +23277,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OBLIVIOUS",
-          "name": "Oblivious",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Oblivious",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -23605,14 +23641,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_AFTERMATH",
-        "name": "Aftermath",
+        "id": "ABILITY_STENCH",
+        "name": "Stench",
         "slot": "2",
         "slotName": "Ability 2",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Aftermath",
+      "abilityName": "Stench",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
       "nature": null,
       "evs": null,
@@ -23671,14 +23707,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_AFTERMATH",
-          "name": "Aftermath",
+          "id": "ABILITY_STENCH",
+          "name": "Stench",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Aftermath",
+        "abilityName": "Stench",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -23735,14 +23771,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHIELD_DUST",
-          "name": "Shield Dust",
+          "id": "ABILITY_TINTED_LENS",
+          "name": "Tinted Lens",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shield Dust",
+        "abilityName": "Tinted Lens",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -23799,14 +23835,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_DRY_SKIN",
-          "name": "Dry Skin",
+          "id": "ABILITY_ANTICIPATION",
+          "name": "Anticipation",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Dry Skin",
+        "abilityName": "Anticipation",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -23862,14 +23898,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STICKY_HOLD",
-          "name": "Sticky Hold",
+          "id": "ABILITY_GOOEY",
+          "name": "Gooey",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sticky Hold",
+        "abilityName": "Gooey",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -23989,14 +24025,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STICKY_HOLD",
-          "name": "Sticky Hold",
+          "id": "ABILITY_GLUTTONY",
+          "name": "Gluttony",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sticky Hold",
+        "abilityName": "Gluttony",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -24093,14 +24129,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_TECHNICIAN",
-        "name": "Technician",
+        "id": "ABILITY_INTIMIDATE",
+        "name": "Intimidate",
         "slot": "2",
         "slotName": "Ability 2",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Technician",
+      "abilityName": "Intimidate",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
       "nature": null,
       "evs": null,
@@ -24158,14 +24194,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TECHNICIAN",
-          "name": "Technician",
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Technician",
+        "abilityName": "Intimidate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -24221,14 +24257,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_RECKLESS",
-          "name": "Reckless",
+          "id": "ABILITY_LIMBER",
+          "name": "Limber",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Reckless",
+        "abilityName": "Limber",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -24284,14 +24320,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_IRON_FIST",
-          "name": "Iron Fist",
+          "id": "ABILITY_KEEN_EYE",
+          "name": "Keen Eye",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Iron Fist",
+        "abilityName": "Keen Eye",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -24567,14 +24603,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -24633,14 +24669,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -24760,14 +24796,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SUPER_LUCK",
-          "name": "Super Luck",
+          "id": "ABILITY_JUSTIFIED",
+          "name": "Justified",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Super Luck",
+        "abilityName": "Justified",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -24824,14 +24860,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SUPER_LUCK",
-          "name": "Super Luck",
+          "id": "ABILITY_INSOMNIA",
+          "name": "Insomnia",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Super Luck",
+        "abilityName": "Insomnia",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -24888,14 +24924,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_EARLY_BIRD",
-          "name": "Early Bird",
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Early Bird",
+        "abilityName": "Intimidate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -25030,27 +25066,27 @@
       "itemName": null,
       "moves": [
         {
-          "id": "MOVE_POISON_FANG",
-          "name": "Poison Fang",
-          "type": "Poison",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_QUICK_GUARD",
-          "name": "Quick Guard",
-          "type": "Fighting",
-          "source": "Level-up learnset"
-        },
-        {
-          "id": "MOVE_AIR_CUTTER",
-          "name": "Air Cutter",
-          "type": "Flying",
+          "id": "MOVE_SWIFT",
+          "name": "Swift",
+          "type": "Normal",
           "source": "Level-up learnset"
         },
         {
           "id": "MOVE_BITE",
           "name": "Bite",
           "type": "Dark",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_QUICK_ATTACK",
+          "name": "Quick Attack",
+          "type": "Normal",
+          "source": "Level-up learnset"
+        },
+        {
+          "id": "MOVE_HYPNOSIS",
+          "name": "Hypnosis",
+          "type": "Psychic",
           "source": "Level-up learnset"
         }
       ],
@@ -25096,27 +25132,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_POISON_FANG",
-            "name": "Poison Fang",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_QUICK_GUARD",
-            "name": "Quick Guard",
-            "type": "Fighting",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_AIR_CUTTER",
-            "name": "Air Cutter",
-            "type": "Flying",
+            "id": "MOVE_SWIFT",
+            "name": "Swift",
+            "type": "Normal",
             "source": "Level-up learnset"
           },
           {
             "id": "MOVE_BITE",
             "name": "Bite",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_QUICK_ATTACK",
+            "name": "Quick Attack",
+            "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_HYPNOSIS",
+            "name": "Hypnosis",
+            "type": "Psychic",
             "source": "Level-up learnset"
           }
         ],
@@ -25159,27 +25195,27 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_SLUDGE",
-            "name": "Sludge",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_HAZE",
-            "name": "Haze",
-            "type": "Ice",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_SELF_DESTRUCT",
             "name": "Self-Destruct",
             "type": "Normal",
             "source": "Level-up learnset"
           },
           {
+            "id": "MOVE_LAVA_PLUME",
+            "name": "Lava Plume",
+            "type": "Fire",
+            "source": "Level-up learnset"
+          },
+          {
             "id": "MOVE_SLUDGE_BOMB",
             "name": "Sludge Bomb",
             "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_STOCKPILE",
+            "name": "Stockpile",
+            "type": "Normal",
             "source": "Level-up learnset"
           }
         ],
@@ -25285,20 +25321,14 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_STOCKPILE",
-            "name": "Stockpile",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_SPIT_UP",
-            "name": "Spit Up",
-            "type": "Normal",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_ACID_SPRAY",
             "name": "Acid Spray",
+            "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_POISON_TAIL",
+            "name": "Poison Tail",
             "type": "Poison",
             "source": "Level-up learnset"
           },
@@ -25306,6 +25336,12 @@
             "id": "MOVE_SLUDGE_BOMB",
             "name": "Sludge Bomb",
             "type": "Poison",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_LEECH_LIFE",
+            "name": "Leech Life",
+            "type": "Bug",
             "source": "Level-up learnset"
           }
         ],
@@ -25349,40 +25385,40 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_NIGHT_SHADE",
-            "name": "Night Shade",
-            "type": "Ghost",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_ASSURANCE",
-            "name": "Assurance",
-            "type": "Dark",
-            "source": "Level-up learnset"
-          },
-          {
-            "id": "MOVE_TAUNT",
-            "name": "Taunt",
-            "type": "Dark",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_MEAN_LOOK",
             "name": "Mean Look",
             "type": "Normal",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_AIR_CUTTER",
+            "name": "Air Cutter",
+            "type": "Flying",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_FEINT_ATTACK",
+            "name": "Feint Attack",
+            "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_DARK_PULSE",
+            "name": "Dark Pulse",
+            "type": "Dark",
             "source": "Level-up learnset"
           }
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -25413,15 +25449,15 @@
         "itemName": null,
         "moves": [
           {
-            "id": "MOVE_TOXIC",
-            "name": "Toxic",
-            "type": "Poison",
-            "source": "Level-up learnset"
-          },
-          {
             "id": "MOVE_SUCKER_PUNCH",
             "name": "Sucker Punch",
             "type": "Dark",
+            "source": "Level-up learnset"
+          },
+          {
+            "id": "MOVE_POISON_JAB",
+            "name": "Poison Jab",
+            "type": "Poison",
             "source": "Level-up learnset"
           },
           {
@@ -25439,14 +25475,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_STENCH",
-          "name": "Stench",
+          "id": "ABILITY_AFTERMATH",
+          "name": "Aftermath",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Stench",
+        "abilityName": "Aftermath",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -25533,14 +25569,14 @@
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_HUSTLE",
+        "name": "Hustle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Hustle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -25592,14 +25628,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Hustle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -25674,14 +25710,14 @@
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_HUSTLE",
+        "name": "Hustle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Hustle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -25733,14 +25769,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Hustle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -25815,14 +25851,14 @@
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_HUSTLE",
+        "name": "Hustle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Hustle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -25874,14 +25910,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Hustle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -25956,14 +25992,14 @@
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_HUSTLE",
+        "name": "Hustle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Hustle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -26015,14 +26051,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Hustle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26097,14 +26133,14 @@
       ],
       "moveSource": "Level-up learnset",
       "ability": {
-        "id": "ABILITY_RUN_AWAY",
-        "name": "Run Away",
+        "id": "ABILITY_HUSTLE",
+        "name": "Hustle",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Run Away",
+      "abilityName": "Hustle",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -26156,14 +26192,14 @@
         ],
         "moveSource": "Level-up learnset",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_HUSTLE",
+          "name": "Hustle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Hustle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26245,14 +26281,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_INTIMIDATE",
-        "name": "Intimidate",
+        "id": "ABILITY_RECKLESS",
+        "name": "Reckless",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Intimidate",
+      "abilityName": "Reckless",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -26311,14 +26347,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INTIMIDATE",
-          "name": "Intimidate",
+          "id": "ABILITY_RECKLESS",
+          "name": "Reckless",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Intimidate",
+        "abilityName": "Reckless",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26375,14 +26411,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_TINTED_LENS",
+          "name": "Tinted Lens",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Tinted Lens",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26503,14 +26539,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INSOMNIA",
-          "name": "Insomnia",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Insomnia",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26567,14 +26603,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_DRIZZLE",
+          "name": "Drizzle",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Drizzle",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26631,14 +26667,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_NO_GUARD",
+          "name": "No Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "No Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -26736,14 +26772,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_TECHNICIAN",
-        "name": "Technician",
+        "id": "ABILITY_SWARM",
+        "name": "Swarm",
         "slot": "2",
         "slotName": "Ability 2",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Technician",
+      "abilityName": "Swarm",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
       "nature": null,
       "evs": null,
@@ -26802,14 +26838,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TECHNICIAN",
-          "name": "Technician",
+          "id": "ABILITY_SWARM",
+          "name": "Swarm",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Technician",
+        "abilityName": "Swarm",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -26993,14 +27029,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_HYPER_CUTTER",
-          "name": "Hyper Cutter",
+          "id": "ABILITY_GUTS",
+          "name": "Guts",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Hyper Cutter",
+        "abilityName": "Guts",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -27057,14 +27093,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_GUTS",
+          "name": "Guts",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Guts",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -27121,14 +27157,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_INTIMIDATE",
+          "name": "Intimidate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Intimidate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -27355,14 +27391,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OWN_TEMPO",
-          "name": "Own Tempo",
+          "id": "ABILITY_OBLIVIOUS",
+          "name": "Oblivious",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Own Tempo",
+        "abilityName": "Oblivious",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -27713,14 +27749,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_UNBURDEN",
-        "name": "Unburden",
+        "id": "ABILITY_AFTERMATH",
+        "name": "Aftermath",
         "slot": "2",
         "slotName": "Ability 2",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Unburden",
+      "abilityName": "Aftermath",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
       "nature": null,
       "evs": null,
@@ -27779,14 +27815,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_UNBURDEN",
-          "name": "Unburden",
+          "id": "ABILITY_AFTERMATH",
+          "name": "Aftermath",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Unburden",
+        "abilityName": "Aftermath",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -27842,14 +27878,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_IRON_FIST",
+          "name": "Iron Fist",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Iron Fist",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -27906,14 +27942,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_MAGIC_BOUNCE",
+          "name": "Magic Bounce",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "Magic Bounce",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -28034,14 +28070,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -28098,14 +28134,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -28397,14 +28433,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -28461,14 +28497,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SNOW_CLOAK",
-          "name": "Snow Cloak",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Snow Cloak",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -28589,14 +28625,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SNOW_CLOAK",
-          "name": "Snow Cloak",
+          "id": "ABILITY_OBLIVIOUS",
+          "name": "Oblivious",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Snow Cloak",
+        "abilityName": "Oblivious",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -28698,14 +28734,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_CLEAR_BODY",
-        "name": "Clear Body",
+        "id": "ABILITY_IRON_FIST",
+        "name": "Iron Fist",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Clear Body",
+      "abilityName": "Iron Fist",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -28764,14 +28800,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CLEAR_BODY",
-          "name": "Clear Body",
+          "id": "ABILITY_IRON_FIST",
+          "name": "Iron Fist",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Clear Body",
+        "abilityName": "Iron Fist",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -28828,14 +28864,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STURDY",
-          "name": "Sturdy",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sturdy",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -29322,14 +29358,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_IRON_FIST",
-          "name": "Iron Fist",
+          "id": "ABILITY_KEEN_EYE",
+          "name": "Keen Eye",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Iron Fist",
+        "abilityName": "Keen Eye",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -29385,14 +29421,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_RECKLESS",
-          "name": "Reckless",
+          "id": "ABILITY_LIMBER",
+          "name": "Limber",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Reckless",
+        "abilityName": "Limber",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -29576,14 +29612,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_WATER_ABSORB",
-          "name": "Water Absorb",
+          "id": "ABILITY_SWIFT_SWIM",
+          "name": "Swift Swim",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Water Absorb",
+        "abilityName": "Swift Swim",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -29806,14 +29842,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHED_SKIN",
-          "name": "Shed Skin",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shed Skin",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -29998,14 +30034,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -30062,14 +30098,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -30297,14 +30333,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_ROCK_HEAD",
-          "name": "Rock Head",
+          "id": "ABILITY_SWIFT_SWIM",
+          "name": "Swift Swim",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Rock Head",
+        "abilityName": "Swift Swim",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -30553,14 +30589,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_MOLD_BREAKER",
-          "name": "Mold Breaker",
+          "id": "ABILITY_ROCK_HEAD",
+          "name": "Rock Head",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Mold Breaker",
+        "abilityName": "Rock Head",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -30654,14 +30690,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_NATURAL_CURE",
-        "name": "Natural Cure",
+        "id": "ABILITY_ANALYTIC",
+        "name": "Analytic",
         "slot": "2",
         "slotName": "Ability 2",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Natural Cure",
+      "abilityName": "Analytic",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
       "nature": null,
       "evs": null,
@@ -30720,14 +30756,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_ANALYTIC",
+          "name": "Analytic",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Analytic",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -30784,14 +30820,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_WATER_ABSORB",
-          "name": "Water Absorb",
+          "id": "ABILITY_UNAWARE",
+          "name": "Unaware",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Water Absorb",
+        "abilityName": "Unaware",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -31402,14 +31438,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STATIC",
-          "name": "Static",
+          "id": "ABILITY_AFTERMATH",
+          "name": "Aftermath",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Static",
+        "abilityName": "Aftermath",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -31465,14 +31501,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_RUN_AWAY",
-          "name": "Run Away",
+          "id": "ABILITY_VOLT_ABSORB",
+          "name": "Volt Absorb",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Run Away",
+        "abilityName": "Volt Absorb",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -32011,14 +32047,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -32309,14 +32345,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_DRY_SKIN",
-          "name": "Dry Skin",
+          "id": "ABILITY_ANTICIPATION",
+          "name": "Anticipation",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Dry Skin",
+        "abilityName": "Anticipation",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -32373,14 +32409,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SWARM",
-          "name": "Swarm",
+          "id": "ABILITY_INSOMNIA",
+          "name": "Insomnia",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Swarm",
+        "abilityName": "Insomnia",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -32437,14 +32473,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHIELD_DUST",
-          "name": "Shield Dust",
+          "id": "ABILITY_TINTED_LENS",
+          "name": "Tinted Lens",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shield Dust",
+        "abilityName": "Tinted Lens",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -32605,14 +32641,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_SYNCHRONIZE",
-        "name": "Synchronize",
+        "id": "ABILITY_MAGIC_GUARD",
+        "name": "Magic Guard",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Synchronize",
+      "abilityName": "Magic Guard",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -32670,14 +32706,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -32733,14 +32769,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": null,
-          "name": "Ability 2",
+          "id": "ABILITY_TELEPATHY",
+          "name": "Telepathy",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
-          "resolved": false
+          "resolved": true
         },
-        "abilityName": "Ability 2",
+        "abilityName": "Telepathy",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -32797,14 +32833,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SOUNDPROOF",
-          "name": "Soundproof",
+          "id": "ABILITY_FILTER",
+          "name": "Filter",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Soundproof",
+        "abilityName": "Filter",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -32861,14 +32897,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OBLIVIOUS",
-          "name": "Oblivious",
+          "id": "ABILITY_DRY_SKIN",
+          "name": "Dry Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Oblivious",
+        "abilityName": "Dry Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -33088,14 +33124,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_WHITE_SMOKE",
-        "name": "White Smoke",
+        "id": "ABILITY_DROUGHT",
+        "name": "Drought",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "White Smoke",
+      "abilityName": "Drought",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -33153,14 +33189,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_WHITE_SMOKE",
-          "name": "White Smoke",
+          "id": "ABILITY_DROUGHT",
+          "name": "Drought",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "White Smoke",
+        "abilityName": "Drought",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -33217,14 +33253,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SOLID_ROCK",
-          "name": "Solid Rock",
+          "id": "ABILITY_DROUGHT",
+          "name": "Drought",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Solid Rock",
+        "abilityName": "Drought",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -33345,14 +33381,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_MAGMA_ARMOR",
-          "name": "Magma Armor",
+          "id": "ABILITY_SOLID_ROCK",
+          "name": "Solid Rock",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Magma Armor",
+        "abilityName": "Solid Rock",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -33770,14 +33806,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SOLID_ROCK",
-          "name": "Solid Rock",
+          "id": "ABILITY_RECKLESS",
+          "name": "Reckless",
           "slot": "2",
           "slotName": "Ability 2",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Solid Rock",
+        "abilityName": "Reckless",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_2",
         "nature": null,
         "evs": null,
@@ -33961,14 +33997,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_KEEN_EYE",
-          "name": "Keen Eye",
+          "id": "ABILITY_NO_GUARD",
+          "name": "No Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Keen Eye",
+        "abilityName": "No Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34340,14 +34376,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34404,14 +34440,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STURDY",
-          "name": "Sturdy",
+          "id": "ABILITY_ROCK_HEAD",
+          "name": "Rock Head",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sturdy",
+        "abilityName": "Rock Head",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34468,14 +34504,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34706,14 +34742,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SHED_SKIN",
-          "name": "Shed Skin",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Shed Skin",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34770,14 +34806,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_CLOUD_NINE",
+          "name": "Cloud Nine",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Cloud Nine",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34898,14 +34934,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -34962,14 +34998,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_INNER_FOCUS",
-          "name": "Inner Focus",
+          "id": "ABILITY_MARVEL_SCALE",
+          "name": "Marvel Scale",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Inner Focus",
+        "abilityName": "Marvel Scale",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35067,14 +35103,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -35133,14 +35169,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35325,14 +35361,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35388,14 +35424,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35452,14 +35488,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_OVERGROW",
-          "name": "Overgrow",
+          "id": "ABILITY_SERENE_GRACE",
+          "name": "Serene Grace",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Overgrow",
+        "abilityName": "Serene Grace",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35577,14 +35613,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -35643,14 +35679,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35835,14 +35871,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35898,14 +35934,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -35962,14 +35998,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_BLAZE",
-          "name": "Blaze",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Blaze",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -36087,14 +36123,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_PRESSURE",
-        "name": "Pressure",
+        "id": "ABILITY_TECHNICIAN",
+        "name": "Technician",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Pressure",
+      "abilityName": "Technician",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -36153,14 +36189,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_PRESSURE",
-          "name": "Pressure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Pressure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -36345,14 +36381,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CURSED_BODY",
-          "name": "Cursed Body",
+          "id": "ABILITY_LEVITATE",
+          "name": "Levitate",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Cursed Body",
+        "abilityName": "Levitate",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -36408,14 +36444,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SYNCHRONIZE",
-          "name": "Synchronize",
+          "id": "ABILITY_MAGIC_GUARD",
+          "name": "Magic Guard",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Synchronize",
+        "abilityName": "Magic Guard",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -36472,14 +36508,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_TORRENT",
-          "name": "Torrent",
+          "id": "ABILITY_STRONG_JAW",
+          "name": "Strong Jaw",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Torrent",
+        "abilityName": "Strong Jaw",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -36915,14 +36951,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STURDY",
-          "name": "Sturdy",
+          "id": "ABILITY_ROCK_HEAD",
+          "name": "Rock Head",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sturdy",
+        "abilityName": "Rock Head",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -36979,14 +37015,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CLEAR_BODY",
-          "name": "Clear Body",
+          "id": "ABILITY_IRON_FIST",
+          "name": "Iron Fist",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Clear Body",
+        "abilityName": "Iron Fist",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -37091,14 +37127,14 @@
       ],
       "moveSource": "Trainer source",
       "ability": {
-        "id": "ABILITY_WATER_VEIL",
-        "name": "Water Veil",
+        "id": "ABILITY_OBLIVIOUS",
+        "name": "Oblivious",
         "slot": "1",
         "slotName": "Ability 1",
         "source": "Trainer source ability slot",
         "resolved": true
       },
-      "abilityName": "Water Veil",
+      "abilityName": "Oblivious",
       "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
       "nature": null,
       "evs": null,
@@ -37156,14 +37192,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_WATER_VEIL",
-          "name": "Water Veil",
+          "id": "ABILITY_OBLIVIOUS",
+          "name": "Oblivious",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Water Veil",
+        "abilityName": "Oblivious",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -37220,14 +37256,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_CLEAR_BODY",
-          "name": "Clear Body",
+          "id": "ABILITY_LIQUID_OOZE",
+          "name": "Liquid Ooze",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Clear Body",
+        "abilityName": "Liquid Ooze",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -37715,14 +37751,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_NATURAL_CURE",
-          "name": "Natural Cure",
+          "id": "ABILITY_TECHNICIAN",
+          "name": "Technician",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Natural Cure",
+        "abilityName": "Technician",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -37779,14 +37815,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_HUSTLE",
-          "name": "Hustle",
+          "id": "ABILITY_SUPER_LUCK",
+          "name": "Super Luck",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Hustle",
+        "abilityName": "Super Luck",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -37843,14 +37879,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_STEADFAST",
-          "name": "Steadfast",
+          "id": "ABILITY_ADAPTABILITY",
+          "name": "Adaptability",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Steadfast",
+        "abilityName": "Adaptability",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,
@@ -37971,14 +38007,14 @@
         ],
         "moveSource": "Trainer source",
         "ability": {
-          "id": "ABILITY_SAND_VEIL",
-          "name": "Sand Veil",
+          "id": "ABILITY_ROUGH_SKIN",
+          "name": "Rough Skin",
           "slot": "1",
           "slotName": "Ability 1",
           "source": "Trainer source ability slot",
           "resolved": true
         },
-        "abilityName": "Sand Veil",
+        "abilityName": "Rough Skin",
         "abilitySlot": "TRAINER_POKEMON_ABILITY_1",
         "nature": null,
         "evs": null,

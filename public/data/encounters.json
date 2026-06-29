@@ -29817,18 +29817,18 @@
     ]
   },
   {
-    "id": "ENCDATA_R42_ROUTE_42:Grass/Cave:Day:SPECIES_TURTWIG:28-28:4:1161",
+    "id": "ENCDATA_R42_ROUTE_42:Grass/Cave:Day:SPECIES_TEDDIURSA:28-28:4:1161",
     "area": "ENCDATA_R42_ROUTE_42",
     "locationId": "ENCDATA_R42_ROUTE_42",
     "locationName": "Route 42",
     "region": "Johto",
     "method": "Grass/Cave",
     "time": "Day",
-    "species": "SPECIES_TURTWIG",
-    "pokemonName": "Turtwig",
-    "pokemonIcon": "assets/pokemon/icons/turtwig.png",
+    "species": "SPECIES_TEDDIURSA",
+    "pokemonName": "Teddiursa",
+    "pokemonIcon": "assets/pokemon/icons/teddiursa.png",
     "types": [
-      "Grass"
+      "Normal"
     ],
     "minLevel": 28,
     "maxLevel": 28,
